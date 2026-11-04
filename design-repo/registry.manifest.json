@@ -1,13 +1,42 @@
 {
   "repositoryId": "mobius-studio-template-clone.design-repo",
   "title": "Design-repo for a design-faithful clone of a design-studio website template",
-  "repositoryVersion": "1.0.0",
+  "repositoryVersion": "1.1.0",
   "pageSpecVersion": "1.0.0",
   "allowlistVersion": "1.0.0",
   "tokenCatalogVersion": "1.0.0",
   "versionFieldNote": "allowlistVersion and tokenCatalogVersion are machine-checked by extraction/verify_all.py (must equal tokens/llm/component-allowlist.json and tokens/llm/token-catalog.json versions); pageSpecVersion is machine-checked against the schema const. repositoryVersion is documentation-only and hand-maintained.",
   "status": "design-review-pending",
   "productionApproved": false,
+  "category": "portfolio",
+  "productDomain": "creative-design-studio-portfolio",
+  "designPolicy": {
+    "policyId": "n0-design-constraints-common",
+    "policyVersion": "0.1.0",
+    "commonIrVersion": "0.5",
+    "enforcementMode": "hard-and-soft",
+    "category": "portfolio",
+    "domain": "creative-design-studio-portfolio",
+    "contentHash": "sha256:941af905166cc2f29d8414aef8337b7acafe2215efd89e4616fa52c43bd04e28",
+    "contentHashFiles": [
+      "tokens/llm/token-policy.json",
+      "compatibility/graph.json",
+      "schema/pagespec.schema.json",
+      "schema/semantic_validate.py"
+    ],
+    "contentHashMethod": "extraction/policy_hash.py: for each contentHashFiles entry in order append '<path>\\n<sha256 hex of bytes>\\n'; contentHash = 'sha256:' + sha256 hex of that text. Recomputed and compared by extraction/verify_all.py (design-policy check).",
+    "localExtension": {
+      "ref": "policy/design-policy.json",
+      "policyId": "portfolio-site-web",
+      "policyVersion": "1.0.0"
+    },
+    "decision": {
+      "policyDecision": "defined-pending-architecture-review",
+      "architectureDecisionRecorded": false,
+      "recordedIn": "policy/design-policy.json approval",
+      "note": "Category and classification are agent-derived and not human-reviewed; not an owner-ratified decision."
+    }
+  },
   "defaultTheme": "light",
   "schemaValidatedThemes": [
     "light",
@@ -98,6 +127,8 @@
     "parityHarness": "extraction/parity_harness.mjs",
     "sectionsDir": "sections/",
     "componentsDir": "components/",
-    "primitivesDir": "primitives/"
+    "primitivesDir": "primitives/",
+    "designPolicy": "policy/design-policy.json",
+    "policyHash": "extraction/policy_hash.py"
   }
 }

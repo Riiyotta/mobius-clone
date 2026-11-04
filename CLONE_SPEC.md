@@ -4,7 +4,7 @@ Source: https://mobius.framer.website/work
 
 Framer template, recon run 2026-11-04 with Playwright (Chromium, DPR 1). I measured every value below from computed styles or rect sampling on the live site, or read it from the site's own JS modules: `DUu_B6HiRI1…DDl-OLAj.mjs` (page + Infinite Canvas), `IW5FwLyQy.Vo7M-LQ8.mjs` (Project Card), `shared-lib.CbKaJb3Q.mjs` (Custom Cursor, Rolling Letters), `script_main.D8sS51K5.mjs` (layout template/nav). If a value comes from code and I didn't sample it at runtime, it is marked *(code)*.
 
-Assets: `/Users/riyaghosh/portfolio/Möbius/.recon/assets.json`. Screenshots: `/Users/riyaghosh/portfolio/Möbius/.recon/*.png`.
+Assets: `.recon/assets.json` (local recon output). Screenshots: `.recon/*.png` (local recon captures, not committed).
 
 ---
 

@@ -1,0 +1,57 @@
+{
+  "policyId": "portfolio-site-web",
+  "policyVersion": "1.0.0",
+  "commonIrVersion": "0.5",
+  "role": "local-extension",
+  "extends": {
+    "policyId": "n0-design-constraints-common",
+    "policyVersion": "0.1.0",
+    "commonIrVersion": "0.5",
+    "note": "This file is a LOCAL EXTENSION layered on the common policy n0-design-constraints-common 0.1.0. It adds the portfolio rules below and does not replace the common policy. The binding itself lives in registry.manifest.json designPolicy."
+  },
+  "title": "Creative design studio portfolio web generation policy",
+  "classification": {
+    "productCategory": "portfolio",
+    "productDomain": "creative-design-studio-portfolio",
+    "surfaces": [
+      "studio-home",
+      "work-index",
+      "case-study-pages",
+      "studio-about-and-team",
+      "contacts",
+      "notes-feed",
+      "legal-pages",
+      "not-found"
+    ],
+    "audiences": [
+      "prospective-clients",
+      "creative-collaborators",
+      "job-candidates"
+    ],
+    "derivation": "Agent-derived from the clone (home, work index, case studies, studio/team, contacts, notes feed, legal pages, 404). Not human-reviewed and not confirmed by the site owner."
+  },
+  "generationRules": [
+    "Pages are drawn only from the 9 templates (home, work-index, case-detail, studio, contacts, feed-index, feed-post, legal, not-found) and the section contracts; no feature-matrix, integrations, dashboard or demo-booking sections, because the source has none.",
+    "The clone does have a real section pricing.packages (a services-packages block on the home page). It is allowed only as that service-packages block as the clone has it (stacked packages with checklists and a starting-from price) and is never extended into a pricing table, plan comparison or checkout flow.",
+    "Work (case-study), studio/team, contacts, notes/feed and legal structures are first class: the home page indexes work and services and ends in contact; a work page is a case study with chapters, results and credits; the studio page carries team and principles; notes are articles; legal pages are decomposed per heading-bounded clause.",
+    "Every PageSpec declares mode: reference (faithful reconstruction of the source) or generated (a new studio site for someone else). Generated pages carry no source studio name, brand, contact details, clients, partners, awards, team identities, testimonials, copy, URLs or media (GENERATED_MODE_* rules).",
+    "Page-level tokens come only from tokens/llm/token-catalog.json under tokens/llm/token-policy.json; no raw colours, lengths or font names (TOKEN_* rules).",
+    "Real client names, partner logos, award marks, team identity (names, portraits, bios), testimonials and imagery (project photography, showreel) are must-not-fabricate in generation mode: use the generation-safe substitute roles in assets/asset-roles.json or operator-supplied content.",
+    "Conversion is a contact invitation (enquiry form, contact details), never a demo-booking or checkout flow."
+  ],
+  "enforcedBy": [
+    "schema/pagespec.schema.json",
+    "schema/semantic_validate.py",
+    "compatibility/graph.json",
+    "tokens/llm/token-policy.json",
+    "assets/asset-roles.json",
+    "schema/source-brand.json"
+  ],
+  "approval": {
+    "policyDecision": "defined-pending-architecture-review",
+    "architectureDecisionRecorded": false,
+    "decidedBy": null,
+    "decision": "Proposed: bind to the common policy n0-design-constraints-common 0.1.0 (Common IR 0.5, hard-and-soft) with this file as a local extension. The category label (portfolio) and this classification were derived by the extraction agent, are not human-reviewed and are not an owner-ratified architecture decision.",
+    "scope": "Policy binding only. Asset-licensing and content-rights review of the template's photography and copy are separate approvals and remain open."
+  }
+}

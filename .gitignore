@@ -5,3 +5,16 @@ dist/
 __pycache__/
 *.pyc
 .playwright-mcp/
+
+# A packaged zip of design-repo/ is never committed next to the live folder (it goes stale);
+# regenerate it on demand when a delivery is requested.
+design-repo.zip
+*.zip
+
+# Local recon captures (screenshots) and the saved copy of the live page: local evidence, not source.
+# .recon/specs/*.md and the *.json measurements stay tracked because design-repo cites them.
+.recon/*.png
+.recon/shots/
+.recon/**/*.png
+Möbius.html
+Möbius_files/

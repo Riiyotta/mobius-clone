@@ -2,7 +2,9 @@
 """Prove that verify_all.py catches drift: copy the repo to an OS temp dir, inject one defect per case,
 run the copy's own verify_all.py, and require a non-zero exit with the expected check FAILing.
 
-    python3 extraction/prove_drift.py
+    python3 extraction/prove_drift.py [--scratch <empty dir>]
+
+--scratch holds the throwaway copies in a directory you choose (must be empty or absent); the default is an OS temp dir.
 
 When the clone's source tree sits next to this repo (repo/..), the scratch parent gets read-only symlinks to
 it so citation, token-source, source-brand and route drift can be proven too; standalone, those cases are
@@ -40,6 +42,14 @@ def role_set(r, rid, **kw):
     for x in d["roles"]:
         if x["id"] == rid: x.update(kw)
     jw(r, "assets/asset-roles.json", d)
+
+def mj(rel, fn):
+    def m(r):
+        d = jl(r, rel); fn(d); jw(r, rel, d)
+    return m
+def m_policy_hash_drift(r):
+    with open(os.path.join(r, "schema", "semantic_validate.py"), "a", encoding="utf-8") as f:
+        f.write("\n# drift\n")
 
 def m_phantom(r):
     a = jl(r, "tokens/llm/component-allowlist.json"); a["sections"].append({"id": "features.phantom", "category": "FEATURES", "retrievalEligible": True}); jw(r, "tokens/llm/component-allowlist.json", a)
@@ -154,6 +164,15 @@ CASES = [  # (name, mutation, expected failing check, needs sibling source)
     ("example declares the wrong template", m_example, "semantic-examples", False),
     ("source.id equals semantic.id", m_semantic_id, "contracts", False),
     ("text field without maxWords", m_maxwords, "contracts", False),
+    ("enforcing file edited without refreshing the policy hash", m_policy_hash_drift, "design-policy", False),
+    ("contentHash tampered", mj("registry.manifest.json", lambda d: d["designPolicy"].update(contentHash="sha256:" + "0" * 64)), "design-policy", False),
+    ("category changed away from portfolio", mj("registry.manifest.json", lambda d: d.update(category="marketplace")), "design-policy", False),
+    ("category removed", mj("registry.manifest.json", lambda d: d.pop("category")), "design-policy", False),
+    ("designPolicy binding removed", mj("registry.manifest.json", lambda d: d.pop("designPolicy")), "design-policy", False),
+    ("bound policy version drift", mj("registry.manifest.json", lambda d: d["designPolicy"].update(policyVersion="0.2.0")), "design-policy", False),
+    ("policy file missing", lambda r: os.unlink(os.path.join(r, "policy", "design-policy.json")), "design-policy", False),
+    ("approval overstated as ratified", mj("policy/design-policy.json", lambda d: d["approval"].update(policyDecision="ratified", architectureDecisionRecorded=True)), "design-policy", False),
+    ("policy_hash script unregistered", mj("registry.manifest.json", lambda d: d["entryPoints"].pop("policyHash")), "design-policy", False),
 ]
 
 def run(root):
@@ -170,7 +189,13 @@ def fresh(tmp):
     return root
 
 def main():
-    tmp = tempfile.mkdtemp(prefix="drift-")
+    scratch = None
+    if "--scratch" in sys.argv:
+        scratch = os.path.abspath(sys.argv[sys.argv.index("--scratch") + 1])
+        if os.path.isdir(scratch) and os.listdir(scratch):
+            sys.exit("--scratch directory must be empty")
+        os.makedirs(scratch, exist_ok=True)
+    tmp = tempfile.mkdtemp(prefix="drift-", dir=scratch)
     bad = 0
     try:
         code, out = run(fresh(tmp))

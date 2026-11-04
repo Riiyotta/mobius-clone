@@ -23,6 +23,26 @@ adversarial suite. Status: `design-review-pending`, `productionApproved: false`.
 | examplePageSpecs | 5 |
 <!-- counts:end -->
 
+## Category and design policy
+
+Category: `portfolio` (product domain `creative-design-studio-portfolio`). `registry.manifest.json` binds the repo to the
+common policy `n0-design-constraints-common` 0.1.0 (Common IR 0.5, `hard-and-soft`) through `designPolicy`, with the local
+extension `policy/design-policy.json` (`portfolio-site-web` 1.0.0). `designPolicy.contentHash` covers the enforcing files
+(`tokens/llm/token-policy.json`, `compatibility/graph.json`, `schema/pagespec.schema.json`, `schema/semantic_validate.py`);
+refresh it with `python3 extraction/policy_hash.py --write` after editing any of them (`verify_all` check `design-policy`
+recomputes it).
+
+Status: the policy decision is `defined-pending-architecture-review` and `architectureDecisionRecorded` is `false`. The
+category label and the classification (surfaces, audiences) were derived by the extraction agent from the clone; they are
+not human-reviewed and not owner-ratified. The clone's real `pricing.packages` section is allowed only as the service-packages
+block as it appears in the clone.
+
+## Not-built stand-in
+
+`src/pages/Pending.jsx` is a "being rebuilt" stand-in rendered by the default branch of the switch in `src/App.jsx`. The router
+(`src/lib/router.js`) only yields home, work, project, feed, post, studio, contacts, legal and 404, all handled explicitly, so
+no served route renders it. The 31 routes and 9 templates counted here are all implemented pages.
+
 ## Templates (`?` optional, `*` repeatable)
 
 | template | routes | node sequence |

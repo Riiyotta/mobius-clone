@@ -23,6 +23,10 @@ Checks (each prints PASS/FAIL/WARN with evidence):
   source-brand       every literal identity pattern occurs in the real source/specs (sibling): patterns are never invented
   routes             routes.json == the route set derived from the sibling router + CMS slugs; mapped exactly once
   graph-parity       compatibility/graph.json rule ids == semantic_validate.GRAPH_RULE_IDS
+  design-policy      category == portfolio; manifest designPolicy bound to n0-design-constraints-common 0.1.0 (Common IR 0.5,
+                     hard-and-soft) with the policy/design-policy.json local extension; contentHash recomputed over the
+                     enforcing files (extraction/policy_hash.py); enforcedBy files exist; policy file and hash script are
+                     registered entryPoints; approval must stay defined-pending-architecture-review (never overstated)
   manifest-counts / readme-counts   recomputed from disk
   wrapper-gate       extraction/wrapper_gate.py (R9) has zero errors
   clone-parity       recorded parity numbers are internally consistent (averages, minima and gate flags re-derived)
@@ -53,7 +57,7 @@ RETRIEVAL_INELIGIBLE = {"utility.custom-cursor", "utility.cursor-image-trail", "
 RUNTIME_UI = re.compile(r"overlay|modal|dialog|drawer|cookie|consent|toast|lightbox|preloader|cursor|popover|tooltip|ticker|clock|trail|success|feedback", re.I)
 # Built from fragments so this file never contains a literal machine-path prefix itself.
 _U, _H = "/" + "Users/", "(?:^|[\\s\"'(=])/" + "home/"
-ABS_PATH = re.compile(_U + r"[A-Za-z0-9._-]+/|" + _H + r"[A-Za-z0-9._-]+/|[A-Za-z]:\\" + r"Users\\|/private/(tmp|var)/")
+ABS_PATH = re.compile(_U + r"[A-Za-z0-9._-]+/|" + _H + r"[A-Za-z0-9._-]+/|[A-Za-z]:\\" + r"Users\\|/" + "private/(tmp|var)/")
 CITE = re.compile(r"((?:src|public)/[A-Za-z0-9_./-]+\.(?:jsx|js|css|json|html)|\.recon/specs/[A-Za-z0-9_.-]+\.md|CLONE_SPEC\.md|index\.html|tailwind\.config\.js|package\.json):(\d+)-(\d+)")
 GATE = 0.8
 
@@ -477,6 +481,66 @@ def check_generated_examples(examples):
     ok = "home" in gen and len(gen - {"home"}) >= 1
     rec("generated-examples", ok, f"generation-safe examples for templates {sorted(gen)}" if ok else f"missing generated examples (have {sorted(gen)})")
 
+BOUND_POLICY = {"policyId": "n0-design-constraints-common", "policyVersion": "0.1.0", "commonIrVersion": "0.5", "enforcementMode": "hard-and-soft"}
+LOCAL_EXTENSION = {"ref": "policy/design-policy.json", "policyId": "portfolio-site-web", "policyVersion": "1.0.0"}
+POLICY_DOMAIN = "creative-design-studio-portfolio"
+
+def check_design_policy(man):
+    """Portfolio category + common-policy binding. Approval is pending: the check fails if any file claims a recorded decision."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("policy_hash", os.path.join(REPO, "extraction", "policy_hash.py"))
+    errs = []
+    ph = None
+    if not os.path.isfile(os.path.join(REPO, "extraction", "policy_hash.py")):
+        errs.append("extraction/policy_hash.py missing")
+    else:
+        ph = importlib.util.module_from_spec(spec); spec.loader.exec_module(ph)
+    eps = man.get("entryPoints", {})
+    if eps.get("designPolicy") != LOCAL_EXTENSION["ref"]:
+        errs.append("entryPoints.designPolicy must be policy/design-policy.json")
+    if eps.get("policyHash") != "extraction/policy_hash.py":
+        errs.append("entryPoints.policyHash must be extraction/policy_hash.py (hash script unregistered)")
+    dp = man.get("designPolicy") or {}
+    if man.get("category") != "portfolio":
+        errs.append(f"manifest category is {man.get('category')!r}, expected 'portfolio'")
+    if not dp:
+        errs.append("manifest has no designPolicy binding")
+    for k, v in BOUND_POLICY.items():
+        if dp.get(k) != v:
+            errs.append(f"designPolicy.{k} is {dp.get(k)!r}, expected {v!r}")
+    if dp.get("category") != "portfolio" or dp.get("domain") != POLICY_DOMAIN or man.get("productDomain") != dp.get("domain"):
+        errs.append(f"designPolicy category/domain must be portfolio / {POLICY_DOMAIN} and match the manifest")
+    ext = dp.get("localExtension") or {}
+    for k, v in LOCAL_EXTENSION.items():
+        if ext.get(k) != v:
+            errs.append(f"designPolicy.localExtension.{k} is {ext.get(k)!r}, expected {v!r}")
+    if not os.path.isfile(os.path.join(REPO, LOCAL_EXTENSION["ref"])):
+        errs.append("policy/design-policy.json does not exist")
+    else:
+        pol = load(LOCAL_EXTENSION["ref"])
+        cls = pol.get("classification") or {}
+        if pol.get("policyId") != LOCAL_EXTENSION["policyId"] or pol.get("policyVersion") != LOCAL_EXTENSION["policyVersion"]:
+            errs.append("policy file id/version disagree with designPolicy.localExtension")
+        if (pol.get("extends") or {}).get("policyId") != BOUND_POLICY["policyId"] or (pol.get("extends") or {}).get("policyVersion") != BOUND_POLICY["policyVersion"]:
+            errs.append("policy file must extend n0-design-constraints-common 0.1.0")
+        if cls.get("productCategory") != "portfolio" or cls.get("productDomain") != dp.get("domain"):
+            errs.append("policy classification must be portfolio with the manifest domain")
+        ap = pol.get("approval") or {}
+        if ap.get("policyDecision") != "defined-pending-architecture-review" or ap.get("architectureDecisionRecorded") is not False:
+            errs.append("policy approval must stay defined-pending-architecture-review / architectureDecisionRecorded false")
+        if (dp.get("decision") or {}).get("architectureDecisionRecorded") is not False:
+            errs.append("designPolicy.decision must not claim a recorded decision")
+        for r in pol.get("enforcedBy", []):
+            if not os.path.exists(os.path.join(REPO, r)):
+                errs.append(f"policy enforcedBy {r} missing")
+    if ph is not None:
+        if dp.get("contentHashFiles") != ph.POLICY_FILES:
+            errs.append("designPolicy.contentHashFiles != extraction/policy_hash.py POLICY_FILES")
+        want = ph.compute(REPO)
+        if dp.get("contentHash") != want:
+            errs.append(f"designPolicy.contentHash {dp.get('contentHash')!r} != recomputed {want!r}")
+    rec("design-policy", not errs, "category portfolio; bound to n0-design-constraints-common 0.1.0 (Common IR 0.5, hard-and-soft); contentHash recomputed over %d enforcing files; approval pending" % len(dp.get("contentHashFiles", [])) if not errs else errs[:6])
+
 def main():
     man = load("registry.manifest.json")
     contracts = {}
@@ -487,7 +551,7 @@ def main():
                      ("semantic-examples", lambda: check_semantic(examples)), ("allowlist-parity", lambda: check_allowlist(contracts, man)), ("citations", check_citations),
                      ("contracts", lambda: check_contracts(contracts)), ("asset-pins", check_asset_pins), ("tokens", lambda: check_tokens(man)), ("source-brand", check_source_brand),
                      ("routes", lambda: check_routes(contracts)), ("graph-parity", check_graph), ("counts", lambda: check_counts(man, contracts)), ("wrapper-gate", check_gate),
-                     ("clone-parity", check_parity), ("generated-examples", lambda: check_generated_examples(examples))):
+                     ("clone-parity", check_parity), ("generated-examples", lambda: check_generated_examples(examples)), ("design-policy", lambda: check_design_policy(man))):
         try:
             fn()
         except Exception as e:
