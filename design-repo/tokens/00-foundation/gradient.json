@@ -1,0 +1,21 @@
+{
+  "$description": "Gradient fills (404 blobs only).",
+  "tokens": {
+    "gradient.notfound-blob-a": {
+      "value": "linear-gradient(rgb(102, 170, 204), rgb(179, 237, 255))",
+      "stops": [
+        "rgb(102, 170, 204)",
+        "rgb(179, 237, 255)"
+      ],
+      "evidence": "src/components/legal/BigNumber404.jsx:25-25"
+    },
+    "gradient.notfound-blob-b": {
+      "value": "linear-gradient(rgb(66, 119, 128), rgb(60, 59, 92))",
+      "stops": [
+        "rgb(66, 119, 128)",
+        "rgb(60, 59, 92)"
+      ],
+      "evidence": "src/components/legal/BigNumber404.jsx:20-20"
+    }
+  }
+}

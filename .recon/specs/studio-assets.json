@@ -1,0 +1,331 @@
+{
+ "source": "https://mobius.framer.website/studio",
+ "note": "URLs have query strings stripped. Framer serves AVIF via content negotiation (content-type observed image/avif); request with ?scale-down-to=N or width/height params for resized variants. \"rendered\" = on-screen box per viewport width (px), including hidden duplicate \"Image Placeholder\" copies used only for aspect-ratio sizing.",
+ "images": [
+  {
+   "url": "https://framerusercontent.com/images/k1yRftQfPk4lIWxRe2Tfq5h4ZEk.jpg",
+   "alt": "Möbius",
+   "fit": "cover 50% 50%",
+   "rendered": {
+    "1440": [
+     "426.7x565.7"
+    ],
+    "1280": [
+     "373.3x495"
+    ],
+    "1000": [
+     "455x603.3"
+    ],
+    "390": [
+     "350x464.1"
+    ]
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/6DZMR1xEPM39KDNzCq98kTlMk.jpg",
+   "alt": "Möbius",
+   "fit": "cover 50% 50%",
+   "rendered": {
+    "1440": [
+     "426.7x565.7"
+    ],
+    "1280": [
+     "373.3x495"
+    ],
+    "1000": [
+     "455x603.3"
+    ],
+    "390": [
+     "350x464.1"
+    ]
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/YVYiW8vzXkPuMM5MMZ5eURVsRKQ.jpg",
+   "alt": "Möbius",
+   "fit": "cover 50% 50%",
+   "rendered": {
+    "1440": [
+     "426.7x565.7"
+    ],
+    "1280": [
+     "373.3x495"
+    ],
+    "1000": [
+     "455x603.3"
+    ],
+    "390": [
+     "350x464.1"
+    ]
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/mP3z1asn1KrsKxc0DEhZSvQML4.jpg",
+   "alt": "Möbius",
+   "fit": "cover 50% 50%",
+   "rendered": {
+    "1440": [
+     "426.7x565.7"
+    ],
+    "1280": [
+     "373.3x495"
+    ],
+    "1000": [
+     "455x603.3"
+    ],
+    "390": [
+     "350x464.1"
+    ]
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/5OwsyGg2p3GhQCQVI7MyikNA.jpg",
+   "alt": "Möbius",
+   "fit": "cover 50% 50%",
+   "rendered": {
+    "1440": [
+     "426.7x565.7"
+    ],
+    "1280": [
+     "373.3x495"
+    ],
+    "1000": [
+     "455x603.3"
+    ],
+    "390": [
+     "350x464.1"
+    ]
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/bQvw7y6z0yBwIdbHPxdbwWDaQ0.jpg",
+   "alt": "Möbius",
+   "fit": "cover 50% 50%",
+   "rendered": {
+    "1440": [
+     "426.7x565.7"
+    ],
+    "1280": [
+     "373.3x495"
+    ],
+    "1000": [
+     "455x603.3"
+    ],
+    "390": [
+     "350x464.1"
+    ]
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/uRGiLtgI5zZUR189HzAdcLcS3E.jpg",
+   "alt": "Möbius",
+   "fit": "cover 50% 50%",
+   "rendered": {
+    "1440": [
+     "1088.6x820"
+    ],
+    "1280": [
+     "955.9x720"
+    ],
+    "1000": [
+     "849.6x640"
+    ],
+    "390": [
+     "637.2x480"
+    ]
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/qIAz9adFiLA0mb3195WsiTZjG8.jpg",
+   "alt": "Möbius",
+   "fit": "cover 50% 50%",
+   "rendered": {
+    "1440": [
+     "615x820"
+    ],
+    "1280": [
+     "540x720"
+    ],
+    "1000": [
+     "480x640"
+    ],
+    "390": [
+     "360x480"
+    ]
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/k0V30JNeHj4BUCaCPkC8p2qTp5o.jpg",
+   "alt": "Möbius",
+   "fit": "cover 50% 50%",
+   "rendered": {
+    "1440": [
+     "1088.6x820"
+    ],
+    "1280": [
+     "955.9x720"
+    ],
+    "1000": [
+     "849.6x640"
+    ],
+    "390": [
+     "637.2x480"
+    ]
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/nuX4yxFg5l3eeENclb1OpZqsoc.jpg",
+   "alt": "Möbius",
+   "fit": "cover 50% 50%",
+   "rendered": {
+    "1440": [
+     "820x820"
+    ],
+    "1280": [
+     "720x720"
+    ],
+    "1000": [
+     "640x640"
+    ],
+    "390": [
+     "480x480"
+    ]
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/70P7DlHOLA5V6H0shE8MTQZ5XW0.jpg",
+   "alt": "Möbius",
+   "fit": "cover 50% 50%",
+   "rendered": {
+    "1440": [
+     "426.7x566.9",
+     "426.7x568.9"
+    ],
+    "1280": [
+     "373.3x496.1",
+     "373.3x497.8"
+    ],
+    "1000": [
+     "616.7x819.4",
+     "616.7x822.2"
+    ],
+    "390": [
+     "350x466.7"
+    ]
+   }
+  }
+ ],
+ "network": [
+  {
+   "url": "https://framerusercontent.com/images/k1yRftQfPk4lIWxRe2Tfq5h4ZEk.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/assets/iwWTDc49ENF2tCHbqlNARXw6Ug.woff2",
+   "contentType": "font/woff2"
+  },
+  {
+   "url": "https://framerusercontent.com/assets/9Nu9BRcGkRrLnJCGqVdSUXJt2Ig.woff2",
+   "contentType": "font/woff2"
+  },
+  {
+   "url": "https://framerusercontent.com/images/6DZMR1xEPM39KDNzCq98kTlMk.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/assets/qITWJ2WdG0wrgQPDb8lvnYnTXDg.woff2",
+   "contentType": "font/woff2"
+  },
+  {
+   "url": "https://framerusercontent.com/images/YVYiW8vzXkPuMM5MMZ5eURVsRKQ.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/images/mP3z1asn1KrsKxc0DEhZSvQML4.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/images/5OwsyGg2p3GhQCQVI7MyikNA.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/images/bQvw7y6z0yBwIdbHPxdbwWDaQ0.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/images/IbeDG1tYDKBEKF6vM7TnKNz2cdU.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/images/nKd7QNIQwJpboPhCvHWSIknx0.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/images/DejJvWQ8KSpfyIWulD4sPenz34.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/images/D7TB6p9zARQleEiLdoeWbQvtw.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/images/Ik5wfOmIgAiBJo81MDKDMJeQPJk.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/modules/ag2KtnH7tMkIxmuWQxFW/KcSVdcwkM6gDBbAPb9vn/Play.js",
+   "contentType": "text/javascript; charset=utf-8"
+  },
+  {
+   "url": "https://framerusercontent.com/modules/K3PeUzM4qhL5IiaYcDem/hZzGgUtf1YrXicbBr18G/ArrowRight.js",
+   "contentType": "text/javascript; charset=utf-8"
+  },
+  {
+   "url": "https://framerusercontent.com/images/rMsvlVp8eyDZLtTb7WAv1CQ8z6U.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/modules/FXBjxIel50FTZAcde0U6/EfKbBK36FTPGYz92B7Yf/ArrowsHorizontal.js",
+   "contentType": "text/javascript; charset=utf-8"
+  },
+  {
+   "url": "https://framerusercontent.com/modules/UNPG3iwXt5YFeGPtdi5q/lKaDyVE0x2GxE7FzUOn3/Plus.js",
+   "contentType": "text/javascript; charset=utf-8"
+  },
+  {
+   "url": "https://framerusercontent.com/images/qIAz9adFiLA0mb3195WsiTZjG8.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/images/uRGiLtgI5zZUR189HzAdcLcS3E.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/images/70P7DlHOLA5V6H0shE8MTQZ5XW0.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/images/k0V30JNeHj4BUCaCPkC8p2qTp5o.jpg",
+   "contentType": "image/avif"
+  }
+ ],
+ "cursorImageTrail": {
+  "note": "Not in DOM until hovered: spawned as background-image divs 300x400, background-size contain (fit \"fit\"), background-position center, no-repeat. Source pixel size 864x1184 per query params.",
+  "images": [
+   "https://framerusercontent.com/images/IbeDG1tYDKBEKF6vM7TnKNz2cdU.jpg",
+   "https://framerusercontent.com/images/nKd7QNIQwJpboPhCvHWSIknx0.jpg",
+   "https://framerusercontent.com/images/DejJvWQ8KSpfyIWulD4sPenz34.jpg",
+   "https://framerusercontent.com/images/rMsvlVp8eyDZLtTb7WAv1CQ8z6U.jpg",
+   "https://framerusercontent.com/images/Ik5wfOmIgAiBJo81MDKDMJeQPJk.jpg",
+   "https://framerusercontent.com/images/D7TB6p9zARQleEiLdoeWbQvtw.jpg"
+  ]
+ },
+ "sourcePixelSizes": {
+  "team (k1yRf,6DZM,YVYi,mP3z,5Ows,bQvw)": "1393x1847",
+  "uRGiLtgI5zZUR189HzAdcLcS3E / k0V30JNeHj4BUCaCPkC8p2qTp5o": "2464x1856",
+  "qIAz9adFiLA0mb3195WsiTZjG8": "1392x1856",
+  "nuX4yxFg5l3eeENclb1OpZqsoc": "2048x2048",
+  "70P7DlHOLA5V6H0shE8MTQZ5XW0 (Golden Hour)": "1800x2400"
+ },
+ "icons": "Phosphor icons via Framer modules (ArrowRight bold for buttons/cursor, Plus for accordion, ArrowsHorizontal for drag cursor, Play unused; contact-form button states use X / Spinner / Check). See network[] module URLs."
+}

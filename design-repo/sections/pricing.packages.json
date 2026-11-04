@@ -1,0 +1,190 @@
+{
+  "id": "pricing.packages",
+  "title": "Pricing packages",
+  "status": "measured",
+  "source": {
+    "id": "src:Pricing#export-default-function-Pricing",
+    "file": "src/components/home/Pricing.jsx",
+    "tag": "export default function Pricing(",
+    "lines": "164-194",
+    "citation": "src/components/home/Pricing.jsx:164-194"
+  },
+  "semantic": {
+    "id": "pricing.packages",
+    "category": "PRICING"
+  },
+  "retrievalEligible": true,
+  "purpose": "Sticky left column (title, Monthly/Yearly toggle, intro, caption, CTA) beside stacked package rows with feature checklists and a rolling 'starting from' price.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 2,
+        "x-maxWordsEvidence": "max 1 words measured (Pricing.jsx h2); budget = ceil(1.25 x max)"
+      },
+      "toggle": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "monthlyLabel": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 2,
+            "x-maxWordsEvidence": "max 1 words measured (Pricing.jsx Toggle); budget = ceil(1.25 x max)"
+          },
+          "yearlyLabel": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 3,
+            "x-maxWordsEvidence": "max 2 words measured (Pricing.jsx Toggle); budget = ceil(1.25 x max)"
+          }
+        },
+        "required": [
+          "monthlyLabel",
+          "yearlyLabel"
+        ]
+      },
+      "intro": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 34,
+        "x-maxWordsEvidence": "max 27 words measured (Pricing.jsx p); budget = ceil(1.25 x max)"
+      },
+      "caption": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 13,
+        "x-maxWordsEvidence": "max 10 words measured (Pricing.jsx caption); budget = ceil(1.25 x max)"
+      },
+      "cta": {
+        "$ref": "#/definitions/cta"
+      },
+      "plans": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 3,
+              "x-maxWordsEvidence": "max 2 words measured (Pricing.jsx PLANS); budget = ceil(1.25 x max)"
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 15,
+              "x-maxWordsEvidence": "max 12 words measured (Pricing.jsx PLANS); budget = ceil(1.25 x max)"
+            },
+            "features": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 8,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxWords": 5,
+                "x-maxWordsEvidence": "max 4 words measured (Pricing.jsx cols); budget = ceil(1.25 x max)"
+              }
+            },
+            "priceLabel": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 3,
+              "x-maxWordsEvidence": "max 2 words measured (Pricing.jsx); budget = ceil(1.25 x max)"
+            },
+            "monthly": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "yearly": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "period": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 2,
+              "x-maxWordsEvidence": "max 1 words measured (Pricing.jsx); budget = ceil(1.25 x max)"
+            }
+          },
+          "required": [
+            "name",
+            "description",
+            "features",
+            "priceLabel",
+            "monthly",
+            "yearly",
+            "period"
+          ]
+        },
+        "x-countEvidence": "3 plans measured"
+      }
+    },
+    "required": [
+      "heading",
+      "toggle",
+      "intro",
+      "plans"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "price-digit-roll",
+      "line-stagger-reveal",
+      "hover-micro"
+    ],
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "hide",
+        "detail": "Caption and CTA desktop only."
+      },
+      {
+        "at": "below-desktop",
+        "change": "stack",
+        "detail": "Left column stacks above the packages."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.billing-toggle",
+    "component.plan-card",
+    "component.sticky-aside"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 2302.3,
+    "heightPxMax": 2302.3,
+    "routes": [
+      "/"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/"
+  ]
+}

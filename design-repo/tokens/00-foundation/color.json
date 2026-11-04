@@ -1,0 +1,49 @@
+{
+  "$description": "Foundation colours. Every value is the literal on its evidence line in the clone CSS/JS (verify_all re-reads the line).",
+  "tokens": {
+    "color.black": {
+      "value": "#000",
+      "evidence": "src/index.css:6-6"
+    },
+    "color.white": {
+      "value": "#fff",
+      "evidence": "src/index.css:7-7"
+    },
+    "color.gray.body": {
+      "value": "#444",
+      "evidence": "src/index.css:8-8"
+    },
+    "color.gray.label": {
+      "value": "#999",
+      "evidence": "src/index.css:9-9"
+    },
+    "color.gray.caption": {
+      "value": "#757575",
+      "evidence": "src/styles/home-sections.css:13-13"
+    },
+    "color.gray.numeral": {
+      "value": "#eee",
+      "evidence": "src/styles/home-sections.css:94-94"
+    },
+    "color.gray.field": {
+      "value": "#f7f7f7",
+      "evidence": "src/index.css:166-166"
+    },
+    "color.gray.selection": {
+      "value": "#e3e3e3",
+      "evidence": "src/index.css:17-17"
+    },
+    "color.gray.clock": {
+      "value": "rgb(102, 102, 102)",
+      "evidence": "src/index.css:53-53"
+    },
+    "color.alpha.backdrop": {
+      "value": "rgba(0, 0, 0, 0.5)",
+      "evidence": "src/styles/home-sections.css:181-181"
+    },
+    "color.notfound.wash": {
+      "value": "rgb(232, 247, 255)",
+      "evidence": "src/styles/notfound.css:29-29"
+    }
+  }
+}

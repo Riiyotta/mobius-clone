@@ -1,0 +1,14 @@
+{
+  "id": "component.faq-item",
+  "title": "FAQ item",
+  "description": "Question row with plus icon; answer revealed by clip height.",
+  "source": {
+    "file": "src/components/shared/Faq.jsx",
+    "tag": "function Item(",
+    "lines": "70-88",
+    "citation": "src/components/shared/Faq.jsx:70-88"
+  },
+  "composes": [
+    "primitive.icon-glyph"
+  ]
+}

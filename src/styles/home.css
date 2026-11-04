@@ -1,0 +1,65 @@
+/* Home hero (home.md §2). Classes prefixed hm-. */
+.hm-hero {
+  position: relative; z-index: 2; height: 100vh; background: var(--white);
+  display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;
+  overflow: visible;
+}
+.hm-introrow { position: sticky; top: 0; z-index: 1; display: flex; align-items: flex-start; padding: 32px 20px 0; width: 100%; box-sizing: border-box; }
+.hm-s1 { flex: 1 0 0; min-width: 0; }
+.hm-s2 { flex: 3 0 0; min-width: 0; overflow: clip; }
+.hm-tc { padding: 0 20px; }
+.hm-intro { max-width: 360px; overflow: clip; font-size: 20px; font-weight: 500; line-height: 32px; color: var(--black); }
+.hm-intro-anim { display: flex; flex-wrap: wrap; align-items: flex-end; }
+.hm-intro-anim.is-outro { opacity: 0; transition: opacity 0.6s var(--spring-06); }
+.hm-intro-empty { min-height: 256px; }
+.hm-intro-static { text-indent: 90px; white-space: pre-wrap; }
+.hm-wm { display: inline-block; overflow: hidden; vertical-align: bottom; }
+.hm-w { display: inline-block; white-space: pre; will-change: transform; }
+
+/* Card stack: 50vh x 100vh box centred in the hero; cards H/2 wide, image aspect .75 */
+.hm-stack {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  height: 100vh; aspect-ratio: 0.5; z-index: 1; user-select: none;
+  --card-w: 100%;
+}
+.hm-push { position: absolute; inset: 0; will-change: transform; }
+.hm-card { position: absolute; left: 50%; top: 50%; width: var(--card-w); }
+.hm-img { position: relative; width: 100%; aspect-ratio: 0.75; overflow: hidden; }
+.hm-img img { display: block; width: 100%; height: 100%; object-fit: cover; -webkit-user-drag: none; }
+.hm-link {
+  position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%);
+  aspect-ratio: 0.8; overflow: clip; z-index: 1;
+}
+
+/* Wordmark + © */
+.hm-name { position: absolute; left: 0; right: 0; bottom: 36px; z-index: 1; padding: 0 40px 0 25px; display: flex; flex-direction: column; align-items: center; }
+.hm-name-row { display: flex; gap: 40px; align-items: flex-start; width: 100%; }
+.hm-mark { flex: 1 0 0; min-width: 0; }
+.hm-mark svg { display: block; width: 100%; height: auto; overflow: visible; }
+.hm-mark p { font-size: 240px; font-weight: 800; line-height: 180px; letter-spacing: -12px; white-space: pre; color: var(--black); }
+.hm-year { overflow: clip; }
+.hm-year h5 { font-size: 32px; font-weight: 700; line-height: 41.6px; letter-spacing: -0.32px; white-space: pre; }
+.hm-yc { display: inline-block; }
+
+/* Tablet 810–1199 (§2.2): 90vh, fixed 810px intro row, static */
+@media (max-width: 1199.98px) {
+  .hm-hero { height: 90vh; }
+  .hm-introrow { width: 810px; padding: 27px 15px 0; }
+  .hm-s1 { flex: 2 0 0; }
+  .hm-s2 { flex: 1 0 0; }
+  .hm-tc { padding: 0 15px; }
+  .hm-stack { height: 66%; top: 53%; --card-w: 123%; }
+  .hm-name { position: relative; left: auto; right: auto; bottom: auto; width: 100%; padding: 0 30px 0 25px; box-sizing: border-box; }
+  .hm-year h5 { font-size: 30px; line-height: 39px; letter-spacing: -0.3px; }
+}
+/* Phone ≤809 (§2.3) */
+@media (max-width: 809.98px) {
+  .hm-hero { height: auto; padding: 0 20px; gap: 24px; align-items: center; justify-content: center; overflow: clip; box-sizing: border-box; }
+  .hm-introrow { width: 100%; padding: 22px 0 0; }
+  .hm-tc { padding: 0; }
+  .hm-stack { position: relative; left: auto; top: auto; transform: none; width: 72%; height: auto; --card-w: 123%; order: 1; }
+  .hm-name { padding: 0; order: 4; }
+  .hm-name-row { flex-direction: column; gap: 32px; }
+  .hm-mark { width: 100%; flex: none; }
+  .hm-year h5 { font-size: 28px; line-height: 36.4px; letter-spacing: -0.28px; }
+}

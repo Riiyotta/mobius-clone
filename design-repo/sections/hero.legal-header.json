@@ -1,0 +1,98 @@
+{
+  "id": "hero.legal-header",
+  "title": "Legal header",
+  "status": "measured",
+  "source": {
+    "id": "src:Legal#div-className-lg-intro",
+    "file": "src/pages/Legal.jsx",
+    "tag": "<div className=\"lg-intro\">",
+    "lines": "33-39",
+    "citation": "src/pages/Legal.jsx:33-39"
+  },
+  "semantic": {
+    "id": "hero.legal-header",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "purpose": "Legal page opener: title and intro paragraph in the centre column, with a sticky 'Last updated' label and date on desktop.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 4,
+        "x-maxWordsEvidence": "max 3 words measured (legal.json h1); budget = ceil(1.25 x max)"
+      },
+      "intro": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 34,
+        "x-maxWordsEvidence": "max 27 words measured (legal.json intro); budget = ceil(1.25 x max)"
+      },
+      "updatedLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (legal.json lastUpdated.label); budget = ceil(1.25 x max)"
+      },
+      "updatedDate": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 4,
+        "x-maxWordsEvidence": "max 3 words measured (legal.json lastUpdated.date); budget = ceil(1.25 x max)"
+      }
+    },
+    "required": [
+      "title",
+      "intro",
+      "updatedLabel",
+      "updatedDate"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "page-appear-scale"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "stack",
+        "detail": "Last-updated block moves in flow below the intro."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "heightPxMin": 432,
+    "heightPxMax": 536,
+    "routes": [
+      "/legal/privacy-policy",
+      "/legal/terms-of-service"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/legal/privacy-policy",
+    "/legal/terms-of-service"
+  ]
+}

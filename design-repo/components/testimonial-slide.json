@@ -1,0 +1,14 @@
+{
+  "id": "component.testimonial-slide",
+  "title": "Testimonial slide",
+  "description": "Index, portrait, quote, name and company.",
+  "source": {
+    "file": "src/components/home/Testimonials.jsx",
+    "tag": "function Slideshow(",
+    "lines": "32-81",
+    "citation": "src/components/home/Testimonials.jsx:32-81"
+  },
+  "composes": [
+    "primitive.media-slot"
+  ]
+}

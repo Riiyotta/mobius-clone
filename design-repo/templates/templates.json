@@ -1,0 +1,544 @@
+{
+  "$description": "One template per page purpose. nodes are ordered {section, required, repeatable, variants?}. schema/semantic_validate.py matches every PageSpec's nodes against its declared template's real node list (TEMPLATE_* rules). runtimeOverlays are retrieval-ineligible runtime UI the page mounts; they are never nodes.",
+  "version": "1.0.0",
+  "templates": {
+    "home": {
+      "id": "home",
+      "title": "Home",
+      "purpose": "Studio homepage: wordmark hero, statement, reel, services, proof (numbers, awards, partners), founders, process, testimonials, pricing, notes teaser, contact form and FAQ.",
+      "evidence": "src/pages/Home.jsx:23-47",
+      "nodes": [
+        {
+          "section": "shell.nav-layer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.studio-wordmark",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.statement-scatter",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "media.showreel",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "features.services-index",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "social-proof.studio-numbers",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "social-proof.awards-list",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "team.founders",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "social-proof.partner-logos",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "features.process-timeline",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "testimonial.client-reflections",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "pricing.packages",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "editorial.studio-notes-teaser",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.contact-form",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "section-title"
+          ]
+        },
+        {
+          "section": "faq.questions-answered",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "runtimeOverlays": [
+        "utility.custom-cursor",
+        "utility.berlin-clock",
+        "overlay.menu-overlay",
+        "overlay.reel-lightbox",
+        "utility.text-ticker",
+        "feedback.form-success"
+      ],
+      "routes": [
+        "/"
+      ]
+    },
+    "work-index": {
+      "id": "work-index",
+      "title": "Work index",
+      "purpose": "All projects: centred title behind an infinite drag canvas on desktop (no footer, 100vh); title, intro and vertical list + footer below 1200.",
+      "evidence": "src/pages/Work.jsx:6-18",
+      "nodes": [
+        {
+          "section": "shell.nav-layer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.index-title",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "work"
+          ]
+        },
+        {
+          "section": "listing.project-index",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": false,
+          "repeatable": false,
+          "variants": [
+            "tablet-forced"
+          ]
+        }
+      ],
+      "runtimeOverlays": [
+        "utility.custom-cursor",
+        "overlay.menu-overlay"
+      ],
+      "routes": [
+        "/work"
+      ],
+      "footerOptional": true
+    },
+    "case-detail": {
+      "id": "case-detail",
+      "title": "Case study",
+      "purpose": "One project: intro hero, three numbered chapters around a pull quote and a gallery, results, credits and a next-case teaser.",
+      "evidence": "src/pages/Project.jsx:12-50",
+      "nodes": [
+        {
+          "section": "shell.nav-layer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.case-intro",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.marked-chapter",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "numbered"
+          ]
+        },
+        {
+          "section": "content.pull-quote",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.marked-chapter",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "numbered"
+          ]
+        },
+        {
+          "section": "media.case-gallery",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.marked-chapter",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "numbered"
+          ]
+        },
+        {
+          "section": "content.case-results",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.case-credits",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "navigation.case-teaser",
+          "required": false,
+          "repeatable": false,
+          "variants": [
+            "next"
+          ]
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "runtimeOverlays": [
+        "utility.custom-cursor",
+        "utility.berlin-clock",
+        "overlay.menu-overlay",
+        "utility.text-ticker"
+      ],
+      "routes": [
+        "/work/soma-studio",
+        "/work/bright-matter",
+        "/work/wavehouse",
+        "/work/north-layer",
+        "/work/zero-parallel",
+        "/work/pulse",
+        "/work/after-light",
+        "/work/forma-nine",
+        "/work/golden-hour",
+        "/work/echoform",
+        "/work/axis-point",
+        "/work/orbit-404"
+      ]
+    },
+    "studio": {
+      "id": "studio",
+      "title": "Studio",
+      "purpose": "About page: intro hero, team statement and grid, principles, image strip, careers and a featured-case teaser.",
+      "evidence": "src/pages/Studio.jsx:323-336",
+      "nodes": [
+        {
+          "section": "shell.nav-layer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.studio-intro",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "team.studio-team",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.principles",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "media.studio-image-strip",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "listing.career-openings",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "navigation.case-teaser",
+          "required": false,
+          "repeatable": false,
+          "variants": [
+            "featured"
+          ]
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "runtimeOverlays": [
+        "utility.custom-cursor",
+        "utility.cursor-image-trail",
+        "utility.berlin-clock",
+        "overlay.menu-overlay",
+        "utility.text-ticker"
+      ],
+      "routes": [
+        "/studio"
+      ]
+    },
+    "contacts": {
+      "id": "contacts",
+      "title": "Contacts",
+      "purpose": "Contact page opened by the enquiry form (no separate hero), then contact details and a notes teaser.",
+      "evidence": "src/pages/Contacts.jsx:15-67",
+      "nodes": [
+        {
+          "section": "shell.nav-layer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.contact-form",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "page-title"
+          ]
+        },
+        {
+          "section": "content.contact-details",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "editorial.studio-notes-teaser",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "runtimeOverlays": [
+        "utility.custom-cursor",
+        "utility.berlin-clock",
+        "overlay.menu-overlay",
+        "feedback.form-success"
+      ],
+      "routes": [
+        "/contacts"
+      ],
+      "heroless": true
+    },
+    "feed-index": {
+      "id": "feed-index",
+      "title": "Feed index",
+      "purpose": "All studio notes: three auto-scrolling columns on desktop (100vh, no title, no footer); title, intro and list + footer below 1200.",
+      "evidence": "src/pages/Feed.jsx:8-20",
+      "nodes": [
+        {
+          "section": "shell.nav-layer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.index-title",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "feed"
+          ]
+        },
+        {
+          "section": "editorial.notes-index",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": false,
+          "repeatable": false,
+          "variants": [
+            "responsive"
+          ]
+        }
+      ],
+      "runtimeOverlays": [
+        "utility.custom-cursor",
+        "overlay.menu-overlay"
+      ],
+      "routes": [
+        "/feed"
+      ],
+      "footerOptional": true
+    },
+    "feed-post": {
+      "id": "feed-post",
+      "title": "Feed post",
+      "purpose": "One studio note: article header, cover, two lettered chapters around a pull quote, and read-more cards.",
+      "evidence": "src/pages/Post.jsx:35-125",
+      "nodes": [
+        {
+          "section": "shell.nav-layer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.article-header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "media.article-cover",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.marked-chapter",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "lettered"
+          ]
+        },
+        {
+          "section": "content.pull-quote",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.marked-chapter",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "lettered"
+          ]
+        },
+        {
+          "section": "editorial.read-more",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "runtimeOverlays": [
+        "utility.custom-cursor",
+        "utility.berlin-clock",
+        "overlay.menu-overlay"
+      ],
+      "routes": [
+        "/feed/the-logic-of-emotion",
+        "/feed/precision-over-perfection",
+        "/feed/the-language-of-shape",
+        "/feed/designing-the-invisible",
+        "/feed/the-architecture-of-meaning",
+        "/feed/one-idea-many-forms",
+        "/feed/beyond-function",
+        "/feed/the-human-algorithm",
+        "/feed/the-clarity-paradox",
+        "/feed/systems-with-soul",
+        "/feed/thinking-in-motion"
+      ]
+    },
+    "legal": {
+      "id": "legal",
+      "title": "Legal document",
+      "purpose": "Privacy policy / terms: header, one clause node per heading-bounded part, FAQ.",
+      "evidence": "src/pages/Legal.jsx:13-58",
+      "nodes": [
+        {
+          "section": "shell.nav-layer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.legal-header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.legal-clause",
+          "required": true,
+          "repeatable": true
+        },
+        {
+          "section": "faq.questions-answered",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "runtimeOverlays": [
+        "utility.custom-cursor",
+        "utility.berlin-clock",
+        "overlay.menu-overlay"
+      ],
+      "routes": [
+        "/legal/privacy-policy",
+        "/legal/terms-of-service"
+      ]
+    },
+    "not-found": {
+      "id": "not-found",
+      "title": "Not found",
+      "purpose": "404 and every unknown URL: animated error-code hero, FAQ.",
+      "evidence": "src/pages/NotFound.jsx:13-33",
+      "nodes": [
+        {
+          "section": "shell.nav-layer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "hero.not-found",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "faq.questions-answered",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "runtimeOverlays": [
+        "utility.custom-cursor",
+        "utility.berlin-clock",
+        "overlay.menu-overlay"
+      ],
+      "routes": [
+        "/404"
+      ]
+    }
+  }
+}

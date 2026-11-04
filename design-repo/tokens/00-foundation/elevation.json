@@ -1,0 +1,10 @@
+{
+  "$description": "Elevation. The source uses none.",
+  "tokens": {
+    "elevation.none": {
+      "value": "none",
+      "evidence": "src/styles/contacts.css:41-41",
+      "note": "No box-shadow exists anywhere in the clone; depth comes from overlap, blend modes and scale."
+    }
+  }
+}

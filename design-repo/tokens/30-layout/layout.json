@@ -1,0 +1,25 @@
+{
+  "$description": "Grid. Desktop: padding 0 20, 12 columns of (vw-40)/12, text inset 20. Tablet 15/15, phone 10/10.",
+  "tokens": {
+    "layout.columns.desktop": {
+      "value": 12,
+      "evidence": ".recon/specs/home.md:258-258"
+    },
+    "layout.columns.tablet": {
+      "value": 6,
+      "evidence": "src/components/home/Process.jsx:42-42"
+    },
+    "layout.columns.phone": {
+      "value": 4,
+      "evidence": "src/components/home/Process.jsx:42-42"
+    },
+    "layout.section-padding-top": {
+      "value": {
+        "desktop": "space.200",
+        "tablet": "space.160",
+        "phone": "space.120"
+      },
+      "evidence": ".recon/specs/home.md:267-267"
+    }
+  }
+}

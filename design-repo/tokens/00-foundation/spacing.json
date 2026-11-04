@@ -1,0 +1,45 @@
+{
+  "$description": "Gutters (20/15/10 desktop/tablet/phone) and section rhythm (200/160/120 pad-top).",
+  "tokens": {
+    "space.10": {
+      "value": "10px",
+      "evidence": "src/index.css:213-213"
+    },
+    "space.15": {
+      "value": "15px",
+      "evidence": "src/index.css:206-206"
+    },
+    "space.20": {
+      "value": "20px",
+      "evidence": "src/index.css:33-33"
+    },
+    "space.30": {
+      "value": "30px",
+      "evidence": "src/index.css:155-155"
+    },
+    "space.40": {
+      "value": "40px",
+      "evidence": "src/index.css:50-50"
+    },
+    "space.64": {
+      "value": "64px",
+      "evidence": "src/index.css:278-278"
+    },
+    "space.80": {
+      "value": "80px",
+      "evidence": "src/index.css:161-161"
+    },
+    "space.120": {
+      "value": "120px",
+      "evidence": "src/index.css:274-274"
+    },
+    "space.160": {
+      "value": "160px",
+      "evidence": "src/index.css:154-154"
+    },
+    "space.200": {
+      "value": "200px",
+      "evidence": "src/index.css:247-247"
+    }
+  }
+}

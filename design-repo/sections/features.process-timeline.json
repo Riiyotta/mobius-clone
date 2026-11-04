@@ -1,0 +1,113 @@
+{
+  "id": "features.process-timeline",
+  "title": "Process timeline",
+  "status": "measured",
+  "source": {
+    "id": "src:Process#export-default-function-Process",
+    "file": "src/components/home/Process.jsx",
+    "tag": "export default function Process(",
+    "lines": "41-77",
+    "citation": "src/components/home/Process.jsx:41-77"
+  },
+  "semantic": {
+    "id": "features.process-timeline",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "purpose": "Numbered 12-column timeline grid with four staggered black step bars, followed by the step names and descriptions in four columns.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (Process.jsx h2); budget = ceil(1.25 x max)"
+      },
+      "intro": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 17,
+        "x-maxWordsEvidence": "max 13 words measured (Process.jsx p); budget = ceil(1.25 x max)"
+      },
+      "steps": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 4,
+              "x-maxWordsEvidence": "max 3 words measured (Process.jsx STEPS); budget = ceil(1.25 x max)"
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 28,
+              "x-maxWordsEvidence": "max 22 words measured (Process.jsx STEPS); budget = ceil(1.25 x max)"
+            }
+          },
+          "required": [
+            "name",
+            "text"
+          ]
+        },
+        "x-countEvidence": "4 steps measured"
+      }
+    },
+    "required": [
+      "heading",
+      "intro",
+      "steps"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "bar-grow-in-view",
+      "char-rise",
+      "line-stagger-reveal"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "collapse-grid",
+        "detail": "Timeline grid 12 -> 6 columns (tablet) -> 4 (phone); bars render full width."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 955.8,
+    "heightPxMax": 955.8,
+    "routes": [
+      "/"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/"
+  ]
+}

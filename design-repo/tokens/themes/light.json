@@ -1,0 +1,51 @@
+{
+  "theme": "light",
+  "$description": "Every semantic token resolved to a foundation value for the light theme.",
+  "tokens": {
+    "color.text.primary": {
+      "ref": "color.black",
+      "value": "#000",
+      "inherited": false
+    },
+    "color.text.body": {
+      "ref": "color.gray.body",
+      "value": "#444",
+      "inherited": false
+    },
+    "color.text.label": {
+      "ref": "color.gray.label",
+      "value": "#999",
+      "inherited": false
+    },
+    "color.text.caption": {
+      "ref": "color.gray.caption",
+      "value": "#757575",
+      "inherited": false
+    },
+    "color.text.numeral": {
+      "ref": "color.gray.numeral",
+      "value": "#eee",
+      "inherited": false
+    },
+    "color.surface.page": {
+      "ref": "color.white",
+      "value": "#fff",
+      "inherited": false
+    },
+    "color.surface.field": {
+      "ref": "color.gray.field",
+      "value": "#f7f7f7",
+      "inherited": false
+    },
+    "color.border.hairline": {
+      "ref": "color.gray.numeral",
+      "value": "#eee",
+      "inherited": false
+    },
+    "color.surface.selection": {
+      "ref": "color.gray.selection",
+      "value": "#e3e3e3",
+      "inherited": false
+    }
+  }
+}

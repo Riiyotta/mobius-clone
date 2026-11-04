@@ -1,0 +1,128 @@
+{
+  "id": "hero.studio-wordmark",
+  "title": "Studio wordmark hero",
+  "status": "measured",
+  "source": {
+    "id": "src:Hero#export-default-function-Hero",
+    "file": "src/components/home/Hero.jsx",
+    "tag": "export default function Hero(",
+    "lines": "68-177",
+    "citation": "src/components/home/Hero.jsx:68-177"
+  },
+  "semantic": {
+    "id": "hero.studio-wordmark",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "purpose": "Home opener (100vh): one intro sentence top-left, a page-wide text wordmark with year range, and a fanned stack of four project photos linking to the work index.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "intro": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 40,
+        "x-maxWordsEvidence": "max 32 words measured (Hero.jsx INTRO); budget = ceil(1.25 x max)"
+      },
+      "wordmarkText": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 2,
+        "x-maxWordsEvidence": "max 1 words measured (Hero.jsx wordmark); budget = ceil(1.25 x max)"
+      },
+      "yearRange": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (Hero.jsx YEAR); budget = ceil(1.25 x max)"
+      },
+      "stack": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 4,
+        "items": {
+          "$ref": "#/definitions/media",
+          "x-assetRoles": [
+            "photo.source-project",
+            "photo.generated-scene"
+          ]
+        },
+        "x-countEvidence": "4 cards measured"
+      },
+      "stackLink": {
+        "$ref": "#/definitions/link"
+      }
+    },
+    "required": [
+      "intro",
+      "wordmarkText",
+      "yearRange",
+      "stack",
+      "stackLink"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "homeRouteOnly": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "page-appear-scale",
+      "hero-card-stack",
+      "line-stagger-reveal",
+      "char-rise"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "disable-motion",
+        "detail": "Tablet/phone render the final state statically (no entrance, no hover fan)."
+      },
+      {
+        "at": "below-tablet",
+        "change": "reflow",
+        "detail": "Wordmark spans the full width, card stack shrinks."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": "stack[]",
+      "assetRoles": [
+        "photo.source-project",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "primitive.media-slot"
+  ],
+  "notes": "There is no separate preloader: the 'loader' is this hero's own ~3s appear sequence (home.md section 1).",
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 900,
+    "heightPxMax": 900,
+    "routes": [
+      "/"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/"
+  ]
+}

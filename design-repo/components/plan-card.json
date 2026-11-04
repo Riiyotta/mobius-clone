@@ -1,0 +1,14 @@
+{
+  "id": "component.plan-card",
+  "title": "Plan card",
+  "description": "Package name, description, two checklists and a rolling price.",
+  "source": {
+    "file": "src/components/home/Pricing.jsx",
+    "tag": "function Plan(",
+    "lines": "127-162",
+    "citation": "src/components/home/Pricing.jsx:127-162"
+  },
+  "composes": [
+    "primitive.icon-glyph"
+  ]
+}

@@ -1,0 +1,2091 @@
+{
+  "_source": "https://mobius.framer.website/work/<slug> (Framer CMS collection, measured 2026-11-04 at 1440x900)",
+  "_notes": [
+    "All 12 projects share identical body copy except name, stats[2], stats[3]. Year is the literal \"'25\" for every project (hard-coded in the template, not a CMS field).",
+    "Gallery has 10 CMS image slots in the template (left column: A, B, A2, B2, A3; right column: C, D, C2, D2, C3) but every project fills only the first 4 (A, B, C, D). Slot heights follow the image aspect ratio (fitImageDimension: height).",
+    "wavehouse is displayed as \"Wave 124\" (slug and name differ).",
+    "next is linear by CMS order; orbit-404 has no next project and the whole Next Case block is not rendered.",
+    "cardNameColor / next.nameColor come from the CMS colour field used on the Project Card hover name (only After Light is black)."
+  ],
+  "order": [
+    "soma-studio",
+    "bright-matter",
+    "wavehouse",
+    "north-layer",
+    "zero-parallel",
+    "pulse",
+    "after-light",
+    "forma-nine",
+    "golden-hour",
+    "echoform",
+    "axis-point",
+    "orbit-404"
+  ],
+  "projects": [
+    {
+      "index": "01",
+      "slug": "soma-studio",
+      "name": "Soma Studio",
+      "path": "/work/soma-studio",
+      "year": "'25",
+      "services": "Brand Identity, Visual Language, Digital Experience, Editorial Design, Campaign Direction.",
+      "description": [
+        "This project was about redefining identity and digital presence to communicate quiet confidence, heritage, and timeless refinement. Möbius focused on creating a brand expression that balances clarity with enduring elegance."
+      ],
+      "sections": {
+        "challenge": {
+          "marker": "/ 1",
+          "paragraphs": [
+            "The challenge was to create clarity in a world of constant change. Every project begins with competing needs — tradition and progress, speed and depth, expression and restraint. The task is to navigate these tensions without losing sight of what truly matters."
+          ]
+        },
+        "quote": "The challenge was clear: design a brand that would express sophistication without excess, tradition without stagnation, and prestige without ostentation.",
+        "approach": {
+          "marker": "/ 2",
+          "paragraphs": [
+            "Our approach is guided by reduction and intent. Every project begins with listening — understanding the context, the people, and the purpose behind the work. We look beyond surface details to uncover the essential idea, the part that gives meaning and direction.",
+            "From there, we build with precision. Research, iteration, and collaboration shape every step of the process, ensuring that each decision contributes to a coherent whole. The goal is not to add more, but to refine until only what matters remains."
+          ]
+        },
+        "outcome": {
+          "marker": "/ 3",
+          "paragraphs": [
+            "The outcome of the project was more than just a refreshed look — it was a transformation in how the brand communicated, behaved, and connected with its audience. By creating a system that was both consistent and adaptable, the work gave structure to everyday communication while leaving space for evolution.",
+            "The design language became a unifying force across platforms, improving clarity internally and strengthening recognition externally. Digital experiences became smoother and more engaging, while the overall identity positioned the brand as confident, timeless, and ready for growth."
+          ]
+        },
+        "numbers": {
+          "heading": "These shifts translated into measurable improvements:",
+          "stats": [
+            {
+              "value": "+62%",
+              "label": "Increase in online orders"
+            },
+            {
+              "value": "+40%",
+              "label": "Return customer rate"
+            },
+            {
+              "value": "+18%",
+              "label": "Brand recognition"
+            },
+            {
+              "value": "+52%",
+              "label": "Conversion rate"
+            }
+          ]
+        },
+        "credits": "Jonas Richter (Creative Direction), Clara Neumann (Design Direction), Leon Weber (Art Direction), Mia Fischer (UX/UI Design), Daniel Vogt (Copywriting)."
+      },
+      "liveProject": {
+        "label": "Live Project",
+        "href": "https://framer.link/drukarov",
+        "external": true
+      },
+      "hero": {
+        "url": "https://framerusercontent.com/images/91tSqsa2UCoJo8t9Pw7JOunYw.jpg",
+        "natural": [
+          1800,
+          2400
+        ],
+        "objectPosition": "46.6% 26%",
+        "rendered1440": {
+          "x": 273.3,
+          "y": 40,
+          "w": 426.7,
+          "h": 820
+        },
+        "fit": "cover"
+      },
+      "gallery": [
+        {
+          "slot": "A",
+          "cmsField": "stsqbRwdT",
+          "column": "left",
+          "size": "small",
+          "desc": "left column, top; width = 2/3 of half-column, right-aligned (offset by a W/6 spacer)",
+          "url": "https://framerusercontent.com/images/IUpIm7xt1Y36zd3ZNnDR0SQGdAI.jpg",
+          "natural": [
+            1800,
+            2400
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 273.3,
+            "y": 2024.7,
+            "w": 426.7,
+            "h": 568.9
+          }
+        },
+        {
+          "slot": "B",
+          "cmsField": "Inq6hZHJr",
+          "column": "left",
+          "size": "large",
+          "desc": "left column, below A; full half-column width",
+          "url": "https://framerusercontent.com/images/ibqd8llLiCf4ZjwWuQZumML1c.jpg",
+          "natural": [
+            1808,
+            1808
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 40,
+            "y": 2633.6,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "C",
+          "cmsField": "LZouaSwDF",
+          "column": "right",
+          "size": "large",
+          "desc": "right column, top; full half-column width",
+          "url": "https://framerusercontent.com/images/WHOiDxS9boljkWADohLxQ7eA.jpg",
+          "natural": [
+            1808,
+            1808
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2024.7,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "D",
+          "cmsField": "DJLMFTEjK",
+          "column": "right",
+          "size": "small",
+          "desc": "right column, below C; width = 2/3 of half-column, left-aligned (W/6 spacer on its right)",
+          "url": "https://framerusercontent.com/images/1HRrfJna5sr21C85x3fkBOQ1g.jpg",
+          "natural": [
+            1800,
+            2400
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2724.7,
+            "w": 426.7,
+            "h": 568.9
+          }
+        }
+      ],
+      "galleryHeight1440": 1348.9,
+      "docHeight1440": 6221,
+      "cardNameColor": "#ffffff",
+      "next": {
+        "slug": "bright-matter",
+        "name": "Bright Matter",
+        "href": "./bright-matter",
+        "image": "https://framerusercontent.com/images/TgD2gKSlOfhH9eJku8ilavEy2Vs.jpg",
+        "imageNatural": [
+          1800,
+          2400
+        ],
+        "objectPosition": "50% 50%",
+        "nameColor": "#ffffff"
+      }
+    },
+    {
+      "index": "02",
+      "slug": "bright-matter",
+      "name": "Bright Matter",
+      "path": "/work/bright-matter",
+      "year": "'25",
+      "services": "Brand Identity, Visual Language, Digital Experience, Editorial Design, Campaign Direction.",
+      "description": [
+        "This project was about redefining identity and digital presence to communicate quiet confidence, heritage, and timeless refinement. Möbius focused on creating a brand expression that balances clarity with enduring elegance."
+      ],
+      "sections": {
+        "challenge": {
+          "marker": "/ 1",
+          "paragraphs": [
+            "The challenge was to create clarity in a world of constant change. Every project begins with competing needs — tradition and progress, speed and depth, expression and restraint. The task is to navigate these tensions without losing sight of what truly matters."
+          ]
+        },
+        "quote": "The challenge was clear: design a brand that would express sophistication without excess, tradition without stagnation, and prestige without ostentation.",
+        "approach": {
+          "marker": "/ 2",
+          "paragraphs": [
+            "Our approach is guided by reduction and intent. Every project begins with listening — understanding the context, the people, and the purpose behind the work. We look beyond surface details to uncover the essential idea, the part that gives meaning and direction.",
+            "From there, we build with precision. Research, iteration, and collaboration shape every step of the process, ensuring that each decision contributes to a coherent whole. The goal is not to add more, but to refine until only what matters remains."
+          ]
+        },
+        "outcome": {
+          "marker": "/ 3",
+          "paragraphs": [
+            "The outcome of the project was more than just a refreshed look — it was a transformation in how the brand communicated, behaved, and connected with its audience. By creating a system that was both consistent and adaptable, the work gave structure to everyday communication while leaving space for evolution.",
+            "The design language became a unifying force across platforms, improving clarity internally and strengthening recognition externally. Digital experiences became smoother and more engaging, while the overall identity positioned the brand as confident, timeless, and ready for growth."
+          ]
+        },
+        "numbers": {
+          "heading": "These shifts translated into measurable improvements:",
+          "stats": [
+            {
+              "value": "+62%",
+              "label": "Increase in online orders"
+            },
+            {
+              "value": "+40%",
+              "label": "Return customer rate"
+            },
+            {
+              "value": "+78%",
+              "label": "Brand recognition in key markets"
+            },
+            {
+              "value": "+18%",
+              "label": "Conversion rate"
+            }
+          ]
+        },
+        "credits": "Jonas Richter (Creative Direction), Clara Neumann (Design Direction), Leon Weber (Art Direction), Mia Fischer (UX/UI Design), Daniel Vogt (Copywriting)."
+      },
+      "liveProject": {
+        "label": "Live Project",
+        "href": "https://framer.link/drukarov",
+        "external": true
+      },
+      "hero": {
+        "url": "https://framerusercontent.com/images/TgD2gKSlOfhH9eJku8ilavEy2Vs.jpg",
+        "natural": [
+          1800,
+          2400
+        ],
+        "objectPosition": "50% 50%",
+        "rendered1440": {
+          "x": 273.3,
+          "y": 40,
+          "w": 426.7,
+          "h": 820
+        },
+        "fit": "cover"
+      },
+      "gallery": [
+        {
+          "slot": "A",
+          "cmsField": "stsqbRwdT",
+          "column": "left",
+          "size": "small",
+          "desc": "left column, top; width = 2/3 of half-column, right-aligned (offset by a W/6 spacer)",
+          "url": "https://framerusercontent.com/images/WyKbQTfVPHmuKXlo6k13LyKChyM.jpg",
+          "natural": [
+            1800,
+            1800
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 273.3,
+            "y": 2024.7,
+            "w": 426.7,
+            "h": 426.7
+          }
+        },
+        {
+          "slot": "B",
+          "cmsField": "Inq6hZHJr",
+          "column": "left",
+          "size": "large",
+          "desc": "left column, below A; full half-column width",
+          "url": "https://framerusercontent.com/images/eIij9bKrxBsdqdmN7T752idvC0.jpg",
+          "natural": [
+            1800,
+            1800
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 40,
+            "y": 2491.4,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "C",
+          "cmsField": "LZouaSwDF",
+          "column": "right",
+          "size": "large",
+          "desc": "right column, top; full half-column width",
+          "url": "https://framerusercontent.com/images/ZT6GYbLaCJpZdmeRG7gGbmuVRHY.jpg",
+          "natural": [
+            1800,
+            1800
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2024.7,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "D",
+          "cmsField": "DJLMFTEjK",
+          "column": "right",
+          "size": "small",
+          "desc": "right column, below C; width = 2/3 of half-column, left-aligned (W/6 spacer on its right)",
+          "url": "https://framerusercontent.com/images/J0ZCl2HmlFlwnnZpxZ2DoUII.jpg",
+          "natural": [
+            1800,
+            1800
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2724.7,
+            "w": 426.7,
+            "h": 426.7
+          }
+        }
+      ],
+      "galleryHeight1440": 1206.7,
+      "docHeight1440": 6079,
+      "cardNameColor": "#ffffff",
+      "next": {
+        "slug": "wavehouse",
+        "name": "Wave 124",
+        "href": "./wavehouse",
+        "image": "https://framerusercontent.com/images/JZNaIjPNcrDF3IgxsRH6Azc8.jpg",
+        "imageNatural": [
+          1800,
+          2400
+        ],
+        "objectPosition": "50% 50%",
+        "nameColor": "#ffffff"
+      }
+    },
+    {
+      "index": "03",
+      "slug": "wavehouse",
+      "name": "Wave 124",
+      "path": "/work/wavehouse",
+      "year": "'25",
+      "services": "Brand Identity, Visual Language, Digital Experience, Editorial Design, Campaign Direction.",
+      "description": [
+        "This project was about redefining identity and digital presence to communicate quiet confidence, heritage, and timeless refinement. Möbius focused on creating a brand expression that balances clarity with enduring elegance."
+      ],
+      "sections": {
+        "challenge": {
+          "marker": "/ 1",
+          "paragraphs": [
+            "The challenge was to create clarity in a world of constant change. Every project begins with competing needs — tradition and progress, speed and depth, expression and restraint. The task is to navigate these tensions without losing sight of what truly matters."
+          ]
+        },
+        "quote": "The challenge was clear: design a brand that would express sophistication without excess, tradition without stagnation, and prestige without ostentation.",
+        "approach": {
+          "marker": "/ 2",
+          "paragraphs": [
+            "Our approach is guided by reduction and intent. Every project begins with listening — understanding the context, the people, and the purpose behind the work. We look beyond surface details to uncover the essential idea, the part that gives meaning and direction.",
+            "From there, we build with precision. Research, iteration, and collaboration shape every step of the process, ensuring that each decision contributes to a coherent whole. The goal is not to add more, but to refine until only what matters remains."
+          ]
+        },
+        "outcome": {
+          "marker": "/ 3",
+          "paragraphs": [
+            "The outcome of the project was more than just a refreshed look — it was a transformation in how the brand communicated, behaved, and connected with its audience. By creating a system that was both consistent and adaptable, the work gave structure to everyday communication while leaving space for evolution.",
+            "The design language became a unifying force across platforms, improving clarity internally and strengthening recognition externally. Digital experiences became smoother and more engaging, while the overall identity positioned the brand as confident, timeless, and ready for growth."
+          ]
+        },
+        "numbers": {
+          "heading": "These shifts translated into measurable improvements:",
+          "stats": [
+            {
+              "value": "+62%",
+              "label": "Increase in online orders"
+            },
+            {
+              "value": "+40%",
+              "label": "Return customer rate"
+            },
+            {
+              "value": "+78%",
+              "label": "Brand recognition in key markets"
+            },
+            {
+              "value": "+18%",
+              "label": "Conversion rate"
+            }
+          ]
+        },
+        "credits": "Jonas Richter (Creative Direction), Clara Neumann (Design Direction), Leon Weber (Art Direction), Mia Fischer (UX/UI Design), Daniel Vogt (Copywriting)."
+      },
+      "liveProject": {
+        "label": "Live Project",
+        "href": "https://framer.link/drukarov",
+        "external": true
+      },
+      "hero": {
+        "url": "https://framerusercontent.com/images/JZNaIjPNcrDF3IgxsRH6Azc8.jpg",
+        "natural": [
+          1800,
+          2400
+        ],
+        "objectPosition": "50% 50%",
+        "rendered1440": {
+          "x": 273.3,
+          "y": 40,
+          "w": 426.7,
+          "h": 820
+        },
+        "fit": "cover"
+      },
+      "gallery": [
+        {
+          "slot": "A",
+          "cmsField": "stsqbRwdT",
+          "column": "left",
+          "size": "small",
+          "desc": "left column, top; width = 2/3 of half-column, right-aligned (offset by a W/6 spacer)",
+          "url": "https://framerusercontent.com/images/kXRrdFcYFxQ48uHGOF7mALg.jpg",
+          "natural": [
+            1800,
+            2400
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 273.3,
+            "y": 2024.7,
+            "w": 426.7,
+            "h": 568.9
+          }
+        },
+        {
+          "slot": "B",
+          "cmsField": "Inq6hZHJr",
+          "column": "left",
+          "size": "large",
+          "desc": "left column, below A; full half-column width",
+          "url": "https://framerusercontent.com/images/nUkSnPkTBW8kuRSL8zhE66e5eU.jpg",
+          "natural": [
+            1800,
+            1800
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 40,
+            "y": 2633.6,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "C",
+          "cmsField": "LZouaSwDF",
+          "column": "right",
+          "size": "large",
+          "desc": "right column, top; full half-column width",
+          "url": "https://framerusercontent.com/images/Wkq3w4VeRbBgxSdjcO40DfbDqs.jpg",
+          "natural": [
+            1800,
+            1800
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2024.7,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "D",
+          "cmsField": "DJLMFTEjK",
+          "column": "right",
+          "size": "small",
+          "desc": "right column, below C; width = 2/3 of half-column, left-aligned (W/6 spacer on its right)",
+          "url": "https://framerusercontent.com/images/TfAyKQ9jxlCdHHufzpfWdTNWwB8.jpg",
+          "natural": [
+            1800,
+            2400
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2724.7,
+            "w": 426.7,
+            "h": 568.9
+          }
+        }
+      ],
+      "galleryHeight1440": 1348.9,
+      "docHeight1440": 6221,
+      "cardNameColor": "#ffffff",
+      "next": {
+        "slug": "north-layer",
+        "name": "North Layer",
+        "href": "./north-layer",
+        "image": "https://framerusercontent.com/images/ZdoJlTXzsfF4jck8jdi8x8jmQN8.jpg",
+        "imageNatural": [
+          1800,
+          2400
+        ],
+        "objectPosition": "50% 50%",
+        "nameColor": "#ffffff"
+      }
+    },
+    {
+      "index": "04",
+      "slug": "north-layer",
+      "name": "North Layer",
+      "path": "/work/north-layer",
+      "year": "'25",
+      "services": "Brand Identity, Visual Language, Digital Experience, Editorial Design, Campaign Direction.",
+      "description": [
+        "This project was about redefining identity and digital presence to communicate quiet confidence, heritage, and timeless refinement. Möbius focused on creating a brand expression that balances clarity with enduring elegance."
+      ],
+      "sections": {
+        "challenge": {
+          "marker": "/ 1",
+          "paragraphs": [
+            "The challenge was to create clarity in a world of constant change. Every project begins with competing needs — tradition and progress, speed and depth, expression and restraint. The task is to navigate these tensions without losing sight of what truly matters."
+          ]
+        },
+        "quote": "The challenge was clear: design a brand that would express sophistication without excess, tradition without stagnation, and prestige without ostentation.",
+        "approach": {
+          "marker": "/ 2",
+          "paragraphs": [
+            "Our approach is guided by reduction and intent. Every project begins with listening — understanding the context, the people, and the purpose behind the work. We look beyond surface details to uncover the essential idea, the part that gives meaning and direction.",
+            "From there, we build with precision. Research, iteration, and collaboration shape every step of the process, ensuring that each decision contributes to a coherent whole. The goal is not to add more, but to refine until only what matters remains."
+          ]
+        },
+        "outcome": {
+          "marker": "/ 3",
+          "paragraphs": [
+            "The outcome of the project was more than just a refreshed look — it was a transformation in how the brand communicated, behaved, and connected with its audience. By creating a system that was both consistent and adaptable, the work gave structure to everyday communication while leaving space for evolution.",
+            "The design language became a unifying force across platforms, improving clarity internally and strengthening recognition externally. Digital experiences became smoother and more engaging, while the overall identity positioned the brand as confident, timeless, and ready for growth."
+          ]
+        },
+        "numbers": {
+          "heading": "These shifts translated into measurable improvements:",
+          "stats": [
+            {
+              "value": "+62%",
+              "label": "Increase in online orders"
+            },
+            {
+              "value": "+40%",
+              "label": "Return customer rate"
+            },
+            {
+              "value": "+78%",
+              "label": "Brand recognition in key markets"
+            },
+            {
+              "value": "+19%",
+              "label": "Conversion rate"
+            }
+          ]
+        },
+        "credits": "Jonas Richter (Creative Direction), Clara Neumann (Design Direction), Leon Weber (Art Direction), Mia Fischer (UX/UI Design), Daniel Vogt (Copywriting)."
+      },
+      "liveProject": {
+        "label": "Live Project",
+        "href": "https://framer.link/drukarov",
+        "external": true
+      },
+      "hero": {
+        "url": "https://framerusercontent.com/images/ZdoJlTXzsfF4jck8jdi8x8jmQN8.jpg",
+        "natural": [
+          1800,
+          2400
+        ],
+        "objectPosition": "50% 50%",
+        "rendered1440": {
+          "x": 273.3,
+          "y": 40,
+          "w": 426.7,
+          "h": 820
+        },
+        "fit": "cover"
+      },
+      "gallery": [
+        {
+          "slot": "A",
+          "cmsField": "stsqbRwdT",
+          "column": "left",
+          "size": "small",
+          "desc": "left column, top; width = 2/3 of half-column, right-aligned (offset by a W/6 spacer)",
+          "url": "https://framerusercontent.com/images/rJMlaL51OiTyQGShLFBoivEM28.jpg",
+          "natural": [
+            1800,
+            2400
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 273.3,
+            "y": 2024.7,
+            "w": 426.7,
+            "h": 568.9
+          }
+        },
+        {
+          "slot": "B",
+          "cmsField": "Inq6hZHJr",
+          "column": "left",
+          "size": "large",
+          "desc": "left column, below A; full half-column width",
+          "url": "https://framerusercontent.com/images/yxibLJXQpQLi2kYBSVicMSBAIE.jpg",
+          "natural": [
+            1920,
+            1920
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 40,
+            "y": 2633.6,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "C",
+          "cmsField": "LZouaSwDF",
+          "column": "right",
+          "size": "large",
+          "desc": "right column, top; full half-column width",
+          "url": "https://framerusercontent.com/images/HSCzAR3uckoJNeDKlojI8XflqA0.jpg",
+          "natural": [
+            1808,
+            1808
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2024.7,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "D",
+          "cmsField": "DJLMFTEjK",
+          "column": "right",
+          "size": "small",
+          "desc": "right column, below C; width = 2/3 of half-column, left-aligned (W/6 spacer on its right)",
+          "url": "https://framerusercontent.com/images/inZkAzaceypi23s2hqEQZoHhjtA.jpg",
+          "natural": [
+            1800,
+            2400
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2724.7,
+            "w": 426.7,
+            "h": 568.9
+          }
+        }
+      ],
+      "galleryHeight1440": 1348.9,
+      "docHeight1440": 6221,
+      "cardNameColor": "#ffffff",
+      "next": {
+        "slug": "zero-parallel",
+        "name": "Zero Parallel",
+        "href": "./zero-parallel",
+        "image": "https://framerusercontent.com/images/5jd5VWBN8ZG85MGXuhQfHfdV3M.jpg",
+        "imageNatural": [
+          2400,
+          1800
+        ],
+        "objectPosition": "50% 50%",
+        "nameColor": "#ffffff"
+      }
+    },
+    {
+      "index": "05",
+      "slug": "zero-parallel",
+      "name": "Zero Parallel",
+      "path": "/work/zero-parallel",
+      "year": "'25",
+      "services": "Brand Identity, Visual Language, Digital Experience, Editorial Design, Campaign Direction.",
+      "description": [
+        "This project was about redefining identity and digital presence to communicate quiet confidence, heritage, and timeless refinement. Möbius focused on creating a brand expression that balances clarity with enduring elegance."
+      ],
+      "sections": {
+        "challenge": {
+          "marker": "/ 1",
+          "paragraphs": [
+            "The challenge was to create clarity in a world of constant change. Every project begins with competing needs — tradition and progress, speed and depth, expression and restraint. The task is to navigate these tensions without losing sight of what truly matters."
+          ]
+        },
+        "quote": "The challenge was clear: design a brand that would express sophistication without excess, tradition without stagnation, and prestige without ostentation.",
+        "approach": {
+          "marker": "/ 2",
+          "paragraphs": [
+            "Our approach is guided by reduction and intent. Every project begins with listening — understanding the context, the people, and the purpose behind the work. We look beyond surface details to uncover the essential idea, the part that gives meaning and direction.",
+            "From there, we build with precision. Research, iteration, and collaboration shape every step of the process, ensuring that each decision contributes to a coherent whole. The goal is not to add more, but to refine until only what matters remains."
+          ]
+        },
+        "outcome": {
+          "marker": "/ 3",
+          "paragraphs": [
+            "The outcome of the project was more than just a refreshed look — it was a transformation in how the brand communicated, behaved, and connected with its audience. By creating a system that was both consistent and adaptable, the work gave structure to everyday communication while leaving space for evolution.",
+            "The design language became a unifying force across platforms, improving clarity internally and strengthening recognition externally. Digital experiences became smoother and more engaging, while the overall identity positioned the brand as confident, timeless, and ready for growth."
+          ]
+        },
+        "numbers": {
+          "heading": "These shifts translated into measurable improvements:",
+          "stats": [
+            {
+              "value": "+62%",
+              "label": "Increase in online orders"
+            },
+            {
+              "value": "+40%",
+              "label": "Return customer rate"
+            },
+            {
+              "value": "+78%",
+              "label": "Brand recognition in key markets"
+            },
+            {
+              "value": "+27%",
+              "label": "Conversion rate"
+            }
+          ]
+        },
+        "credits": "Jonas Richter (Creative Direction), Clara Neumann (Design Direction), Leon Weber (Art Direction), Mia Fischer (UX/UI Design), Daniel Vogt (Copywriting)."
+      },
+      "liveProject": {
+        "label": "Live Project",
+        "href": "https://framer.link/drukarov",
+        "external": true
+      },
+      "hero": {
+        "url": "https://framerusercontent.com/images/5jd5VWBN8ZG85MGXuhQfHfdV3M.jpg",
+        "natural": [
+          2400,
+          1800
+        ],
+        "objectPosition": "50% 50%",
+        "rendered1440": {
+          "x": 273.3,
+          "y": 40,
+          "w": 426.7,
+          "h": 820
+        },
+        "fit": "cover"
+      },
+      "gallery": [
+        {
+          "slot": "A",
+          "cmsField": "stsqbRwdT",
+          "column": "left",
+          "size": "small",
+          "desc": "left column, top; width = 2/3 of half-column, right-aligned (offset by a W/6 spacer)",
+          "url": "https://framerusercontent.com/images/Otiqa0LU3z870ZSlD9amnRT4Y4.jpg",
+          "natural": [
+            1800,
+            2400
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 273.3,
+            "y": 2024.7,
+            "w": 426.7,
+            "h": 568.9
+          }
+        },
+        {
+          "slot": "B",
+          "cmsField": "Inq6hZHJr",
+          "column": "left",
+          "size": "large",
+          "desc": "left column, below A; full half-column width",
+          "url": "https://framerusercontent.com/images/izpoCEOHjtgBWvr2BwU88wpjkw8.jpg",
+          "natural": [
+            1752,
+            1752
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 40,
+            "y": 2633.6,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "C",
+          "cmsField": "LZouaSwDF",
+          "column": "right",
+          "size": "large",
+          "desc": "right column, top; full half-column width",
+          "url": "https://framerusercontent.com/images/eYa9ite6w5ozPaWPINx7BF7ZV2I.jpg",
+          "natural": [
+            1920,
+            1920
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2024.7,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "D",
+          "cmsField": "DJLMFTEjK",
+          "column": "right",
+          "size": "small",
+          "desc": "right column, below C; width = 2/3 of half-column, left-aligned (W/6 spacer on its right)",
+          "url": "https://framerusercontent.com/images/nDviOvkjdjZLaZDIxWdMZXJBgTY.jpg",
+          "natural": [
+            1200,
+            1600
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2724.7,
+            "w": 426.7,
+            "h": 568.9
+          }
+        }
+      ],
+      "galleryHeight1440": 1348.9,
+      "docHeight1440": 6221,
+      "cardNameColor": "#ffffff",
+      "next": {
+        "slug": "pulse",
+        "name": "Pulse",
+        "href": "./pulse",
+        "image": "https://framerusercontent.com/images/wvQDwJd4SD2wngQjJZQMGAI.jpg",
+        "imageNatural": [
+          1800,
+          2400
+        ],
+        "objectPosition": "52.3% 16.3%",
+        "nameColor": "#ffffff"
+      }
+    },
+    {
+      "index": "06",
+      "slug": "pulse",
+      "name": "Pulse",
+      "path": "/work/pulse",
+      "year": "'25",
+      "services": "Brand Identity, Visual Language, Digital Experience, Editorial Design, Campaign Direction.",
+      "description": [
+        "This project was about redefining identity and digital presence to communicate quiet confidence, heritage, and timeless refinement. Möbius focused on creating a brand expression that balances clarity with enduring elegance."
+      ],
+      "sections": {
+        "challenge": {
+          "marker": "/ 1",
+          "paragraphs": [
+            "The challenge was to create clarity in a world of constant change. Every project begins with competing needs — tradition and progress, speed and depth, expression and restraint. The task is to navigate these tensions without losing sight of what truly matters."
+          ]
+        },
+        "quote": "The challenge was clear: design a brand that would express sophistication without excess, tradition without stagnation, and prestige without ostentation.",
+        "approach": {
+          "marker": "/ 2",
+          "paragraphs": [
+            "Our approach is guided by reduction and intent. Every project begins with listening — understanding the context, the people, and the purpose behind the work. We look beyond surface details to uncover the essential idea, the part that gives meaning and direction.",
+            "From there, we build with precision. Research, iteration, and collaboration shape every step of the process, ensuring that each decision contributes to a coherent whole. The goal is not to add more, but to refine until only what matters remains."
+          ]
+        },
+        "outcome": {
+          "marker": "/ 3",
+          "paragraphs": [
+            "The outcome of the project was more than just a refreshed look — it was a transformation in how the brand communicated, behaved, and connected with its audience. By creating a system that was both consistent and adaptable, the work gave structure to everyday communication while leaving space for evolution.",
+            "The design language became a unifying force across platforms, improving clarity internally and strengthening recognition externally. Digital experiences became smoother and more engaging, while the overall identity positioned the brand as confident, timeless, and ready for growth."
+          ]
+        },
+        "numbers": {
+          "heading": "These shifts translated into measurable improvements:",
+          "stats": [
+            {
+              "value": "+62%",
+              "label": "Increase in online orders"
+            },
+            {
+              "value": "+40%",
+              "label": "Return customer rate"
+            },
+            {
+              "value": "+78%",
+              "label": "Brand recognition in key markets"
+            },
+            {
+              "value": "+36%",
+              "label": "Conversion rate"
+            }
+          ]
+        },
+        "credits": "Jonas Richter (Creative Direction), Clara Neumann (Design Direction), Leon Weber (Art Direction), Mia Fischer (UX/UI Design), Daniel Vogt (Copywriting)."
+      },
+      "liveProject": {
+        "label": "Live Project",
+        "href": "https://framer.link/drukarov",
+        "external": true
+      },
+      "hero": {
+        "url": "https://framerusercontent.com/images/wvQDwJd4SD2wngQjJZQMGAI.jpg",
+        "natural": [
+          1800,
+          2400
+        ],
+        "objectPosition": "52.3% 16.3%",
+        "rendered1440": {
+          "x": 273.3,
+          "y": 40,
+          "w": 426.7,
+          "h": 820
+        },
+        "fit": "cover"
+      },
+      "gallery": [
+        {
+          "slot": "A",
+          "cmsField": "stsqbRwdT",
+          "column": "left",
+          "size": "small",
+          "desc": "left column, top; width = 2/3 of half-column, right-aligned (offset by a W/6 spacer)",
+          "url": "https://framerusercontent.com/images/S56ET8vPjB5FiWZWSz4RNgg.jpg",
+          "natural": [
+            1800,
+            2400
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 273.3,
+            "y": 2024.7,
+            "w": 426.7,
+            "h": 568.9
+          }
+        },
+        {
+          "slot": "B",
+          "cmsField": "Inq6hZHJr",
+          "column": "left",
+          "size": "large",
+          "desc": "left column, below A; full half-column width",
+          "url": "https://framerusercontent.com/images/1dlvTGFjvphok9k37pCK315aBJY.jpg",
+          "natural": [
+            1595,
+            1595
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 40,
+            "y": 2633.6,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "C",
+          "cmsField": "LZouaSwDF",
+          "column": "right",
+          "size": "large",
+          "desc": "right column, top; full half-column width",
+          "url": "https://framerusercontent.com/images/QNlV3RRgepgEOt8CjwPbzsSIg.jpg",
+          "natural": [
+            1345,
+            1345
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2024.7,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "D",
+          "cmsField": "DJLMFTEjK",
+          "column": "right",
+          "size": "small",
+          "desc": "right column, below C; width = 2/3 of half-column, left-aligned (W/6 spacer on its right)",
+          "url": "https://framerusercontent.com/images/JvrclQU9JR2QotLd844ZApRxVrE.jpg",
+          "natural": [
+            1800,
+            2400
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2724.7,
+            "w": 426.7,
+            "h": 568.9
+          }
+        }
+      ],
+      "galleryHeight1440": 1348.9,
+      "docHeight1440": 6221,
+      "cardNameColor": "#ffffff",
+      "next": {
+        "slug": "after-light",
+        "name": "After Light",
+        "href": "./after-light",
+        "image": "https://framerusercontent.com/images/DsGJvT1AjWPpAnwaISwENoGk.jpg",
+        "imageNatural": [
+          1856,
+          2464
+        ],
+        "objectPosition": "50% 50%",
+        "nameColor": "#000000"
+      }
+    },
+    {
+      "index": "07",
+      "slug": "after-light",
+      "name": "After Light",
+      "path": "/work/after-light",
+      "year": "'25",
+      "services": "Brand Identity, Visual Language, Digital Experience, Editorial Design, Campaign Direction.",
+      "description": [
+        "This project was about redefining identity and digital presence to communicate quiet confidence, heritage, and timeless refinement. Möbius focused on creating a brand expression that balances clarity with enduring elegance."
+      ],
+      "sections": {
+        "challenge": {
+          "marker": "/ 1",
+          "paragraphs": [
+            "The challenge was to create clarity in a world of constant change. Every project begins with competing needs — tradition and progress, speed and depth, expression and restraint. The task is to navigate these tensions without losing sight of what truly matters."
+          ]
+        },
+        "quote": "The challenge was clear: design a brand that would express sophistication without excess, tradition without stagnation, and prestige without ostentation.",
+        "approach": {
+          "marker": "/ 2",
+          "paragraphs": [
+            "Our approach is guided by reduction and intent. Every project begins with listening — understanding the context, the people, and the purpose behind the work. We look beyond surface details to uncover the essential idea, the part that gives meaning and direction.",
+            "From there, we build with precision. Research, iteration, and collaboration shape every step of the process, ensuring that each decision contributes to a coherent whole. The goal is not to add more, but to refine until only what matters remains."
+          ]
+        },
+        "outcome": {
+          "marker": "/ 3",
+          "paragraphs": [
+            "The outcome of the project was more than just a refreshed look — it was a transformation in how the brand communicated, behaved, and connected with its audience. By creating a system that was both consistent and adaptable, the work gave structure to everyday communication while leaving space for evolution.",
+            "The design language became a unifying force across platforms, improving clarity internally and strengthening recognition externally. Digital experiences became smoother and more engaging, while the overall identity positioned the brand as confident, timeless, and ready for growth."
+          ]
+        },
+        "numbers": {
+          "heading": "These shifts translated into measurable improvements:",
+          "stats": [
+            {
+              "value": "+62%",
+              "label": "Increase in online orders"
+            },
+            {
+              "value": "+40%",
+              "label": "Return customer rate"
+            },
+            {
+              "value": "+78%",
+              "label": "Brand recognition in key markets"
+            },
+            {
+              "value": "+27%",
+              "label": "Conversion rate"
+            }
+          ]
+        },
+        "credits": "Jonas Richter (Creative Direction), Clara Neumann (Design Direction), Leon Weber (Art Direction), Mia Fischer (UX/UI Design), Daniel Vogt (Copywriting)."
+      },
+      "liveProject": {
+        "label": "Live Project",
+        "href": "https://framer.link/drukarov",
+        "external": true
+      },
+      "hero": {
+        "url": "https://framerusercontent.com/images/DsGJvT1AjWPpAnwaISwENoGk.jpg",
+        "natural": [
+          1856,
+          2464
+        ],
+        "objectPosition": "50% 50%",
+        "rendered1440": {
+          "x": 273.3,
+          "y": 40,
+          "w": 426.7,
+          "h": 820
+        },
+        "fit": "cover"
+      },
+      "gallery": [
+        {
+          "slot": "A",
+          "cmsField": "stsqbRwdT",
+          "column": "left",
+          "size": "small",
+          "desc": "left column, top; width = 2/3 of half-column, right-aligned (offset by a W/6 spacer)",
+          "url": "https://framerusercontent.com/images/oSVCHIO3CsQqVf8BuFaAcaIAB5g.jpg",
+          "natural": [
+            1856,
+            2464
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 273.3,
+            "y": 2024.7,
+            "w": 426.7,
+            "h": 566.4
+          }
+        },
+        {
+          "slot": "B",
+          "cmsField": "Inq6hZHJr",
+          "column": "left",
+          "size": "large",
+          "desc": "left column, below A; full half-column width",
+          "url": "https://framerusercontent.com/images/2Htye0RBCWQDV6gAxNaOKF58vsk.jpg",
+          "natural": [
+            1856,
+            2464
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 40,
+            "y": 2631.2,
+            "w": 660,
+            "h": 876.2
+          }
+        },
+        {
+          "slot": "C",
+          "cmsField": "LZouaSwDF",
+          "column": "right",
+          "size": "large",
+          "desc": "right column, top; full half-column width",
+          "url": "https://framerusercontent.com/images/XED1k8ZoWrxr3obUSoSc9HB8.jpg",
+          "natural": [
+            1856,
+            2464
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2024.7,
+            "w": 660,
+            "h": 876.2
+          }
+        },
+        {
+          "slot": "D",
+          "cmsField": "DJLMFTEjK",
+          "column": "right",
+          "size": "small",
+          "desc": "right column, below C; width = 2/3 of half-column, left-aligned (W/6 spacer on its right)",
+          "url": "https://framerusercontent.com/images/BxwcgynfNEOvicvacPwf1qLULM.jpg",
+          "natural": [
+            1856,
+            2464
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2940.9,
+            "w": 426.7,
+            "h": 566.4
+          }
+        }
+      ],
+      "galleryHeight1440": 1562.6,
+      "docHeight1440": 6435,
+      "cardNameColor": "#000000",
+      "next": {
+        "slug": "forma-nine",
+        "name": "Forma Nine",
+        "href": "./forma-nine",
+        "image": "https://framerusercontent.com/images/aHAP7xg5ONNK4g1WeQC34kBsVs.jpg",
+        "imageNatural": [
+          1800,
+          2400
+        ],
+        "objectPosition": "50% 50%",
+        "nameColor": "#ffffff"
+      }
+    },
+    {
+      "index": "08",
+      "slug": "forma-nine",
+      "name": "Forma Nine",
+      "path": "/work/forma-nine",
+      "year": "'25",
+      "services": "Brand Identity, Visual Language, Digital Experience, Editorial Design, Campaign Direction.",
+      "description": [
+        "This project was about redefining identity and digital presence to communicate quiet confidence, heritage, and timeless refinement. Möbius focused on creating a brand expression that balances clarity with enduring elegance."
+      ],
+      "sections": {
+        "challenge": {
+          "marker": "/ 1",
+          "paragraphs": [
+            "The challenge was to create clarity in a world of constant change. Every project begins with competing needs — tradition and progress, speed and depth, expression and restraint. The task is to navigate these tensions without losing sight of what truly matters."
+          ]
+        },
+        "quote": "The challenge was clear: design a brand that would express sophistication without excess, tradition without stagnation, and prestige without ostentation.",
+        "approach": {
+          "marker": "/ 2",
+          "paragraphs": [
+            "Our approach is guided by reduction and intent. Every project begins with listening — understanding the context, the people, and the purpose behind the work. We look beyond surface details to uncover the essential idea, the part that gives meaning and direction.",
+            "From there, we build with precision. Research, iteration, and collaboration shape every step of the process, ensuring that each decision contributes to a coherent whole. The goal is not to add more, but to refine until only what matters remains."
+          ]
+        },
+        "outcome": {
+          "marker": "/ 3",
+          "paragraphs": [
+            "The outcome of the project was more than just a refreshed look — it was a transformation in how the brand communicated, behaved, and connected with its audience. By creating a system that was both consistent and adaptable, the work gave structure to everyday communication while leaving space for evolution.",
+            "The design language became a unifying force across platforms, improving clarity internally and strengthening recognition externally. Digital experiences became smoother and more engaging, while the overall identity positioned the brand as confident, timeless, and ready for growth."
+          ]
+        },
+        "numbers": {
+          "heading": "These shifts translated into measurable improvements:",
+          "stats": [
+            {
+              "value": "+62%",
+              "label": "Increase in online orders"
+            },
+            {
+              "value": "+40%",
+              "label": "Return customer rate"
+            },
+            {
+              "value": "+78%",
+              "label": "Brand recognition in key markets"
+            },
+            {
+              "value": "+15%",
+              "label": "Conversion rate"
+            }
+          ]
+        },
+        "credits": "Jonas Richter (Creative Direction), Clara Neumann (Design Direction), Leon Weber (Art Direction), Mia Fischer (UX/UI Design), Daniel Vogt (Copywriting)."
+      },
+      "liveProject": {
+        "label": "Live Project",
+        "href": "https://framer.link/drukarov",
+        "external": true
+      },
+      "hero": {
+        "url": "https://framerusercontent.com/images/aHAP7xg5ONNK4g1WeQC34kBsVs.jpg",
+        "natural": [
+          1800,
+          2400
+        ],
+        "objectPosition": "50% 50%",
+        "rendered1440": {
+          "x": 273.3,
+          "y": 40,
+          "w": 426.7,
+          "h": 820
+        },
+        "fit": "cover"
+      },
+      "gallery": [
+        {
+          "slot": "A",
+          "cmsField": "stsqbRwdT",
+          "column": "left",
+          "size": "small",
+          "desc": "left column, top; width = 2/3 of half-column, right-aligned (offset by a W/6 spacer)",
+          "url": "https://framerusercontent.com/images/2LzLbx6Bc434G4vnZKsSChn9L0.jpg",
+          "natural": [
+            1572,
+            2096
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 273.3,
+            "y": 2024.7,
+            "w": 426.7,
+            "h": 568.9
+          }
+        },
+        {
+          "slot": "B",
+          "cmsField": "Inq6hZHJr",
+          "column": "left",
+          "size": "large",
+          "desc": "left column, below A; full half-column width",
+          "url": "https://framerusercontent.com/images/Jd219m9xc4wjENHE4C9jz2RiYK8.jpg",
+          "natural": [
+            1808,
+            1808
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 40,
+            "y": 2633.6,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "C",
+          "cmsField": "LZouaSwDF",
+          "column": "right",
+          "size": "large",
+          "desc": "right column, top; full half-column width",
+          "url": "https://framerusercontent.com/images/6m49AO5SWsRwhaHoEl0Bjic1Mc.jpg",
+          "natural": [
+            1846,
+            1846
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2024.7,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "D",
+          "cmsField": "DJLMFTEjK",
+          "column": "right",
+          "size": "small",
+          "desc": "right column, below C; width = 2/3 of half-column, left-aligned (W/6 spacer on its right)",
+          "url": "https://framerusercontent.com/images/PSjCJwM02dfEvZ7xRoMUNU0Qyw.jpg",
+          "natural": [
+            1725,
+            2300
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2724.7,
+            "w": 426.7,
+            "h": 568.9
+          }
+        }
+      ],
+      "galleryHeight1440": 1348.9,
+      "docHeight1440": 6221,
+      "cardNameColor": "#ffffff",
+      "next": {
+        "slug": "golden-hour",
+        "name": "Golden Hour",
+        "href": "./golden-hour",
+        "image": "https://framerusercontent.com/images/70P7DlHOLA5V6H0shE8MTQZ5XW0.jpg",
+        "imageNatural": [
+          1800,
+          2400
+        ],
+        "objectPosition": "50% 50%",
+        "nameColor": "#ffffff"
+      }
+    },
+    {
+      "index": "09",
+      "slug": "golden-hour",
+      "name": "Golden Hour",
+      "path": "/work/golden-hour",
+      "year": "'25",
+      "services": "Brand Identity, Visual Language, Digital Experience, Editorial Design, Campaign Direction.",
+      "description": [
+        "This project was about redefining identity and digital presence to communicate quiet confidence, heritage, and timeless refinement. Möbius focused on creating a brand expression that balances clarity with enduring elegance."
+      ],
+      "sections": {
+        "challenge": {
+          "marker": "/ 1",
+          "paragraphs": [
+            "The challenge was to create clarity in a world of constant change. Every project begins with competing needs — tradition and progress, speed and depth, expression and restraint. The task is to navigate these tensions without losing sight of what truly matters."
+          ]
+        },
+        "quote": "The challenge was clear: design a brand that would express sophistication without excess, tradition without stagnation, and prestige without ostentation.",
+        "approach": {
+          "marker": "/ 2",
+          "paragraphs": [
+            "Our approach is guided by reduction and intent. Every project begins with listening — understanding the context, the people, and the purpose behind the work. We look beyond surface details to uncover the essential idea, the part that gives meaning and direction.",
+            "From there, we build with precision. Research, iteration, and collaboration shape every step of the process, ensuring that each decision contributes to a coherent whole. The goal is not to add more, but to refine until only what matters remains."
+          ]
+        },
+        "outcome": {
+          "marker": "/ 3",
+          "paragraphs": [
+            "The outcome of the project was more than just a refreshed look — it was a transformation in how the brand communicated, behaved, and connected with its audience. By creating a system that was both consistent and adaptable, the work gave structure to everyday communication while leaving space for evolution.",
+            "The design language became a unifying force across platforms, improving clarity internally and strengthening recognition externally. Digital experiences became smoother and more engaging, while the overall identity positioned the brand as confident, timeless, and ready for growth."
+          ]
+        },
+        "numbers": {
+          "heading": "These shifts translated into measurable improvements:",
+          "stats": [
+            {
+              "value": "+62%",
+              "label": "Increase in online orders"
+            },
+            {
+              "value": "+40%",
+              "label": "Return customer rate"
+            },
+            {
+              "value": "+78%",
+              "label": "Brand recognition in key markets"
+            },
+            {
+              "value": "+16%",
+              "label": "Conversion rate"
+            }
+          ]
+        },
+        "credits": "Jonas Richter (Creative Direction), Clara Neumann (Design Direction), Leon Weber (Art Direction), Mia Fischer (UX/UI Design), Daniel Vogt (Copywriting)."
+      },
+      "liveProject": {
+        "label": "Live Project",
+        "href": "https://framer.link/drukarov",
+        "external": true
+      },
+      "hero": {
+        "url": "https://framerusercontent.com/images/70P7DlHOLA5V6H0shE8MTQZ5XW0.jpg",
+        "natural": [
+          1800,
+          2400
+        ],
+        "objectPosition": "50% 50%",
+        "rendered1440": {
+          "x": 273.3,
+          "y": 40,
+          "w": 426.7,
+          "h": 820
+        },
+        "fit": "cover"
+      },
+      "gallery": [
+        {
+          "slot": "A",
+          "cmsField": "stsqbRwdT",
+          "column": "left",
+          "size": "small",
+          "desc": "left column, top; width = 2/3 of half-column, right-aligned (offset by a W/6 spacer)",
+          "url": "https://framerusercontent.com/images/G5zWnM69hb2T6iLJkbrXRw8D1d0.jpg",
+          "natural": [
+            1600,
+            2133
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 273.3,
+            "y": 2024.7,
+            "w": 426.7,
+            "h": 568.8
+          }
+        },
+        {
+          "slot": "B",
+          "cmsField": "Inq6hZHJr",
+          "column": "left",
+          "size": "large",
+          "desc": "left column, below A; full half-column width",
+          "url": "https://framerusercontent.com/images/NofQF1QCcaWk2NHqPzEyB85KYPg.jpg",
+          "natural": [
+            1920,
+            1920
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 40,
+            "y": 2633.5,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "C",
+          "cmsField": "LZouaSwDF",
+          "column": "right",
+          "size": "large",
+          "desc": "right column, top; full half-column width",
+          "url": "https://framerusercontent.com/images/VuUHriWsRefewK5burLN8gPoyYw.jpg",
+          "natural": [
+            2400,
+            2400
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2024.7,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "D",
+          "cmsField": "DJLMFTEjK",
+          "column": "right",
+          "size": "small",
+          "desc": "right column, below C; width = 2/3 of half-column, left-aligned (W/6 spacer on its right)",
+          "url": "https://framerusercontent.com/images/E1Cc8Av5BQF7GKXIb8QCjlAhdT8.jpg",
+          "natural": [
+            1600,
+            2133
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2724.7,
+            "w": 426.7,
+            "h": 568.8
+          }
+        }
+      ],
+      "galleryHeight1440": 1348.8,
+      "docHeight1440": 6221,
+      "cardNameColor": "#ffffff",
+      "next": {
+        "slug": "echoform",
+        "name": "Echoform",
+        "href": "./echoform",
+        "image": "https://framerusercontent.com/images/hT3qlH9GjIZn0XY4ES3pI2A8LU.jpg",
+        "imageNatural": [
+          2400,
+          1800
+        ],
+        "objectPosition": "50% 50%",
+        "nameColor": "#ffffff"
+      }
+    },
+    {
+      "index": "10",
+      "slug": "echoform",
+      "name": "Echoform",
+      "path": "/work/echoform",
+      "year": "'25",
+      "services": "Brand Identity, Visual Language, Digital Experience, Editorial Design, Campaign Direction.",
+      "description": [
+        "This project was about redefining identity and digital presence to communicate quiet confidence, heritage, and timeless refinement. Möbius focused on creating a brand expression that balances clarity with enduring elegance."
+      ],
+      "sections": {
+        "challenge": {
+          "marker": "/ 1",
+          "paragraphs": [
+            "The challenge was to create clarity in a world of constant change. Every project begins with competing needs — tradition and progress, speed and depth, expression and restraint. The task is to navigate these tensions without losing sight of what truly matters."
+          ]
+        },
+        "quote": "The challenge was clear: design a brand that would express sophistication without excess, tradition without stagnation, and prestige without ostentation.",
+        "approach": {
+          "marker": "/ 2",
+          "paragraphs": [
+            "Our approach is guided by reduction and intent. Every project begins with listening — understanding the context, the people, and the purpose behind the work. We look beyond surface details to uncover the essential idea, the part that gives meaning and direction.",
+            "From there, we build with precision. Research, iteration, and collaboration shape every step of the process, ensuring that each decision contributes to a coherent whole. The goal is not to add more, but to refine until only what matters remains."
+          ]
+        },
+        "outcome": {
+          "marker": "/ 3",
+          "paragraphs": [
+            "The outcome of the project was more than just a refreshed look — it was a transformation in how the brand communicated, behaved, and connected with its audience. By creating a system that was both consistent and adaptable, the work gave structure to everyday communication while leaving space for evolution.",
+            "The design language became a unifying force across platforms, improving clarity internally and strengthening recognition externally. Digital experiences became smoother and more engaging, while the overall identity positioned the brand as confident, timeless, and ready for growth."
+          ]
+        },
+        "numbers": {
+          "heading": "These shifts translated into measurable improvements:",
+          "stats": [
+            {
+              "value": "+62%",
+              "label": "Increase in online orders"
+            },
+            {
+              "value": "+40%",
+              "label": "Return customer rate"
+            },
+            {
+              "value": "+78%",
+              "label": "Brand recognition in key markets"
+            },
+            {
+              "value": "+17%",
+              "label": "Conversion rate"
+            }
+          ]
+        },
+        "credits": "Jonas Richter (Creative Direction), Clara Neumann (Design Direction), Leon Weber (Art Direction), Mia Fischer (UX/UI Design), Daniel Vogt (Copywriting)."
+      },
+      "liveProject": {
+        "label": "Live Project",
+        "href": "https://framer.link/drukarov",
+        "external": true
+      },
+      "hero": {
+        "url": "https://framerusercontent.com/images/hT3qlH9GjIZn0XY4ES3pI2A8LU.jpg",
+        "natural": [
+          2400,
+          1800
+        ],
+        "objectPosition": "50% 50%",
+        "rendered1440": {
+          "x": 273.3,
+          "y": 40,
+          "w": 426.7,
+          "h": 820
+        },
+        "fit": "cover"
+      },
+      "gallery": [
+        {
+          "slot": "A",
+          "cmsField": "stsqbRwdT",
+          "column": "left",
+          "size": "small",
+          "desc": "left column, top; width = 2/3 of half-column, right-aligned (offset by a W/6 spacer)",
+          "url": "https://framerusercontent.com/images/XIt3rCMf24usVMD1mhbYUzAt8.jpg",
+          "natural": [
+            1800,
+            1800
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 273.3,
+            "y": 2024.7,
+            "w": 426.7,
+            "h": 426.7
+          }
+        },
+        {
+          "slot": "B",
+          "cmsField": "Inq6hZHJr",
+          "column": "left",
+          "size": "large",
+          "desc": "left column, below A; full half-column width",
+          "url": "https://framerusercontent.com/images/45QT0GWu2oduYtX8nbgB0nivs.jpg",
+          "natural": [
+            1800,
+            1800
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 40,
+            "y": 2491.4,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "C",
+          "cmsField": "LZouaSwDF",
+          "column": "right",
+          "size": "large",
+          "desc": "right column, top; full half-column width",
+          "url": "https://framerusercontent.com/images/VWxb1aKKrMIN0DYTvEAlGuoJNY.jpg",
+          "natural": [
+            1800,
+            1800
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2024.7,
+            "w": 660,
+            "h": 660
+          }
+        },
+        {
+          "slot": "D",
+          "cmsField": "DJLMFTEjK",
+          "column": "right",
+          "size": "small",
+          "desc": "right column, below C; width = 2/3 of half-column, left-aligned (W/6 spacer on its right)",
+          "url": "https://framerusercontent.com/images/x4dvGBsqmqCUpHOCDrRcGw13zUw.jpg",
+          "natural": [
+            1800,
+            1800
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2724.7,
+            "w": 426.7,
+            "h": 426.7
+          }
+        }
+      ],
+      "galleryHeight1440": 1206.7,
+      "docHeight1440": 6079,
+      "cardNameColor": "#ffffff",
+      "next": {
+        "slug": "axis-point",
+        "name": "Axis Point",
+        "href": "./axis-point",
+        "image": "https://framerusercontent.com/images/0vnxbbxLjIiUePXnIzdt69Rk.jpg",
+        "imageNatural": [
+          2400,
+          1800
+        ],
+        "objectPosition": "50% 50%",
+        "nameColor": "#ffffff"
+      }
+    },
+    {
+      "index": "11",
+      "slug": "axis-point",
+      "name": "Axis Point",
+      "path": "/work/axis-point",
+      "year": "'25",
+      "services": "Brand Identity, Visual Language, Digital Experience, Editorial Design, Campaign Direction.",
+      "description": [
+        "This project was about redefining identity and digital presence to communicate quiet confidence, heritage, and timeless refinement. Möbius focused on creating a brand expression that balances clarity with enduring elegance."
+      ],
+      "sections": {
+        "challenge": {
+          "marker": "/ 1",
+          "paragraphs": [
+            "The challenge was to create clarity in a world of constant change. Every project begins with competing needs — tradition and progress, speed and depth, expression and restraint. The task is to navigate these tensions without losing sight of what truly matters."
+          ]
+        },
+        "quote": "The challenge was clear: design a brand that would express sophistication without excess, tradition without stagnation, and prestige without ostentation.",
+        "approach": {
+          "marker": "/ 2",
+          "paragraphs": [
+            "Our approach is guided by reduction and intent. Every project begins with listening — understanding the context, the people, and the purpose behind the work. We look beyond surface details to uncover the essential idea, the part that gives meaning and direction.",
+            "From there, we build with precision. Research, iteration, and collaboration shape every step of the process, ensuring that each decision contributes to a coherent whole. The goal is not to add more, but to refine until only what matters remains."
+          ]
+        },
+        "outcome": {
+          "marker": "/ 3",
+          "paragraphs": [
+            "The outcome of the project was more than just a refreshed look — it was a transformation in how the brand communicated, behaved, and connected with its audience. By creating a system that was both consistent and adaptable, the work gave structure to everyday communication while leaving space for evolution.",
+            "The design language became a unifying force across platforms, improving clarity internally and strengthening recognition externally. Digital experiences became smoother and more engaging, while the overall identity positioned the brand as confident, timeless, and ready for growth."
+          ]
+        },
+        "numbers": {
+          "heading": "These shifts translated into measurable improvements:",
+          "stats": [
+            {
+              "value": "+62%",
+              "label": "Increase in online orders"
+            },
+            {
+              "value": "+40%",
+              "label": "Return customer rate"
+            },
+            {
+              "value": "+78%",
+              "label": "Brand recognition in key markets"
+            },
+            {
+              "value": "+16%",
+              "label": "Conversion rate"
+            }
+          ]
+        },
+        "credits": "Jonas Richter (Creative Direction), Clara Neumann (Design Direction), Leon Weber (Art Direction), Mia Fischer (UX/UI Design), Daniel Vogt (Copywriting)."
+      },
+      "liveProject": {
+        "label": "Live Project",
+        "href": "https://framer.link/drukarov",
+        "external": true
+      },
+      "hero": {
+        "url": "https://framerusercontent.com/images/0vnxbbxLjIiUePXnIzdt69Rk.jpg",
+        "natural": [
+          2400,
+          1800
+        ],
+        "objectPosition": "50% 50%",
+        "rendered1440": {
+          "x": 273.3,
+          "y": 40,
+          "w": 426.7,
+          "h": 820
+        },
+        "fit": "cover"
+      },
+      "gallery": [
+        {
+          "slot": "A",
+          "cmsField": "stsqbRwdT",
+          "column": "left",
+          "size": "small",
+          "desc": "left column, top; width = 2/3 of half-column, right-aligned (offset by a W/6 spacer)",
+          "url": "https://framerusercontent.com/images/bL1JR6GGck1g6pFseOicbf20U7A.jpg",
+          "natural": [
+            1800,
+            1800
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 273.3,
+            "y": 2024.7,
+            "w": 426.7,
+            "h": 426.7
+          }
+        },
+        {
+          "slot": "B",
+          "cmsField": "Inq6hZHJr",
+          "column": "left",
+          "size": "large",
+          "desc": "left column, below A; full half-column width",
+          "url": "https://framerusercontent.com/images/noELhThwtTeKEjNGE4JLvDI5LA.jpg",
+          "natural": [
+            1800,
+            2400
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 40,
+            "y": 2491.4,
+            "w": 660,
+            "h": 880
+          }
+        },
+        {
+          "slot": "C",
+          "cmsField": "LZouaSwDF",
+          "column": "right",
+          "size": "large",
+          "desc": "right column, top; full half-column width",
+          "url": "https://framerusercontent.com/images/b67cX41XndmJtUTjPMSnTzDSuY.jpg",
+          "natural": [
+            1800,
+            2400
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2024.7,
+            "w": 660,
+            "h": 880
+          }
+        },
+        {
+          "slot": "D",
+          "cmsField": "DJLMFTEjK",
+          "column": "right",
+          "size": "small",
+          "desc": "right column, below C; width = 2/3 of half-column, left-aligned (W/6 spacer on its right)",
+          "url": "https://framerusercontent.com/images/pQytBl2ZzSovtUKZRraSKG9c8A.jpg",
+          "natural": [
+            1800,
+            1800
+          ],
+          "orientation": "square",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2944.7,
+            "w": 426.7,
+            "h": 426.7
+          }
+        }
+      ],
+      "galleryHeight1440": 1426.7,
+      "docHeight1440": 6299,
+      "cardNameColor": "#ffffff",
+      "next": {
+        "slug": "orbit-404",
+        "name": "Orbit 404",
+        "href": "./orbit-404",
+        "image": "https://framerusercontent.com/images/i5EVAPbSjFlbPcvvbXVwzln3BY.jpg",
+        "imageNatural": [
+          1800,
+          2400
+        ],
+        "objectPosition": "50% 50%",
+        "nameColor": "#ffffff"
+      }
+    },
+    {
+      "index": "12",
+      "slug": "orbit-404",
+      "name": "Orbit 404",
+      "path": "/work/orbit-404",
+      "year": "'25",
+      "services": "Brand Identity, Visual Language, Digital Experience, Editorial Design, Campaign Direction.",
+      "description": [
+        "This project was about redefining identity and digital presence to communicate quiet confidence, heritage, and timeless refinement. Möbius focused on creating a brand expression that balances clarity with enduring elegance."
+      ],
+      "sections": {
+        "challenge": {
+          "marker": "/ 1",
+          "paragraphs": [
+            "The challenge was to create clarity in a world of constant change. Every project begins with competing needs — tradition and progress, speed and depth, expression and restraint. The task is to navigate these tensions without losing sight of what truly matters."
+          ]
+        },
+        "quote": "The challenge was clear: design a brand that would express sophistication without excess, tradition without stagnation, and prestige without ostentation.",
+        "approach": {
+          "marker": "/ 2",
+          "paragraphs": [
+            "Our approach is guided by reduction and intent. Every project begins with listening — understanding the context, the people, and the purpose behind the work. We look beyond surface details to uncover the essential idea, the part that gives meaning and direction.",
+            "From there, we build with precision. Research, iteration, and collaboration shape every step of the process, ensuring that each decision contributes to a coherent whole. The goal is not to add more, but to refine until only what matters remains."
+          ]
+        },
+        "outcome": {
+          "marker": "/ 3",
+          "paragraphs": [
+            "The outcome of the project was more than just a refreshed look — it was a transformation in how the brand communicated, behaved, and connected with its audience. By creating a system that was both consistent and adaptable, the work gave structure to everyday communication while leaving space for evolution.",
+            "The design language became a unifying force across platforms, improving clarity internally and strengthening recognition externally. Digital experiences became smoother and more engaging, while the overall identity positioned the brand as confident, timeless, and ready for growth."
+          ]
+        },
+        "numbers": {
+          "heading": "These shifts translated into measurable improvements:",
+          "stats": [
+            {
+              "value": "+62%",
+              "label": "Increase in online orders"
+            },
+            {
+              "value": "+40%",
+              "label": "Return customer rate"
+            },
+            {
+              "value": "+78%",
+              "label": "Brand recognition in key markets"
+            },
+            {
+              "value": "+36%",
+              "label": "Conversion rate"
+            }
+          ]
+        },
+        "credits": "Jonas Richter (Creative Direction), Clara Neumann (Design Direction), Leon Weber (Art Direction), Mia Fischer (UX/UI Design), Daniel Vogt (Copywriting)."
+      },
+      "liveProject": {
+        "label": "Live Project",
+        "href": "https://framer.link/drukarov",
+        "external": true
+      },
+      "hero": {
+        "url": "https://framerusercontent.com/images/i5EVAPbSjFlbPcvvbXVwzln3BY.jpg",
+        "natural": [
+          1800,
+          2400
+        ],
+        "objectPosition": "50% 50%",
+        "rendered1440": {
+          "x": 273.3,
+          "y": 40,
+          "w": 426.7,
+          "h": 820
+        },
+        "fit": "cover"
+      },
+      "gallery": [
+        {
+          "slot": "A",
+          "cmsField": "stsqbRwdT",
+          "column": "left",
+          "size": "small",
+          "desc": "left column, top; width = 2/3 of half-column, right-aligned (offset by a W/6 spacer)",
+          "url": "https://framerusercontent.com/images/9BYCipSVyqp0PkP3t0Y5myL8ph8.jpg",
+          "natural": [
+            1800,
+            2400
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 273.3,
+            "y": 2024.7,
+            "w": 426.7,
+            "h": 568.9
+          }
+        },
+        {
+          "slot": "B",
+          "cmsField": "Inq6hZHJr",
+          "column": "left",
+          "size": "large",
+          "desc": "left column, below A; full half-column width",
+          "url": "https://framerusercontent.com/images/DNbAmUhNXX07xrMz5h4q0sWhHY.jpg",
+          "natural": [
+            2400,
+            1800
+          ],
+          "orientation": "landscape",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 40,
+            "y": 2633.6,
+            "w": 660,
+            "h": 495
+          }
+        },
+        {
+          "slot": "C",
+          "cmsField": "LZouaSwDF",
+          "column": "right",
+          "size": "large",
+          "desc": "right column, top; full half-column width",
+          "url": "https://framerusercontent.com/images/KROS4Pk3MfjPIaO1EvIaSW8qDo.jpg",
+          "natural": [
+            2400,
+            1800
+          ],
+          "orientation": "landscape",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2024.7,
+            "w": 660,
+            "h": 495
+          }
+        },
+        {
+          "slot": "D",
+          "cmsField": "DJLMFTEjK",
+          "column": "right",
+          "size": "small",
+          "desc": "right column, below C; width = 2/3 of half-column, left-aligned (W/6 spacer on its right)",
+          "url": "https://framerusercontent.com/images/vitQwbex62QiFc81pw1avoStIY4.jpg",
+          "natural": [
+            1800,
+            2400
+          ],
+          "orientation": "portrait",
+          "objectPosition": "50% 50%",
+          "rendered1440": {
+            "x": 740,
+            "y": 2559.7,
+            "w": 426.7,
+            "h": 568.9
+          }
+        }
+      ],
+      "galleryHeight1440": 1183.9,
+      "docHeight1440": 5169,
+      "cardNameColor": "#ffffff",
+      "next": null
+    }
+  ]
+}

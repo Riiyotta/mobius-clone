@@ -1,0 +1,67 @@
+{
+  "id": "overlay.reel-lightbox",
+  "title": "Reel lightbox",
+  "status": "measured",
+  "source": {
+    "id": "src:Reel#function-Lightbox",
+    "file": "src/components/home/Reel.jsx",
+    "tag": "function Lightbox(",
+    "lines": "74-85",
+    "citation": "src/components/home/Reel.jsx:74-85"
+  },
+  "semantic": {
+    "id": "overlay.reel-lightbox",
+    "category": "UTILITY"
+  },
+  "retrievalEligible": false,
+  "retrievalIneligibleReason": "Modal media dialog opened by a click; runtime UI that is never a page node.",
+  "purpose": "Full-screen black lightbox playing the reel with sound; close button enters after 1.2s; cursor turns white over it.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "label": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (contract title); budget = ceil(1.25 x max)"
+      }
+    },
+    "required": []
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "lightbox-fade"
+    ],
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "hide",
+        "detail": "See purpose for per-breakpoint availability."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "note": "runtime UI / overlay: not an in-page section, not height-gated"
+  },
+  "referenceRoutes": []
+}

@@ -1,0 +1,3238 @@
+{
+  "$description": "Measured evidence ledger. Citations to the clone source and recon specs (paths relative to the clone project that contains design-repo/) are re-resolved by verify_all when that sibling tree exists and degrade to WARN when it does not.",
+  "sourceRoot": "..",
+  "sectionHeights": {
+    "viewportWidth": 1440,
+    "viewportHeight": 900,
+    "measuredAt": "2026-11-04T12:52:02.561Z",
+    "reducedMotion": false,
+    "tool": "extraction/measure_sections.mjs (headless Chromium via Playwright)",
+    "pages": [
+      {
+        "route": "/",
+        "template": "home",
+        "docHeightPx": 23544,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.studio-wordmark",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".hm-hero"
+          },
+          {
+            "section": "content.statement-scatter",
+            "variant": null,
+            "instance": 0,
+            "topPx": 900,
+            "heightPx": 1836.7,
+            "inFlow": true,
+            "selector": ".hs-scr"
+          },
+          {
+            "section": "media.showreel",
+            "variant": null,
+            "instance": 0,
+            "topPx": 2736.7,
+            "heightPx": 502.5,
+            "inFlow": true,
+            "selector": ".hs-reel"
+          },
+          {
+            "section": "features.services-index",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3239.2,
+            "heightPx": 3104.5,
+            "inFlow": true,
+            "selector": ".hs-svc"
+          },
+          {
+            "section": "social-proof.studio-numbers",
+            "variant": null,
+            "instance": 0,
+            "topPx": 6343.7,
+            "heightPx": 3108,
+            "inFlow": true,
+            "selector": ".hs-num"
+          },
+          {
+            "section": "social-proof.awards-list",
+            "variant": null,
+            "instance": 0,
+            "topPx": 9451.7,
+            "heightPx": 788.8,
+            "inFlow": true,
+            "selector": ".hs-aw"
+          },
+          {
+            "section": "team.founders",
+            "variant": null,
+            "instance": 0,
+            "topPx": 10240.4,
+            "heightPx": 945.7,
+            "inFlow": true,
+            "selector": ".hs-fd"
+          },
+          {
+            "section": "social-proof.partner-logos",
+            "variant": null,
+            "instance": 0,
+            "topPx": 11186.1,
+            "heightPx": 2771,
+            "inFlow": true,
+            "selector": ".hs-pt"
+          },
+          {
+            "section": "features.process-timeline",
+            "variant": null,
+            "instance": 0,
+            "topPx": 13957.1,
+            "heightPx": 955.8,
+            "inFlow": true,
+            "selector": ".hs-pc"
+          },
+          {
+            "section": "testimonial.client-reflections",
+            "variant": null,
+            "instance": 0,
+            "topPx": 14912.9,
+            "heightPx": 1053.2,
+            "inFlow": true,
+            "selector": ".hs-ts"
+          },
+          {
+            "section": "pricing.packages",
+            "variant": null,
+            "instance": 0,
+            "topPx": 15966,
+            "heightPx": 2302.3,
+            "inFlow": true,
+            "selector": ".hs-pr"
+          },
+          {
+            "section": "editorial.studio-notes-teaser",
+            "variant": null,
+            "instance": 0,
+            "topPx": 18268.4,
+            "heightPx": 1179.3,
+            "inFlow": true,
+            "selector": ".ct-notes"
+          },
+          {
+            "section": "conversion.contact-form",
+            "variant": "section-title",
+            "instance": 0,
+            "topPx": 19447.7,
+            "heightPx": 1707.8,
+            "inFlow": true,
+            "selector": ".ct-talk"
+          },
+          {
+            "section": "faq.questions-answered",
+            "variant": null,
+            "instance": 0,
+            "topPx": 21155.5,
+            "heightPx": 1470.3,
+            "inFlow": true,
+            "selector": ".faq"
+          }
+        ]
+      },
+      {
+        "route": "/work",
+        "template": "work-index",
+        "docHeightPx": 900,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": null,
+            "inFlow": false,
+            "renderedAtViewport": false
+          }
+        ],
+        "sections": [
+          {
+            "section": "listing.project-index",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".canvas, .works-items"
+          },
+          {
+            "section": "hero.index-title",
+            "variant": "work",
+            "instance": 0,
+            "topPx": 299.8,
+            "heightPx": 300.4,
+            "inFlow": false,
+            "selector": ".title-wrap, .works-text"
+          }
+        ]
+      },
+      {
+        "route": "/work/soma-studio",
+        "template": "case-detail",
+        "docHeightPx": 6221,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.case-intro",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".pj-intro"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 0,
+            "topPx": 900,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1148,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".pj-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 1,
+            "topPx": 1536.8,
+            "heightPx": 407.9,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "media.case-gallery",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1944.7,
+            "heightPx": 1348.9,
+            "inFlow": true,
+            "selector": ".pj-gc"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 2,
+            "topPx": 3293.6,
+            "heightPx": 459.1,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.case-results",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3752.7,
+            "heightPx": 314.8,
+            "inFlow": true,
+            "selector": ".pj-num"
+          },
+          {
+            "section": "content.case-credits",
+            "variant": null,
+            "instance": 0,
+            "topPx": 4067.5,
+            "heightPx": 348.8,
+            "inFlow": true,
+            "selector": ".pj-cr"
+          },
+          {
+            "section": "navigation.case-teaser",
+            "variant": "next",
+            "instance": 0,
+            "topPx": 4416.3,
+            "heightPx": 886.9,
+            "inFlow": true,
+            "selector": ".pj-next"
+          }
+        ]
+      },
+      {
+        "route": "/work/bright-matter",
+        "template": "case-detail",
+        "docHeightPx": 6079,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.case-intro",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".pj-intro"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 0,
+            "topPx": 900,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1148,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".pj-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 1,
+            "topPx": 1536.8,
+            "heightPx": 407.9,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "media.case-gallery",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1944.7,
+            "heightPx": 1206.7,
+            "inFlow": true,
+            "selector": ".pj-gc"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 2,
+            "topPx": 3151.4,
+            "heightPx": 459.1,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.case-results",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3610.5,
+            "heightPx": 314.8,
+            "inFlow": true,
+            "selector": ".pj-num"
+          },
+          {
+            "section": "content.case-credits",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3925.3,
+            "heightPx": 348.8,
+            "inFlow": true,
+            "selector": ".pj-cr"
+          },
+          {
+            "section": "navigation.case-teaser",
+            "variant": "next",
+            "instance": 0,
+            "topPx": 4274.1,
+            "heightPx": 886.9,
+            "inFlow": true,
+            "selector": ".pj-next"
+          }
+        ]
+      },
+      {
+        "route": "/work/wavehouse",
+        "template": "case-detail",
+        "docHeightPx": 6221,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.case-intro",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".pj-intro"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 0,
+            "topPx": 900,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1148,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".pj-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 1,
+            "topPx": 1536.8,
+            "heightPx": 407.9,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "media.case-gallery",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1944.7,
+            "heightPx": 1348.9,
+            "inFlow": true,
+            "selector": ".pj-gc"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 2,
+            "topPx": 3293.6,
+            "heightPx": 459.1,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.case-results",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3752.7,
+            "heightPx": 314.8,
+            "inFlow": true,
+            "selector": ".pj-num"
+          },
+          {
+            "section": "content.case-credits",
+            "variant": null,
+            "instance": 0,
+            "topPx": 4067.5,
+            "heightPx": 348.8,
+            "inFlow": true,
+            "selector": ".pj-cr"
+          },
+          {
+            "section": "navigation.case-teaser",
+            "variant": "next",
+            "instance": 0,
+            "topPx": 4416.3,
+            "heightPx": 886.9,
+            "inFlow": true,
+            "selector": ".pj-next"
+          }
+        ]
+      },
+      {
+        "route": "/work/north-layer",
+        "template": "case-detail",
+        "docHeightPx": 6221,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.case-intro",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".pj-intro"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 0,
+            "topPx": 900,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1148,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".pj-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 1,
+            "topPx": 1536.8,
+            "heightPx": 407.9,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "media.case-gallery",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1944.7,
+            "heightPx": 1348.9,
+            "inFlow": true,
+            "selector": ".pj-gc"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 2,
+            "topPx": 3293.6,
+            "heightPx": 459.1,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.case-results",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3752.7,
+            "heightPx": 314.8,
+            "inFlow": true,
+            "selector": ".pj-num"
+          },
+          {
+            "section": "content.case-credits",
+            "variant": null,
+            "instance": 0,
+            "topPx": 4067.5,
+            "heightPx": 348.8,
+            "inFlow": true,
+            "selector": ".pj-cr"
+          },
+          {
+            "section": "navigation.case-teaser",
+            "variant": "next",
+            "instance": 0,
+            "topPx": 4416.3,
+            "heightPx": 886.9,
+            "inFlow": true,
+            "selector": ".pj-next"
+          }
+        ]
+      },
+      {
+        "route": "/work/zero-parallel",
+        "template": "case-detail",
+        "docHeightPx": 6221,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.case-intro",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".pj-intro"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 0,
+            "topPx": 900,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1148,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".pj-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 1,
+            "topPx": 1536.8,
+            "heightPx": 407.9,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "media.case-gallery",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1944.7,
+            "heightPx": 1348.9,
+            "inFlow": true,
+            "selector": ".pj-gc"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 2,
+            "topPx": 3293.6,
+            "heightPx": 459.1,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.case-results",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3752.7,
+            "heightPx": 314.8,
+            "inFlow": true,
+            "selector": ".pj-num"
+          },
+          {
+            "section": "content.case-credits",
+            "variant": null,
+            "instance": 0,
+            "topPx": 4067.5,
+            "heightPx": 348.8,
+            "inFlow": true,
+            "selector": ".pj-cr"
+          },
+          {
+            "section": "navigation.case-teaser",
+            "variant": "next",
+            "instance": 0,
+            "topPx": 4416.3,
+            "heightPx": 886.9,
+            "inFlow": true,
+            "selector": ".pj-next"
+          }
+        ]
+      },
+      {
+        "route": "/work/pulse",
+        "template": "case-detail",
+        "docHeightPx": 6221,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.case-intro",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".pj-intro"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 0,
+            "topPx": 900,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1148,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".pj-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 1,
+            "topPx": 1536.8,
+            "heightPx": 407.9,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "media.case-gallery",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1944.7,
+            "heightPx": 1348.9,
+            "inFlow": true,
+            "selector": ".pj-gc"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 2,
+            "topPx": 3293.6,
+            "heightPx": 459.1,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.case-results",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3752.7,
+            "heightPx": 314.8,
+            "inFlow": true,
+            "selector": ".pj-num"
+          },
+          {
+            "section": "content.case-credits",
+            "variant": null,
+            "instance": 0,
+            "topPx": 4067.5,
+            "heightPx": 348.8,
+            "inFlow": true,
+            "selector": ".pj-cr"
+          },
+          {
+            "section": "navigation.case-teaser",
+            "variant": "next",
+            "instance": 0,
+            "topPx": 4416.3,
+            "heightPx": 886.9,
+            "inFlow": true,
+            "selector": ".pj-next"
+          }
+        ]
+      },
+      {
+        "route": "/work/after-light",
+        "template": "case-detail",
+        "docHeightPx": 6435,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.case-intro",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".pj-intro"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 0,
+            "topPx": 900,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1148,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".pj-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 1,
+            "topPx": 1536.8,
+            "heightPx": 407.9,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "media.case-gallery",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1944.7,
+            "heightPx": 1562.6,
+            "inFlow": true,
+            "selector": ".pj-gc"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 2,
+            "topPx": 3507.3,
+            "heightPx": 459.1,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.case-results",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3966.5,
+            "heightPx": 314.8,
+            "inFlow": true,
+            "selector": ".pj-num"
+          },
+          {
+            "section": "content.case-credits",
+            "variant": null,
+            "instance": 0,
+            "topPx": 4281.3,
+            "heightPx": 348.8,
+            "inFlow": true,
+            "selector": ".pj-cr"
+          },
+          {
+            "section": "navigation.case-teaser",
+            "variant": "next",
+            "instance": 0,
+            "topPx": 4630,
+            "heightPx": 886.9,
+            "inFlow": true,
+            "selector": ".pj-next"
+          }
+        ]
+      },
+      {
+        "route": "/work/forma-nine",
+        "template": "case-detail",
+        "docHeightPx": 6221,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.case-intro",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".pj-intro"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 0,
+            "topPx": 900,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1148,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".pj-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 1,
+            "topPx": 1536.8,
+            "heightPx": 407.9,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "media.case-gallery",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1944.7,
+            "heightPx": 1348.9,
+            "inFlow": true,
+            "selector": ".pj-gc"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 2,
+            "topPx": 3293.6,
+            "heightPx": 459.1,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.case-results",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3752.7,
+            "heightPx": 314.8,
+            "inFlow": true,
+            "selector": ".pj-num"
+          },
+          {
+            "section": "content.case-credits",
+            "variant": null,
+            "instance": 0,
+            "topPx": 4067.5,
+            "heightPx": 348.8,
+            "inFlow": true,
+            "selector": ".pj-cr"
+          },
+          {
+            "section": "navigation.case-teaser",
+            "variant": "next",
+            "instance": 0,
+            "topPx": 4416.3,
+            "heightPx": 886.9,
+            "inFlow": true,
+            "selector": ".pj-next"
+          }
+        ]
+      },
+      {
+        "route": "/work/golden-hour",
+        "template": "case-detail",
+        "docHeightPx": 6221,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.case-intro",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".pj-intro"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 0,
+            "topPx": 900,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1148,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".pj-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 1,
+            "topPx": 1536.8,
+            "heightPx": 407.9,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "media.case-gallery",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1944.7,
+            "heightPx": 1348.8,
+            "inFlow": true,
+            "selector": ".pj-gc"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 2,
+            "topPx": 3293.5,
+            "heightPx": 459.1,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.case-results",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3752.6,
+            "heightPx": 314.8,
+            "inFlow": true,
+            "selector": ".pj-num"
+          },
+          {
+            "section": "content.case-credits",
+            "variant": null,
+            "instance": 0,
+            "topPx": 4067.4,
+            "heightPx": 348.8,
+            "inFlow": true,
+            "selector": ".pj-cr"
+          },
+          {
+            "section": "navigation.case-teaser",
+            "variant": "next",
+            "instance": 0,
+            "topPx": 4416.2,
+            "heightPx": 886.9,
+            "inFlow": true,
+            "selector": ".pj-next"
+          }
+        ]
+      },
+      {
+        "route": "/work/echoform",
+        "template": "case-detail",
+        "docHeightPx": 6079,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.case-intro",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".pj-intro"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 0,
+            "topPx": 900,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1148,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".pj-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 1,
+            "topPx": 1536.8,
+            "heightPx": 407.9,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "media.case-gallery",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1944.7,
+            "heightPx": 1206.7,
+            "inFlow": true,
+            "selector": ".pj-gc"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 2,
+            "topPx": 3151.4,
+            "heightPx": 459.1,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.case-results",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3610.5,
+            "heightPx": 314.8,
+            "inFlow": true,
+            "selector": ".pj-num"
+          },
+          {
+            "section": "content.case-credits",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3925.3,
+            "heightPx": 348.8,
+            "inFlow": true,
+            "selector": ".pj-cr"
+          },
+          {
+            "section": "navigation.case-teaser",
+            "variant": "next",
+            "instance": 0,
+            "topPx": 4274.1,
+            "heightPx": 886.9,
+            "inFlow": true,
+            "selector": ".pj-next"
+          }
+        ]
+      },
+      {
+        "route": "/work/axis-point",
+        "template": "case-detail",
+        "docHeightPx": 6299,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.case-intro",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".pj-intro"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 0,
+            "topPx": 900,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1148,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".pj-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 1,
+            "topPx": 1536.8,
+            "heightPx": 407.9,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "media.case-gallery",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1944.7,
+            "heightPx": 1426.7,
+            "inFlow": true,
+            "selector": ".pj-gc"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 2,
+            "topPx": 3371.4,
+            "heightPx": 459.1,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.case-results",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3830.5,
+            "heightPx": 314.8,
+            "inFlow": true,
+            "selector": ".pj-num"
+          },
+          {
+            "section": "content.case-credits",
+            "variant": null,
+            "instance": 0,
+            "topPx": 4145.3,
+            "heightPx": 348.8,
+            "inFlow": true,
+            "selector": ".pj-cr"
+          },
+          {
+            "section": "navigation.case-teaser",
+            "variant": "next",
+            "instance": 0,
+            "topPx": 4494.1,
+            "heightPx": 886.9,
+            "inFlow": true,
+            "selector": ".pj-next"
+          }
+        ]
+      },
+      {
+        "route": "/work/orbit-404",
+        "template": "case-detail",
+        "docHeightPx": 5169,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.case-intro",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".pj-intro"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 0,
+            "topPx": 900,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1148,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".pj-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 1,
+            "topPx": 1536.8,
+            "heightPx": 407.9,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "media.case-gallery",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1944.7,
+            "heightPx": 1183.9,
+            "inFlow": true,
+            "selector": ".pj-gc"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "numbered",
+            "instance": 2,
+            "topPx": 3128.6,
+            "heightPx": 459.1,
+            "inFlow": true,
+            "selector": ".pj-ch"
+          },
+          {
+            "section": "content.case-results",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3587.7,
+            "heightPx": 314.8,
+            "inFlow": true,
+            "selector": ".pj-num"
+          },
+          {
+            "section": "content.case-credits",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3902.5,
+            "heightPx": 348.8,
+            "inFlow": true,
+            "selector": ".pj-cr"
+          },
+          {
+            "section": "navigation.case-teaser",
+            "variant": "next",
+            "instance": 0,
+            "heightPx": null,
+            "inFlow": false,
+            "selector": ".pj-next",
+            "renderedAtViewport": false,
+            "optional": true
+          }
+        ]
+      },
+      {
+        "route": "/studio",
+        "template": "studio",
+        "docHeightPx": 9661,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.studio-intro",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 911.9,
+            "inFlow": true,
+            "selector": ".st-intro"
+          },
+          {
+            "section": "team.studio-team",
+            "variant": null,
+            "instance": 0,
+            "topPx": 911.9,
+            "heightPx": 2451.4,
+            "inFlow": true,
+            "selector": ".st-team"
+          },
+          {
+            "section": "content.principles",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3363.3,
+            "heightPx": 1720.8,
+            "inFlow": true,
+            "selector": ".st-pr"
+          },
+          {
+            "section": "media.studio-image-strip",
+            "variant": null,
+            "instance": 0,
+            "topPx": 5084.2,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".st-gal"
+          },
+          {
+            "section": "listing.career-openings",
+            "variant": null,
+            "instance": 0,
+            "topPx": 5984.2,
+            "heightPx": 1871.9,
+            "inFlow": true,
+            "selector": ".st-career"
+          },
+          {
+            "section": "navigation.case-teaser",
+            "variant": "featured",
+            "instance": 0,
+            "topPx": 7856.1,
+            "heightPx": 886.8,
+            "inFlow": true,
+            "selector": ".st-case"
+          }
+        ]
+      },
+      {
+        "route": "/contacts",
+        "template": "contacts",
+        "docHeightPx": 4905,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "conversion.contact-form",
+            "variant": "page-title",
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 1707.8,
+            "inFlow": true,
+            "selector": ".ct-talk"
+          },
+          {
+            "section": "content.contact-details",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1707.8,
+            "heightPx": 1100,
+            "inFlow": true,
+            "selector": ".ct-img"
+          },
+          {
+            "section": "editorial.studio-notes-teaser",
+            "variant": null,
+            "instance": 0,
+            "topPx": 2807.8,
+            "heightPx": 1179.3,
+            "inFlow": true,
+            "selector": ".ct-notes"
+          }
+        ]
+      },
+      {
+        "route": "/feed",
+        "template": "feed-index",
+        "docHeightPx": 900,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": null,
+            "inFlow": false,
+            "renderedAtViewport": false
+          }
+        ],
+        "sections": [
+          {
+            "section": "editorial.notes-index",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": false,
+            "selector": ".fd-ticker, .fd-notes-items"
+          },
+          {
+            "section": "hero.index-title",
+            "variant": "feed",
+            "instance": 0,
+            "heightPx": null,
+            "inFlow": false,
+            "selector": ".fd-notes-text",
+            "renderedAtViewport": false,
+            "optional": true
+          }
+        ]
+      },
+      {
+        "route": "/feed/the-logic-of-emotion",
+        "template": "feed-post",
+        "docHeightPx": 5129,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.article-header",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 507,
+            "inFlow": true,
+            "selector": ".fd-intro"
+          },
+          {
+            "section": "media.article-cover",
+            "variant": null,
+            "instance": 0,
+            "topPx": 507,
+            "heightPx": 1266,
+            "inFlow": true,
+            "selector": ".fd-cover-row"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 0,
+            "topPx": 1773,
+            "heightPx": 433.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 2206.5,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".fd-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 1,
+            "topPx": 2595.3,
+            "heightPx": 588.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "editorial.read-more",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3183.8,
+            "heightPx": 1027.4,
+            "inFlow": true,
+            "selector": ".fd-rm"
+          }
+        ]
+      },
+      {
+        "route": "/feed/precision-over-perfection",
+        "template": "feed-post",
+        "docHeightPx": 5129,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.article-header",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 481.4,
+            "inFlow": true,
+            "selector": ".fd-intro"
+          },
+          {
+            "section": "media.article-cover",
+            "variant": null,
+            "instance": 0,
+            "topPx": 481.4,
+            "heightPx": 1266,
+            "inFlow": true,
+            "selector": ".fd-cover-row"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 0,
+            "topPx": 1747.4,
+            "heightPx": 433.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 2180.9,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".fd-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 1,
+            "topPx": 2569.7,
+            "heightPx": 588.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "editorial.read-more",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3158.2,
+            "heightPx": 1053,
+            "inFlow": true,
+            "selector": ".fd-rm"
+          }
+        ]
+      },
+      {
+        "route": "/feed/the-language-of-shape",
+        "template": "feed-post",
+        "docHeightPx": 5155,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.article-header",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 507,
+            "inFlow": true,
+            "selector": ".fd-intro"
+          },
+          {
+            "section": "media.article-cover",
+            "variant": null,
+            "instance": 0,
+            "topPx": 507,
+            "heightPx": 1266,
+            "inFlow": true,
+            "selector": ".fd-cover-row"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 0,
+            "topPx": 1773,
+            "heightPx": 433.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 2206.5,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".fd-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 1,
+            "topPx": 2595.3,
+            "heightPx": 588.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "editorial.read-more",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3183.8,
+            "heightPx": 1053,
+            "inFlow": true,
+            "selector": ".fd-rm"
+          }
+        ]
+      },
+      {
+        "route": "/feed/designing-the-invisible",
+        "template": "feed-post",
+        "docHeightPx": 5129,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.article-header",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 507,
+            "inFlow": true,
+            "selector": ".fd-intro"
+          },
+          {
+            "section": "media.article-cover",
+            "variant": null,
+            "instance": 0,
+            "topPx": 507,
+            "heightPx": 1266,
+            "inFlow": true,
+            "selector": ".fd-cover-row"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 0,
+            "topPx": 1773,
+            "heightPx": 433.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 2206.5,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".fd-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 1,
+            "topPx": 2595.3,
+            "heightPx": 588.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "editorial.read-more",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3183.8,
+            "heightPx": 1027.4,
+            "inFlow": true,
+            "selector": ".fd-rm"
+          }
+        ]
+      },
+      {
+        "route": "/feed/the-architecture-of-meaning",
+        "template": "feed-post",
+        "docHeightPx": 4837,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.article-header",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 481.4,
+            "inFlow": true,
+            "selector": ".fd-intro"
+          },
+          {
+            "section": "media.article-cover",
+            "variant": null,
+            "instance": 0,
+            "topPx": 481.4,
+            "heightPx": 973.3,
+            "inFlow": true,
+            "selector": ".fd-cover-row"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 0,
+            "topPx": 1454.7,
+            "heightPx": 433.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1888.3,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".fd-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 1,
+            "topPx": 2277,
+            "heightPx": 588.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "editorial.read-more",
+            "variant": null,
+            "instance": 0,
+            "topPx": 2865.5,
+            "heightPx": 1053,
+            "inFlow": true,
+            "selector": ".fd-rm"
+          }
+        ]
+      },
+      {
+        "route": "/feed/one-idea-many-forms",
+        "template": "feed-post",
+        "docHeightPx": 4808,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.article-header",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 507,
+            "inFlow": true,
+            "selector": ".fd-intro"
+          },
+          {
+            "section": "media.article-cover",
+            "variant": null,
+            "instance": 0,
+            "topPx": 507,
+            "heightPx": 973.3,
+            "inFlow": true,
+            "selector": ".fd-cover-row"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 0,
+            "topPx": 1480.3,
+            "heightPx": 433.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1913.9,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".fd-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 1,
+            "topPx": 2302.6,
+            "heightPx": 588.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "editorial.read-more",
+            "variant": null,
+            "instance": 0,
+            "topPx": 2891.1,
+            "heightPx": 998.9,
+            "inFlow": true,
+            "selector": ".fd-rm"
+          }
+        ]
+      },
+      {
+        "route": "/feed/beyond-function",
+        "template": "feed-post",
+        "docHeightPx": 4801,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.article-header",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 403,
+            "inFlow": true,
+            "selector": ".fd-intro"
+          },
+          {
+            "section": "media.article-cover",
+            "variant": null,
+            "instance": 0,
+            "topPx": 403,
+            "heightPx": 1152.7,
+            "inFlow": true,
+            "selector": ".fd-cover-row"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 0,
+            "topPx": 1555.7,
+            "heightPx": 433.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1989.2,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".fd-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 1,
+            "topPx": 2378,
+            "heightPx": 588.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "editorial.read-more",
+            "variant": null,
+            "instance": 0,
+            "topPx": 2966.5,
+            "heightPx": 916.5,
+            "inFlow": true,
+            "selector": ".fd-rm"
+          }
+        ]
+      },
+      {
+        "route": "/feed/the-human-algorithm",
+        "template": "feed-post",
+        "docHeightPx": 4897,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.article-header",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 507,
+            "inFlow": true,
+            "selector": ".fd-intro"
+          },
+          {
+            "section": "media.article-cover",
+            "variant": null,
+            "instance": 0,
+            "topPx": 507,
+            "heightPx": 1033.7,
+            "inFlow": true,
+            "selector": ".fd-cover-row"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 0,
+            "topPx": 1540.7,
+            "heightPx": 433.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1974.2,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".fd-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 1,
+            "topPx": 2363,
+            "heightPx": 588.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "editorial.read-more",
+            "variant": null,
+            "instance": 0,
+            "topPx": 2951.5,
+            "heightPx": 1027.4,
+            "inFlow": true,
+            "selector": ".fd-rm"
+          }
+        ]
+      },
+      {
+        "route": "/feed/the-clarity-paradox",
+        "template": "feed-post",
+        "docHeightPx": 4889,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.article-header",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 377.4,
+            "inFlow": true,
+            "selector": ".fd-intro"
+          },
+          {
+            "section": "media.article-cover",
+            "variant": null,
+            "instance": 0,
+            "topPx": 377.4,
+            "heightPx": 1266,
+            "inFlow": true,
+            "selector": ".fd-cover-row"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 0,
+            "topPx": 1643.4,
+            "heightPx": 433.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 2076.9,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".fd-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 1,
+            "topPx": 2465.7,
+            "heightPx": 588.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "editorial.read-more",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3054.2,
+            "heightPx": 916.5,
+            "inFlow": true,
+            "selector": ".fd-rm"
+          }
+        ]
+      },
+      {
+        "route": "/feed/systems-with-soul",
+        "template": "feed-post",
+        "docHeightPx": 4733,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.article-header",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 403,
+            "inFlow": true,
+            "selector": ".fd-intro"
+          },
+          {
+            "section": "media.article-cover",
+            "variant": null,
+            "instance": 0,
+            "topPx": 403,
+            "heightPx": 973.3,
+            "inFlow": true,
+            "selector": ".fd-cover-row"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 0,
+            "topPx": 1376.3,
+            "heightPx": 433.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1809.9,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".fd-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 1,
+            "topPx": 2198.6,
+            "heightPx": 588.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "editorial.read-more",
+            "variant": null,
+            "instance": 0,
+            "topPx": 2787.1,
+            "heightPx": 1027.4,
+            "inFlow": true,
+            "selector": ".fd-rm"
+          }
+        ]
+      },
+      {
+        "route": "/feed/thinking-in-motion",
+        "template": "feed-post",
+        "docHeightPx": 4797,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.article-header",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 403,
+            "inFlow": true,
+            "selector": ".fd-intro"
+          },
+          {
+            "section": "media.article-cover",
+            "variant": null,
+            "instance": 0,
+            "topPx": 403,
+            "heightPx": 1011.8,
+            "inFlow": true,
+            "selector": ".fd-cover-row"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 0,
+            "topPx": 1414.8,
+            "heightPx": 433.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "content.pull-quote",
+            "variant": null,
+            "instance": 0,
+            "topPx": 1848.4,
+            "heightPx": 388.8,
+            "inFlow": true,
+            "selector": ".fd-q"
+          },
+          {
+            "section": "content.marked-chapter",
+            "variant": "lettered",
+            "instance": 1,
+            "topPx": 2237.1,
+            "heightPx": 588.5,
+            "inFlow": true,
+            "selector": ".fd-ct"
+          },
+          {
+            "section": "editorial.read-more",
+            "variant": null,
+            "instance": 0,
+            "topPx": 2825.6,
+            "heightPx": 1053,
+            "inFlow": true,
+            "selector": ".fd-rm"
+          }
+        ]
+      },
+      {
+        "route": "/legal/privacy-policy",
+        "template": "legal",
+        "docHeightPx": 6138,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.legal-header",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 432,
+            "inFlow": true,
+            "selector": ".lg-intro"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 0,
+            "topPx": 552,
+            "heightPx": 751.9,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(0)",
+            "heading": "Information We Collect"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 1,
+            "topPx": 1303.9,
+            "heightPx": 378.3,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(1)",
+            "heading": "How We Use Your Information"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 2,
+            "topPx": 1682.2,
+            "heightPx": 439.1,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(2)",
+            "heading": "How We Share Information"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 3,
+            "topPx": 2121.3,
+            "heightPx": 273.6,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(3)",
+            "heading": "Cookies and Tracking"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 4,
+            "topPx": 2394.9,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(4)",
+            "heading": "Data Retention"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 5,
+            "topPx": 2642.9,
+            "heightPx": 273.6,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(5)",
+            "heading": "Security"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 6,
+            "topPx": 2916.4,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(6)",
+            "heading": "Third-Party Links"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 7,
+            "topPx": 3164.4,
+            "heightPx": 368.8,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(7)",
+            "heading": "Your Rights"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 8,
+            "topPx": 3533.2,
+            "heightPx": 176,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(8)",
+            "heading": "Changes to This Policy"
+          },
+          {
+            "section": "faq.questions-answered",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3749.1,
+            "heightPx": 1470.3,
+            "inFlow": true,
+            "selector": ".faq"
+          }
+        ]
+      },
+      {
+        "route": "/legal/terms-of-service",
+        "template": "legal",
+        "docHeightPx": 5748,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.legal-header",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 536,
+            "inFlow": true,
+            "selector": ".lg-intro"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 0,
+            "topPx": 656,
+            "heightPx": 496.7,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(0)",
+            "heading": "Use of the Site"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 1,
+            "topPx": 1152.7,
+            "heightPx": 299.2,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(1)",
+            "heading": "Intellectual Property"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 2,
+            "topPx": 1451.9,
+            "heightPx": 305.6,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(2)",
+            "heading": "Service Availability"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 3,
+            "topPx": 1757.4,
+            "heightPx": 336.8,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(3)",
+            "heading": "Limitation of Liability"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 4,
+            "topPx": 2094.2,
+            "heightPx": 331.2,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(4)",
+            "heading": "Third-Party Links"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 5,
+            "topPx": 2425.3,
+            "heightPx": 273.6,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(5)",
+            "heading": "Indemnification"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 6,
+            "topPx": 2698.9,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(6)",
+            "heading": "Governing Law"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 7,
+            "topPx": 2946.9,
+            "heightPx": 248,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(7)",
+            "heading": "Changes to These Terms"
+          },
+          {
+            "section": "content.legal-clause",
+            "variant": null,
+            "instance": 8,
+            "topPx": 3194.8,
+            "heightPx": 124.8,
+            "inFlow": true,
+            "selector": ".lg-rt h5:nth(8)",
+            "heading": "Contact"
+          },
+          {
+            "section": "faq.questions-answered",
+            "variant": null,
+            "instance": 0,
+            "topPx": 3359.6,
+            "heightPx": 1470.3,
+            "inFlow": true,
+            "selector": ".faq"
+          }
+        ]
+      },
+      {
+        "route": "/404",
+        "template": "not-found",
+        "docHeightPx": 3288,
+        "shell": [
+          {
+            "section": "shell.nav-layer",
+            "heightPx": 900,
+            "inFlow": false
+          },
+          {
+            "section": "shell.site-footer",
+            "heightPx": 918.1,
+            "inFlow": true
+          }
+        ],
+        "sections": [
+          {
+            "section": "hero.not-found",
+            "variant": null,
+            "instance": 0,
+            "topPx": 0,
+            "heightPx": 900,
+            "inFlow": true,
+            "selector": ".nf-hero"
+          },
+          {
+            "section": "faq.questions-answered",
+            "variant": null,
+            "instance": 0,
+            "topPx": 900,
+            "heightPx": 1470.3,
+            "inFlow": true,
+            "selector": ".faq"
+          }
+        ]
+      }
+    ]
+  },
+  "responsiveDocHeights": {
+    "tool": "extraction/measure_sections.mjs --width 1000/390",
+    "clone": {
+      "1000x800": {
+        "/": 20070,
+        "/work": 12568,
+        "/work/soma-studio": 6096,
+        "/work/bright-matter": 5998,
+        "/work/wavehouse": 6096,
+        "/work/north-layer": 6096,
+        "/work/zero-parallel": 6096,
+        "/work/pulse": 6096,
+        "/work/after-light": 6243,
+        "/work/forma-nine": 6096,
+        "/work/golden-hour": 6096,
+        "/work/echoform": 5998,
+        "/work/axis-point": 6150,
+        "/work/orbit-404": 4843,
+        "/studio": 8923,
+        "/contacts": 5116,
+        "/feed": 9661,
+        "/feed/the-logic-of-emotion": 4749,
+        "/feed/precision-over-perfection": 4723,
+        "/feed/the-language-of-shape": 4774,
+        "/feed/designing-the-invisible": 4565,
+        "/feed/the-architecture-of-meaning": 4363,
+        "/feed/one-idea-many-forms": 4487,
+        "/feed/beyond-function": 4449,
+        "/feed/the-human-algorithm": 4588,
+        "/feed/the-clarity-paradox": 4540,
+        "/feed/systems-with-soul": 4390,
+        "/feed/thinking-in-motion": 4607,
+        "/legal/privacy-policy": 5644,
+        "/legal/terms-of-service": 5192,
+        "/404": 2884
+      },
+      "390x844": {
+        "/": 22998,
+        "/work": 10679,
+        "/work/soma-studio": 6893,
+        "/work/bright-matter": 6659,
+        "/work/wavehouse": 6829,
+        "/work/north-layer": 6827,
+        "/work/zero-parallel": 6829,
+        "/work/pulse": 6827,
+        "/work/after-light": 7054,
+        "/work/forma-nine": 6829,
+        "/work/golden-hour": 6827,
+        "/work/echoform": 6594,
+        "/work/axis-point": 6829,
+        "/work/orbit-404": 6123,
+        "/studio": 9850,
+        "/contacts": 4964,
+        "/feed": 10102,
+        "/feed/the-logic-of-emotion": 4562,
+        "/feed/precision-over-perfection": 4626,
+        "/feed/the-language-of-shape": 4677,
+        "/feed/designing-the-invisible": 4473,
+        "/feed/the-architecture-of-meaning": 4396,
+        "/feed/one-idea-many-forms": 4454,
+        "/feed/beyond-function": 4452,
+        "/feed/the-human-algorithm": 4471,
+        "/feed/the-clarity-paradox": 4473,
+        "/feed/systems-with-soul": 4373,
+        "/feed/thinking-in-motion": 4529,
+        "/legal/privacy-policy": 6284,
+        "/legal/terms-of-service": 5847,
+        "/404": 3247
+      }
+    },
+    "originalReference": {
+      "home 1000": 20070,
+      "home 390": 22998,
+      "work 1000": 12568,
+      "work 390": 10680,
+      "evidence": [
+        ".recon/specs/home.md:9-9",
+        "CLONE_SPEC.md:18-18"
+      ]
+    },
+    "coordinatorReconciliation": "Reported by the coordinating agent (not re-measured here): original vs clone page heights equal in 34 of 36 cells (12 routes x 1440/1000/390); the two exceptions are 1px: /legal/privacy-policy @1440 (6137 vs 6138) and /feed/thinking-in-motion @390 (4530 vs 4529). Independently confirmed by this repo's parity run at 1440 for 9 routes (all equal except privacy-policy 6137/6138)."
+  },
+  "wrapperWhitelist": [],
+  "wrapperWhitelistNote": "Empty: at 1440 no HERO exceeds 1800px (max 911.9) and no in-flow section exceeds 50% of a page with >= 3 sections (max: contacts form 34.8%). The 100vh index pages (/work, /feed) have < 3 in-flow sections and are skipped by rule.",
+  "cloneParity": {
+    "tool": "extraction/parity_harness.mjs",
+    "measuredAt": "2026-11-04T12:32:42.360Z (routes /work/soma-studio and /studio re-run 2026-11-04T12:55:17.067Z after the concurrent layout fixes)",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "originalUrl": "https://mobius.framer.website",
+    "pixelThreshold": 40,
+    "gate": {
+      "perSectionMin": 0.8,
+      "pageAverageMin": 0.8
+    },
+    "overall": {
+      "routes": 9,
+      "sections": 53,
+      "meanSectionScore": 0.9699,
+      "sectionsBelowGate": 3
+    },
+    "routes": [
+      {
+        "route": "/",
+        "template": "home",
+        "docHeightOriginal": 23544,
+        "docHeightClone": 23544,
+        "average": 0.9518,
+        "minSection": 0.6249,
+        "perSectionGatePass": false,
+        "averageGatePass": true,
+        "belowGate": [
+          "media.showreel#0"
+        ],
+        "sections": [
+          {
+            "section": "hero.studio-wordmark",
+            "instance": 0,
+            "score": 0.9976
+          },
+          {
+            "section": "content.statement-scatter",
+            "instance": 0,
+            "score": 0.8683
+          },
+          {
+            "section": "media.showreel",
+            "instance": 0,
+            "score": 0.6249
+          },
+          {
+            "section": "features.services-index",
+            "instance": 0,
+            "score": 0.9929
+          },
+          {
+            "section": "social-proof.studio-numbers",
+            "instance": 0,
+            "score": 0.9801
+          },
+          {
+            "section": "social-proof.awards-list",
+            "instance": 0,
+            "score": 0.9975
+          },
+          {
+            "section": "team.founders",
+            "instance": 0,
+            "score": 0.9654
+          },
+          {
+            "section": "social-proof.partner-logos",
+            "instance": 0,
+            "score": 0.9784
+          },
+          {
+            "section": "features.process-timeline",
+            "instance": 0,
+            "score": 0.9538
+          },
+          {
+            "section": "testimonial.client-reflections",
+            "instance": 0,
+            "score": 0.9368
+          },
+          {
+            "section": "pricing.packages",
+            "instance": 0,
+            "score": 0.9962
+          },
+          {
+            "section": "editorial.studio-notes-teaser",
+            "instance": 0,
+            "score": 0.9986
+          },
+          {
+            "section": "conversion.contact-form",
+            "instance": 0,
+            "score": 0.9985
+          },
+          {
+            "section": "faq.questions-answered",
+            "instance": 0,
+            "score": 0.9974
+          },
+          {
+            "section": "shell.site-footer",
+            "instance": 0,
+            "score": 0.991
+          }
+        ]
+      },
+      {
+        "route": "/work",
+        "template": "work-index",
+        "docHeightOriginal": 900,
+        "docHeightClone": 900,
+        "average": 0.9981,
+        "minSection": 0.9981,
+        "perSectionGatePass": true,
+        "averageGatePass": true,
+        "belowGate": [],
+        "sections": [
+          {
+            "section": "listing.project-index",
+            "instance": 0,
+            "score": 0.9981
+          },
+          {
+            "section": "hero.index-title",
+            "instance": 0,
+            "score": 0.9981
+          }
+        ]
+      },
+      {
+        "route": "/work/soma-studio",
+        "template": "case-detail",
+        "docHeightOriginal": 6221,
+        "docHeightClone": 6221,
+        "average": 0.9885,
+        "minSection": 0.9658,
+        "perSectionGatePass": true,
+        "averageGatePass": true,
+        "belowGate": [],
+        "sections": [
+          {
+            "section": "hero.case-intro",
+            "instance": 0,
+            "score": 0.9963
+          },
+          {
+            "section": "content.marked-chapter",
+            "instance": 0,
+            "score": 0.9902
+          },
+          {
+            "section": "content.pull-quote",
+            "instance": 0,
+            "score": 0.9902
+          },
+          {
+            "section": "content.marked-chapter",
+            "instance": 1,
+            "score": 0.9994
+          },
+          {
+            "section": "media.case-gallery",
+            "instance": 0,
+            "score": 0.999
+          },
+          {
+            "section": "content.marked-chapter",
+            "instance": 2,
+            "score": 0.9934
+          },
+          {
+            "section": "content.case-results",
+            "instance": 0,
+            "score": 0.9933
+          },
+          {
+            "section": "content.case-credits",
+            "instance": 0,
+            "score": 0.9658
+          },
+          {
+            "section": "navigation.case-teaser",
+            "instance": 0,
+            "score": 0.9667
+          },
+          {
+            "section": "shell.site-footer",
+            "instance": 0,
+            "score": 0.991
+          }
+        ]
+      },
+      {
+        "route": "/studio",
+        "template": "studio",
+        "docHeightOriginal": 9661,
+        "docHeightClone": 9661,
+        "average": 0.9417,
+        "minSection": 0.6704,
+        "perSectionGatePass": false,
+        "averageGatePass": true,
+        "belowGate": [
+          "media.studio-image-strip#0"
+        ],
+        "sections": [
+          {
+            "section": "hero.studio-intro",
+            "instance": 0,
+            "score": 0.9942
+          },
+          {
+            "section": "team.studio-team",
+            "instance": 0,
+            "score": 0.9928
+          },
+          {
+            "section": "content.principles",
+            "instance": 0,
+            "score": 0.999
+          },
+          {
+            "section": "media.studio-image-strip",
+            "instance": 0,
+            "score": 0.6704
+          },
+          {
+            "section": "listing.career-openings",
+            "instance": 0,
+            "score": 0.9739
+          },
+          {
+            "section": "navigation.case-teaser",
+            "instance": 0,
+            "score": 0.9707
+          },
+          {
+            "section": "shell.site-footer",
+            "instance": 0,
+            "score": 0.991
+          }
+        ]
+      },
+      {
+        "route": "/contacts",
+        "template": "contacts",
+        "docHeightOriginal": 4905,
+        "docHeightClone": 4905,
+        "average": 0.9904,
+        "minSection": 0.9762,
+        "perSectionGatePass": true,
+        "averageGatePass": true,
+        "belowGate": [],
+        "sections": [
+          {
+            "section": "conversion.contact-form",
+            "instance": 0,
+            "score": 0.9985
+          },
+          {
+            "section": "content.contact-details",
+            "instance": 0,
+            "score": 0.9762
+          },
+          {
+            "section": "editorial.studio-notes-teaser",
+            "instance": 0,
+            "score": 0.9958
+          },
+          {
+            "section": "shell.site-footer",
+            "instance": 0,
+            "score": 0.991
+          }
+        ]
+      },
+      {
+        "route": "/feed",
+        "template": "feed-index",
+        "docHeightOriginal": 900,
+        "docHeightClone": 900,
+        "average": 0.7954,
+        "minSection": 0.7954,
+        "perSectionGatePass": false,
+        "averageGatePass": false,
+        "belowGate": [
+          "editorial.notes-index#0"
+        ],
+        "sections": [
+          {
+            "section": "editorial.notes-index",
+            "instance": 0,
+            "score": 0.7954
+          }
+        ]
+      },
+      {
+        "route": "/feed/beyond-function",
+        "template": "feed-post",
+        "docHeightOriginal": 4801,
+        "docHeightClone": 4801,
+        "average": 0.9922,
+        "minSection": 0.9868,
+        "perSectionGatePass": true,
+        "averageGatePass": true,
+        "belowGate": [],
+        "sections": [
+          {
+            "section": "hero.article-header",
+            "instance": 0,
+            "score": 0.9868
+          },
+          {
+            "section": "media.article-cover",
+            "instance": 0,
+            "score": 0.9906
+          },
+          {
+            "section": "content.marked-chapter",
+            "instance": 0,
+            "score": 0.992
+          },
+          {
+            "section": "content.pull-quote",
+            "instance": 0,
+            "score": 0.9919
+          },
+          {
+            "section": "content.marked-chapter",
+            "instance": 1,
+            "score": 0.9984
+          },
+          {
+            "section": "editorial.read-more",
+            "instance": 0,
+            "score": 0.9947
+          },
+          {
+            "section": "shell.site-footer",
+            "instance": 0,
+            "score": 0.991
+          }
+        ]
+      },
+      {
+        "route": "/legal/privacy-policy",
+        "template": "legal",
+        "docHeightOriginal": 6137,
+        "docHeightClone": 6138,
+        "average": 0.9967,
+        "minSection": 0.9905,
+        "perSectionGatePass": true,
+        "averageGatePass": true,
+        "belowGate": [],
+        "sections": [
+          {
+            "section": "hero.legal-header",
+            "instance": 0,
+            "score": 0.9992
+          },
+          {
+            "section": "content.legal-clause",
+            "instance": 0,
+            "score": 0.9991
+          },
+          {
+            "section": "faq.questions-answered",
+            "instance": 0,
+            "score": 0.9981
+          },
+          {
+            "section": "shell.site-footer",
+            "instance": 0,
+            "score": 0.9905
+          }
+        ]
+      },
+      {
+        "route": "/404",
+        "template": "not-found",
+        "docHeightOriginal": 3288,
+        "docHeightClone": 3288,
+        "average": 0.9874,
+        "minSection": 0.9732,
+        "perSectionGatePass": true,
+        "averageGatePass": true,
+        "belowGate": [],
+        "sections": [
+          {
+            "section": "hero.not-found",
+            "instance": 0,
+            "score": 0.9732
+          },
+          {
+            "section": "faq.questions-answered",
+            "instance": 0,
+            "score": 0.9981
+          },
+          {
+            "section": "shell.site-footer",
+            "instance": 0,
+            "score": 0.991
+          }
+        ]
+      }
+    ],
+    "interpretation": "Sections below 0.80 are continuously animating media the harness does not freeze (reel video + text bands, studio image strip, auto-scrolling feed columns): their frames differ by time, not layout. Every static section scores >= 0.97. Not measured: tablet/phone parity, and routes beyond one per template.",
+    "notMeasured": [
+      "parity at 1000 and 390",
+      "the other 22 CMS routes (one representative per template only)",
+      "hover/drag/interaction states",
+      "motion timing curves (see recon specs instead)"
+    ]
+  },
+  "cloneBuild": {
+    "install": "npm ci && npm run build (package-lock.json present)",
+    "dev": "npm run dev (vite --port 5194)",
+    "note": "The clone's own scripts; this repo does not depend on them."
+  },
+  "groundworkChecks": [
+    {
+      "claim": "home.md section boxes (y 900 / 2736.7 / 3239.2 / 6343.7 / ... / 21155.7; docH 23544) describe the clone",
+      "result": "holds",
+      "evidence": "measure_sections.mjs at 1440 reproduces every home section top and height to 0.2px; docH 23544",
+      "where": ".recon/specs/home.md:312-312"
+    },
+    {
+      "claim": "CLONE_SPEC: /work is 100vh at >=1200 with no footer; tablet docH 12568, phone 10680",
+      "result": "holds (phone 1px)",
+      "evidence": "clone 900 / 12568 / 10679",
+      "where": "CLONE_SPEC.md:17-17"
+    },
+    {
+      "claim": "Brief: '8 template families'",
+      "result": "does not hold as stated",
+      "evidence": "the brief's own list has 9 groups (home, work index, project detail, studio, contacts, feed index, feed post, legal, 404); templates.json has 9 templates"
+    },
+    {
+      "claim": "Brief: 'hello@mobius.studio' is a source identity string",
+      "result": "holds, plus two more",
+      "evidence": "hello@mobius.studio appears only in legal.json; the contact card shows hello@mobius.com and the careers apply link shows hello@wearemobis.com (all href mailto:hello@world.com). All four are in source-brand.json contact patterns.",
+      "where": "src/components/contacts/ContactInfo.jsx:23-23"
+    },
+    {
+      "claim": "Page TODOs: 'desktop footer variant is still being measured by another agent' (Project/Post/Legal/NotFound.jsx)",
+      "result": "stale comment",
+      "evidence": "Footer.jsx renders the Desktop variant at >=1200 on those pages; measured footer 918.1px vs home.md 917.9px",
+      "where": "src/pages/Legal.jsx:54-54"
+    },
+    {
+      "claim": "Unknown URLs render the 404",
+      "result": "partly",
+      "evidence": "router.match() returns '404' for unknown paths and App.jsx guards /work/<slug> and /legal/<slug>, but case 'post' renders Post with no slug guard and Post returns null: /feed/<unknown> is an empty page with only the nav layer",
+      "where": "src/App.jsx:35-35"
+    },
+    {
+      "claim": "src/pages/Pending.jsx is a live route",
+      "result": "dead code",
+      "evidence": "App.jsx default branch renders Pending, but match() only ever returns the nine known names (or '404'), so it is unreachable",
+      "where": "src/App.jsx:38-38"
+    },
+    {
+      "claim": "Berlin clock on most desktop routes",
+      "result": "holds",
+      "evidence": "App.jsx: clock = desktop && route not in (work, feed)",
+      "where": "src/App.jsx:44-44"
+    },
+    {
+      "claim": "Hero 'loader' is the hero's own appear animation",
+      "result": "holds",
+      "evidence": "No preloader element in the clone; Hero.jsx comment and home.md section 1",
+      "where": ".recon/specs/home.md:13-13"
+    },
+    {
+      "claim": "Contact form has no backend; submit is simulated",
+      "result": "holds",
+      "evidence": "ContactForm onSubmit preventDefault -> loading 1500ms -> success; nothing is sent",
+      "where": "src/components/contacts/ContactForm.jsx:55-55"
+    },
+    {
+      "claim": "Lenis smooth scroll desktop-only",
+      "result": "holds",
+      "evidence": "useSmoothScroll(desktop) on every page that scrolls",
+      "where": "src/lib/useSmoothScroll.js:5-5"
+    }
+  ],
+  "excludedEvidence": [
+    "Möbius.html and Möbius_files/ (saved copy of the live homepage)",
+    "dist/",
+    "node_modules/",
+    ".playwright-mcp/ logs",
+    "src/pages/Pending.jsx (unreachable fallback)"
+  ],
+  "externalSpecs": [
+    "CLONE_SPEC.md:3-3",
+    ".recon/specs/home.md:3-3",
+    ".recon/specs/studio.md:3-3",
+    ".recon/specs/contacts.md:3-3",
+    ".recon/specs/feed.md:3-3",
+    ".recon/specs/project.md:3-3",
+    ".recon/specs/legal-404.md:3-3"
+  ]
+}

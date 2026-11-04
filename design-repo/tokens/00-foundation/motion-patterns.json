@@ -1,0 +1,266 @@
+{
+  "$description": "Closed set of motion patterns observed in the clone; each carries its fixed reduced-motion fallback.",
+  "version": "1.0.0",
+  "fallbackEnum": [
+    "none-needed",
+    "static-final-state",
+    "instant-state-change",
+    "paused-first-frame",
+    "manual-advance-only",
+    "hidden"
+  ],
+  "continuousPatterns": [
+    "marquee-loop",
+    "auto-scroll-columns",
+    "video-autoplay",
+    "slideshow-autoplay"
+  ],
+  "patterns": [
+    {
+      "id": "static",
+      "description": "No motion; content renders in its final state.",
+      "reducedMotionFallback": "none-needed",
+      "evidence": []
+    },
+    {
+      "id": "page-appear-scale",
+      "description": "Layer appear: opacity 0.001 -> 1, scale 1.6 -> 1, spring 0.8 bounce 0 (nav layer, home hero, case/legal/post intros).",
+      "reducedMotionFallback": "static-final-state",
+      "evidence": [
+        "src/index.css:31-31"
+      ]
+    },
+    {
+      "id": "hero-card-stack",
+      "description": "Home card stack: cards rise from +100vh with 1.1-1.4s springs, fan out on hover, exit to -100vh past scrollY 30 and re-enter at top.",
+      "reducedMotionFallback": "static-final-state",
+      "evidence": [
+        "src/components/home/Hero.jsx:106-106"
+      ]
+    },
+    {
+      "id": "line-stagger-reveal",
+      "description": "Staggered lines: words translateY 100% -> 0, 600ms cubic-bezier(.4,1,.4,1), 120ms per line, in view once.",
+      "reducedMotionFallback": "static-final-state",
+      "evidence": [
+        "src/components/home/Motion.jsx:97-97"
+      ]
+    },
+    {
+      "id": "char-rise",
+      "description": "Characters rise translateY 50-300px -> 0 inside a clip, duration spring, stagger 0.025s.",
+      "reducedMotionFallback": "static-final-state",
+      "evidence": [
+        "src/components/home/Motion.jsx:61-61"
+      ]
+    },
+    {
+      "id": "word-scatter-scroll",
+      "description": "Words fly in from seeded random offsets (spread 1000) as the heading top moves from vh to vh/2.",
+      "reducedMotionFallback": "static-final-state",
+      "evidence": [
+        "src/components/home/Scramble.jsx:13-13"
+      ]
+    },
+    {
+      "id": "word-reveal-scroll",
+      "description": "Statement words light up in a seeded shuffled order tied to scroll, then the block fades out.",
+      "reducedMotionFallback": "static-final-state",
+      "evidence": [
+        "src/pages/Studio.jsx:111-111"
+      ]
+    },
+    {
+      "id": "scroll-parallax",
+      "description": "Scroll-linked translateY (image parallax, offset columns/cards) smoothed by spring {340,60,1}.",
+      "reducedMotionFallback": "static-final-state",
+      "evidence": [
+        "src/components/home/Partners.jsx:53-53"
+      ]
+    },
+    {
+      "id": "sticky-state-swap",
+      "description": "Sticky box swaps state (digit columns roll, photo cross-fades, 1.6s spring) when a row marker crosses mid-viewport.",
+      "reducedMotionFallback": "instant-state-change",
+      "evidence": [
+        "src/components/home/Numbers.jsx:101-101"
+      ]
+    },
+    {
+      "id": "row-scroll-link",
+      "description": "Rows rise y 100 -> 0 and fade 0 -> 1 with scroll progress, spring {500,100,3.3}.",
+      "reducedMotionFallback": "static-final-state",
+      "evidence": [
+        "src/components/home/Awards.jsx:8-8"
+      ]
+    },
+    {
+      "id": "bar-grow-in-view",
+      "description": "Timeline bars grow from 1px to full width, 1.2s cubic-bezier(.4,0,0,1), label slides x -20 -> 0.",
+      "reducedMotionFallback": "static-final-state",
+      "evidence": [
+        "src/components/home/Process.jsx:11-11"
+      ]
+    },
+    {
+      "id": "image-reveal-wipe",
+      "description": "Image revealed by a left-to-right mask wipe, 1.2s cubic-bezier(.6,0,.4,1), in view once.",
+      "reducedMotionFallback": "static-final-state",
+      "evidence": [
+        "src/index.css:229-229"
+      ]
+    },
+    {
+      "id": "slideshow-autoplay",
+      "description": "One slide visible, 10s autoplay, 0.3s fade-out / swap / fade-in; prev/next buttons.",
+      "reducedMotionFallback": "manual-advance-only",
+      "evidence": [
+        "src/components/home/Testimonials.jsx:19-19"
+      ]
+    },
+    {
+      "id": "carousel-snap",
+      "description": "Horizontal scroll-snap carousel with dot buttons (touch).",
+      "reducedMotionFallback": "manual-advance-only",
+      "evidence": [
+        "src/components/home/Testimonials.jsx:83-83"
+      ]
+    },
+    {
+      "id": "price-digit-roll",
+      "description": "Price digits roll per digit (NumberFlow-style, ~1.17s) when the billing toggle changes; pill slides with spring 0.4.",
+      "reducedMotionFallback": "instant-state-change",
+      "evidence": [
+        "src/components/home/Pricing.jsx:52-52"
+      ]
+    },
+    {
+      "id": "accordion-height",
+      "description": "Accordion row clip height tweens 0.8s between closed and open; plus icon rotates 45 degrees.",
+      "reducedMotionFallback": "instant-state-change",
+      "evidence": [
+        "src/components/studio/CareerAccordion.jsx:119-119"
+      ]
+    },
+    {
+      "id": "heading-fade-scroll",
+      "description": "Sticky heading opacity 1 -> 0.02 as the grid marker crosses 240px of viewport, spring-smoothed.",
+      "reducedMotionFallback": "static-final-state",
+      "evidence": [
+        "src/components/home/Partners.jsx:46-46"
+      ]
+    },
+    {
+      "id": "blinds-reveal",
+      "description": "Footer wordmark uncovered by six slats whose white bars shrink 100% -> 0 with scroll.",
+      "reducedMotionFallback": "static-final-state",
+      "evidence": [
+        "src/components/Footer.jsx:38-38"
+      ]
+    },
+    {
+      "id": "rolling-letters-hover",
+      "description": "Hover rolls each letter up one line, 0.4s cubic-bezier(.8,0,.4,1), stagger 0.03s (>=1200).",
+      "reducedMotionFallback": "instant-state-change",
+      "evidence": [
+        "src/components/RollingLetters.jsx:5-5"
+      ]
+    },
+    {
+      "id": "hover-micro",
+      "description": "Hover micro-interactions: card image zoom 1.2, underline growth, arrow swap, logo scale (spring 0.4-0.6).",
+      "reducedMotionFallback": "instant-state-change",
+      "evidence": [
+        "src/index.css:95-95"
+      ]
+    },
+    {
+      "id": "infinite-drag-canvas",
+      "description": "Infinite wrap-around canvas moved by wheel and drag with lerp easing; cards repeat in a 2600x2300 tile.",
+      "reducedMotionFallback": "manual-advance-only",
+      "evidence": [
+        "src/components/InfiniteCanvas.jsx:6-6"
+      ]
+    },
+    {
+      "id": "auto-scroll-columns",
+      "description": "Three columns auto-scroll vertically at different speeds/directions; wheel steers and boosts.",
+      "reducedMotionFallback": "paused-first-frame",
+      "evidence": [
+        "src/components/feed/NotesTicker.jsx:34-34"
+      ]
+    },
+    {
+      "id": "marquee-loop",
+      "description": "Endless horizontal loop at 100 px/s with a scroll-velocity boost (capped 1000, decay e^-6t).",
+      "reducedMotionFallback": "paused-first-frame",
+      "evidence": [
+        "src/components/studio/TextTicker.jsx:8-8"
+      ]
+    },
+    {
+      "id": "video-autoplay",
+      "description": "Muted looping inline video.",
+      "reducedMotionFallback": "paused-first-frame",
+      "evidence": [
+        "src/components/home/Reel.jsx:125-125"
+      ]
+    },
+    {
+      "id": "cursor-follow",
+      "description": "Custom cursor follows the pointer on spring {340,60,1}; variant size/icon changes spring 0.4.",
+      "reducedMotionFallback": "hidden",
+      "evidence": [
+        "src/components/Cursor.jsx:5-5"
+      ]
+    },
+    {
+      "id": "cursor-trail",
+      "description": "Photo cards spawn every 163px of pointer travel, fade in 0.4s, out after 1s.",
+      "reducedMotionFallback": "hidden",
+      "evidence": [
+        "src/components/studio/CursorTrail.jsx:6-6"
+      ]
+    },
+    {
+      "id": "clock-tick",
+      "description": "Clock text refreshes every 1000ms.",
+      "reducedMotionFallback": "none-needed",
+      "evidence": [
+        "src/components/BerlinClock.jsx:9-9"
+      ]
+    },
+    {
+      "id": "overlay-instant",
+      "description": "Overlay opens and closes instantly (no tween).",
+      "reducedMotionFallback": "none-needed",
+      "evidence": [
+        "src/components/MenuOverlay.jsx:5-5"
+      ]
+    },
+    {
+      "id": "lightbox-fade",
+      "description": "Backdrop opacity 0.001 -> 1 (spring 0.6), close button enters from the corner after 1.2s.",
+      "reducedMotionFallback": "instant-state-change",
+      "evidence": [
+        "src/components/home/Reel.jsx:74-74"
+      ]
+    },
+    {
+      "id": "form-feedback",
+      "description": "Submit button Idle -> Loading (spinner, 1500ms) -> Success ('Thank you' + check).",
+      "reducedMotionFallback": "instant-state-change",
+      "evidence": [
+        "src/components/contacts/ContactForm.jsx:8-8"
+      ]
+    },
+    {
+      "id": "digit-column-settle",
+      "description": "404 digit columns slide from offset positions to the code with a 1.6s spring while gradient blobs loop.",
+      "reducedMotionFallback": "static-final-state",
+      "evidence": [
+        "src/components/legal/BigNumber404.jsx:8-8"
+      ]
+    }
+  ]
+}

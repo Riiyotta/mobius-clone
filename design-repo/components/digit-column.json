@@ -1,0 +1,12 @@
+{
+  "id": "component.digit-column",
+  "title": "Digit column",
+  "description": "SVG column of digits 0-9 shifted to show one digit.",
+  "source": {
+    "file": "src/components/home/Numbers.jsx",
+    "tag": "function DigitColumn(",
+    "lines": "42-57",
+    "citation": "src/components/home/Numbers.jsx:42-57"
+  },
+  "composes": []
+}

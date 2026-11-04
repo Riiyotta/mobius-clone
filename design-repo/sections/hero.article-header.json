@@ -1,0 +1,114 @@
+{
+  "id": "hero.article-header",
+  "title": "Article header",
+  "status": "measured",
+  "source": {
+    "id": "src:Post#B2-2-Intro",
+    "file": "src/pages/Post.jsx",
+    "tag": "{/* B2.2 Intro */}",
+    "lines": "64-77",
+    "citation": "src/pages/Post.jsx:64-77"
+  },
+  "semantic": {
+    "id": "hero.article-header",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "purpose": "Feed post opener: date, title and excerpt centred in the 2/8/2 grid, with the pinned 'N / total' article counter at the bottom-left on desktop.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "number": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "total": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "date": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 4,
+        "x-maxWordsEvidence": "max 3 words measured (feed.json dates); budget = ceil(1.25 x max)"
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "x-maxWordsEvidence": "max 4 words measured (feed.json titles); budget = ceil(1.25 x max)"
+      },
+      "excerpt": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 29,
+        "x-maxWordsEvidence": "max 23 words measured (feed.json excerpts); budget = ceil(1.25 x max)"
+      }
+    },
+    "required": [
+      "number",
+      "total",
+      "date",
+      "title",
+      "excerpt"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "page-appear-scale"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-tablet",
+        "change": "reflow",
+        "detail": "Article counter becomes a static first row instead of a pinned overlay."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 11,
+    "heightPxMin": 377.4,
+    "heightPxMax": 507,
+    "routes": [
+      "/feed/beyond-function",
+      "/feed/designing-the-invisible",
+      "/feed/one-idea-many-forms",
+      "/feed/precision-over-perfection",
+      "/feed/systems-with-soul",
+      "/feed/the-architecture-of-meaning"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/feed/beyond-function",
+    "/feed/designing-the-invisible",
+    "/feed/one-idea-many-forms",
+    "/feed/precision-over-perfection",
+    "/feed/systems-with-soul",
+    "/feed/the-architecture-of-meaning",
+    "/feed/the-clarity-paradox",
+    "/feed/the-human-algorithm",
+    "/feed/the-language-of-shape",
+    "/feed/the-logic-of-emotion",
+    "/feed/thinking-in-motion"
+  ]
+}

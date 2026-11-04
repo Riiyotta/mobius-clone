@@ -1,0 +1,744 @@
+{
+ "long": [
+  "Möbius® brings ideas and design together, turning imagination into clarity and connection into beauty.",
+  "At Möbius®, we keep our process clear, collaborative, and focused. We work closely as a small team, shaping each project with intention and care. Every idea is explored from multiple angles, refined together, and guided by a shared sense of purpose. Nothing is added without reason, and nothing essential is left behind. The result is work that feels thoughtful, precise, and built to last beyond trends.Our way of working is straightforward. We stay small by choice, keeping the process open and honest so decisions remain meaningful. Dialogue is constant, feedback is collective, and the direction becomes sharper with every step. We believe clarity comes from collaboration, and that strong ideas emerge when the team thinks as one.",
+  "We create identity systems that bring clarity and distinction to brands — thoughtful visuals, cohesive structure, and design that lasts.",
+  "We design intuitive, expressive digital experiences shaped by strong visual direction and seamless interaction across all screens.",
+  "We guide ideas from concept to execution, shaping visual and narrative direction for consistent expression across every touchpoint.",
+  "We help teams make confident decisions by defining direction, sharpening positioning, and building the foundation for meaningful growth.",
+  "Recognized across global juries for clarity, craft, and concept. Every award reflects the same commitment: creating work with intention, designing with purpose, and shaping ideas that resonate far beyond their launch.",
+  "Built on relationships, not transactions. We partner with teams who value dialogue, trust, and shared ambition — working together to create brands and digital experiences that feel true to who they are.n, designing with purpose, and shaping ideas that resonate far beyond their launch.",
+  "Each project becomes a part of the studio’s rhythm — ideas shaped, stories refined, and systems brought to life. Every collaboration deepens our perspective and strengthens the work that follows.",
+  "Founded by Jonas Richter and Tobias Keller, Möbius® began as a shared belief in how design should feel: clear, thoughtful, and human. What started as a focused partnership has grown into a small team with a strong collective mindset, bringing structure, imagination, and craft to every project we take on.",
+  "We start by listening. This phase is about understanding your goals, audience, and challenges — finding clarity before we begin designing.",
+  "We translate insights into direction. Here, we define the concept, structure, and creative approach that shape your brand or digital product.",
+  "Ideas take form. From visual identity to interactive experience, we design, prototype, and develop with precision and care.",
+  "Delivery is only the beginning. We test, refine, and support long after launch — ensuring the work performs and evolves over time.",
+  "“Möbius® turned our complex ideas into something clear and elegant. They understood our goals quickly and shaped a design language that feels natural to us.”",
+  "“They delivered a level of clarity we’d been missing for years. Möbius® took our scattered thoughts and shaped them into a cohesive identity that finally feels right.”",
+  "“Working with Möbius® was refreshingly straightforward. Strong ideas, precise execution, and a calm process from start to finish. The result speaks for itself.”",
+  "“Möbius® brought clarity to a project that had lost direction. They listened, understood our needs, and delivered a system that feels modern and grounded.”",
+  "Choose a plan that fits your pace, your team, and your goals. From startups to scaling brands, our monthly options give you the design support you need.",
+  "In design, clarity isn’t about simplicity for its own sake. It’s about removing what doesn’t serve meaning — until what remains feels inevitable.",
+  "Learn more about the people and principles behind Learn more about the people and principles behind Möbius®.",
+  "We start by listening. Every project begins with a short discovery phase where we learn about your goals, challenges, and expectations. From there, we define the creative direction, map out deliverables, and set a timeline that balances clarity with craft.",
+  "Yes — strategy is part of everything we do. Before we design, we help define your message, audience, and positioning. That foundation shapes how your brand looks, feels, and communicates across every touchpoint.",
+  "It depends on the scope and level of detail. A small website or brand refresh may take around 4–6 weeks, while larger, more complex projects often need 8–12 weeks. We always plan collaboratively to make sure deadlines fit both sides.",
+  "That’s completely fine. Many collaborations start that way. We’ll guide you through a short discovery process to clarify your goals and define what makes the most impact — whether it’s a rebrand, a digital experience, or something entirely new.",
+  "Join our studio newsletter for thoughts on design, brand systems, and creative direction — sent occasionally, when there’s something worth saying."
+ ],
+ "testi": [
+  "“Möbius® turned our complex ideas into something clear and elegant. They understood our goals quickly and shaped a design language that feels natural to us.” || Clara Jensen | Vela Studio || https://framerusercontent.com/images/JUqCPovcIKHCGuuLShMUORkvJI.jpg",
+  "“They delivered a level of clarity we’d been missing for years. Möbius® took our scattered thoughts and shaped them into a cohesive identity that finally feels right.” || Jonas Berg | Arcton Labs || https://framerusercontent.com/images/8s1d41G36Gw3wKjdAqv9BP0vZo.jpg",
+  "“Möbius® turned our complex ideas into something clear and elegant. They understood our goals quickly and shaped a design language that feels natural to us.” || Sophie Adler | Norrhaven Collective || https://framerusercontent.com/images/dsv8pyXntSx7GoSgWObJlj2AfI.jpg",
+  "“Working with Möbius® was refreshingly straightforward. Strong ideas, precise execution, and a calm process from start to finish. The result speaks for itself.” || Markus Lehn | Lumen Technologies || https://framerusercontent.com/images/wO8Iq3rw5mv83TUR6LomHKgu0.jpg",
+  "“Möbius® brought clarity to a project that had lost direction. They listened, understood our needs, and delivered a system that feels modern and grounded.” || Daniel Weiss | Helio Projects || https://framerusercontent.com/images/WnrOxsOsaOPvCTyZrMzybh6jck.jpg"
+ ],
+ "form": [
+  [
+   [
+    "INPUT",
+    "text",
+    "Name",
+    "Your Name *",
+    true,
+    "",
+    [
+     291,
+     19998,
+     404,
+     32
+    ],
+    "rgba(0, 0, 0, 0)",
+    "0px",
+    "0px",
+    "20px/500",
+    "rgb(0, 0, 0)",
+    "0px none rgb(0, 0, 0)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "Company Name",
+    "Company Name",
+    false,
+    "",
+    [
+     291,
+     20086,
+     404,
+     32
+    ],
+    "rgba(0, 0, 0, 0)",
+    "0px",
+    "0px",
+    "20px/500",
+    "rgb(0, 0, 0)",
+    "0px none rgb(0, 0, 0)"
+   ],
+   [
+    "TEXTAREA",
+    "textarea",
+    "Message",
+    "Message *",
+    true,
+    "",
+    [
+     273,
+     20268,
+     660,
+     240
+    ],
+    "rgba(0, 0, 0, 0)",
+    "0px",
+    "18px",
+    "20px/500",
+    "rgb(0, 0, 0)",
+    "0px none rgb(0, 0, 0)"
+   ],
+   [
+    "SELECT",
+    "select-one",
+    "Budget",
+    "",
+    true,
+    "Select a Budget */$5,000 - $10,000/$10,000 - $20,000/$20,000 +",
+    [
+     470,
+     20528,
+     222,
+     68
+    ],
+    "rgba(0, 0, 0, 0)",
+    "0px",
+    "18px",
+    "20px/500",
+    "rgb(153, 153, 153)",
+    "0px none rgb(153, 153, 153)"
+   ],
+   [
+    "SELECT",
+    "select-one",
+    "Timeframe",
+    "",
+    true,
+    "Choose a Timeframe */As soon as possible/Next month/Whenever you’re available",
+    [
+     273,
+     20616,
+     462,
+     68
+    ],
+    "rgba(0, 0, 0, 0)",
+    "0px",
+    "18px",
+    "20px/500",
+    "rgb(153, 153, 153)",
+    "0px none rgb(153, 153, 153)"
+   ],
+   [
+    "INPUT",
+    "email",
+    "Email",
+    "Email *",
+    true,
+    "",
+    [
+     500,
+     20782,
+     404,
+     32
+    ],
+    "rgba(0, 0, 0, 0)",
+    "0px",
+    "0px",
+    "20px/500",
+    "rgb(0, 0, 0)",
+    "0px none rgb(0, 0, 0)"
+   ],
+   [
+    "BUTTON",
+    "submit",
+    "",
+    "",
+    null,
+    "",
+    [
+     273,
+     21068,
+     200,
+     48
+    ],
+    "rgba(0, 0, 0, 0)",
+    "0px",
+    "8px 58px 8px 18px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "0px outset rgb(0, 0, 0)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "website",
+    "",
+    false,
+    "",
+    [
+     340,
+     19938,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "company",
+    "",
+    false,
+    "",
+    [
+     340,
+     19938,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "message",
+    "",
+    false,
+    "",
+    [
+     340,
+     19938,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "subject",
+    "",
+    false,
+    "",
+    [
+     340,
+     19938,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "title",
+    "",
+    false,
+    "",
+    [
+     340,
+     19938,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "description",
+    "",
+    false,
+    "",
+    [
+     340,
+     19938,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "feedback",
+    "",
+    false,
+    "",
+    [
+     340,
+     19938,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "notes",
+    "",
+    false,
+    "",
+    [
+     340,
+     19938,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "details",
+    "",
+    false,
+    "",
+    [
+     340,
+     19938,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "remarks",
+    "",
+    false,
+    "",
+    [
+     340,
+     19938,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "comments",
+    "",
+    false,
+    "",
+    [
+     340,
+     19938,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ]
+  ],
+  [
+   [
+    "LABEL",
+    "",
+    "",
+    "",
+    null,
+    "",
+    [
+     40,
+     23311,
+     480,
+     58
+    ],
+    "rgba(0, 0, 0, 0)",
+    "0px",
+    "0px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "0px none rgb(0, 0, 0)"
+   ],
+   [
+    "INPUT",
+    "email",
+    "Email",
+    "YOUR EMAIL HERE",
+    true,
+    "",
+    [
+     58,
+     23329,
+     444,
+     22
+    ],
+    "rgba(0, 0, 0, 0)",
+    "0px",
+    "0px",
+    "14px/700",
+    "rgb(0, 0, 0)",
+    "0px none rgb(0, 0, 0)"
+   ],
+   [
+    "BUTTON",
+    "submit",
+    "",
+    "",
+    null,
+    "",
+    [
+     480,
+     23320,
+     24,
+     40
+    ],
+    "rgba(0, 0, 0, 0)",
+    "0px",
+    "0px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "0px outset rgb(0, 0, 0)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "website",
+    "",
+    false,
+    "",
+    [
+     107,
+     23321,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "company",
+    "",
+    false,
+    "",
+    [
+     107,
+     23321,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "message",
+    "",
+    false,
+    "",
+    [
+     107,
+     23321,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "subject",
+    "",
+    false,
+    "",
+    [
+     107,
+     23321,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "title",
+    "",
+    false,
+    "",
+    [
+     107,
+     23321,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "description",
+    "",
+    false,
+    "",
+    [
+     107,
+     23321,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "feedback",
+    "",
+    false,
+    "",
+    [
+     107,
+     23321,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "notes",
+    "",
+    false,
+    "",
+    [
+     107,
+     23321,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "details",
+    "",
+    false,
+    "",
+    [
+     107,
+     23321,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "remarks",
+    "",
+    false,
+    "",
+    [
+     107,
+     23321,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ],
+   [
+    "INPUT",
+    "text",
+    "comments",
+    "",
+    false,
+    "",
+    [
+     107,
+     23321,
+     0,
+     0
+    ],
+    "rgb(255, 255, 255)",
+    "0px",
+    "1px 2px",
+    "12px/400",
+    "rgb(0, 0, 0)",
+    "2px inset rgb(118, 118, 118)"
+   ]
+  ]
+ ],
+ "team": [
+  "Meet the Team",
+  "",
+  ""
+ ],
+ "blog": [
+  [
+   "./feed/the-logic-of-emotion",
+   [
+    "https://framerusercontent.com/images/drBPvfLZfwnmhTDHHQbPmsfGe1I.jpg cover 427x566",
+    "https://framerusercontent.com/images/drBPvfLZfwnmhTDHHQbPmsfGe1I.jpg cover 427x566"
+   ],
+   [
+    "Variant 2:1:566"
+   ]
+  ],
+  [
+   "./feed/the-logic-of-emotion",
+   [],
+   []
+  ],
+  [
+   "./feed/precision-over-perfection",
+   [
+    "https://framerusercontent.com/images/3wAhbBL8w69xQSppPtvRjJX8.jpg cover 427x566",
+    "https://framerusercontent.com/images/3wAhbBL8w69xQSppPtvRjJX8.jpg cover 427x566"
+   ],
+   [
+    "Variant 2:1:566"
+   ]
+  ],
+  [
+   "./feed/precision-over-perfection",
+   [],
+   []
+  ]
+ ],
+ "faq": [
+  "AHow do you start a new project?We start by listening. Every project begins with a short discovery phase where we learn about your goals, challenges, and expectations. From there, we define the creative direction, map out deliverables, and set a timeline that balances clarity with craft.How do you start a new project?We start by listening. Every project begins with a short discovery phase where we",
+  "ACan you help with strategy, not just design?Can you help with strategy, not just design?Yes — strategy is part of everything we do. Before we design, we help define your message, audience, and positioning. That foundation shapes how your brand looks, feels, and communicates across every touchpoint.",
+  "AHow long does a typical project take?How long does a typical project take?It depends on the scope and level of detail. A small website or brand refresh may take around 4–6 weeks, while larger, more complex projects often need 8–12 weeks. We always plan collaboratively to make sure deadlines fit both sides.",
+  "AWhat if I don’t know exactly what I need?What if I don’t know exactly what I need?That’s completely fine. Many collaborations start that way. We’ll guide you through a short discovery process to clarify your goals and define what makes the most impact — whether it’s a rebrand, a digital experience, or something entirely new."
+ ],
+ "allLinks": [
+  "./contacts",
+  "./#awards",
+  "./#client-logotypes",
+  "./work",
+  "./studio",
+  "./feed",
+  "./feed/the-logic-of-emotion",
+  "./feed/precision-over-perfection",
+  "./studio#career",
+  "./",
+  "https://framer.link/drukarov",
+  "./legal/privacy-policy",
+  "./legal/terms-of-service",
+  "./404",
+  "https://templatoria.com/",
+  "https://www.framer.com"
+ ]
+}

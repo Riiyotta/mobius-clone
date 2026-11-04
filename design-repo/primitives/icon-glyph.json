@@ -1,0 +1,11 @@
+{
+  "id": "primitive.icon-glyph",
+  "title": "UI glyph",
+  "description": "Phosphor glyphs (arrow, plus, check, play, close).",
+  "source": {
+    "file": "src/components/legal/Icons.jsx",
+    "tag": "export const ArrowRight",
+    "lines": "2-6",
+    "citation": "src/components/legal/Icons.jsx:2-6"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "repositoryId": "mobius-studio-template-clone.design-repo",
+  "title": "Design-repo for a design-faithful clone of a design-studio website template",
+  "repositoryVersion": "1.0.0",
+  "pageSpecVersion": "1.0.0",
+  "allowlistVersion": "1.0.0",
+  "tokenCatalogVersion": "1.0.0",
+  "versionFieldNote": "allowlistVersion and tokenCatalogVersion are machine-checked by extraction/verify_all.py (must equal tokens/llm/component-allowlist.json and tokens/llm/token-catalog.json versions); pageSpecVersion is machine-checked against the schema const. repositoryVersion is documentation-only and hand-maintained.",
+  "status": "design-review-pending",
+  "productionApproved": false,
+  "defaultTheme": "light",
+  "schemaValidatedThemes": [
+    "light",
+    "inverse"
+  ],
+  "sourceStack": {
+    "note": "Documentation only. Never used for token names, section ids, schema fields or validator logic.",
+    "original": "A no-code (Framer) website template served at the original template URL; the template author is credited in its footer.",
+    "clone": "React 18 + Vite 5 + Tailwind CSS 3 with plain CSS files, a small custom client-side router (src/lib/router.js), Lenis smooth scroll at >=1200 only, self-hosted Inter Display / Inter fonts.",
+    "lockfile": "package-lock.json (clean install: npm ci && npm run build)"
+  },
+  "sourceProject": {
+    "kind": "design-faithful clone of a commercial website template",
+    "realCompanySource": false,
+    "commercialTemplate": true,
+    "cloneIdentity": "reproduces the template's own fictional studio brand, copy and photography (no substitution)",
+    "constraints": [
+      "contact form has no backend (submit simulated)",
+      "external links point at the template author's link shortener"
+    ],
+    "structuralNotes": [
+      "src/pages/Pending.jsx is unreachable (router never yields its branch)",
+      "/feed/<unknown-slug> renders an empty page rather than the 404",
+      "page-level TODO comments about the desktop footer are stale"
+    ]
+  },
+  "counts": {
+    "tokens": 76,
+    "primitives": 10,
+    "components": 13,
+    "sections": 45,
+    "retrievableSections": 38,
+    "templates": 9,
+    "routes": 31,
+    "assetRoles": 18,
+    "motionPatterns": 31,
+    "graphRules": 12,
+    "examplePageSpecs": 5
+  },
+  "entryPoints": {
+    "readme": "README.md",
+    "changelog": "CHANGELOG.md",
+    "tokensFoundation": [
+      "tokens/00-foundation/breakpoint.json",
+      "tokens/00-foundation/color.json",
+      "tokens/00-foundation/elevation.json",
+      "tokens/00-foundation/gradient.json",
+      "tokens/00-foundation/motion-patterns.json",
+      "tokens/00-foundation/motion.json",
+      "tokens/00-foundation/radius.json",
+      "tokens/00-foundation/spacing.json",
+      "tokens/00-foundation/typography.json"
+    ],
+    "tokensSemantic": "tokens/10-semantic/semantic.json",
+    "tokensComponent": "tokens/20-component/component.json",
+    "tokensLayout": "tokens/30-layout/layout.json",
+    "themes": [
+      "tokens/themes/inverse.json",
+      "tokens/themes/light.json"
+    ],
+    "tokenCatalog": "tokens/llm/token-catalog.json",
+    "tokenPolicy": "tokens/llm/token-policy.json",
+    "componentAllowlist": "tokens/llm/component-allowlist.json",
+    "motionPatterns": "tokens/00-foundation/motion-patterns.json",
+    "assetRoles": "assets/asset-roles.json",
+    "templates": "templates/templates.json",
+    "routes": "templates/routes.json",
+    "compatibilityGraph": "compatibility/graph.json",
+    "pagespecSchema": "schema/pagespec.schema.json",
+    "sectionContractSchema": "schema/section-contract.schema.json",
+    "examplePageSpec": "schema/example.pagespec.json",
+    "generatedExamples": [
+      "schema/examples/generated-case-detail.pagespec.json",
+      "schema/examples/generated-feed-post.pagespec.json",
+      "schema/examples/generated-home.pagespec.json",
+      "schema/examples/generated-legal.pagespec.json"
+    ],
+    "sourceBrandRegistry": "schema/source-brand.json",
+    "referenceCopyCorpus": "schema/reference-copy-corpus.json",
+    "semanticValidator": "schema/semantic_validate.py",
+    "adversarialTests": "schema/tests/adversarial_test.py",
+    "verifyAll": "extraction/verify_all.py",
+    "wrapperGate": "extraction/wrapper_gate.py",
+    "proveDrift": "extraction/prove_drift.py",
+    "measuredValues": "extraction/measured-values.json",
+    "measureTool": "extraction/measure_sections.mjs",
+    "sectionSelectors": "extraction/section-selectors.json",
+    "parityHarness": "extraction/parity_harness.mjs",
+    "sectionsDir": "sections/",
+    "componentsDir": "components/",
+    "primitivesDir": "primitives/"
+  }
+}

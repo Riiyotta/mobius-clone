@@ -1,0 +1,110 @@
+{
+  "id": "content.pull-quote",
+  "title": "Pull quote",
+  "status": "measured",
+  "source": {
+    "id": "src:Sections#export-function-Quote",
+    "file": "src/components/project/Sections.jsx",
+    "tag": "export function Quote(",
+    "lines": "29-44",
+    "citation": "src/components/project/Sections.jsx:29-44",
+    "alsoImplementedBy": [
+      {
+        "file": "src/pages/Post.jsx",
+        "tag": "{/* B2.5 Quote",
+        "lines": "99-113",
+        "citation": "src/pages/Post.jsx:99-113"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "content.pull-quote",
+    "category": "CONTENT"
+  },
+  "retrievalEligible": true,
+  "purpose": "Large medium-weight quote spanning ten columns with a first-line indent, revealed word by word on desktop.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "quote": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 32,
+        "x-maxWordsEvidence": "max 25 words measured (projects.json + feed.json quotes); budget = ceil(1.25 x max)"
+      }
+    },
+    "required": [
+      "quote"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "line-stagger-reveal"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "disable-motion",
+        "detail": "Plain h4, no word stagger."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 23,
+    "heightPxMin": 388.8,
+    "heightPxMax": 388.8,
+    "routes": [
+      "/feed/beyond-function",
+      "/feed/designing-the-invisible",
+      "/feed/one-idea-many-forms",
+      "/feed/precision-over-perfection",
+      "/feed/systems-with-soul",
+      "/feed/the-architecture-of-meaning"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/feed/beyond-function",
+    "/feed/designing-the-invisible",
+    "/feed/one-idea-many-forms",
+    "/feed/precision-over-perfection",
+    "/feed/systems-with-soul",
+    "/feed/the-architecture-of-meaning",
+    "/feed/the-clarity-paradox",
+    "/feed/the-human-algorithm",
+    "/feed/the-language-of-shape",
+    "/feed/the-logic-of-emotion",
+    "/feed/thinking-in-motion",
+    "/work/after-light",
+    "/work/axis-point",
+    "/work/bright-matter",
+    "/work/echoform",
+    "/work/forma-nine",
+    "/work/golden-hour",
+    "/work/north-layer",
+    "/work/orbit-404",
+    "/work/pulse",
+    "/work/soma-studio",
+    "/work/wavehouse",
+    "/work/zero-parallel"
+  ]
+}

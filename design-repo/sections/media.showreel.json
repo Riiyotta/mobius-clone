@@ -1,0 +1,110 @@
+{
+  "id": "media.showreel",
+  "title": "Showreel",
+  "status": "measured",
+  "source": {
+    "id": "src:Reel#export-default-function-Reel",
+    "file": "src/components/home/Reel.jsx",
+    "tag": "export default function Reel(",
+    "lines": "87-140",
+    "citation": "src/components/home/Reel.jsx:87-140"
+  },
+  "semantic": {
+    "id": "media.showreel",
+    "category": "MEDIA"
+  },
+  "retrievalEligible": true,
+  "purpose": "Two opposing display-text bands behind a centred, muted, looping studio reel; clicking opens the reel in a full-screen lightbox.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "tickerText": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 4,
+        "x-maxWordsEvidence": "max 3 words measured (Reel.jsx TEXT); budget = ceil(1.25 x max)"
+      },
+      "video": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "media.source-reel",
+          "media.video-placeholder"
+        ]
+      },
+      "poster": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-editorial",
+          "photo.generated-scene"
+        ]
+      }
+    },
+    "required": [
+      "tickerText",
+      "video",
+      "poster"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "video-autoplay",
+      "marquee-loop"
+    ],
+    "reducedMotionFallback": "paused-first-frame",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-tablet",
+        "change": "hide",
+        "detail": "Text bands are not rendered on phone; play badge shown instead of the Play cursor."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": "video",
+      "assetRoles": [
+        "media.source-reel",
+        "media.video-placeholder"
+      ]
+    },
+    {
+      "field": "poster",
+      "assetRoles": [
+        "photo.source-editorial",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "media.video-placeholder",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "notes": "The two text bands are utility.text-ticker decoration and the lightbox is overlay.reel-lightbox (both retrieval-ineligible runtime UI).",
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 502.5,
+    "heightPxMax": 502.5,
+    "routes": [
+      "/"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "utility.berlin-clock",
+  "title": "Location clock",
+  "status": "measured",
+  "source": {
+    "id": "src:BerlinClock#export-default-function-BerlinClock",
+    "file": "src/components/BerlinClock.jsx",
+    "tag": "export default function BerlinClock(",
+    "lines": "6-18",
+    "citation": "src/components/BerlinClock.jsx:6-18"
+  },
+  "semantic": {
+    "id": "utility.berlin-clock",
+    "category": "UTILITY"
+  },
+  "retrievalEligible": false,
+  "retrievalIneligibleReason": "Live-updating chrome widget inside the nav layer; time-dependent, not page content.",
+  "purpose": "Live 'CITY, CC hh:mm' clock fixed bottom-right inside the nav layer on most desktop routes.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "label": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (contract title); budget = ceil(1.25 x max)"
+      }
+    },
+    "required": []
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "clock-tick"
+    ],
+    "reducedMotionFallback": "none-needed",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "hide",
+        "detail": "See purpose for per-breakpoint availability."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "note": "runtime UI / overlay: not an in-page section, not height-gated"
+  },
+  "referenceRoutes": []
+}

@@ -1,0 +1,188 @@
+{
+  "id": "listing.career-openings",
+  "title": "Career openings",
+  "status": "measured",
+  "source": {
+    "id": "src:Studio#function-Career",
+    "file": "src/pages/Studio.jsx",
+    "tag": "function Career(",
+    "lines": "235-279",
+    "citation": "src/pages/Studio.jsx:235-279",
+    "alsoImplementedBy": [
+      {
+        "file": "src/components/studio/CareerAccordion.jsx",
+        "tag": "export default function CareerAccordion(",
+        "lines": "119-125",
+        "citation": "src/components/studio/CareerAccordion.jsx:119-125"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "listing.career-openings",
+    "category": "LISTING"
+  },
+  "retrievalEligible": true,
+  "purpose": "Careers block: heading, two paragraphs, indented quote, application note, an accordion of open roles (description, to-do list, requirements, how to apply) and a closing LinkedIn prompt.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 2,
+        "x-maxWordsEvidence": "max 1 words measured (Studio.jsx h2); budget = ceil(1.25 x max)"
+      },
+      "paragraphs": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 3,
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxWords": 55,
+          "x-maxWordsEvidence": "max 44 words measured (Studio.jsx CAREER); budget = ceil(1.25 x max)"
+        }
+      },
+      "quote": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 24,
+        "x-maxWordsEvidence": "max 19 words measured (Studio.jsx QUOTE); budget = ceil(1.25 x max)"
+      },
+      "note": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 48,
+        "x-maxWordsEvidence": "max 38 words measured (Studio.jsx note); budget = ceil(1.25 x max)"
+      },
+      "roles": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "x-maxWordsEvidence": "max 4 words measured (CareerAccordion.jsx ROLES); budget = ceil(1.25 x max)"
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 59,
+              "x-maxWordsEvidence": "max 47 words measured (CareerAccordion.jsx ROLES); budget = ceil(1.25 x max)"
+            },
+            "doList": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 8,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxWords": 13,
+                "x-maxWordsEvidence": "max 10 words measured (CareerAccordion.jsx lists); budget = ceil(1.25 x max)"
+              }
+            },
+            "lookList": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 8,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxWords": 13,
+                "x-maxWordsEvidence": "max 10 words measured (CareerAccordion.jsx lists); budget = ceil(1.25 x max)"
+              }
+            },
+            "applyText": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 12,
+              "x-maxWordsEvidence": "max 9 words measured (CareerAccordion.jsx APPLY); budget = ceil(1.25 x max)"
+            },
+            "applyHref": {
+              "$ref": "#/definitions/url"
+            }
+          },
+          "required": [
+            "title",
+            "description",
+            "doList",
+            "lookList",
+            "applyText",
+            "applyHref"
+          ]
+        },
+        "x-countEvidence": "3 roles measured"
+      },
+      "moreText": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 33,
+        "x-maxWordsEvidence": "max 26 words measured (Studio.jsx closing p); budget = ceil(1.25 x max)"
+      },
+      "moreCta": {
+        "$ref": "#/definitions/cta"
+      }
+    },
+    "required": [
+      "heading",
+      "paragraphs",
+      "quote",
+      "note",
+      "roles",
+      "moreText",
+      "moreCta"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "accordion-height",
+      "line-stagger-reveal"
+    ],
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "stack",
+        "detail": "Rows stack; quote indent reduces."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.career-item",
+    "primitive.button-pill"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 1871.9,
+    "heightPxMax": 1871.9,
+    "routes": [
+      "/studio"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/studio"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "component.newsletter-field",
+  "title": "Newsletter field",
+  "description": "Email field with sliding arrow submit.",
+  "source": {
+    "file": "src/components/Footer.jsx",
+    "tag": "<form className=\"ft-form\"",
+    "lines": "91-121",
+    "citation": "src/components/Footer.jsx:91-121"
+  },
+  "composes": [
+    "primitive.text-field",
+    "primitive.icon-glyph"
+  ]
+}

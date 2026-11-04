@@ -1,0 +1,737 @@
+{
+  "_source": "https://mobius.framer.website — images on /work/<slug>, /legal/*, /404 (measured 2026-11-04). Legal and 404 load no raster images.",
+  "images": [
+    {
+      "url": "https://framerusercontent.com/images/91tSqsa2UCoJo8t9Pw7JOunYw.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/soma-studio hero (+ /work card, + Next Case card on previous project)"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/IUpIm7xt1Y36zd3ZNnDR0SQGdAI.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/soma-studio gallery slot A"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/ibqd8llLiCf4ZjwWuQZumML1c.jpg",
+      "natural": [
+        1808,
+        1808
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/soma-studio gallery slot B"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/WHOiDxS9boljkWADohLxQ7eA.jpg",
+      "natural": [
+        1808,
+        1808
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/soma-studio gallery slot C"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/1HRrfJna5sr21C85x3fkBOQ1g.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/soma-studio gallery slot D"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/TgD2gKSlOfhH9eJku8ilavEy2Vs.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/bright-matter hero (+ /work card, + Next Case card on previous project)"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/WyKbQTfVPHmuKXlo6k13LyKChyM.jpg",
+      "natural": [
+        1800,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/bright-matter gallery slot A"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/eIij9bKrxBsdqdmN7T752idvC0.jpg",
+      "natural": [
+        1800,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/bright-matter gallery slot B"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/ZT6GYbLaCJpZdmeRG7gGbmuVRHY.jpg",
+      "natural": [
+        1800,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/bright-matter gallery slot C"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/J0ZCl2HmlFlwnnZpxZ2DoUII.jpg",
+      "natural": [
+        1800,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/bright-matter gallery slot D"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/JZNaIjPNcrDF3IgxsRH6Azc8.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/wavehouse hero (+ /work card, + Next Case card on previous project)"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/kXRrdFcYFxQ48uHGOF7mALg.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/wavehouse gallery slot A"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/nUkSnPkTBW8kuRSL8zhE66e5eU.jpg",
+      "natural": [
+        1800,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/wavehouse gallery slot B"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/Wkq3w4VeRbBgxSdjcO40DfbDqs.jpg",
+      "natural": [
+        1800,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/wavehouse gallery slot C"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/TfAyKQ9jxlCdHHufzpfWdTNWwB8.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/wavehouse gallery slot D"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/ZdoJlTXzsfF4jck8jdi8x8jmQN8.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/north-layer hero (+ /work card, + Next Case card on previous project)"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/rJMlaL51OiTyQGShLFBoivEM28.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/north-layer gallery slot A"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/yxibLJXQpQLi2kYBSVicMSBAIE.jpg",
+      "natural": [
+        1920,
+        1920
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/north-layer gallery slot B"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/HSCzAR3uckoJNeDKlojI8XflqA0.jpg",
+      "natural": [
+        1808,
+        1808
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/north-layer gallery slot C"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/inZkAzaceypi23s2hqEQZoHhjtA.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/north-layer gallery slot D"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/5jd5VWBN8ZG85MGXuhQfHfdV3M.jpg",
+      "natural": [
+        2400,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/zero-parallel hero (+ /work card, + Next Case card on previous project)"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/Otiqa0LU3z870ZSlD9amnRT4Y4.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/zero-parallel gallery slot A"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/izpoCEOHjtgBWvr2BwU88wpjkw8.jpg",
+      "natural": [
+        1752,
+        1752
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/zero-parallel gallery slot B"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/eYa9ite6w5ozPaWPINx7BF7ZV2I.jpg",
+      "natural": [
+        1920,
+        1920
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/zero-parallel gallery slot C"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/nDviOvkjdjZLaZDIxWdMZXJBgTY.jpg",
+      "natural": [
+        1200,
+        1600
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/zero-parallel gallery slot D"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/wvQDwJd4SD2wngQjJZQMGAI.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/pulse hero (+ /work card, + Next Case card on previous project)"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/S56ET8vPjB5FiWZWSz4RNgg.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/pulse gallery slot A"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/1dlvTGFjvphok9k37pCK315aBJY.jpg",
+      "natural": [
+        1595,
+        1595
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/pulse gallery slot B"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/QNlV3RRgepgEOt8CjwPbzsSIg.jpg",
+      "natural": [
+        1345,
+        1345
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/pulse gallery slot C"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/JvrclQU9JR2QotLd844ZApRxVrE.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/pulse gallery slot D"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/DsGJvT1AjWPpAnwaISwENoGk.jpg",
+      "natural": [
+        1856,
+        2464
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/after-light hero (+ /work card, + Next Case card on previous project)"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/oSVCHIO3CsQqVf8BuFaAcaIAB5g.jpg",
+      "natural": [
+        1856,
+        2464
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/after-light gallery slot A"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/2Htye0RBCWQDV6gAxNaOKF58vsk.jpg",
+      "natural": [
+        1856,
+        2464
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/after-light gallery slot B"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/XED1k8ZoWrxr3obUSoSc9HB8.jpg",
+      "natural": [
+        1856,
+        2464
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/after-light gallery slot C"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/BxwcgynfNEOvicvacPwf1qLULM.jpg",
+      "natural": [
+        1856,
+        2464
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/after-light gallery slot D"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/aHAP7xg5ONNK4g1WeQC34kBsVs.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/forma-nine hero (+ /work card, + Next Case card on previous project)"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/2LzLbx6Bc434G4vnZKsSChn9L0.jpg",
+      "natural": [
+        1572,
+        2096
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/forma-nine gallery slot A"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/Jd219m9xc4wjENHE4C9jz2RiYK8.jpg",
+      "natural": [
+        1808,
+        1808
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/forma-nine gallery slot B"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/6m49AO5SWsRwhaHoEl0Bjic1Mc.jpg",
+      "natural": [
+        1846,
+        1846
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/forma-nine gallery slot C"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/PSjCJwM02dfEvZ7xRoMUNU0Qyw.jpg",
+      "natural": [
+        1725,
+        2300
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/forma-nine gallery slot D"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/70P7DlHOLA5V6H0shE8MTQZ5XW0.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/golden-hour hero (+ /work card, + Next Case card on previous project)"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/G5zWnM69hb2T6iLJkbrXRw8D1d0.jpg",
+      "natural": [
+        1600,
+        2133
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/golden-hour gallery slot A"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/NofQF1QCcaWk2NHqPzEyB85KYPg.jpg",
+      "natural": [
+        1920,
+        1920
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/golden-hour gallery slot B"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/VuUHriWsRefewK5burLN8gPoyYw.jpg",
+      "natural": [
+        2400,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/golden-hour gallery slot C"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/E1Cc8Av5BQF7GKXIb8QCjlAhdT8.jpg",
+      "natural": [
+        1600,
+        2133
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/golden-hour gallery slot D"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/hT3qlH9GjIZn0XY4ES3pI2A8LU.jpg",
+      "natural": [
+        2400,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/echoform hero (+ /work card, + Next Case card on previous project)"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/XIt3rCMf24usVMD1mhbYUzAt8.jpg",
+      "natural": [
+        1800,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/echoform gallery slot A"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/45QT0GWu2oduYtX8nbgB0nivs.jpg",
+      "natural": [
+        1800,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/echoform gallery slot B"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/VWxb1aKKrMIN0DYTvEAlGuoJNY.jpg",
+      "natural": [
+        1800,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/echoform gallery slot C"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/x4dvGBsqmqCUpHOCDrRcGw13zUw.jpg",
+      "natural": [
+        1800,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/echoform gallery slot D"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/0vnxbbxLjIiUePXnIzdt69Rk.jpg",
+      "natural": [
+        2400,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/axis-point hero (+ /work card, + Next Case card on previous project)"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/bL1JR6GGck1g6pFseOicbf20U7A.jpg",
+      "natural": [
+        1800,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/axis-point gallery slot A"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/noELhThwtTeKEjNGE4JLvDI5LA.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/axis-point gallery slot B"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/b67cX41XndmJtUTjPMSnTzDSuY.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/axis-point gallery slot C"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/pQytBl2ZzSovtUKZRraSKG9c8A.jpg",
+      "natural": [
+        1800,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/axis-point gallery slot D"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/i5EVAPbSjFlbPcvvbXVwzln3BY.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/orbit-404 hero (+ /work card, + Next Case card on previous project)"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/9BYCipSVyqp0PkP3t0Y5myL8ph8.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/orbit-404 gallery slot A"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/DNbAmUhNXX07xrMz5h4q0sWhHY.jpg",
+      "natural": [
+        2400,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/orbit-404 gallery slot B"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/KROS4Pk3MfjPIaO1EvIaSW8qDo.jpg",
+      "natural": [
+        2400,
+        1800
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/orbit-404 gallery slot C"
+      ]
+    },
+    {
+      "url": "https://framerusercontent.com/images/vitQwbex62QiFc81pw1avoStIY4.jpg",
+      "natural": [
+        1800,
+        2400
+      ],
+      "format": "jpg (served as avif/webp via ?scale-down-to=512|1024|2048&width=W&height=H srcset)",
+      "usedIn": [
+        "/work/orbit-404 gallery slot D"
+      ]
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Inter Display",
+      "weight": 500,
+      "url": "https://framerusercontent.com/assets/iwWTDc49ENF2tCHbqlNARXw6Ug.woff2",
+      "usedOn": "all"
+    },
+    {
+      "family": "Inter Display",
+      "weight": 700,
+      "url": "https://framerusercontent.com/assets/qITWJ2WdG0wrgQPDb8lvnYnTXDg.woff2",
+      "usedOn": "all"
+    },
+    {
+      "family": "Inter Display",
+      "weight": 800,
+      "url": "https://framerusercontent.com/assets/9Nu9BRcGkRrLnJCGqVdSUXJt2Ig.woff2",
+      "usedOn": "all (logo, Next Project ticker, footer wordmark)"
+    },
+    {
+      "family": "Inter Display",
+      "weight": 900,
+      "url": "https://framerusercontent.com/assets/x8eJ5VkmPMHVhVbF0E8JYFJmwc.woff2",
+      "usedOn": "/404 only (big digits)"
+    }
+  ],
+  "icons": [
+    {
+      "name": "Phosphor ArrowRight bold",
+      "viewBox": "0 0 256 256",
+      "path": "M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z",
+      "usedIn": "Button A (Live Project, Ask a question) 16x16 white; Button B (Go back home, About us) ~20x25.9 black; cursor arrow"
+    },
+    {
+      "name": "Phosphor Plus regular",
+      "viewBox": "0 0 256 256",
+      "path": "M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z",
+      "usedIn": "FAQ item toggle 32x32 black (rotated 135deg when open)"
+    }
+  ],
+  "svgs": [
+    {
+      "name": "404 gradient Shape B",
+      "viewBox": "0 0 656.923 859.463",
+      "gradient": {
+        "x1": 1,
+        "x2": 0,
+        "y1": 0.6134505089099256,
+        "y2": 0.3865494910900744,
+        "stops": [
+          "rgb(66, 119, 128)",
+          "rgb(60, 59, 92)"
+        ]
+      },
+      "path": "M 278.224 668.787 C 300.449 406.209 606.411 469.108 654.315 246.451 C 702.219 23.794 75.028 -229.613 9.107 382.981 C -56.814 995.576 255.998 931.366 278.224 668.787 Z"
+    },
+    {
+      "name": "404 gradient Shape A",
+      "viewBox": "0 0 644.93 843.473",
+      "gradient": {
+        "x1": 0.49751243781094523,
+        "x2": 0.5024875621890548,
+        "y1": 0,
+        "y2": 1,
+        "stops": [
+          "rgb(102, 170, 204)",
+          "rgb(179, 237, 255)"
+        ]
+      },
+      "path": "M 273.145 656.345 C 294.964 398.652 595.341 460.38 642.37 241.866 C 689.4 23.351 73.659 -225.341 8.941 375.856 C -55.777 977.054 251.325 914.038 273.145 656.345 Z"
+    }
+  ]
+}

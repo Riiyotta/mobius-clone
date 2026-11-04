@@ -1,0 +1,442 @@
+{
+  "$description": "Font families and the measured type roles (desktop >=1200 / tablet 810-1199 / phone <=809; 'wide' = >=1600 step). Values from .recon/specs/home.md 3.2, cross-checked against the clone CSS line in evidence.",
+  "fontFamily": {
+    "font.display": {
+      "value": "\"Inter Display\", \"Inter Display Placeholder\", sans-serif",
+      "evidence": "src/index.css:10-10"
+    },
+    "font.text": {
+      "value": "\"Inter\", sans-serif",
+      "evidence": "src/fonts.css:8-8",
+      "note": "Loaded by fonts.css (400/700) but no text preset uses it; catalogued, not approved."
+    }
+  },
+  "fontSize": {
+    "type.display-xxl": {
+      "desktop": {
+        "fontSize": 240,
+        "fontWeight": 800,
+        "lineHeight": 264,
+        "letterSpacing": -12
+      },
+      "tablet": {
+        "fontSize": 120,
+        "fontWeight": 800,
+        "lineHeight": 120,
+        "letterSpacing": -6
+      },
+      "phone": {
+        "fontSize": 80,
+        "fontWeight": 800,
+        "lineHeight": 80,
+        "letterSpacing": -4
+      },
+      "evidence": "src/index.css:63-63",
+      "measuredEvidence": ".recon/specs/home.md:286-306",
+      "note": "Work title; the footer/hero wordmark uses the same preset inside a fit-text SVG."
+    },
+    "type.display-xl": {
+      "desktop": {
+        "fontSize": 160,
+        "fontWeight": 800,
+        "lineHeight": 160,
+        "letterSpacing": -8
+      },
+      "tablet": {
+        "fontSize": 120,
+        "fontWeight": 800,
+        "lineHeight": 120,
+        "letterSpacing": -6
+      },
+      "phone": {
+        "fontSize": 80,
+        "fontWeight": 800,
+        "lineHeight": 80,
+        "letterSpacing": -4
+      },
+      "evidence": "src/styles/home-sections.css:46-46",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    },
+    "type.section-title": {
+      "desktop": {
+        "fontSize": 104,
+        "fontWeight": 700,
+        "lineHeight": 104,
+        "letterSpacing": -4.16
+      },
+      "tablet": {
+        "fontSize": 80,
+        "fontWeight": 700,
+        "lineHeight": 80,
+        "letterSpacing": -3.2
+      },
+      "phone": {
+        "fontSize": 64,
+        "fontWeight": 700,
+        "lineHeight": 64,
+        "letterSpacing": -2.56
+      },
+      "evidence": "src/styles/home-sections.css:11-11",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    },
+    "type.scatter-word": {
+      "desktop": {
+        "fontSize": 80,
+        "fontWeight": 700,
+        "lineHeight": 88,
+        "letterSpacing": -2.4
+      },
+      "tablet": {
+        "fontSize": 54,
+        "fontWeight": 700,
+        "lineHeight": 64.8,
+        "letterSpacing": -1.62
+      },
+      "phone": {
+        "fontSize": 44,
+        "fontWeight": 700,
+        "lineHeight": 52.8,
+        "letterSpacing": -1.32
+      },
+      "evidence": "src/styles/home-sections.css:23-23",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    },
+    "type.package-title": {
+      "desktop": {
+        "fontSize": 64,
+        "fontWeight": 700,
+        "lineHeight": 76.8,
+        "letterSpacing": -1.92
+      },
+      "tablet": {
+        "fontSize": 54,
+        "fontWeight": 700,
+        "lineHeight": 64.8,
+        "letterSpacing": -1.62
+      },
+      "phone": {
+        "fontSize": 44,
+        "fontWeight": 700,
+        "lineHeight": 52.8,
+        "letterSpacing": -1.32
+      },
+      "evidence": "src/styles/home-sections.css:353-353",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    },
+    "type.statement": {
+      "desktop": {
+        "fontSize": 56,
+        "fontWeight": 700,
+        "lineHeight": 67.2,
+        "letterSpacing": -1.68
+      },
+      "tablet": {
+        "fontSize": 44,
+        "fontWeight": 700,
+        "lineHeight": 52.8,
+        "letterSpacing": -1.32
+      },
+      "phone": {
+        "fontSize": 36,
+        "fontWeight": 700,
+        "lineHeight": 43.2,
+        "letterSpacing": -1.08
+      },
+      "evidence": "src/styles/home-sections.css:93-93",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    },
+    "type.quote": {
+      "desktop": {
+        "fontSize": 48,
+        "fontWeight": 500,
+        "lineHeight": 57.6,
+        "letterSpacing": -1.44
+      },
+      "tablet": {
+        "fontSize": 44,
+        "fontWeight": 500,
+        "lineHeight": 52.8,
+        "letterSpacing": -1.32
+      },
+      "phone": {
+        "fontSize": 36,
+        "fontWeight": 500,
+        "lineHeight": 43.2,
+        "letterSpacing": -1.08
+      },
+      "evidence": "src/styles/home-sections.css:280-280",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    },
+    "type.question": {
+      "desktop": {
+        "fontSize": 48,
+        "fontWeight": 500,
+        "lineHeight": 57.6,
+        "letterSpacing": -0.96
+      },
+      "tablet": {
+        "fontSize": 44,
+        "fontWeight": 500,
+        "lineHeight": 52.8,
+        "letterSpacing": -0.88
+      },
+      "phone": {
+        "fontSize": 36,
+        "fontWeight": 500,
+        "lineHeight": 43.2,
+        "letterSpacing": -0.72
+      },
+      "evidence": "src/styles/home-sections.css:184-184",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    },
+    "type.card-name": {
+      "desktop": {
+        "fontSize": 48,
+        "fontWeight": 700,
+        "lineHeight": 57.6,
+        "letterSpacing": -0.96,
+        "wide": 56
+      },
+      "tablet": {
+        "fontSize": 44,
+        "fontWeight": 700,
+        "lineHeight": 52.8,
+        "letterSpacing": -0.88
+      },
+      "phone": {
+        "fontSize": 36,
+        "fontWeight": 700,
+        "lineHeight": 43.2,
+        "letterSpacing": -0.72
+      },
+      "evidence": "src/index.css:101-101",
+      "measuredEvidence": ".recon/specs/home.md:286-306",
+      "note": "Steps to 56px at >=1600 (index.css)."
+    },
+    "type.menu-link": {
+      "desktop": {
+        "fontSize": 44,
+        "fontWeight": 700,
+        "lineHeight": 52.8,
+        "letterSpacing": -1.32
+      },
+      "tablet": {
+        "fontSize": 44,
+        "fontWeight": 700,
+        "lineHeight": 52.8,
+        "letterSpacing": -1.32
+      },
+      "phone": {
+        "fontSize": 44,
+        "fontWeight": 700,
+        "lineHeight": 52.8,
+        "letterSpacing": -1.32
+      },
+      "evidence": "src/index.css:200-200",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    },
+    "type.h5": {
+      "desktop": {
+        "fontSize": 32,
+        "fontWeight": 700,
+        "lineHeight": 41.6,
+        "letterSpacing": -0.32
+      },
+      "tablet": {
+        "fontSize": 30,
+        "fontWeight": 700,
+        "lineHeight": 39,
+        "letterSpacing": -0.3
+      },
+      "phone": {
+        "fontSize": 28,
+        "fontWeight": 700,
+        "lineHeight": 36.4,
+        "letterSpacing": -0.28
+      },
+      "evidence": "src/styles/home-sections.css:252-252",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    },
+    "type.h6": {
+      "desktop": {
+        "fontSize": 26,
+        "fontWeight": 500,
+        "lineHeight": 36.4,
+        "letterSpacing": -0.26,
+        "wide": 28
+      },
+      "tablet": {
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 35,
+        "letterSpacing": -0.25
+      },
+      "phone": {
+        "fontSize": 24,
+        "fontWeight": 500,
+        "lineHeight": 33.6,
+        "letterSpacing": -0.24
+      },
+      "evidence": "src/styles/home-sections.css:12-12",
+      "measuredEvidence": ".recon/specs/home.md:286-306",
+      "note": "'scroll / drag' steps to 28px at >=1600."
+    },
+    "type.lead": {
+      "desktop": {
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 32,
+        "letterSpacing": 0
+      },
+      "tablet": {
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 32,
+        "letterSpacing": 0
+      },
+      "phone": {
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 32,
+        "letterSpacing": 0
+      },
+      "evidence": "src/styles/home-sections.css:282-282",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    },
+    "type.logo": {
+      "desktop": {
+        "fontSize": 20,
+        "fontWeight": 800,
+        "lineHeight": 32,
+        "letterSpacing": 0
+      },
+      "tablet": {
+        "fontSize": 20,
+        "fontWeight": 800,
+        "lineHeight": 32,
+        "letterSpacing": 0
+      },
+      "phone": {
+        "fontSize": 20,
+        "fontWeight": 800,
+        "lineHeight": 32,
+        "letterSpacing": 0
+      },
+      "evidence": "src/index.css:36-36",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    },
+    "type.body": {
+      "desktop": {
+        "fontSize": 16,
+        "fontWeight": 500,
+        "lineHeight": 25.6,
+        "letterSpacing": 0
+      },
+      "tablet": {
+        "fontSize": 16,
+        "fontWeight": 500,
+        "lineHeight": 25.6,
+        "letterSpacing": 0
+      },
+      "phone": {
+        "fontSize": 16,
+        "fontWeight": 500,
+        "lineHeight": 25.6,
+        "letterSpacing": 0
+      },
+      "evidence": "src/styles/home-sections.css:14-14",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    },
+    "type.caption": {
+      "desktop": {
+        "fontSize": 14,
+        "fontWeight": 500,
+        "lineHeight": 23.8,
+        "letterSpacing": 0
+      },
+      "tablet": {
+        "fontSize": 14,
+        "fontWeight": 500,
+        "lineHeight": 23.8,
+        "letterSpacing": 0
+      },
+      "phone": {
+        "fontSize": 14,
+        "fontWeight": 500,
+        "lineHeight": 23.8,
+        "letterSpacing": 0
+      },
+      "evidence": "src/styles/home-sections.css:13-13",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    },
+    "type.small": {
+      "desktop": {
+        "fontSize": 14,
+        "fontWeight": 500,
+        "lineHeight": 22.4,
+        "letterSpacing": 0
+      },
+      "tablet": {
+        "fontSize": 14,
+        "fontWeight": 500,
+        "lineHeight": 22.4,
+        "letterSpacing": 0
+      },
+      "phone": {
+        "fontSize": 14,
+        "fontWeight": 500,
+        "lineHeight": 22.4,
+        "letterSpacing": 0
+      },
+      "evidence": "src/styles/home-sections.css:253-253",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    },
+    "type.label": {
+      "desktop": {
+        "fontSize": 14,
+        "fontWeight": 700,
+        "lineHeight": 22.4,
+        "letterSpacing": 0.28,
+        "transform": "uppercase"
+      },
+      "tablet": {
+        "fontSize": 14,
+        "fontWeight": 700,
+        "lineHeight": 22.4,
+        "letterSpacing": 0.28,
+        "transform": "uppercase"
+      },
+      "phone": {
+        "fontSize": 14,
+        "fontWeight": 700,
+        "lineHeight": 22.4,
+        "letterSpacing": 0.28,
+        "transform": "uppercase"
+      },
+      "evidence": "src/styles/home-sections.css:15-15",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    },
+    "type.nav-link": {
+      "desktop": {
+        "fontSize": 14,
+        "fontWeight": 700,
+        "lineHeight": 14,
+        "letterSpacing": 0.28
+      },
+      "tablet": {
+        "fontSize": 14,
+        "fontWeight": 700,
+        "lineHeight": 22.4,
+        "letterSpacing": 0.28
+      },
+      "phone": {
+        "fontSize": 14,
+        "fontWeight": 700,
+        "lineHeight": 22.4,
+        "letterSpacing": 0.28
+      },
+      "evidence": "src/index.css:42-42",
+      "measuredEvidence": ".recon/specs/home.md:286-306"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "$description": "What a PageSpec may set (style block) vs what contracts own. Enforced by schema/semantic_validate.py TOKEN_* rules.",
+  "version": "1.0.0",
+  "pageSpecStyleFields": {
+    "theme": "light|inverse; must be one of the section contract's themes (every eligible section is light-only)",
+    "surface": "colour token from themeSurfaces[theme]",
+    "paddingTop": "space token from sectionRhythm",
+    "paddingBottom": "space token from sectionRhythm",
+    "headingFont": "fontFamily token from approvedFonts"
+  },
+  "themeSurfaces": {
+    "light": [
+      "color.surface.page",
+      "color.surface.field",
+      "color.white"
+    ],
+    "inverse": [
+      "color.black"
+    ]
+  },
+  "sectionRhythm": [
+    "space.80",
+    "space.120",
+    "space.160",
+    "space.200"
+  ],
+  "approvedFonts": [
+    "font.display"
+  ],
+  "unsupportedFontsNote": "font.text (Inter) is loaded but used by no preset: catalogued, not approved. Any family outside the catalog is rejected.",
+  "rawValueRestrictions": {
+    "color": "no hex/rgb/hsl literals anywhere in a PageSpec (TOKEN_RAW_COLOR)",
+    "space": "no px/rem/em literals in style fields (TOKEN_ARBITRARY_SPACING)",
+    "fontFamily": "only approvedFonts (TOKEN_UNSUPPORTED_FONT)"
+  },
+  "enforced": [
+    "TOKEN_UNKNOWN",
+    "TOKEN_NOT_APPROVED",
+    "TOKEN_RAW_COLOR",
+    "TOKEN_ARBITRARY_SPACING",
+    "TOKEN_UNSUPPORTED_FONT",
+    "TOKEN_THEME_MISMATCH",
+    "THEME_NOT_ALLOWED_FOR_SECTION"
+  ],
+  "convention": [
+    "type roles, radii, easing and springs are applied by section/component contracts, never chosen per PageSpec"
+  ],
+  "resolutionOrder": [
+    "foundation",
+    "theme (tokens/themes)",
+    "semantic",
+    "component",
+    "PageSpec style fields",
+    "breakpoint overrides"
+  ],
+  "maxWordsRule": "Every text field's maxWords = ceil(1.25 x the largest word count of the real source strings for that field), minimum 2; recorded per field in x-maxWordsEvidence."
+}

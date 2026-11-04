@@ -1,0 +1,99 @@
+{
+  "id": "media.studio-image-strip",
+  "title": "Studio image strip",
+  "status": "measured",
+  "source": {
+    "id": "src:Studio#function-Gallery",
+    "file": "src/pages/Studio.jsx",
+    "tag": "function Gallery(",
+    "lines": "226-233",
+    "citation": "src/pages/Studio.jsx:226-233",
+    "alsoImplementedBy": [
+      {
+        "file": "src/components/studio/ImageTicker.jsx",
+        "tag": "export default function ImageTicker(",
+        "lines": "19-101",
+        "citation": "src/components/studio/ImageTicker.jsx:19-101"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "media.studio-image-strip",
+    "category": "MEDIA"
+  },
+  "retrievalEligible": true,
+  "purpose": "Full-viewport band of studio photographs drifting horizontally under a white bar.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "images": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 12,
+        "items": {
+          "$ref": "#/definitions/media",
+          "x-assetRoles": [
+            "photo.source-editorial",
+            "photo.generated-scene"
+          ]
+        },
+        "x-countEvidence": "image row measured in studio-assets.json"
+      }
+    },
+    "required": [
+      "images"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "marquee-loop"
+    ],
+    "reducedMotionFallback": "paused-first-frame",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "reflow",
+        "detail": "Band height follows the viewport."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": "images[]",
+      "assetRoles": [
+        "photo.source-editorial",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 900,
+    "heightPxMax": 900,
+    "routes": [
+      "/studio"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/studio"
+  ]
+}

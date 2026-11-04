@@ -1,0 +1,21 @@
+{
+  "$description": "Framer breakpoints mirrored by the clone.",
+  "tokens": {
+    "breakpoint.phone": {
+      "value": "max-width: 809.98px",
+      "evidence": "src/index.css:212-212"
+    },
+    "breakpoint.tablet": {
+      "value": "min-width: 810px and max-width: 1199.98px",
+      "evidence": "src/index.css:205-205"
+    },
+    "breakpoint.desktop": {
+      "value": "min-width: 1200px",
+      "evidence": "src/App.jsx:21-21"
+    },
+    "breakpoint.wide": {
+      "value": "min-width: 1600px",
+      "evidence": "src/index.css:204-204"
+    }
+  }
+}

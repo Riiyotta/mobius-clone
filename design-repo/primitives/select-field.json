@@ -1,0 +1,11 @@
+{
+  "id": "primitive.select-field",
+  "title": "Select field",
+  "description": "Native select styled as a field with a disabled placeholder option.",
+  "source": {
+    "file": "src/components/contacts/ContactForm.jsx",
+    "tag": "<select className=\"ct-input\" name=\"Budget\"",
+    "lines": "82-117",
+    "citation": "src/components/contacts/ContactForm.jsx:82-117"
+  }
+}

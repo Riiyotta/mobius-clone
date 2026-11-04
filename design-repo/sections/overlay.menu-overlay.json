@@ -1,0 +1,69 @@
+{
+  "id": "overlay.menu-overlay",
+  "title": "Menu overlay",
+  "status": "measured",
+  "source": {
+    "id": "src:MenuOverlay#export-default-function-MenuOverlay",
+    "file": "src/components/MenuOverlay.jsx",
+    "tag": "export default function MenuOverlay(",
+    "lines": "4-25",
+    "citation": "src/components/MenuOverlay.jsx:4-25"
+  },
+  "semantic": {
+    "id": "overlay.menu-overlay",
+    "category": "UTILITY"
+  },
+  "retrievalEligible": false,
+  "retrievalIneligibleReason": "Modal navigation overlay that exists only while open; runtime UI, not a page section.",
+  "purpose": "Full-screen black menu with the four page links, opened by MENU below 1200; opens and closes instantly.",
+  "themes": [
+    "inverse"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "links": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 6,
+        "items": {
+          "$ref": "#/definitions/link"
+        }
+      }
+    },
+    "required": []
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "overlay-instant"
+    ],
+    "reducedMotionFallback": "none-needed",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "desktop",
+        "change": "hide",
+        "detail": "Not rendered at >=1200."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "note": "runtime UI / overlay: not an in-page section, not height-gated"
+  },
+  "referenceRoutes": []
+}

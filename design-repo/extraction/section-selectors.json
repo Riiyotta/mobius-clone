@@ -1,0 +1,72 @@
+{
+  "$description": "Rendered-DOM selectors used by extraction/measure_sections.mjs to locate each section instance on the clone. Selectors are measurement plumbing only (they describe where the rendered box is), never contract vocabulary. A comma list means 'first selector that matches at this viewport'. all=true measures every match in document order. splitBy measures heading-bounded parts inside one container.",
+  "version": "1.0.0",
+  "shell": [
+    { "section": "shell.nav-layer", "selector": ".nav-wrap" },
+    { "section": "shell.site-footer", "selector": "footer" }
+  ],
+  "templates": {
+    "home": [
+      { "section": "hero.studio-wordmark", "selector": ".hm-hero" },
+      { "section": "content.statement-scatter", "selector": ".hs-scr" },
+      { "section": "media.showreel", "selector": ".hs-reel" },
+      { "section": "features.services-index", "selector": ".hs-svc" },
+      { "section": "social-proof.studio-numbers", "selector": ".hs-num" },
+      { "section": "social-proof.awards-list", "selector": ".hs-aw" },
+      { "section": "team.founders", "selector": ".hs-fd" },
+      { "section": "social-proof.partner-logos", "selector": ".hs-pt" },
+      { "section": "features.process-timeline", "selector": ".hs-pc" },
+      { "section": "testimonial.client-reflections", "selector": ".hs-ts" },
+      { "section": "pricing.packages", "selector": ".hs-pr" },
+      { "section": "editorial.studio-notes-teaser", "selector": ".ct-notes" },
+      { "section": "conversion.contact-form", "selector": ".ct-talk", "variant": "section-title" },
+      { "section": "faq.questions-answered", "selector": ".faq" }
+    ],
+    "work-index": [
+      { "section": "hero.index-title", "selector": ".title-wrap, .works-text", "variant": "work" },
+      { "section": "listing.project-index", "selector": ".canvas, .works-items" }
+    ],
+    "case-detail": [
+      { "section": "hero.case-intro", "selector": ".pj-intro" },
+      { "section": "content.marked-chapter", "selector": ".pj-ch", "all": true, "variant": "numbered" },
+      { "section": "content.pull-quote", "selector": ".pj-q" },
+      { "section": "media.case-gallery", "selector": ".pj-gc" },
+      { "section": "content.case-results", "selector": ".pj-num" },
+      { "section": "content.case-credits", "selector": ".pj-cr" },
+      { "section": "navigation.case-teaser", "selector": ".pj-next", "variant": "next", "optional": true }
+    ],
+    "studio": [
+      { "section": "hero.studio-intro", "selector": ".st-intro" },
+      { "section": "team.studio-team", "selector": ".st-team" },
+      { "section": "content.principles", "selector": ".st-pr" },
+      { "section": "media.studio-image-strip", "selector": ".st-gal" },
+      { "section": "listing.career-openings", "selector": ".st-career" },
+      { "section": "navigation.case-teaser", "selector": ".st-case", "variant": "featured" }
+    ],
+    "contacts": [
+      { "section": "conversion.contact-form", "selector": ".ct-talk", "variant": "page-title" },
+      { "section": "content.contact-details", "selector": ".ct-img" },
+      { "section": "editorial.studio-notes-teaser", "selector": ".ct-notes" }
+    ],
+    "feed-index": [
+      { "section": "hero.index-title", "selector": ".fd-notes-text", "variant": "feed", "optional": true },
+      { "section": "editorial.notes-index", "selector": ".fd-ticker, .fd-notes-items" }
+    ],
+    "feed-post": [
+      { "section": "hero.article-header", "selector": ".fd-intro" },
+      { "section": "media.article-cover", "selector": ".fd-cover-row" },
+      { "section": "content.marked-chapter", "selector": ".fd-ct", "all": true, "variant": "lettered" },
+      { "section": "content.pull-quote", "selector": ".fd-q" },
+      { "section": "editorial.read-more", "selector": ".fd-rm" }
+    ],
+    "legal": [
+      { "section": "hero.legal-header", "selector": ".lg-intro" },
+      { "section": "content.legal-clause", "selector": ".lg-rt", "splitBy": "h5" },
+      { "section": "faq.questions-answered", "selector": ".faq" }
+    ],
+    "not-found": [
+      { "section": "hero.not-found", "selector": ".nf-hero" },
+      { "section": "faq.questions-answered", "selector": ".faq" }
+    ]
+  }
+}

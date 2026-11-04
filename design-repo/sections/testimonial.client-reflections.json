@@ -1,0 +1,131 @@
+{
+  "id": "testimonial.client-reflections",
+  "title": "Client reflections",
+  "status": "measured",
+  "source": {
+    "id": "src:Testimonials#export-default-function-Testimonials",
+    "file": "src/components/home/Testimonials.jsx",
+    "tag": "export default function Testimonials(",
+    "lines": "127-148",
+    "citation": "src/components/home/Testimonials.jsx:127-148"
+  },
+  "semantic": {
+    "id": "testimonial.client-reflections",
+    "category": "TESTIMONIAL"
+  },
+  "retrievalEligible": true,
+  "purpose": "Centred heading and intro, then a one-at-a-time testimonial slideshow (index, portrait, quote, name, company) with prev/next buttons.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (Testimonials.jsx h2); budget = ceil(1.25 x max)"
+      },
+      "intro": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 17,
+        "x-maxWordsEvidence": "max 13 words measured (Testimonials.jsx p); budget = ceil(1.25 x max)"
+      },
+      "slides": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "quote": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 34,
+              "x-maxWordsEvidence": "max 27 words measured (Testimonials.jsx SLIDES); budget = ceil(1.25 x max)"
+            },
+            "person": {
+              "$ref": "#/definitions/person"
+            },
+            "photo": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-person",
+                "person.fictional-portrait"
+              ]
+            }
+          },
+          "required": [
+            "quote",
+            "person",
+            "photo"
+          ]
+        },
+        "x-countEvidence": "5 slides measured"
+      }
+    },
+    "required": [
+      "heading",
+      "intro",
+      "slides"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "slideshow-autoplay",
+      "carousel-snap",
+      "image-reveal-wipe",
+      "char-rise"
+    ],
+    "reducedMotionFallback": "manual-advance-only",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "show-alternate-tree",
+        "detail": "Horizontal snap carousel with 5 dots instead of the autoplay slideshow."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": "slides[].photo",
+      "assetRoles": [
+        "photo.source-person",
+        "person.fictional-portrait"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "person.fictional-portrait",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.testimonial-slide",
+    "component.image-reveal"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 1053.2,
+    "heightPxMax": 1053.2,
+    "routes": [
+      "/"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/"
+  ]
+}

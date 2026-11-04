@@ -1,0 +1,12 @@
+{
+  "id": "component.billing-toggle",
+  "title": "Billing toggle",
+  "description": "Two-option pill with sliding black indicator.",
+  "source": {
+    "file": "src/components/home/Pricing.jsx",
+    "tag": "function Toggle(",
+    "lines": "113-125",
+    "citation": "src/components/home/Pricing.jsx:113-125"
+  },
+  "composes": []
+}

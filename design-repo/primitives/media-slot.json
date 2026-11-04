@@ -1,0 +1,11 @@
+{
+  "id": "primitive.media-slot",
+  "title": "Media slot",
+  "description": "Cover-fit image or video box with object-position.",
+  "source": {
+    "file": "src/components/fx/ImageReveal.jsx",
+    "tag": "export default function ImageReveal(",
+    "lines": "5-12",
+    "citation": "src/components/fx/ImageReveal.jsx:5-12"
+  }
+}

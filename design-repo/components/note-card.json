@@ -1,0 +1,14 @@
+{
+  "id": "component.note-card",
+  "title": "Note card",
+  "description": "Cover image, date, bold title, excerpt.",
+  "source": {
+    "file": "src/components/feed/NotesTicker.jsx",
+    "tag": "function TickerCard(",
+    "lines": "5-23",
+    "citation": "src/components/feed/NotesTicker.jsx:5-23"
+  },
+  "composes": [
+    "primitive.media-slot"
+  ]
+}

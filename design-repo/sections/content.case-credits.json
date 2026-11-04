@@ -1,0 +1,97 @@
+{
+  "id": "content.case-credits",
+  "title": "Case credits",
+  "status": "measured",
+  "source": {
+    "id": "src:Sections#export-function-Credits",
+    "file": "src/components/project/Sections.jsx",
+    "tag": "export function Credits(",
+    "lines": "83-101",
+    "citation": "src/components/project/Sections.jsx:83-101"
+  },
+  "semantic": {
+    "id": "content.case-credits",
+    "category": "CONTENT"
+  },
+  "retrievalEligible": true,
+  "purpose": "Credits paragraph (names with roles) and a pill button to the live project.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "credits": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 24,
+        "x-maxWordsEvidence": "max 19 words measured (projects.json credits); budget = ceil(1.25 x max)"
+      },
+      "liveCta": {
+        "$ref": "#/definitions/cta"
+      }
+    },
+    "required": [
+      "credits",
+      "liveCta"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "hover-micro"
+    ],
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "disable-motion",
+        "detail": "No hover morph on the pill."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "primitive.button-pill"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 12,
+    "heightPxMin": 348.8,
+    "heightPxMax": 348.8,
+    "routes": [
+      "/work/after-light",
+      "/work/axis-point",
+      "/work/bright-matter",
+      "/work/echoform",
+      "/work/forma-nine",
+      "/work/golden-hour"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/work/after-light",
+    "/work/axis-point",
+    "/work/bright-matter",
+    "/work/echoform",
+    "/work/forma-nine",
+    "/work/golden-hour",
+    "/work/north-layer",
+    "/work/orbit-404",
+    "/work/pulse",
+    "/work/soma-studio",
+    "/work/wavehouse",
+    "/work/zero-parallel"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "utility.text-ticker",
+  "title": "Text band decoration",
+  "status": "measured",
+  "source": {
+    "id": "src:TextTicker#export-default-function-TextTicker",
+    "file": "src/components/studio/TextTicker.jsx",
+    "tag": "export default function TextTicker(",
+    "lines": "12-67",
+    "citation": "src/components/studio/TextTicker.jsx:12-67"
+  },
+  "semantic": {
+    "id": "utility.text-ticker",
+    "category": "UTILITY"
+  },
+  "retrievalEligible": false,
+  "retrievalIneligibleReason": "Decorative ticker repeating one phrase; it belongs to its host section and is never a node.",
+  "purpose": "Endless horizontal display-text bands ('Ideas in Motion.', 'Featured Project.', 'Next Project.') with scroll-velocity boost.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "label": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 4,
+        "x-maxWordsEvidence": "max 3 words measured (contract title); budget = ceil(1.25 x max)"
+      }
+    },
+    "required": []
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "marquee-loop"
+    ],
+    "reducedMotionFallback": "paused-first-frame",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "hide",
+        "detail": "See purpose for per-breakpoint availability."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "note": "runtime UI / overlay: not an in-page section, not height-gated"
+  },
+  "referenceRoutes": []
+}

@@ -1,0 +1,186 @@
+{
+  "id": "shell.site-footer",
+  "title": "Site footer",
+  "status": "measured",
+  "source": {
+    "id": "src:Footer#export-default-function-Footer",
+    "file": "src/components/Footer.jsx",
+    "tag": "export default function Footer(",
+    "lines": "67-121",
+    "citation": "src/components/Footer.jsx:67-121"
+  },
+  "semantic": {
+    "id": "shell.site-footer",
+    "category": "SHELL"
+  },
+  "retrievalEligible": true,
+  "purpose": "Shared footer: huge wordmark with year range, newsletter field, Social and Legal link columns, template credit and copyright line.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "wordmarkText": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 2,
+        "x-maxWordsEvidence": "max 1 words measured (Footer.jsx wordmark); budget = ceil(1.25 x max)"
+      },
+      "yearRange": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (Footer.jsx h5); budget = ceil(1.25 x max)"
+      },
+      "newsletter": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 27,
+            "x-maxWordsEvidence": "max 21 words measured (Footer.jsx newsletter p); budget = ceil(1.25 x max)"
+          },
+          "placeholder": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 4,
+            "x-maxWordsEvidence": "max 3 words measured (Footer.jsx input); budget = ceil(1.25 x max)"
+          }
+        },
+        "required": [
+          "text",
+          "placeholder"
+        ]
+      },
+      "columns": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 2,
+              "x-maxWordsEvidence": "max 1 words measured (Footer.jsx labels); budget = ceil(1.25 x max)"
+            },
+            "links": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 4,
+              "items": {
+                "$ref": "#/definitions/link"
+              },
+              "x-countEvidence": "3 + 3 links measured"
+            }
+          },
+          "required": [
+            "label",
+            "links"
+          ]
+        },
+        "x-countEvidence": "2 columns measured"
+      },
+      "credit": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "lead": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 4,
+            "x-maxWordsEvidence": "max 3 words measured (Footer.jsx credit); budget = ceil(1.25 x max)"
+          },
+          "links": {
+            "type": "array",
+            "minItems": 0,
+            "maxItems": 3,
+            "items": {
+              "$ref": "#/definitions/link"
+            },
+            "x-countEvidence": "2 rolling-letter links measured"
+          }
+        },
+        "required": [
+          "lead",
+          "links"
+        ]
+      },
+      "legalLine": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 8,
+        "x-maxWordsEvidence": "max 6 words measured (Footer.jsx copyright); budget = ceil(1.25 x max)"
+      }
+    },
+    "required": [
+      "wordmarkText",
+      "yearRange",
+      "newsletter",
+      "columns",
+      "legalLine"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeLast": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "blinds-reveal",
+      "char-rise",
+      "hover-micro",
+      "rolling-letters-hover"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "reflow",
+        "detail": "Tablet variant: pad-top 160, links h6 25px, columns side by side, no Blinds."
+      },
+      {
+        "at": "below-tablet",
+        "change": "stack",
+        "detail": "Mobile variant: pad-top 120, year below the wordmark, Social/Legal stacked."
+      },
+      {
+        "at": "below-desktop",
+        "change": "disable-motion",
+        "detail": "No Blinds wordmark reveal, no hover lines below 1200."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.newsletter-field",
+    "primitive.link-line",
+    "primitive.rolling-letters",
+    "primitive.caps-label"
+  ],
+  "variants": [
+    "responsive",
+    "tablet-forced"
+  ],
+  "notes": "tablet-forced = the work index renders the Tablet variant at every width below 1200 (Work.jsx passes force=tablet).",
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "note": "runtime UI / overlay: not an in-page section, not height-gated"
+  },
+  "referenceRoutes": []
+}

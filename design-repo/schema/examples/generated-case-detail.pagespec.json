@@ -1,0 +1,262 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "generated",
+  "template": "case-detail",
+  "route": "/projects/harbour-flat",
+  "brand": {
+    "name": "Tallowreed",
+    "mark": {
+      "assetRole": "brand.placeholder-mark",
+      "assetRef": "generate:plain serif-free text wordmark, black",
+      "alt": "Tallowreed wordmark"
+    },
+    "fictional": true
+  },
+  "meta": {
+    "title": "Harbour Flat — Tallowreed",
+    "description": "Generated case study for a fictional interiors workshop."
+  },
+  "nodes": [
+    {
+      "id": "nav",
+      "type": "shell.nav-layer",
+      "content": {
+        "logoText": "Tallowreed",
+        "links": [
+          {
+            "label": "PROJECTS",
+            "href": "/projects"
+          },
+          {
+            "label": "ABOUT",
+            "href": "/about"
+          },
+          {
+            "label": "JOURNAL",
+            "href": "/journal"
+          },
+          {
+            "label": "HELLO",
+            "href": "/hello"
+          }
+        ],
+        "menuLabel": "Menu"
+      },
+      "motion": {
+        "patterns": [
+          "page-appear-scale"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "intro",
+      "type": "hero.case-intro",
+      "content": {
+        "name": "Harbour Flat",
+        "year": "'24",
+        "description": [
+          "A two-room harbour flat reworked for a retired sailor who wanted fewer things and better ones."
+        ],
+        "services": "Space planning, Joinery, Lighting.",
+        "heroImage": {
+          "assetRole": "photo.generated-scene",
+          "assetRef": "generate:small living room with built-in oak bench facing a harbour window",
+          "alt": "small living room with built-in oak bench facing a harbour w"
+        }
+      },
+      "motion": {
+        "patterns": [
+          "page-appear-scale",
+          "scroll-parallax"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "ch-1",
+      "type": "content.marked-chapter",
+      "variant": "numbered",
+      "content": {
+        "marker": "/ 1",
+        "paragraphs": [
+          "The flat had one window worth facing and three doors fighting for the same wall."
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "static"
+        ],
+        "reducedMotionFallback": "none-needed"
+      }
+    },
+    {
+      "id": "quote",
+      "type": "content.pull-quote",
+      "content": {
+        "quote": "He asked for a room where every object had earned its place on the shelf."
+      },
+      "motion": {
+        "patterns": [
+          "line-stagger-reveal"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "ch-2",
+      "type": "content.marked-chapter",
+      "variant": "numbered",
+      "content": {
+        "marker": "/ 2",
+        "paragraphs": [
+          "We moved one door, built a bench along the window and hid storage under it."
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "static"
+        ],
+        "reducedMotionFallback": "none-needed"
+      }
+    },
+    {
+      "id": "gallery",
+      "type": "media.case-gallery",
+      "content": {
+        "images": [
+          {
+            "image": {
+              "assetRole": "photo.generated-scene",
+              "assetRef": "generate:oak bench detail with brass pulls",
+              "alt": "oak bench detail with brass pulls"
+            },
+            "size": "small",
+            "column": "left"
+          },
+          {
+            "image": {
+              "assetRole": "photo.generated-scene",
+              "assetRef": "generate:harbour view through tall window",
+              "alt": "harbour view through tall window"
+            },
+            "size": "large",
+            "column": "right"
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "static"
+        ],
+        "reducedMotionFallback": "none-needed"
+      }
+    },
+    {
+      "id": "ch-3",
+      "type": "content.marked-chapter",
+      "variant": "numbered",
+      "content": {
+        "marker": "/ 3",
+        "paragraphs": [
+          "The finished flat feels twice the size and needs ten minutes of tidying a week."
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "static"
+        ],
+        "reducedMotionFallback": "none-needed"
+      }
+    },
+    {
+      "id": "results",
+      "type": "content.case-results",
+      "content": {
+        "heading": "What changed after handover:",
+        "stats": [
+          {
+            "value": "2x",
+            "label": "Usable floor area"
+          },
+          {
+            "value": "-60%",
+            "label": "Things kept"
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "char-rise"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "credits",
+      "type": "content.case-credits",
+      "content": {
+        "credits": "Ines Varga (Planning), Teo Marlow (Joinery).",
+        "liveCta": {
+          "label": "View drawings",
+          "href": "https://tallowreed.example/drawings/harbour",
+          "style": "pill"
+        }
+      },
+      "motion": {
+        "patterns": [
+          "hover-micro"
+        ],
+        "reducedMotionFallback": "instant-state-change"
+      }
+    },
+    {
+      "id": "footer",
+      "type": "shell.site-footer",
+      "variant": "responsive",
+      "content": {
+        "wordmarkText": "Tallowreed",
+        "yearRange": "© 2011-26",
+        "newsletter": {
+          "text": "A short letter every season about crafted interiors, materials we trust and the rooms we are quietly finishing.",
+          "placeholder": "YOUR ADDRESS"
+        },
+        "columns": [
+          {
+            "label": "Elsewhere",
+            "links": [
+              {
+                "label": "Newsletter",
+                "href": "https://tallowreed.example/letters"
+              },
+              {
+                "label": "Press kit",
+                "href": "https://tallowreed.example/press"
+              }
+            ]
+          },
+          {
+            "label": "Fine print",
+            "links": [
+              {
+                "label": "Privacy",
+                "href": "/fine-print/privacy"
+              },
+              {
+                "label": "Terms",
+                "href": "/fine-print/terms"
+              }
+            ]
+          }
+        ],
+        "legalLine": "© 2026 Tallowreed. Every right kept."
+      },
+      "motion": {
+        "patterns": [
+          "blinds-reveal"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    }
+  ]
+}

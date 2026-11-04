@@ -1,0 +1,213 @@
+{
+  "$description": "Closed asset-role vocabulary for every media field (PageSpec definitions.media.assetRole). availability is pinned in code (PINNED_AVAILABILITY in schema/semantic_validate.py and extraction/verify_all.py): editing this file alone cannot loosen it.",
+  "version": "1.0.0",
+  "availabilityEnum": [
+    "reference-only",
+    "generation-safe",
+    "blocked-for-generation"
+  ],
+  "generationPolicyEnum": [
+    "may-generate-new",
+    "must-reuse-exact",
+    "must-not-fabricate",
+    "reference-evidence-only"
+  ],
+  "licensing": {
+    "sourceIsRealCompany": false,
+    "sourceIsCommercialTemplate": true,
+    "rule": "The source is a commercial Framer template by its author (credited in the footer). Its photography, partner logos, people's photos and names, showreel and marketing copy are the template author's proprietary content. Real logos, real people's photos and proprietary content must never be reproduced, traced, imitated or paraphrased in generated output; generated pages use only generation-safe roles.",
+    "fonts": "Inter / Inter Display are SIL OFL.",
+    "icons": "Phosphor icons are MIT licensed.",
+    "generatedPages": "Only availability=generation-safe roles; URLs only on reserved .example/.invalid domains or neutral relative paths; people fictional (person.fictional = true); no award, rating or testimonial identities from the source."
+  },
+  "roles": [
+    {
+      "id": "brand.source-wordmark",
+      "availability": "reference-only",
+      "generationPolicy": "reference-evidence-only",
+      "description": "The template's text wordmark ('Möbius®' set in Inter Display 800 as nav logo, hero/footer fit-text SVG). Allowed only in reference reconstructions; never reproduced, traced or imitated in generated output.",
+      "evidence": [
+        "src/components/Nav.jsx:12-12",
+        "src/components/Footer.jsx:77-77"
+      ],
+      "generationSafeSubstitutes": [
+        "brand.placeholder-mark",
+        "brand.user-supplied-mark"
+      ]
+    },
+    {
+      "id": "brand.placeholder-mark",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "description": "A neutral text wordmark for a fictional brand set in the approved display font; must not resemble any real mark.",
+      "evidence": [
+        "src/index.css:36-36"
+      ]
+    },
+    {
+      "id": "brand.user-supplied-mark",
+      "availability": "generation-safe",
+      "generationPolicy": "must-reuse-exact",
+      "description": "A mark the requesting user supplies for their own brand; reused exactly as given.",
+      "evidence": [
+        "src/index.css:36-36"
+      ]
+    },
+    {
+      "id": "logo.source-partner",
+      "availability": "blocked-for-generation",
+      "generationPolicy": "must-not-fabricate",
+      "description": "The 12 partner logo SVGs in the partners grid (template author's assets presented as client brands). Never reproduced or imitated.",
+      "evidence": [
+        "src/components/home/Partners.jsx:13-13"
+      ],
+      "generationSafeSubstitutes": [
+        "logo.fictional-partner"
+      ]
+    },
+    {
+      "id": "logo.fictional-partner",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "description": "Newly drawn abstract logotype for a fictional company.",
+      "evidence": [
+        "src/components/home/Partners.jsx:13-13"
+      ]
+    },
+    {
+      "id": "photo.source-project",
+      "availability": "reference-only",
+      "generationPolicy": "reference-evidence-only",
+      "description": "Case-study photography (hero stack, canvas cards, case hero and gallery, case teasers). Template author's proprietary imagery.",
+      "evidence": [
+        "src/data.js:8-8",
+        "src/components/home/Hero.jsx:9-9"
+      ],
+      "generationSafeSubstitutes": [
+        "photo.generated-scene"
+      ]
+    },
+    {
+      "id": "photo.source-editorial",
+      "availability": "reference-only",
+      "generationPolicy": "reference-evidence-only",
+      "description": "Editorial/atmosphere photography (feed covers, notes, studio strip, contact image, numbers and partners images, reel poster).",
+      "evidence": [
+        "src/components/contacts/StudioNotes.jsx:11-11",
+        "src/components/home/Numbers.jsx:17-17"
+      ],
+      "generationSafeSubstitutes": [
+        "photo.generated-scene"
+      ]
+    },
+    {
+      "id": "photo.source-person",
+      "availability": "blocked-for-generation",
+      "generationPolicy": "must-not-fabricate",
+      "description": "Portraits of team members, founders and testimonial clients. A real person's likeness: never reproduced, traced or imitated.",
+      "evidence": [
+        "src/pages/Studio.jsx:33-33",
+        "src/components/home/Founders.jsx:30-30"
+      ],
+      "generationSafeSubstitutes": [
+        "person.fictional-portrait"
+      ]
+    },
+    {
+      "id": "person.fictional-portrait",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "description": "Generated portrait of a clearly fictional person (person.fictional = true); must not depict or resemble a real individual.",
+      "evidence": [
+        "src/pages/Studio.jsx:33-33"
+      ]
+    },
+    {
+      "id": "media.source-reel",
+      "availability": "blocked-for-generation",
+      "generationPolicy": "must-not-fabricate",
+      "description": "The studio showreel video.",
+      "evidence": [
+        "src/components/home/Reel.jsx:10-10"
+      ],
+      "generationSafeSubstitutes": [
+        "media.video-placeholder"
+      ]
+    },
+    {
+      "id": "media.video-placeholder",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "description": "Placeholder or newly generated loop for a video slot.",
+      "evidence": [
+        "src/components/home/Reel.jsx:10-10"
+      ]
+    },
+    {
+      "id": "photo.generated-scene",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "description": "Newly generated photograph/scene with no real people, products or marks.",
+      "evidence": [
+        "src/data.js:8-8"
+      ]
+    },
+    {
+      "id": "illustration.gradient-shape",
+      "availability": "reference-only",
+      "generationPolicy": "reference-evidence-only",
+      "description": "The template's 404 gradient blob paths.",
+      "evidence": [
+        "src/components/legal/BigNumber404.jsx:18-18"
+      ],
+      "generationSafeSubstitutes": [
+        "illustration.generated-abstract"
+      ]
+    },
+    {
+      "id": "illustration.generated-abstract",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "description": "Newly generated abstract shape or gradient built from approved tokens.",
+      "evidence": [
+        "src/components/legal/BigNumber404.jsx:23-23"
+      ]
+    },
+    {
+      "id": "icon.ui-glyph",
+      "availability": "generation-safe",
+      "generationPolicy": "must-reuse-exact",
+      "description": "UI glyphs from the open-source Phosphor set (arrow, plus, check, play, close) used by buttons and the cursor.",
+      "evidence": [
+        "src/components/project/projectData.jsx:13-13"
+      ]
+    },
+    {
+      "id": "rating.placeholder",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "description": "Placeholder rating/recognition slot for generated pages. The source has no rating UI; its award names and client quotes are real-identity content blocked by GENERATED_MODE_RATING / _PERSON.",
+      "evidence": [
+        "src/components/home/Awards.jsx:31-31"
+      ]
+    },
+    {
+      "id": "url.placeholder",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "description": "Placeholder link on a reserved .example/.invalid domain or a relative path that is not a source slug.",
+      "evidence": [
+        "src/lib/router.js:51-51"
+      ]
+    },
+    {
+      "id": "copy.original",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "description": "Newly written copy; must not reuse any 6-word run of the reference copy corpus.",
+      "evidence": [
+        "src/components/home/Scramble.jsx:18-18"
+      ]
+    }
+  ]
+}

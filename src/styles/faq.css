@@ -1,0 +1,147 @@
+/* Shared FAQ section + Button A / Button B, built against .recon/specs/legal-404.md §B.5 and §C
+   (Button A: project.md §4.6 / §7.5).
+   .faq-desk = Desktop variant (>=1200, from the `desktop` prop). .faq-touch = Tablet; phone overrides
+   are in the max-width 809.98px block at the bottom. */
+
+/* ---------- Button A (pill) ---------- */
+.faq-btna {
+  position: relative; display: flex; gap: 16px; padding: 8px 58px 8px 18px; overflow: clip;
+}
+.faq-btna-bg { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: var(--black); border-radius: 999px; }
+.faq-btna-text { position: relative; font-size: 20px; font-weight: 500; line-height: 32px; color: var(--white); white-space: nowrap; }
+.faq-btna-arrow { position: absolute; top: calc(50% - 8px); width: 16px; height: 16px; color: var(--white); }
+.faq-btna-arrow1 { right: 14px; }
+.faq-btna-arrow2 { left: -32px; }
+/* Desktop hover, spring 0.4 bounce 0 */
+.faq-btna-desk,
+.faq-btna-desk .faq-btna-bg,
+.faq-btna-desk .faq-btna-text,
+.faq-btna-desk .faq-btna-arrow1,
+.faq-btna-desk .faq-btna-arrow2 {
+  transition: padding 0.4s var(--spring-04), top 0.4s var(--spring-04), right 0.4s var(--spring-04),
+    bottom 0.4s var(--spring-04), left 0.4s var(--spring-04), color 0.4s var(--spring-04);
+}
+.faq-btna-desk:hover { padding: 8px 76px 8px 0; }
+.faq-btna-desk:hover .faq-btna-bg { top: 10px; bottom: 10px; right: 1px; left: calc(100% - 29px); }
+.faq-btna-desk:hover .faq-btna-text { color: var(--black); }
+.faq-btna-desk:hover .faq-btna-arrow1 { right: -120px; }
+.faq-btna-desk:hover .faq-btna-arrow2 { left: calc(100% - 23px); }
+
+/* ---------- Button B (text link + arrows + underline) ---------- */
+.faq-btnb {
+  position: relative; display: flex; gap: 16px; padding: 2px 40px 2px 0; overflow: clip; cursor: unset;
+}
+.faq-btnb-desk { cursor: pointer; }
+.faq-btnb-text {
+  font-size: 26px; font-weight: 500; line-height: 36.4px; letter-spacing: -0.26px;
+  color: var(--black); white-space: nowrap;
+}
+.faq-btnb-arrows {
+  position: absolute; top: 0; left: -40px; right: 0; height: 100%; z-index: 1;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.faq-btnb-arrow { flex: none; width: 11%; height: 64%; color: var(--black); }
+.faq-btnb-line { position: absolute; bottom: 0; left: -1px; right: 100%; height: 2px; background: var(--black); }
+/* Desktop hover, spring 0.6 bounce 0 */
+.faq-btnb-desk, .faq-btnb-desk .faq-btnb-arrows, .faq-btnb-desk .faq-btnb-line {
+  transition: padding 0.6s var(--spring-06), left 0.6s var(--spring-06), right 0.6s var(--spring-06);
+}
+.faq-btnb-desk:hover { padding: 2px 0 2px 40px; }
+.faq-btnb-desk:hover .faq-btnb-arrows { left: 0; right: -40px; }
+.faq-btnb-desk:hover .faq-btnb-line { right: 0; }
+
+/* ---------- Section (desktop, §C.1) ---------- */
+.faq { display: flex; padding: 0 20px; }
+.faq-left { flex: 5 0 0; min-width: 0; }
+.faq-right { flex: 7 0 0; min-width: 0; display: flex; flex-direction: column; padding-bottom: 40px; }
+.faq-sticky {
+  position: sticky; top: 0; height: 100vh; z-index: 1;
+  display: flex; flex-direction: column; justify-content: flex-end; gap: 40px; padding: 0 20px 40px;
+}
+.faq-text { flex: 1 0 0; display: flex; flex-direction: column; overflow: clip; }
+.faq-spacer { flex: none; height: 240px; }
+.faq-h6 { font-size: 26px; font-weight: 700; line-height: 36.4px; letter-spacing: -0.26px; color: var(--black); }
+.faq-h6 strong { font-weight: 700; }
+.faq-learn { width: 280px; font-size: 14px; font-weight: 500; line-height: 23.8px; color: #757575; }
+.faq-about { display: flex; }
+
+/* Accordion */
+.faq-acc { display: flex; flex-direction: column; gap: 120px; }
+.faq-item { position: relative; display: flex; cursor: pointer; }
+.faq-item-bg {
+  position: absolute; top: -60px; bottom: -60px; left: -20px; right: -20px;
+  background: #f7f7f7; opacity: 0; transition: opacity 0.8s cubic-bezier(0.6, 0, 0.4, 1);
+}
+.faq-item:hover .faq-item-bg { opacity: 1; }
+.faq-plus-col { position: relative; flex: 0 0 calc(100% / 7); min-width: 0; padding: 0 20px; }
+.faq-plus-ph { visibility: hidden; }
+.faq-plus {
+  position: absolute; top: 13.33px; left: calc(50% - 16px); width: 32px; height: 32px; color: var(--black);
+  transition: transform 0.8s cubic-bezier(0.6, 0, 0.4, 1);
+}
+.faq-item.is-open .faq-plus { transform: rotate(135deg); }
+.faq-qa { position: relative; flex: 0 0 calc(600% / 7); min-width: 0; padding: 0 20px; overflow: clip; }
+.faq-q {
+  font-size: 48px; font-weight: 700; line-height: 57.6px; letter-spacing: -0.96px;
+  color: var(--black); text-wrap: balance;
+}
+.faq-a-wrap {
+  display: grid; grid-template-rows: 0fr;
+  transition: grid-template-rows 0.8s cubic-bezier(0.6, 0, 0.4, 1);
+}
+.faq-item.is-open .faq-a-wrap { grid-template-rows: 1fr; }
+.faq-a-clip { min-height: 0; overflow: hidden; }
+.faq-a { margin-top: 16px; max-width: 480px; font-size: 16px; font-weight: 500; line-height: 25.6px; color: var(--body); }
+.faq-a strong { font-weight: 700; }
+
+/* CTA */
+.faq-cta { display: flex; padding-top: 120px; }
+.faq-cta-side { flex: none; width: calc(100% / 7); }
+.faq-cta-col {
+  flex: none; width: calc(500% / 7); display: flex; flex-direction: column; align-items: flex-start;
+  gap: 32px; padding: 0 20px;
+}
+.faq-cta-text { width: 320px; max-width: 100%; font-size: 16px; font-weight: 500; line-height: 25.6px; color: var(--body); }
+
+/* ---------- Tablet (§C.2) ---------- */
+.faq-touch { padding: 0 15px; }
+.faq-touch .faq-left { flex: 1 0 0; }
+.faq-touch .faq-right { flex: 2 0 0; padding-bottom: 30px; }
+.faq-touch .faq-sticky { padding: 0 15px 30px; }
+.faq-touch .faq-spacer { height: 160px; }
+.faq-touch .faq-h6 { font-size: 25px; line-height: 35px; letter-spacing: -0.25px; }
+.faq-touch .faq-acc { padding: 0 15px; gap: 80px; }
+.faq-touch .faq-qa { order: 0; flex: 1 0 0; padding: 0; }
+.faq-touch .faq-plus-col { order: 1; flex: none; padding: 0 0 0 20px; }
+.faq-touch .faq-plus { top: 10.9px; }
+.faq-touch .faq-q { font-size: 44px; line-height: 52.8px; letter-spacing: -0.88px; }
+.faq-touch .faq-cta { padding-top: 80px; }
+.faq-touch .faq-cta-side { display: none; }
+.faq-touch .faq-cta-col { width: 100%; padding: 0 15px; }
+.faq-btnb:not(.faq-btnb-desk) .faq-btnb-text { font-size: 25px; line-height: 35px; letter-spacing: -0.25px; }
+
+/* ---------- Phone (§C.3) ---------- */
+@media (max-width: 809.98px) {
+  .faq-touch { flex-direction: column; padding: 120px 0 0; }
+  .faq-touch .faq-left, .faq-touch .faq-right { flex: none; }
+  .faq-touch .faq-right { padding-bottom: 0; }
+  .faq-touch .faq-sticky { position: static; height: auto; justify-content: flex-start; padding: 0 20px 40px; }
+  .faq-touch .faq-text { flex: none; }
+  .faq-touch .faq-spacer { display: none; }
+  .faq-touch .faq-h6 { font-size: 24px; line-height: 33.6px; letter-spacing: -0.24px; }
+  .faq-touch .faq-learn { width: 100%; }
+  .faq-touch .faq-about { display: none; }
+  .faq-touch .faq-acc { padding: 0 20px; }
+  .faq-touch .faq-plus { top: 6px; }
+  .faq-touch .faq-q { font-size: 36px; line-height: 43.2px; letter-spacing: -0.72px; }
+  .faq-touch .faq-cta { padding: 64px 20px 0; }
+  .faq-touch .faq-cta-col { padding: 0; }
+  .faq-touch .faq-btna { width: 100%; }
+  .faq-touch .faq-btna-text { flex: 1 0 0; }
+  .faq-btnb:not(.faq-btnb-desk) .faq-btnb-text { font-size: 24px; line-height: 33.6px; letter-spacing: -0.24px; }
+}
+
+/* ---------- Appear helpers (desktop) ---------- */
+.faq-ch { display: inline-block; white-space: pre; }
+.faq-wm { display: inline-block; overflow: hidden; vertical-align: bottom; }
+.faq-w { display: inline-block; white-space: pre; }

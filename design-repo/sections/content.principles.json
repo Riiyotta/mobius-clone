@@ -1,0 +1,119 @@
+{
+  "id": "content.principles",
+  "title": "Principles list",
+  "status": "measured",
+  "source": {
+    "id": "src:Studio#function-Principles",
+    "file": "src/pages/Studio.jsx",
+    "tag": "function Principles(",
+    "lines": "197-224",
+    "citation": "src/pages/Studio.jsx:197-224"
+  },
+  "semantic": {
+    "id": "content.principles",
+    "category": "CONTENT"
+  },
+  "retrievalEligible": true,
+  "purpose": "Sticky left column (heading, note, underline CTA) beside an indexed list of short principle statements ('A /', 'B /', 'C /').",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (Studio.jsx h6); budget = ceil(1.25 x max)"
+      },
+      "note": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 14,
+        "x-maxWordsEvidence": "max 11 words measured (Studio.jsx note); budget = ceil(1.25 x max)"
+      },
+      "cta": {
+        "$ref": "#/definitions/cta"
+      },
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "index": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 3,
+              "x-maxWordsEvidence": "max 2 words measured (Studio.jsx PRINCIPLES); budget = ceil(1.25 x max)"
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 22,
+              "x-maxWordsEvidence": "max 17 words measured (Studio.jsx PRINCIPLES); budget = ceil(1.25 x max)"
+            }
+          },
+          "required": [
+            "index",
+            "text"
+          ]
+        },
+        "x-countEvidence": "3 items measured"
+      }
+    },
+    "required": [
+      "heading",
+      "note",
+      "cta",
+      "items"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "char-rise",
+      "line-stagger-reveal"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "stack",
+        "detail": "Left column stacks above the list; no sticky."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.sticky-aside",
+    "primitive.button-underline"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 1720.8,
+    "heightPxMax": 1720.8,
+    "routes": [
+      "/studio"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/studio"
+  ]
+}

@@ -1,0 +1,523 @@
+--- scrollY 900
+    DIV>H3>SPAN#141 = t-738.962,101.338 o1.000 @y901
+--- scrollY 1050
+    DIV>H3>SPAN#74 = t-422.264,57.907 o1.000 @y708
+    DIV>H3>SPAN#141 = (gone/identity)
+--- scrollY 1200
+    DIV>H3>SPAN#74 = t-105.566,14.477 o1.000 @y514
+--- scrollY 1350
+    DIV>H3>SPAN#74 = t0,0 o1.000 @y350
+--- scrollY 1950
+    Main Container>Reel>Tickers#335 = t0,-168 o1.000 @y870
+    DIV>DIV>DIV#339 = t-135.237,0 o1.000 @y870
+    DIV>H3>SPAN#74 = (gone/identity)
+--- scrollY 2100
+    DIV>DIV>DIV#339 = t-229.533,0 o1.000 @y720
+    DIV>DIV>DIV#355 = t-882.677,0 o1.000 @y896
+--- scrollY 2250
+    DIV>DIV>DIV#339 = t-324.058,0 o1.000 @y570
+    DIV>DIV>DIV#355 = t-788.148,0 o1.000 @y746
+--- scrollY 2400
+    DIV>DIV>DIV#339 = t-418.324,0 o1.000 @y420
+    DIV>DIV>DIV#355 = t-693.882,0 o1.000 @y596
+--- scrollY 2550
+    DIV>DIV>DIV#339 = t-514.661,0 o1.000 @y270
+    DIV>DIV>DIV#355 = t-597.546,0 o1.000 @y446
+--- scrollY 2700
+    DIV>DIV>DIV#339 = t-607.112,0 o1.000 @y120
+    DIV>DIV>DIV#355 = t-505.094,0 o1.000 @y296
+    STRONG>SPAN>SPAN#386 = t0,5.332 o1.000 @y775
+    DIV>H4>SPAN#464 = t0,1.872 o0.968 @y771
+--- scrollY 2850
+    DIV>DIV>DIV#339 = t-701.37,0 o1.000 @y-30
+    DIV>DIV>DIV#355 = t-410.836,0 o1.000 @y146
+    STRONG>SPAN>SPAN#386 = t0,0.062 o1.000 @y619
+    DIV>H4>SPAN#464 = (gone/identity)
+--- scrollY 3000
+    DIV>DIV>DIV#339 = t-795.906,0 o1.000 @y-180
+    DIV>DIV>DIV#355 = t-316.301,0 o1.000 @y-4
+    STRONG>SPAN>SPAN#386 = (gone/identity)
+--- scrollY 3150
+    DIV>DIV>DIV#355 = t-222.034,0 o1.000 @y-154
+    DIV>Desktop>Arrows#427 = t0,30 o1.000 @y939
+    DIV>DIV>DIV#339 = (gone/identity)
+--- scrollY 3300
+    H6>SPAN>SPAN#441 = t0,11.128 o1.000 @y833
+    Main Container>Reel>Tickers#335 = (gone/identity)
+    DIV>DIV>DIV#355 = (gone/identity)
+--- scrollY 3450
+    DIV>Desktop>Arrows#427 = t0,4.311 o1.000 @y824
+    H6>SPAN>SPAN#441 = t0,0.145 o1.000 @y822
+    DIV>H4>SPAN#539 = t0,1.872 o0.968 @y758
+    A>Digit B>svg#847 = t-228.953,-2653.51 o1.000 @y916
+    Digit B>svg>foreignObject#848 = t0,0 o1.000 @y916
+--- scrollY 3600
+    DIV>Desktop>Arrows#427 = t0,0.052 o1.000 @y820
+    H6>SPAN>SPAN#441 = (gone/identity)
+    DIV>H4>SPAN#539 = (gone/identity)
+--- scrollY 3750
+    DIV>Desktop>Arrows#427 = (gone/identity)
+--- scrollY 4050
+    DIV>H4>SPAN#608 = t0,1.836 o0.969 @y895
+--- scrollY 4200
+    DIV>H4>SPAN#608 = (gone/identity)
+--- scrollY 4800
+    DIV>H4>SPAN#679 = t0,1.984 o0.967 @y882
+--- scrollY 4950
+    DIV>H4>SPAN#679 = (gone/identity)
+--- scrollY 5250
+    A>Digit A>svg#879 = t-228.953,-2654.48 o1.000 @y806
+    Digit A>svg>foreignObject#880 = t0,0 o1.000 @y806
+--- scrollY 5700
+    H2>SPAN>SPAN#752 = t0,7.574 o1.000 @y851
+--- scrollY 5850
+    H2>SPAN>SPAN#764 = t0,26.673 o1.000 @y824
+    DIV>Desktop>Arrows#808 = t0,30 o1.000 @y804
+    H6>SPAN>SPAN#822 = t0,12.851 o1.000 @y788
+    H2>SPAN>SPAN#752 = (gone/identity)
+--- scrollY 6000
+    DIV>Desktop>Arrows#808 = t0,5.058 o1.000 @y629
+    H6>SPAN>SPAN#822 = t0,0.173 o1.000 @y625
+    H2>SPAN>SPAN#764 = (gone/identity)
+--- scrollY 6150
+    DIV>Desktop>Arrows#808 = t0,0.053 o1.000 @y474
+    DIV>A>Digit B#846 = t0,-267.633 o1.000 @y869
+    DIV>A>B#913 = none o0.000 @y863
+    DIV>A>C#916 = none o0.000 @y863
+    Big Numbers>A>big-number-a#1018 = none o0.000 @y802
+    H6>SPAN>SPAN#822 = (gone/identity)
+--- scrollY 6300
+    DIV>A>Digit A#878 = t0,-267.633 o1.000 @y815
+    DIV>Desktop>Arrows#808 = (gone/identity)
+--- scrollY 6750
+    Big Numbers>B>big-number-b#1145 = none o0.000 @y902
+--- scrollY 7050
+    Big Numbers>A>big-number-a#1018 = (gone/identity)
+--- scrollY 7350
+    DIV>B>Digit B#846 = t0,-267.633 o1.000 @y268
+    B>Digit B>svg#847 = t0,-3127.5 o1.000 @y-1265
+    DIV>B>Digit A#878 = t0,-267.633 o1.000 @y364
+    B>Digit A>svg#879 = t-228.953,-2339.54 o1.000 @y-1441
+    DIV>B>A#910 = none o0.296 @y261
+    DIV>B>1#913 = none o0.704 @y261
+    DIV>B>C#916 = none o0.000 @y261
+    DIV>A>Digit B#846 = (gone/identity)
+    A>Digit B>svg#847 = (gone/identity)
+    DIV>A>Digit A#878 = (gone/identity)
+    A>Digit A>svg#879 = (gone/identity)
+    DIV>A>B#913 = (gone/identity)
+    DIV>A>C#916 = (gone/identity)
+--- scrollY 7500
+    B>Digit B>svg#847 = t0,-2710.51 o1.000 @y-848
+    B>Digit A>svg#879 = t-228.953,-2616.6 o1.000 @y-1718
+    DIV>B>A#910 = none o0.036 @y261
+    DIV>B>1#913 = none o0.964 @y261
+--- scrollY 7650
+    B>Digit B>svg#847 = t0,-2659.55 o1.000 @y-797
+    B>Digit A>svg#879 = t-228.953,-2650.46 o1.000 @y-1751
+    DIV>B>A#910 = none o0.004 @y261
+    DIV>B>1#913 = none o0.996 @y261
+    Big Numbers>C>big-number-c#1244 = none o0.000 @y902
+--- scrollY 7800
+    B>Digit B>svg#847 = t0,-2653.51 o1.000 @y-791
+    B>Digit A>svg#879 = t-228.953,-2654.48 o1.000 @y-1755
+    DIV>B>A#910 = none o0.000 @y261
+    DIV>B>1#913 = (gone/identity)
+    Big Numbers>B>big-number-b#1145 = (gone/identity)
+--- scrollY 8250
+    DIV>C>Digit B#846 = t0,-267.633 o1.000 @y268
+    C>Digit B>svg#847 = t0,-2495.75 o1.000 @y-1168
+    DIV>C>Digit A#878 = t0,-267.633 o1.000 @y364
+    C>Digit A>svg#879 = t0,-2028.17 o1.000 @y-3254
+    DIV>C>A#910 = none o0.000 @y261
+    DIV>C>1#913 = none o0.294 @y261
+    DIV>C>C#916 = none o0.706 @y261
+    DIV>B>Digit B#846 = (gone/identity)
+    B>Digit B>svg#847 = (gone/identity)
+    DIV>B>Digit A#878 = (gone/identity)
+    B>Digit A>svg#879 = (gone/identity)
+    DIV>B>A#910 = (gone/identity)
+    DIV>B>C#916 = (gone/identity)
+--- scrollY 8400
+    C>Digit B>svg#847 = t0,-2632.94 o1.000 @y-1305
+    C>Digit A>svg#879 = t0,-2572.83 o1.000 @y-3799
+    DIV>C>1#913 = none o0.038 @y261
+    DIV>C>C#916 = none o0.962 @y261
+--- scrollY 8550
+    C>Digit B>svg#847 = t0,-2651.32 o1.000 @y-1324
+    C>Digit A>svg#879 = t0,-2645.79 o1.000 @y-3872
+    DIV>C>1#913 = none o0.004 @y261
+    DIV>C>C#916 = none o0.996 @y261
+--- scrollY 8700
+    C>Digit B>svg#847 = t0,-2653.51 o1.000 @y-1474
+    C>Digit A>svg#879 = t0,-2654.48 o1.000 @y-4029
+    DIV>C>1#913 = none o0.000 @y113
+    DIV>C>C#916 = (gone/identity)
+    Big Numbers>C>big-number-c#1244 = (gone/identity)
+--- scrollY 8850
+    H2>SPAN>SPAN#1255 = t0,6.081 o1.000 @y808
+    List>DIV>Item#1318 = t0,7.961 o0.920 @y810
+    List>DIV>Item#1335 = t0,70.149 o0.299 @y945
+--- scrollY 9000
+    H2>SPAN>SPAN#1263 = t0,26.355 o1.000 @y782
+    List>DIV>Item#1318 = t0,0.448 o0.996 @y652
+    List>DIV>Item#1335 = t0,6.096 o0.939 @y731
+    List>DIV>Item#1352 = t0,8.807 o0.912 @y808
+    List>DIV>Item#1369 = t0,66.727 o0.333 @y939
+    H2>SPAN>SPAN#1255 = (gone/identity)
+--- scrollY 9150
+    List>DIV>Item#1318 = t0,0.023 o1.000 @y502
+    List>DIV>Item#1335 = t0,0.315 o0.997 @y576
+    List>DIV>Item#1352 = t0,0.456 o0.995 @y649
+    List>DIV>Item#1369 = t0,5.222 o0.948 @y728
+    List>DIV>Item#1386 = t0,7.961 o0.920 @y804
+    List>DIV>Item#1403 = t0,62.687 o0.373 @y932
+    H2>SPAN>SPAN#1263 = (gone/identity)
+--- scrollY 9300
+    DIV>Desktop>Arrows#1293 = t0,30 o1.000 @y930
+    List>DIV>Item#1318 = t0,0.001 o1.000 @y352
+    List>DIV>Item#1335 = t0,0.018 o1.000 @y425
+    List>DIV>Item#1352 = t0,0.025 o1.000 @y499
+    List>DIV>Item#1369 = t0,0.291 o0.997 @y573
+    List>DIV>Item#1386 = t0,0.444 o0.996 @y646
+    List>DIV>Item#1403 = t0,5.417 o0.946 @y725
+    List>DIV>Item#1420 = t0,8.807 o0.912 @y802
+    List>DIV>Item#1437 = t0,59.333 o0.407 @y926
+--- scrollY 9450
+    H6>SPAN>SPAN#1307 = t0,11.128 o1.000 @y763
+    List>DIV>Item#1352 = t0,0.001 o1.000 @y349
+    List>DIV>Item#1369 = t0,0.015 o1.000 @y422
+    List>DIV>Item#1386 = t0,0.023 o1.000 @y496
+    List>DIV>Item#1403 = t0,0.279 o0.997 @y570
+    List>DIV>Item#1420 = t0,0.454 o0.995 @y644
+    List>DIV>Item#1437 = t0,4.585 o0.954 @y721
+    DIV>C>Digit B#846 = (gone/identity)
+    List>DIV>Item#1318 = (gone/identity)
+    List>DIV>Item#1335 = (gone/identity)
+--- scrollY 9600
+    DIV>Desktop>Arrows#1293 = t0,2.359 o1.000 @y603
+    H6>SPAN>SPAN#1307 = t0,0.073 o1.000 @y602
+    List>DIV>Item#1403 = t0,0.01 o1.000 @y420
+    List>DIV>Item#1420 = t0,0.017 o1.000 @y493
+    List>DIV>Item#1437 = t0,0.171 o0.998 @y567
+    Section>DIV>Card Container#1602 = t0,-200 o1.000 @y820
+    DIV>Desktop>Image Placeholder#1611 = none o0.000 @y820
+    DIV>C>Digit A#878 = (gone/identity)
+    DIV>C>A#910 = (gone/identity)
+    DIV>C>1#913 = (gone/identity)
+    List>DIV>Item#1352 = (gone/identity)
+    List>DIV>Item#1369 = (gone/identity)
+    List>DIV>Item#1386 = (gone/identity)
+--- scrollY 9750
+    List>DIV>Item#1437 = t0,0.009 o1.000 @y417
+    Section>DIV>Card Container#1602 = t0,-190.173 o1.000 @y680
+    Section>DIV>Card Container#1616 = t0,-47.543 o1.000 @y823
+    DIV>Desktop>Image Placeholder#1625 = none o0.000 @y823
+    DIV>Desktop>Arrows#1293 = (gone/identity)
+    H6>SPAN>SPAN#1307 = (gone/identity)
+    List>DIV>Item#1403 = (gone/identity)
+    List>DIV>Item#1420 = (gone/identity)
+--- scrollY 9900
+    STRONG>SPAN>SPAN#1464 = t0,5.332 o1.000 @y850
+    Section>DIV>Card Container#1602 = t0,-140.308 o1.000 @y580
+    Section>DIV>Card Container#1616 = t0,-35.077 o1.000 @y685
+    List>DIV>Item#1437 = (gone/identity)
+--- scrollY 10050
+    STRONG>SPAN>SPAN#1464 = t0,0.052 o1.000 @y694
+    Section>DIV>Card Container#1602 = t0,-87.438 o1.000 @y483
+    Section>DIV>Card Container#1616 = t0,-21.859 o1.000 @y549
+    C>Digit A>svg#879 = (gone/identity)
+    Digit A>svg>foreignObject#880 = (gone/identity)
+--- scrollY 10200
+    Section>DIV>Card Container#1602 = t0,-33.971 o1.000 @y386
+    Section>DIV>Card Container#1616 = t0,-8.493 o1.000 @y412
+    STRONG>SPAN>SPAN#1464 = (gone/identity)
+--- scrollY 10350
+    Section>DIV>Card Container#1602 = t0,-2.423 o1.000 @y268
+    Section>DIV>Card Container#1616 = t0,-0.606 o1.000 @y270
+--- scrollY 10500
+    Section>DIV>Card Container#1602 = t0,-0.126 o1.000 @y120
+    Section>DIV>Card Container#1616 = t0,-0.031 o1.000 @y120
+--- scrollY 10650
+    Section>DIV>Card Container#1602 = t0,-0.007 o1.000 @y-30
+    Section>DIV>Card Container#1616 = t0,-0.002 o1.000 @y-30
+    Sticky Container>Sticky>Text Container#1632 = t0,-80 o1.000 @y861
+--- scrollY 10800
+    Section>DIV>Card Container#1602 = (gone/identity)
+    Section>DIV>Card Container#1616 = (gone/identity)
+--- scrollY 10950
+    Our Partners>client-logotypes>our-partners-fade-out#1641 = none o0.000 @y910
+--- scrollY 11100
+    Text Container>DIV>DIV#1634 = none o0.467 @y411
+--- scrollY 11250
+    Text Container>DIV>DIV#1634 = none o0.052 @y325
+    DIV>Desktop>Image Placeholder#1611 = (gone/identity)
+    DIV>Desktop>Image Placeholder#1625 = (gone/identity)
+--- scrollY 11400
+    Text Container>DIV>DIV#1634 = none o0.022 @y325
+--- scrollY 11550
+    Text Container>DIV>DIV#1634 = none o0.020 @y325
+--- scrollY 11850
+    DIV>DIV>IMG#1720 = t0,-300 o1.000 @y907
+--- scrollY 12300
+    DIV>DIV>IMG#1720 = t0,-276.19 o1.000 @y481
+--- scrollY 12450
+    DIV>DIV>IMG#1720 = t0,-251.19 o1.000 @y356
+--- scrollY 12600
+    DIV>DIV>IMG#1720 = t0,-226.19 o1.000 @y231
+    C>Digit B>svg#847 = (gone/identity)
+    Digit B>svg>foreignObject#848 = (gone/identity)
+--- scrollY 12750
+    DIV>DIV>IMG#1720 = t0,-201.19 o1.000 @y106
+--- scrollY 12900
+    DIV>DIV>IMG#1720 = t0,-176.19 o1.000 @y-19
+--- scrollY 13050
+    DIV>DIV>IMG#1720 = t0,-151.19 o1.000 @y-144
+--- scrollY 13200
+    DIV>DIV>IMG#1720 = t0,-126.19 o1.000 @y-269
+--- scrollY 13350
+    DIV>DIV>IMG#1720 = t0,-101.19 o1.000 @y-394
+    H2>SPAN>SPAN#1730 = t0,26.04 o1.000 @y833
+    Our Partners>client-logotypes>our-partners-fade-out#1641 = (gone/identity)
+--- scrollY 13500
+    DIV>DIV>IMG#1720 = t0,-76.19 o1.000 @y-519
+    Timeline>Grid>Line#1799 = none o0.300 @y892
+    Timeline>Grid>Line#1800 = none o0.300 @y892
+    Timeline>Grid>Line#1801 = none o0.300 @y892
+    Timeline>Grid>Line#1802 = none o0.300 @y892
+    Timeline>Grid>Line#1803 = none o0.300 @y892
+    Timeline>Grid>Line#1804 = none o0.300 @y892
+    Timeline>Grid>Line#1805 = none o0.300 @y892
+    Timeline>Grid>Line#1806 = none o0.300 @y892
+    Timeline>Grid>Line#1807 = none o0.300 @y892
+    Timeline>Grid>Line#1808 = none o0.300 @y892
+    Timeline>Grid>Line#1809 = none o0.300 @y892
+    Timeline>Grid>Line#1810 = none o0.300 @y892
+    P>STRONG>SPAN#1821 = t-20,0 o1.000 @y934
+    H2>SPAN>SPAN#1730 = (gone/identity)
+--- scrollY 13650
+    DIV>DIV>IMG#1720 = t0,-51.19 o1.000 @y-644
+    DIV>B>Backdrop#1817 = s0.716,0 t-44.3,0 o1.000 @y774
+    P>STRONG>SPAN#1821 = t-5.618,0 o1.000 @y784
+    DIV>B>Backdrop#1830 = s0.716,0 t-52.611,0 o1.000 @y833
+    P>STRONG>SPAN#1834 = t-5.618,0 o1.000 @y843
+    P>STRONG>SPAN#1847 = t-20,0 o1.000 @y902
+    Sticky Container>Sticky>Text Container#1632 = (gone/identity)
+    Text Container>DIV>DIV#1634 = (gone/identity)
+--- scrollY 13800
+    DIV>DIV>IMG#1720 = t0,-26.19 o1.000 @y-769
+    Timeline>Numbers>DIV#1774 = none o0.500 @y879
+    Timeline>Numbers>DIV#1776 = none o0.500 @y879
+    Timeline>Numbers>DIV#1778 = none o0.500 @y879
+    Timeline>Numbers>DIV#1780 = none o0.500 @y879
+    Timeline>Numbers>DIV#1782 = none o0.500 @y879
+    Timeline>Numbers>DIV#1784 = none o0.500 @y879
+    Timeline>Numbers>DIV#1786 = none o0.500 @y879
+    Timeline>Numbers>DIV#1788 = none o0.500 @y879
+    Timeline>Numbers>DIV#1790 = none o0.500 @y879
+    Timeline>Numbers>DIV#1792 = none o0.500 @y879
+    Timeline>Numbers>DIV#1794 = none o0.500 @y879
+    Timeline>Numbers>DIV#1796 = none o0.000 @y879
+    DIV>B>Backdrop#1817 = s0.973,0 t-4.22,0 o1.000 @y624
+    P>STRONG>SPAN#1821 = t-0.532,0 o1.000 @y634
+    DIV>B>Backdrop#1830 = s0.973,0 t-5.011,0 o1.000 @y683
+    P>STRONG>SPAN#1834 = t-0.532,0 o1.000 @y693
+    DIV>B>Backdrop#1843 = s0.691,0 t-102.422,0 o1.000 @y742
+    P>STRONG>SPAN#1847 = t-6.103,0 o1.000 @y752
+    DIV>B>Backdrop#1858 = s0.691,0 t-66.268,0 o1.000 @y800
+    P>STRONG>SPAN#1862 = t-6.103,0 o1.000 @y810
+--- scrollY 13950
+    DIV>DIV>IMG#1720 = t0,-1.19 o1.000 @y-894
+    DIV>B>Backdrop#1843 = s0.973,0 t-9.055,0 o1.000 @y592
+    P>STRONG>SPAN#1847 = t-0.538,0 o1.000 @y602
+    DIV>B>Backdrop#1858 = s0.973,0 t-5.858,0 o1.000 @y650
+    P>STRONG>SPAN#1862 = t-0.538,0 o1.000 @y660
+    DIV>H5>SPAN#1872 = t0,18.755 o1.000 @y834
+    DIV>H5>SPAN#1925 = t0,45.667 o1.000 @y861
+    DIV>H5>SPAN#1978 = t0,101.027 o1.000 @y917
+    DIV>B>Backdrop#1817 = (gone/identity)
+    P>STRONG>SPAN#1821 = (gone/identity)
+    DIV>B>Backdrop#1830 = (gone/identity)
+    P>STRONG>SPAN#1834 = (gone/identity)
+--- scrollY 14100
+    DIV>DIV>IMG#1720 = t0,0 o1.000 @y-1043
+    DIV>H5>SPAN#1872 = t0,0.213 o1.000 @y666
+    DIV>H5>SPAN#1925 = t0,0.598 o1.000 @y666
+    DIV>H5>SPAN#1978 = t0,1.655 o1.000 @y667
+    DIV>H5>SPAN#2027 = t0,4.477 o1.000 @y670
+    DIV>B>Backdrop#1843 = (gone/identity)
+    P>STRONG>SPAN#1847 = (gone/identity)
+    DIV>B>Backdrop#1858 = (gone/identity)
+    P>STRONG>SPAN#1862 = (gone/identity)
+--- scrollY 14250
+    H2>SPAN>SPAN#2088 = t0,6.241 o1.000 @y869
+    DIV>H5>SPAN#1872 = (gone/identity)
+    DIV>H5>SPAN#1925 = (gone/identity)
+    DIV>H5>SPAN#1978 = (gone/identity)
+    DIV>H5>SPAN#2027 = (gone/identity)
+--- scrollY 14400
+    DIV>DIV>IMG#1720 = (gone/identity)
+    H2>SPAN>SPAN#2088 = (gone/identity)
+--- scrollY 14850
+    Timeline>Numbers>DIV#1774 = (gone/identity)
+    Timeline>Numbers>DIV#1776 = (gone/identity)
+    Timeline>Numbers>DIV#1778 = (gone/identity)
+    Timeline>Numbers>DIV#1780 = (gone/identity)
+    Timeline>Numbers>DIV#1782 = (gone/identity)
+    Timeline>Numbers>DIV#1784 = (gone/identity)
+    Timeline>Numbers>DIV#1786 = (gone/identity)
+    Timeline>Numbers>DIV#1788 = (gone/identity)
+    Timeline>Numbers>DIV#1790 = (gone/identity)
+    Timeline>Numbers>DIV#1792 = (gone/identity)
+    Timeline>Numbers>DIV#1794 = (gone/identity)
+    Timeline>Numbers>DIV#1796 = (gone/identity)
+    Timeline>Grid>Line#1799 = (gone/identity)
+    Timeline>Grid>Line#1800 = (gone/identity)
+    Timeline>Grid>Line#1801 = (gone/identity)
+    Timeline>Grid>Line#1802 = (gone/identity)
+    Timeline>Grid>Line#1803 = (gone/identity)
+    Timeline>Grid>Line#1804 = (gone/identity)
+    Timeline>Grid>Line#1805 = (gone/identity)
+    Timeline>Grid>Line#1806 = (gone/identity)
+    Timeline>Grid>Line#1807 = (gone/identity)
+    Timeline>Grid>Line#1808 = (gone/identity)
+    Timeline>Grid>Line#1809 = (gone/identity)
+    Timeline>Grid>Line#1810 = (gone/identity)
+--- scrollY 15900
+    DIV>Desktop>Arrows#2735 = t0,30 o1.000 @y916
+    H6>SPAN>SPAN#2749 = t0,50 o1.000 @y938
+--- scrollY 16050
+    H6>SPAN>SPAN#2749 = t0,13.288 o1.000 @y835
+--- scrollY 16200
+    DIV>Desktop>Arrows#2735 = t0,4.468 o1.000 @y824
+    H6>SPAN>SPAN#2749 = t0,0.151 o1.000 @y822
+--- scrollY 16350
+    DIV>Desktop>Arrows#2735 = t0,0.054 o1.000 @y820
+    H6>SPAN>SPAN#2749 = (gone/identity)
+--- scrollY 16500
+    DIV>Desktop>Arrows#2735 = (gone/identity)
+--- scrollY 17700
+    H2>SPAN>SPAN#3043 = t0,7.477 o1.000 @y776
+--- scrollY 17850
+    Image Container>Image Container>SECTION#3063 = none o0.000 @y802
+    Image Container>Image Container>SECTION#3086 = none o0.000 @y802
+    H2>SPAN>SPAN#3043 = (gone/identity)
+--- scrollY 18300
+    DIV>Desktop>Arrows#3013 = t0,30 o1.000 @y850
+    H6>SPAN>SPAN#3027 = t0,13.399 o1.000 @y835
+--- scrollY 18450
+    DIV>Desktop>Arrows#3013 = t0,4.468 o1.000 @y824
+    H6>SPAN>SPAN#3027 = t0,0.151 o1.000 @y822
+--- scrollY 18600
+    DIV>Desktop>Arrows#3013 = t0,0.054 o1.000 @y768
+    H6>SPAN>SPAN#3027 = (gone/identity)
+--- scrollY 18750
+    DIV>Desktop>Arrows#3013 = (gone/identity)
+--- scrollY 19350
+    DIV>Desktop>Arrows#3134 = t0,30 o1.000 @y948
+    Image Container>Image Container>SECTION#3063 = (gone/identity)
+    Image Container>Image Container>SECTION#3086 = (gone/identity)
+--- scrollY 19500
+    H6>SPAN>SPAN#3148 = t0,13.068 o1.000 @y835
+--- scrollY 19650
+    DIV>Desktop>Arrows#3134 = t0,4.389 o1.000 @y824
+    H6>SPAN>SPAN#3148 = t0,0.148 o1.000 @y822
+--- scrollY 19800
+    DIV>Desktop>Arrows#3134 = t0,0.044 o1.000 @y820
+    H6>SPAN>SPAN#3148 = (gone/identity)
+--- scrollY 19950
+    DIV>Desktop>Arrows#3134 = (gone/identity)
+--- scrollY 20400
+    DIV>Open>bg#3392 = none o0.000 @y936
+--- scrollY 20550
+    STRONG>SPAN>SPAN#3301 = t0,5.235 o1.000 @y851
+    Section>Plus Container>DIV#3395 = s-0.707,0.707 t0,0 o1.000 @y852
+    Section>Plus Container>Placeholder Text#3400 = none o0.000 @y846
+    Open>Section>Q&A Placeholder Container#3404 = none o0.000 @y846
+--- scrollY 20700
+    STRONG>SPAN>SPAN#3301 = (gone/identity)
+--- scrollY 20850
+    DIV>Close>bg#3420 = none o0.000 @y839
+    Section>Plus Container>Placeholder Text#3428 = none o0.000 @y899
+    Close>Section>Q&A Placeholder Container#3432 = none o0.000 @y899
+--- scrollY 21000
+    DIV>Close>bg#3445 = none o0.000 @y924
+--- scrollY 21150
+    DIV>Desktop>Arrows#3360 = t0,30 o1.000 @y856
+    H6>SPAN>SPAN#3374 = t0,10.94 o1.000 @y838
+    Section>Plus Container>Placeholder Text#3453 = none o0.000 @y834
+    Close>Section>Q&A Placeholder Container#3457 = none o0.000 @y834
+--- scrollY 21300
+    DIV>Desktop>Arrows#3360 = t0,4.197 o1.000 @y824
+    H6>SPAN>SPAN#3374 = t0,0.142 o1.000 @y822
+    DIV>Close>bg#3472 = none o0.000 @y860
+    Section>Plus Container>Placeholder Text#3480 = none o0.000 @y920
+    Close>Section>Q&A Placeholder Container#3484 = none o0.000 @y920
+--- scrollY 21450
+    DIV>Desktop>Arrows#3360 = t0,0.043 o1.000 @y820
+    H6>SPAN>SPAN#3374 = (gone/identity)
+--- scrollY 21600
+    DIV>Desktop>Arrows#3360 = (gone/identity)
+    Section>Plus Container>DIV#3395 = (gone/identity)
+    Section>Plus Container>Placeholder Text#3400 = (gone/identity)
+--- scrollY 21750
+    DIV>Open>bg#3392 = (gone/identity)
+    Open>Section>Q&A Placeholder Container#3404 = (gone/identity)
+--- scrollY 21900
+    Text Container>svg>foreignObject#3544 = t0,0 o1.000 @y926
+    Section>Plus Container>Placeholder Text#3428 = (gone/identity)
+--- scrollY 22050
+    H5>SPAN>SPAN#3550 = t0,47.324 o1.000 @y823
+    DIV>Close>bg#3420 = (gone/identity)
+    Close>Section>Q&A Placeholder Container#3432 = (gone/identity)
+--- scrollY 22200
+    H5>SPAN>SPAN#3550 = t0,1.259 o1.000 @y627
+    Section>Plus Container>Placeholder Text#3453 = (gone/identity)
+    Close>Section>Q&A Placeholder Container#3457 = (gone/identity)
+--- scrollY 22350
+    H5>SPAN>SPAN#3646 = t0,12.851 o1.000 @y892
+    H5>SPAN>SPAN#3697 = t0,12.959 o1.000 @y892
+    DIV>Close>bg#3445 = (gone/identity)
+    Section>Plus Container>Placeholder Text#3480 = (gone/identity)
+    H5>SPAN>SPAN#3550 = (gone/identity)
+--- scrollY 22500
+    H5>SPAN>SPAN#3646 = t0,0.173 o1.000 @y729
+    H5>SPAN>SPAN#3660 = t0,12.851 o1.000 @y791
+    H5>SPAN>SPAN#3677 = t0,12.851 o1.000 @y841
+    H5>SPAN>SPAN#3697 = t0,0.173 o1.000 @y729
+    H5>SPAN>SPAN#3717 = t0,12.851 o1.000 @y791
+    H5>SPAN>SPAN#3739 = t0,12.851 o1.000 @y841
+    DIV>Close>bg#3472 = (gone/identity)
+    Close>Section>Q&A Placeholder Container#3484 = (gone/identity)
+--- scrollY 22650
+    H5>SPAN>SPAN#3660 = t0,0.145 o1.000 @y634
+    H5>SPAN>SPAN#3677 = t0,0.147 o1.000 @y684
+    H5>SPAN>SPAN#3717 = t0,0.147 o1.000 @y634
+    H5>SPAN>SPAN#3739 = t0,0.145 o1.000 @y684
+    DIV>DIV>DIV#3754 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3758 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3762 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3766 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3770 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3774 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3785 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3789 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3793 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3797 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3801 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3805 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3809 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3813 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3817 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3821 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3825 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3829 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3833 = none o1.000 clip:inset(0px -8px) @y849
+    DIV>DIV>DIV#3837 = none o1.000 clip:inset(0px -8px) @y849
+    H5>SPAN>SPAN#3646 = (gone/identity)
+    H5>SPAN>SPAN#3697 = (gone/identity)
+--- scrollY 22800
+    H5>SPAN>SPAN#3660 = (gone/identity)
+    H5>SPAN>SPAN#3677 = (gone/identity)
+    H5>SPAN>SPAN#3717 = (gone/identity)
+    H5>SPAN>SPAN#3739 = (gone/identity)

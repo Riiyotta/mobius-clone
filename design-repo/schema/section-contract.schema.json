@@ -1,0 +1,411 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "section-contract.schema.json",
+  "title": "Section contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "status",
+    "source",
+    "semantic",
+    "retrievalEligible",
+    "purpose",
+    "themes",
+    "content",
+    "constraints",
+    "motion",
+    "responsive",
+    "assetSlots",
+    "generatedAssetRoles",
+    "composes"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z-]+\\.[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "measured"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "file",
+        "tag",
+        "lines",
+        "citation"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^src:"
+        },
+        "file": {
+          "type": "string"
+        },
+        "tag": {
+          "type": "string"
+        },
+        "lines": {
+          "type": "string",
+          "pattern": "^\\d+-\\d+$"
+        },
+        "citation": {
+          "type": "string"
+        },
+        "alsoImplementedBy": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/cite"
+          }
+        }
+      }
+    },
+    "semantic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "category"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "category": {
+          "enum": [
+            "SHELL",
+            "HERO",
+            "CONTENT",
+            "FEATURES",
+            "SOCIAL_PROOF",
+            "TEAM",
+            "TESTIMONIAL",
+            "PRICING",
+            "EDITORIAL",
+            "LISTING",
+            "MEDIA",
+            "CONVERSION",
+            "FAQ",
+            "NAVIGATION",
+            "UTILITY"
+          ]
+        }
+      }
+    },
+    "retrievalEligible": {
+      "type": "boolean"
+    },
+    "retrievalIneligibleReason": {
+      "type": "string",
+      "minLength": 30
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 20
+    },
+    "themes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "enum": [
+          "light",
+          "inverse"
+        ]
+      }
+    },
+    "variants": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
+    "variantRequirements": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "required": [
+        "type",
+        "properties",
+        "required",
+        "additionalProperties"
+      ],
+      "properties": {
+        "additionalProperties": {
+          "const": false
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "onePerPage": {
+          "type": "boolean"
+        },
+        "mustBeFirst": {
+          "type": "boolean"
+        },
+        "mustBeLast": {
+          "type": "boolean"
+        },
+        "mustPrecedeFooter": {
+          "type": "boolean"
+        },
+        "homeRouteOnly": {
+          "type": "boolean"
+        },
+        "repeatable": {
+          "type": "boolean"
+        },
+        "maxPerPage": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "motion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allowedPatterns",
+        "reducedMotionFallback",
+        "evidence"
+      ],
+      "properties": {
+        "allowedPatterns": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "static",
+              "page-appear-scale",
+              "hero-card-stack",
+              "line-stagger-reveal",
+              "char-rise",
+              "word-scatter-scroll",
+              "word-reveal-scroll",
+              "scroll-parallax",
+              "sticky-state-swap",
+              "row-scroll-link",
+              "bar-grow-in-view",
+              "image-reveal-wipe",
+              "slideshow-autoplay",
+              "carousel-snap",
+              "price-digit-roll",
+              "accordion-height",
+              "heading-fade-scroll",
+              "blinds-reveal",
+              "rolling-letters-hover",
+              "hover-micro",
+              "infinite-drag-canvas",
+              "auto-scroll-columns",
+              "marquee-loop",
+              "video-autoplay",
+              "cursor-follow",
+              "cursor-trail",
+              "clock-tick",
+              "overlay-instant",
+              "lightbox-fade",
+              "form-feedback",
+              "digit-column-settle"
+            ]
+          }
+        },
+        "reducedMotionFallback": {
+          "enum": [
+            "none-needed",
+            "static-final-state",
+            "instant-state-change",
+            "paused-first-frame",
+            "manual-advance-only",
+            "hidden"
+          ]
+        },
+        "evidence": {
+          "type": "string"
+        }
+      }
+    },
+    "responsive": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primaryBreakpoint",
+        "changes"
+      ],
+      "properties": {
+        "primaryBreakpoint": {
+          "type": "string",
+          "pattern": "^breakpoint\\."
+        },
+        "changes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "at": {
+                "enum": [
+                  "desktop",
+                  "below-desktop",
+                  "below-tablet"
+                ]
+              },
+              "change": {
+                "enum": [
+                  "stack",
+                  "collapse-grid",
+                  "hide",
+                  "show-alternate-tree",
+                  "resize-type",
+                  "reflow",
+                  "disable-motion"
+                ]
+              },
+              "detail": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "at",
+              "change",
+              "detail"
+            ]
+          }
+        }
+      }
+    },
+    "assetSlots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "field": {
+            "type": "string"
+          },
+          "assetRoles": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "brand.source-wordmark",
+                "brand.placeholder-mark",
+                "brand.user-supplied-mark",
+                "logo.source-partner",
+                "logo.fictional-partner",
+                "photo.source-project",
+                "photo.source-editorial",
+                "photo.source-person",
+                "person.fictional-portrait",
+                "media.source-reel",
+                "media.video-placeholder",
+                "photo.generated-scene",
+                "illustration.gradient-shape",
+                "illustration.generated-abstract",
+                "icon.ui-glyph",
+                "rating.placeholder",
+                "url.placeholder",
+                "copy.original"
+              ]
+            }
+          }
+        },
+        "required": [
+          "field",
+          "assetRoles"
+        ]
+      }
+    },
+    "generatedAssetRoles": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "brand.placeholder-mark",
+          "brand.user-supplied-mark",
+          "logo.fictional-partner",
+          "person.fictional-portrait",
+          "media.video-placeholder",
+          "photo.generated-scene",
+          "illustration.generated-abstract",
+          "icon.ui-glyph",
+          "rating.placeholder",
+          "url.placeholder",
+          "copy.original"
+        ]
+      }
+    },
+    "composes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^(primitive|component)\\."
+      }
+    },
+    "measured": {
+      "type": "object"
+    },
+    "referenceRoutes": {
+      "type": "array"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "if": {
+    "properties": {
+      "retrievalEligible": {
+        "const": false
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "retrievalIneligibleReason"
+    ]
+  },
+  "definitions": {
+    "cite": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "file": {
+          "type": "string"
+        },
+        "tag": {
+          "type": "string"
+        },
+        "lines": {
+          "type": "string",
+          "pattern": "^\\d+-\\d+$"
+        },
+        "citation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "file",
+        "tag",
+        "lines",
+        "citation"
+      ]
+    }
+  }
+}

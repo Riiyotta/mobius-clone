@@ -1,0 +1,11 @@
+{
+  "id": "primitive.button-pill",
+  "title": "Pill button (Button A)",
+  "description": "Black 999px pill with label and two arrow glyphs that swap on hover.",
+  "source": {
+    "file": "src/components/legal/ButtonA.jsx",
+    "tag": "export default function ButtonA(",
+    "lines": "6-15",
+    "citation": "src/components/legal/ButtonA.jsx:6-15"
+  }
+}

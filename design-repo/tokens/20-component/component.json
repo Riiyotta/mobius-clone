@@ -1,0 +1,26 @@
+{
+  "$description": "Component-scoped tokens (references only).",
+  "tokens": {
+    "component.cursor.size": {
+      "value": "20px / 120px (arrow, drag, play)",
+      "refs": [],
+      "evidence": "src/index.css:124-124"
+    },
+    "component.button-pill.surface": {
+      "ref": "color.black",
+      "evidence": "src/styles/contacts.css:72-72"
+    },
+    "component.tag.surface": {
+      "ref": "color.gray.numeral",
+      "evidence": "src/styles/home-sections.css:96-96"
+    },
+    "component.field.surface": {
+      "ref": "color.gray.field",
+      "evidence": "src/styles/contacts.css:29-29"
+    },
+    "component.nav-layer.blend": {
+      "value": "mix-blend-mode: difference; text #fff",
+      "evidence": "src/index.css:28-28"
+    }
+  }
+}

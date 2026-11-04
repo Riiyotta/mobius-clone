@@ -1,0 +1,56 @@
+/* /404, built against .recon/specs/legal-404.md §B.
+   Ranges: desktop >=1200 | tablet 810–1199.98 | phone <=809.98. */
+
+.nf-main { display: flex; flex-direction: column; }
+
+/* ---------- "404" section (§B.1, §B.2) ---------- */
+.nf-hero {
+  height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 56px;
+}
+.nf-num-wrap { flex: none; height: 50%; aspect-ratio: 2.4691358; }
+
+/* ---------- Big Number 404 (§B.3) ---------- */
+.nf-num { position: relative; width: 100%; height: 100%; background: var(--white); overflow: clip; }
+.nf-col {
+  position: absolute; width: 35%; transform: translate(-50%, -50%); /* left/top/opacity inline */
+}
+.nf-col svg { display: block; width: 100%; height: auto; overflow: visible; }
+/* Font size is derived, not measured: 10 lines × 0.8 line-height fill the 2605 viewBox height (see handoff). */
+.nf-digits {
+  margin: 0; font-family: var(--font); font-size: 325.625px; font-weight: 900; line-height: 80%;
+  letter-spacing: -0.03em; text-align: center; color: var(--black); white-space: pre;
+}
+
+/* Gradient overlay: lighten over the white box colours the black digits. */
+.nf-grad-wrap {
+  position: absolute; top: -30px; left: -30px; right: -36px; bottom: -30px;
+  mix-blend-mode: lighten; filter: blur(10px);
+}
+.nf-grad { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgb(232, 247, 255); overflow: clip; }
+.nf-shape {
+  position: absolute; width: 493px; height: 644px; left: calc(50% - 246.5px); top: calc(50% - 321.8px);
+  mix-blend-mode: hard-light; filter: blur(53px); overflow: visible;
+}
+.nf-shape-b { transform: rotate(-171deg); animation: nf-rot-b 14s linear infinite; }
+.nf-shape-a { animation: nf-rot-a 10s linear infinite; }
+.nf-num.is-paused .nf-shape { animation-play-state: paused; }
+/* Shape B +360° / 14s from -171°; Shape A −360° / 10s (start angle not in spec: 0°). */
+@keyframes nf-rot-b { from { transform: rotate(-171deg); } to { transform: rotate(189deg); } }
+@keyframes nf-rot-a { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+.nf-shape-svg { position: absolute; display: block; overflow: visible; }
+.nf-shape-b .nf-shape-svg { transform: rotate(-265deg); }
+
+/* ---------- Text (§B.4) ---------- */
+.nf-text { align-self: stretch; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.nf-copy { width: 100%; text-align: center; font-size: 14px; font-weight: 500; line-height: 23.8px; color: #757575; }
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1199.98px) {
+  .nf-num-wrap { height: auto; width: 80%; }
+}
+
+/* ---------- Phone ---------- */
+@media (max-width: 809.98px) {
+  .nf-hero { padding: 0 20px; }
+  .nf-num-wrap { width: 100%; }
+}

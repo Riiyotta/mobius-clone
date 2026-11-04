@@ -1,0 +1,133 @@
+{
+  "id": "content.marked-chapter",
+  "title": "Marked chapter",
+  "status": "measured",
+  "source": {
+    "id": "src:Sections#export-function-Challenge",
+    "file": "src/components/project/Sections.jsx",
+    "tag": "export function Challenge(",
+    "lines": "13-26",
+    "citation": "src/components/project/Sections.jsx:13-26",
+    "alsoImplementedBy": [
+      {
+        "file": "src/pages/Post.jsx",
+        "tag": "function Content(",
+        "lines": "17-33",
+        "citation": "src/pages/Post.jsx:17-33"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "content.marked-chapter",
+    "category": "CONTENT"
+  },
+  "retrievalEligible": true,
+  "purpose": "One chapter of long-form body copy in the 4-column text lane, labelled with a large grey marker ('/ 1' on case studies, '/ A' on posts).",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "marker": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (projects.json markers, Post.jsx labels); budget = ceil(1.25 x max)"
+      },
+      "paragraphs": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 6,
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxWords": 65,
+          "x-maxWordsEvidence": "max 52 words measured (projects.json + feed.json paragraphs); budget = ceil(1.25 x max)"
+        }
+      },
+      "byline": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (feed.json author); budget = ceil(1.25 x max)"
+      }
+    },
+    "required": [
+      "marker",
+      "paragraphs"
+    ]
+  },
+  "constraints": {
+    "maxPerPage": 3
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none-needed",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "hide",
+        "detail": "Grey marker label is desktop-only; text widens to the column."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "variants": [
+    "numbered",
+    "lettered"
+  ],
+  "notes": "One semantic unit per heading/marker-bounded chapter (R6). Case studies use three numbered chapters, posts two lettered ones; byline only on the last lettered chapter.",
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 58,
+    "heightPxMin": 248,
+    "heightPxMax": 588.5,
+    "routes": [
+      "/feed/beyond-function",
+      "/feed/designing-the-invisible",
+      "/feed/one-idea-many-forms",
+      "/feed/precision-over-perfection",
+      "/feed/systems-with-soul",
+      "/feed/the-architecture-of-meaning"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/feed/beyond-function",
+    "/feed/designing-the-invisible",
+    "/feed/one-idea-many-forms",
+    "/feed/precision-over-perfection",
+    "/feed/systems-with-soul",
+    "/feed/the-architecture-of-meaning",
+    "/feed/the-clarity-paradox",
+    "/feed/the-human-algorithm",
+    "/feed/the-language-of-shape",
+    "/feed/the-logic-of-emotion",
+    "/feed/thinking-in-motion",
+    "/work/after-light",
+    "/work/axis-point",
+    "/work/bright-matter",
+    "/work/echoform",
+    "/work/forma-nine",
+    "/work/golden-hour",
+    "/work/north-layer",
+    "/work/orbit-404",
+    "/work/pulse",
+    "/work/soma-studio",
+    "/work/wavehouse",
+    "/work/zero-parallel"
+  ]
+}

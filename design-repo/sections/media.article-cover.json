@@ -1,0 +1,102 @@
+{
+  "id": "media.article-cover",
+  "title": "Article cover",
+  "status": "measured",
+  "source": {
+    "id": "src:Post#B2-3-Cover",
+    "file": "src/pages/Post.jsx",
+    "tag": "{/* B2.3 Cover",
+    "lines": "79-94",
+    "citation": "src/pages/Post.jsx:79-94"
+  },
+  "semantic": {
+    "id": "media.article-cover",
+    "category": "MEDIA"
+  },
+  "retrievalEligible": true,
+  "purpose": "Post cover photo in the 8-column lane at its natural aspect, revealed with a horizontal wipe.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "image": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-editorial",
+          "photo.generated-scene"
+        ]
+      }
+    },
+    "required": [
+      "image"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "image-reveal-wipe"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-tablet",
+        "change": "reflow",
+        "detail": "Cover spans the full column."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": "image",
+      "assetRoles": [
+        "photo.source-editorial",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.image-reveal"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 11,
+    "heightPxMin": 973.3,
+    "heightPxMax": 1266,
+    "routes": [
+      "/feed/beyond-function",
+      "/feed/designing-the-invisible",
+      "/feed/one-idea-many-forms",
+      "/feed/precision-over-perfection",
+      "/feed/systems-with-soul",
+      "/feed/the-architecture-of-meaning"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/feed/beyond-function",
+    "/feed/designing-the-invisible",
+    "/feed/one-idea-many-forms",
+    "/feed/precision-over-perfection",
+    "/feed/systems-with-soul",
+    "/feed/the-architecture-of-meaning",
+    "/feed/the-clarity-paradox",
+    "/feed/the-human-algorithm",
+    "/feed/the-language-of-shape",
+    "/feed/the-logic-of-emotion",
+    "/feed/thinking-in-motion"
+  ]
+}

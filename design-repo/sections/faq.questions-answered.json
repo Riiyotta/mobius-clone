@@ -1,0 +1,141 @@
+{
+  "id": "faq.questions-answered",
+  "title": "FAQ",
+  "status": "measured",
+  "source": {
+    "id": "src:Faq#export-default-function-Faq",
+    "file": "src/components/shared/Faq.jsx",
+    "tag": "export default function Faq(",
+    "lines": "103-132",
+    "citation": "src/components/shared/Faq.jsx:103-132"
+  },
+  "semantic": {
+    "id": "faq.questions-answered",
+    "category": "FAQ"
+  },
+  "retrievalEligible": true,
+  "purpose": "Sticky left column (heading, learn-more line, 'About us' link) beside an accordion of 4 questions and a closing prompt with a pill CTA.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (legal.json faqSection.heading); budget = ceil(1.25 x max)"
+      },
+      "learnMore": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 22,
+        "x-maxWordsEvidence": "max 17 words measured (legal.json faqSection.learnMore); budget = ceil(1.25 x max)"
+      },
+      "aboutCta": {
+        "$ref": "#/definitions/cta"
+      },
+      "items": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 8,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "question": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 12,
+              "x-maxWordsEvidence": "max 9 words measured (legal.json faqSection.items.q); budget = ceil(1.25 x max)"
+            },
+            "answer": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 53,
+              "x-maxWordsEvidence": "max 42 words measured (legal.json faqSection.items.a); budget = ceil(1.25 x max)"
+            }
+          },
+          "required": [
+            "question",
+            "answer"
+          ]
+        },
+        "x-countEvidence": "4 items measured"
+      },
+      "ctaText": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 17,
+        "x-maxWordsEvidence": "max 13 words measured (legal.json faqSection.cta.text); budget = ceil(1.25 x max)"
+      },
+      "cta": {
+        "$ref": "#/definitions/cta"
+      }
+    },
+    "required": [
+      "heading",
+      "learnMore",
+      "aboutCta",
+      "items",
+      "ctaText",
+      "cta"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustPrecedeFooter": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "accordion-height",
+      "char-rise",
+      "line-stagger-reveal",
+      "hover-micro"
+    ],
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "stack",
+        "detail": "Touch variant: plus icon on the right, every item starts closed, no hover background."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.faq-item",
+    "component.sticky-aside",
+    "primitive.button-pill",
+    "primitive.button-underline"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 4,
+    "heightPxMin": 1470.3,
+    "heightPxMax": 1470.3,
+    "routes": [
+      "/",
+      "/404",
+      "/legal/privacy-policy",
+      "/legal/terms-of-service"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/",
+    "/404",
+    "/legal/privacy-policy",
+    "/legal/terms-of-service"
+  ]
+}

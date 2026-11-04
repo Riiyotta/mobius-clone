@@ -1,0 +1,25 @@
+{
+  "$description": "Radii in use. Most surfaces are square (0); pills/dots are fully rounded.",
+  "tokens": {
+    "radius.none": {
+      "value": "0",
+      "evidence": "src/styles/contacts.css:29-29"
+    },
+    "radius.pill": {
+      "value": "999px",
+      "evidence": "src/index.css:114-114"
+    },
+    "radius.tag": {
+      "value": "99px",
+      "evidence": "src/styles/home-sections.css:96-96"
+    },
+    "radius.dot-track": {
+      "value": "50px",
+      "evidence": "src/styles/home-sections.css:307-307"
+    },
+    "radius.round": {
+      "value": "50%",
+      "evidence": "src/styles/home-sections.css:311-311"
+    }
+  }
+}

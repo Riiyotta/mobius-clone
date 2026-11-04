@@ -1,0 +1,67 @@
+{
+  "id": "utility.cursor-image-trail",
+  "title": "Cursor image trail",
+  "status": "measured",
+  "source": {
+    "id": "src:CursorTrail#export-default-function-CursorTrail",
+    "file": "src/components/studio/CursorTrail.jsx",
+    "tag": "export default function CursorTrail(",
+    "lines": "10-65",
+    "citation": "src/components/studio/CursorTrail.jsx:10-65"
+  },
+  "semantic": {
+    "id": "utility.cursor-image-trail",
+    "category": "UTILITY"
+  },
+  "retrievalEligible": false,
+  "retrievalIneligibleReason": "Pointer-driven decorative effect layered over a hero; it carries no content of its own.",
+  "purpose": "Spawns fading photo cards along the pointer path over the studio intro (desktop only).",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "label": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 4,
+        "x-maxWordsEvidence": "max 3 words measured (contract title); budget = ceil(1.25 x max)"
+      }
+    },
+    "required": []
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "cursor-trail"
+    ],
+    "reducedMotionFallback": "hidden",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "hide",
+        "detail": "See purpose for per-breakpoint availability."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "note": "runtime UI / overlay: not an in-page section, not height-gated"
+  },
+  "referenceRoutes": []
+}

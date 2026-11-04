@@ -1,0 +1,67 @@
+{
+  "id": "utility.custom-cursor",
+  "title": "Custom cursor",
+  "status": "measured",
+  "source": {
+    "id": "src:Cursor#export-default-function-Cursor",
+    "file": "src/components/Cursor.jsx",
+    "tag": "export default function Cursor(",
+    "lines": "7-83",
+    "citation": "src/components/Cursor.jsx:7-83"
+  },
+  "semantic": {
+    "id": "utility.custom-cursor",
+    "category": "UTILITY"
+  },
+  "retrievalEligible": false,
+  "retrievalIneligibleReason": "Pointer-following runtime UI with no content; never retrieved or placed as a page node.",
+  "purpose": "Spring-following dot cursor with Black / Arrow / Hidden / Drag / Play / White variants chosen by the hovered region (desktop only).",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "label": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (contract title); budget = ceil(1.25 x max)"
+      }
+    },
+    "required": []
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "cursor-follow"
+    ],
+    "reducedMotionFallback": "hidden",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "hide",
+        "detail": "See purpose for per-breakpoint availability."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "note": "runtime UI / overlay: not an in-page section, not height-gated"
+  },
+  "referenceRoutes": []
+}

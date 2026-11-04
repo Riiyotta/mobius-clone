@@ -1,0 +1,131 @@
+{
+  "id": "social-proof.awards-list",
+  "title": "Awards list",
+  "status": "measured",
+  "source": {
+    "id": "src:Awards#export-default-function-Awards",
+    "file": "src/components/home/Awards.jsx",
+    "tag": "export default function Awards(",
+    "lines": "42-78",
+    "citation": "src/components/home/Awards.jsx:42-78"
+  },
+  "semantic": {
+    "id": "social-proof.awards-list",
+    "category": "SOCIAL_PROOF"
+  },
+  "retrievalEligible": true,
+  "purpose": "Two-line title with caption and CTA, then a three-column table of award rows (award, category, count) that rise in with scroll.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "titleLines": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxWords": 2,
+          "x-maxWordsEvidence": "max 1 words measured (Awards.jsx h2); budget = ceil(1.25 x max)"
+        }
+      },
+      "caption": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 12,
+        "x-maxWordsEvidence": "max 9 words measured (Awards.jsx caption); budget = ceil(1.25 x max)"
+      },
+      "cta": {
+        "$ref": "#/definitions/cta"
+      },
+      "rows": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 10,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "award": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 4,
+              "x-maxWordsEvidence": "max 3 words measured (Awards.jsx ROWS); budget = ceil(1.25 x max)"
+            },
+            "category": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "x-maxWordsEvidence": "max 4 words measured (Awards.jsx ROWS); budget = ceil(1.25 x max)"
+            },
+            "count": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 2,
+              "x-maxWordsEvidence": "max 1 words measured (Awards.jsx ROWS); budget = ceil(1.25 x max)"
+            }
+          },
+          "required": [
+            "award",
+            "category",
+            "count"
+          ]
+        },
+        "x-countEvidence": "8 rows measured"
+      }
+    },
+    "required": [
+      "titleLines",
+      "rows"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "row-scroll-link",
+      "char-rise"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "disable-motion",
+        "detail": "Rows static."
+      },
+      {
+        "at": "below-tablet",
+        "change": "stack",
+        "detail": "Award name becomes an h5 row heading."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 788.8,
+    "heightPxMax": 788.8,
+    "routes": [
+      "/"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/"
+  ]
+}

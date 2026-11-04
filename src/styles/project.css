@@ -1,0 +1,243 @@
+/* /work/<slug> template — .recon/specs/project.md. Desktop ≥1200 first, then tablet (810–1199.98), phone (<810). */
+
+.pj-page { display: flex; flex-direction: column; background: var(--white); }
+.pj-case { position: relative; display: flex; flex-direction: column; }
+
+/* Column units: u = W/12 via flex ratios (every row has W = vw − 40 inside its 20px side padding). */
+.pj-u1, .pj-u2, .pj-u4, .pj-u5, .pj-u6, .pj-u10 { min-width: 0; }
+.pj-u1 { flex: 1 0 0; }
+.pj-u2 { flex: 2 0 0; }
+.pj-u4 { flex: 4 0 0; }
+.pj-u5 { flex: 5 0 0; }
+.pj-u6 { flex: 6 0 0; }
+.pj-u10 { flex: 10 0 0; }
+.pj-col { padding: 0 20px; }
+/* Padded columns inside rows: a zero flex-basis plus padding grows past its u-share, so every
+   direct row column uses a percentage basis (border-box) of the row's content width W. */
+.pj-row > *, .pj-g-small > * { box-sizing: border-box; flex-grow: 0; flex-shrink: 0; }
+.pj-row > .pj-u1 { flex-basis: calc(100% / 12); }
+.pj-row > .pj-u2 { flex-basis: calc(200% / 12); }
+.pj-row > .pj-u4 { flex-basis: calc(400% / 12); }
+.pj-row > .pj-u5 { flex-basis: calc(500% / 12); }
+.pj-row > .pj-u6 { flex-basis: calc(600% / 12); }
+.pj-row > .pj-u10 { flex-basis: calc(1000% / 12); }
+
+/* ---------- Type (§3) ---------- */
+.pj-h1 { font-size: 104px; font-weight: 700; line-height: 104px; letter-spacing: -0.04em; color: var(--black); }
+.pj-body { font-size: 16px; font-weight: 500; line-height: 25.6px; color: var(--body); }
+.pj-grey { margin: 0; font-size: 64px; font-weight: 700; line-height: 76.8px; letter-spacing: -1.92px; color: #eee; }
+
+/* ---------- Year (§1, §7.2) ---------- */
+.pj-year { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 2; pointer-events: none; }
+.pj-year-t { position: sticky; top: 0; height: 100vh; display: flex; align-items: flex-end; padding: 0 40px 40px; }
+
+/* ---------- Appear (§7.1): opacity .001 → 1, scale 1.6 → 1, spring 0.8 bounce 0, origin = centre ---------- */
+.pj-appear { animation: pj-appear 0.8s var(--spring-08) both; }
+@keyframes pj-appear { from { opacity: 0.001; transform: scale(1.6); } to { opacity: 1; transform: none; } }
+
+/* ---------- Intro (§4.1) ---------- */
+.pj-intro { display: flex; align-items: flex-end; height: 100vh; padding: 40px 20px; }
+.pj-intro-c { flex: 9 0 0; min-width: 0; display: flex; height: 100%; }
+.pj-intro-imgc { flex: 4 0 0; min-width: 0; height: 100%; }
+.pj-intro-img { height: 100%; padding: 0 20px; overflow: clip; }
+.pj-par { height: 100%; }
+.pj-fill { height: 100%; }
+.pj-backdrop { display: none; position: sticky; top: 0; z-index: 2; height: 64px; background: var(--white); }
+.pj-info { flex: 4 0 0; min-width: 0; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; }
+.pj-info-text { flex: 2 0 0; min-height: 0; display: flex; flex-direction: column; justify-content: flex-end; gap: 24px; padding: 0 20px; }
+.pj-info-bottom { flex: 1 0 0; min-height: 0; display: flex; flex-direction: column; justify-content: center; gap: 40px; padding: 0 20px; }
+.pj-services { opacity: 0.6; }
+.pj-services p { width: 400px; font-size: 14px; font-weight: 500; line-height: 23.8px; color: var(--body); }
+
+/* ---------- Rows (§2 paddings) ---------- */
+.pj-row { display: flex; padding: 120px 20px 0; }
+
+/* Challenge (§4.2) */
+.pj-ch { align-items: flex-start; }
+.pj-ch-text, .pj-cr-text { display: flex; flex-direction: column; gap: 40px; }
+.pj-rich { display: flex; flex-direction: column; gap: 32px; }
+
+/* Quote (§4.3) */
+.pj-quote { margin: 0; font-size: 56px; font-weight: 500; line-height: 67.2px; letter-spacing: -0.04em; color: var(--black); }
+.pj-quote-anim { transform: translateX(-160px); }
+.pj-quote-anim .pj-quote-line { display: flex; flex-wrap: wrap; align-items: flex-end; width: 100%; }
+
+/* Numbers (§4.5) */
+.pj-num-c { display: flex; flex-direction: column; gap: 40px; }
+.pj-num-h { margin: 0; font-size: 26px; font-weight: 700; line-height: 36.4px; letter-spacing: -0.26px; color: var(--black); }
+.pj-stats { display: flex; }
+.pj-stat { flex: 1 0 0; min-width: 0; padding: 0 20px; display: flex; flex-direction: column; gap: 16px; }
+.pj-stat-v { margin: 0; font-size: 64px; font-weight: 700; line-height: 76.8px; letter-spacing: -1.92px; color: var(--black); }
+.pj-stat-l { font-size: 16px; font-weight: 500; line-height: 25.6px; color: var(--label); }
+/* §7.3 stats: CharRise ships a 0.6s transform-only transition; the spec wants spring 0.8 on transform AND opacity.
+   springEase() has the same curve shape for every duration, so only duration/property need overriding. */
+.pj-stat-v.pj-anim .char-rise-c {
+  opacity: 0.001;
+  transition-property: transform, opacity !important;
+  transition-duration: 0.8s !important;
+  transition-timing-function: var(--spring-08) !important;
+}
+.pj-stat-v.pj-anim.pj-in .char-rise-c { opacity: 1; }
+
+/* Credits + Button A (§4.6, §7.5) */
+.pj-cr { padding-bottom: 40px; }
+.pj-cr-text { align-items: flex-start; gap: 64px; }
+.pj-btn {
+  position: relative; display: flex; align-items: center; gap: 16px; overflow: clip;
+  padding: 8px 58px 8px 18px; cursor: pointer;
+  transition: padding 0.4s var(--spring-04);
+}
+.pj-btn-bg {
+  position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: var(--black); border-radius: 999px;
+  transition: top 0.4s var(--spring-04), bottom 0.4s var(--spring-04), left 0.4s var(--spring-04), right 0.4s var(--spring-04);
+}
+.pj-btn-t {
+  position: relative; font-size: 20px; font-weight: 500; line-height: 32px; color: var(--white); white-space: pre;
+  transition: color 0.4s var(--spring-04);
+}
+.pj-btn-a1, .pj-btn-a2 { position: absolute; top: calc(50% - 8px); width: 16px; height: 16px; fill: var(--white); }
+.pj-btn-a1 { right: 14px; transition: right 0.4s var(--spring-04); }
+.pj-btn-a2 { left: -32px; transition: left 0.4s var(--spring-04); }
+@media (min-width: 1200px) {
+  .pj-btn:hover { padding: 8px 76px 8px 0; }
+  /* 28x28 circle: top/bottom 10, right 1 → left = width − 1 − 28 */
+  .pj-btn:hover .pj-btn-bg { top: 10px; bottom: 10px; right: 1px; left: calc(100% - 29px); }
+  .pj-btn:hover .pj-btn-t { color: var(--black); }
+  .pj-btn:hover .pj-btn-a1 { right: -120px; }
+  /* right:7 → left = width − 7 − 16 */
+  .pj-btn:hover .pj-btn-a2 { left: calc(100% - 23px); }
+}
+
+/* ---------- Gallery (§4.4) ---------- */
+.pj-g-sticky { position: sticky; top: 0; z-index: 1; height: 80px; background: var(--white); }
+.pj-g { display: flex; padding: 0 20px; }
+.pj-g-col { flex: 1 0 0; min-width: 0; display: flex; flex-direction: column; gap: 40px; }
+.pj-g-small { display: flex; }
+.pj-g-small > .pj-g-sp { flex-basis: calc(100% / 3); min-width: 0; }
+.pj-g-small > .pj-g-img { flex-basis: calc(200% / 3); min-width: 0; }
+.pj-g-img { padding: 0 20px; }
+.pj-g-img img { display: block; width: 100%; height: auto; object-fit: cover; -webkit-user-drag: none; }
+
+/* ---------- Next Case (§4.7, §7.4, §7.5) ---------- */
+.pj-next { position: relative; display: flex; flex-direction: column; align-items: center; padding: 160px 0; }
+.pj-tk { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.pj-tk-row { position: relative; width: 100%; height: 160px; overflow: hidden; }
+.pj-tk-track { position: absolute; top: 0; left: 0; display: flex; gap: 0; }
+.pj-tk-t { margin: 0; flex: none; font-size: 160px; font-weight: 800; line-height: 160px; letter-spacing: -0.05em; white-space: pre; }
+.pj-tk-a { color: var(--black); }
+.pj-tk-b { color: #f7f7f7; }
+.pj-next-row { display: flex; width: 100%; padding: 0 20px; }
+.pj-next-link { display: block; padding: 0 20px; }
+/* Measured card boxes: 426.7x566.9 (1440), 373.3x496.1 (1280), 616.7x819.4 (1000). */
+.pj-next-card { width: 100%; aspect-ratio: 426.7 / 566.9; }
+
+/* ---------- Utilities ---------- */
+.pj-desk { display: block; }
+
+/* ================= Tablet ================= */
+@media (max-width: 1199.98px) {
+  .pj-col { padding: 0 15px; }
+  .pj-h1 { font-size: 80px; line-height: 80px; }
+  .pj-desk { display: none; }
+
+  /* Intro: text first, then sticky backdrop + 640 image */
+  .pj-intro { height: auto; align-items: flex-start; padding: 160px 15px 0; }
+  .pj-intro > .pj-u2, .pj-intro-r { flex: 1 0 0; }
+  .pj-intro-c { flex: 4 0 0; flex-direction: column; height: auto; }
+  .pj-intro-c > .pj-u1 { display: none; }
+  .pj-info { order: 1; flex: none; height: auto; gap: 48px; }
+  .pj-info-text, .pj-info-bottom { flex: none; padding: 0 15px; }
+  .pj-intro-imgc { order: 2; flex: none; height: auto; }
+  .pj-intro .pj-backdrop { display: block; }
+  .pj-intro-img { height: 640px; padding: 0 15px; }
+  .pj-info-text .pj-body, .pj-ch .pj-body, .pj-cr-p { max-width: 480px; }
+
+  .pj-row { padding: 80px 15px 0; }
+  .pj-ch > .pj-u2, .pj-ch > .pj-ch-gap { flex-basis: calc(100% / 6); }
+  .pj-ch > .pj-u4 { flex-basis: calc(400% / 6); }
+
+  .pj-q > .pj-u2 { flex-basis: calc(100% / 6); }
+  .pj-q > .pj-u10 { flex-basis: calc(500% / 6); }
+  .pj-quote { font-size: 44px; line-height: 52.8px; transform: translateX(-120px); text-indent: 120px; }
+
+  .pj-num > .pj-u2 { flex-basis: calc(100% / 6); }
+  .pj-num > .pj-u10 { flex-basis: calc(500% / 6); }
+  .pj-num-h { font-size: 25px; line-height: 35px; letter-spacing: -0.25px; }
+  .pj-stat { padding: 0 15px; }
+  .pj-stat-v { font-size: 54px; line-height: 64.8px; letter-spacing: -1.62px; }
+
+  .pj-cr { padding: 80px 15px 30px; }
+  .pj-cr > .pj-u2, .pj-cr > .pj-cr-r { flex-basis: calc(100% / 6); }
+  .pj-cr > .pj-u4 { flex-basis: calc(400% / 6); }
+  /* "Mobile" variant: fixed width, text flex 1, no hover */
+  .pj-btn { width: 193px; }
+  .pj-btn-t { flex: 1 0 0; }
+
+  .pj-g-sticky { height: 72px; }
+  .pj-g { padding: 0 15px; }
+  .pj-g-col { gap: 30px; }
+  .pj-g-img { padding: 0 15px; }
+
+  /* Tickers 120px, rows 810 wide centred */
+  .pj-tk-row { width: 810px; height: 120px; }
+  .pj-tk-t { font-size: 120px; line-height: 120px; }
+  .pj-next-row { padding: 0 15px; }
+  .pj-next-row > .pj-u4 { flex: 1 0 0; }
+  .pj-next-row > .pj-next-col { flex: 4 0 0; }
+  .pj-next-link { padding: 0 15px; }
+
+  /* Project Card "Touch" variant: name always visible, left-aligned, no hover zoom */
+  .pj-next .card-name { visibility: visible; justify-content: flex-start; min-height: 0; }
+  .pj-next .name-char { transform: none; }
+  .pj-next .card:hover .name-char { animation: none; }
+  .pj-next .card:hover .card-img { transform: none; }
+}
+
+/* ================= Phone ================= */
+@media (max-width: 809.98px) {
+  .pj-col { padding: 0 10px; }
+  .pj-h1 { font-size: 64px; line-height: 64px; }
+  .pj-hide-phone { display: none; }
+
+  .pj-intro { padding: 120px 10px 0; }
+  .pj-intro-c { flex: 1 0 0; }
+  .pj-info { gap: 32px; }
+  .pj-info-text, .pj-info-bottom { padding: 0 10px; }
+  .pj-intro-img { height: 480px; padding: 0 10px; }
+  .pj-services p { width: 350px; }
+  .pj-info-text .pj-body, .pj-ch .pj-body, .pj-cr-p { max-width: none; }
+
+  .pj-row { padding: 80px 10px 0; }
+  /* Challenge / credits: column, gap 12, empty 0-height section first */
+  .pj-ch, .pj-cr { flex-direction: column; align-items: stretch; gap: 12px; }
+  .pj-ch > .pj-u2, .pj-cr > .pj-u2 { flex: none; height: 0; }
+  .pj-ch-gap, .pj-cr-r { display: none; }
+  .pj-ch > .pj-u4, .pj-cr > .pj-u4 { flex: none; }
+  .pj-q > .pj-u10, .pj-num > .pj-u10 { flex-basis: 100%; }
+  .pj-cr { padding: 80px 10px 0; }
+  .pj-cr-text { align-items: stretch; gap: 56px; }
+  .pj-btn { width: 100%; }
+
+  .pj-quote { font-size: 36px; line-height: 43.2px; letter-spacing: -0.04em; transform: none; text-indent: 80px; }
+
+  .pj-num-h { font-size: 24px; line-height: 33.6px; letter-spacing: -0.24px; }
+  .pj-stats { display: grid; grid-template-columns: 185px 185px; grid-auto-rows: 1fr; gap: 40px 0; }
+  .pj-stat { padding: 0 10px; }
+  .pj-stat-v { font-size: 44px; line-height: 52.8px; letter-spacing: -1.32px; }
+
+  .pj-g-sticky { height: 64px; }
+  .pj-g { flex-direction: column; gap: 20px; padding: 0 10px; }
+  .pj-g-col { flex: none; gap: 20px; }
+  .pj-g-small > .pj-g-sp { display: none; }
+  .pj-g-small > .pj-g-img { flex-basis: 100%; }
+  .pj-g-img { padding: 0 10px; }
+
+  .pj-next { padding: 0; }
+  .pj-tk { display: none; }
+  .pj-next-row { padding: 0 10px; }
+  .pj-next-link { padding: 0 10px; }
+  .pj-next .pj-backdrop { display: block; }
+  .pj-next-card { aspect-ratio: 350 / 466.7; }
+  .pj-next-card-alt { aspect-ratio: 350 / 465.1; }
+  .pj-next .card-name h4 { font-size: 36px; }
+}

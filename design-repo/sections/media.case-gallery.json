@@ -1,0 +1,130 @@
+{
+  "id": "media.case-gallery",
+  "title": "Case gallery",
+  "status": "measured",
+  "source": {
+    "id": "src:Gallery#export-default-function-Gallery",
+    "file": "src/components/project/Gallery.jsx",
+    "tag": "export default function Gallery(",
+    "lines": "22-34",
+    "citation": "src/components/project/Gallery.jsx:22-34"
+  },
+  "semantic": {
+    "id": "media.case-gallery",
+    "category": "MEDIA"
+  },
+  "retrievalEligible": true,
+  "purpose": "Four project images in two columns: two 'small' images beside spacers and two full-width 'large' images, each at its natural aspect.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "images": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-project",
+                "photo.generated-scene"
+              ]
+            },
+            "size": {
+              "enum": [
+                "small",
+                "large"
+              ]
+            },
+            "column": {
+              "enum": [
+                "left",
+                "right"
+              ]
+            }
+          },
+          "required": [
+            "image",
+            "size",
+            "column"
+          ]
+        },
+        "x-countEvidence": "4 images per project measured"
+      }
+    },
+    "required": [
+      "images"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none-needed",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-tablet",
+        "change": "stack",
+        "detail": "Columns stack into one."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": "images[].image",
+      "assetRoles": [
+        "photo.source-project",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 12,
+    "heightPxMin": 1183.9,
+    "heightPxMax": 1562.6,
+    "routes": [
+      "/work/after-light",
+      "/work/axis-point",
+      "/work/bright-matter",
+      "/work/echoform",
+      "/work/forma-nine",
+      "/work/golden-hour"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/work/after-light",
+    "/work/axis-point",
+    "/work/bright-matter",
+    "/work/echoform",
+    "/work/forma-nine",
+    "/work/golden-hour",
+    "/work/north-layer",
+    "/work/orbit-404",
+    "/work/pulse",
+    "/work/soma-studio",
+    "/work/wavehouse",
+    "/work/zero-parallel"
+  ]
+}

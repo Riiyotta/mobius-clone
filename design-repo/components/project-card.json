@@ -1,0 +1,14 @@
+{
+  "id": "component.project-card",
+  "title": "Project card",
+  "description": "Image card; desktop hover zooms the image 1.2 and rises the name char by char.",
+  "source": {
+    "file": "src/components/ProjectCard.jsx",
+    "tag": "function ProjectCard(",
+    "lines": "4-28",
+    "citation": "src/components/ProjectCard.jsx:4-28"
+  },
+  "composes": [
+    "primitive.media-slot"
+  ]
+}

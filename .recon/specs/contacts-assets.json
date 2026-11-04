@@ -1,0 +1,100 @@
+{
+ "source": "https://mobius.framer.website/contacts",
+ "note": "URLs have query strings stripped. Framer serves AVIF via content negotiation (content-type observed image/avif); request with ?scale-down-to=N or width/height params for resized variants. \"rendered\" = on-screen box per viewport width (px), including hidden duplicate \"Image Placeholder\" copies used only for aspect-ratio sizing.",
+ "images": [
+  {
+   "url": "https://framerusercontent.com/images/uFUviw9ZrPHHXKTg0Uk6Ceg3IM.jpg",
+   "alt": "Parallax Image",
+   "fit": "cover 50% 50%",
+   "rendered": {
+    "1440": [
+     "1360x1200"
+    ],
+    "1280": [
+     "1200x1100"
+    ],
+    "1000": [
+     "940x840"
+    ],
+    "390": [
+     "350x480"
+    ]
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/drBPvfLZfwnmhTDHHQbPmsfGe1I.jpg",
+   "alt": "Möbius",
+   "fit": "cover 63.9% 28.8%",
+   "rendered": {
+    "1440": [
+     "426.7x566.4"
+    ],
+    "1280": [
+     "373.3x495.6"
+    ],
+    "1000": [
+     "616.7x818.7",
+     "616.7x800"
+    ],
+    "390": [
+     "350x464.6"
+    ]
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/3wAhbBL8w69xQSppPtvRjJX8.jpg",
+   "alt": "Möbius",
+   "fit": "cover 50% 50%",
+   "rendered": {
+    "1440": [
+     "426.7x566.4"
+    ],
+    "1280": [
+     "373.3x495.6"
+    ]
+   }
+  }
+ ],
+ "network": [
+  {
+   "url": "https://framerusercontent.com/assets/iwWTDc49ENF2tCHbqlNARXw6Ug.woff2",
+   "contentType": "font/woff2"
+  },
+  {
+   "url": "https://framerusercontent.com/assets/qITWJ2WdG0wrgQPDb8lvnYnTXDg.woff2",
+   "contentType": "font/woff2"
+  },
+  {
+   "url": "https://framerusercontent.com/assets/9Nu9BRcGkRrLnJCGqVdSUXJt2Ig.woff2",
+   "contentType": "font/woff2"
+  },
+  {
+   "url": "https://framerusercontent.com/images/drBPvfLZfwnmhTDHHQbPmsfGe1I.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/images/3wAhbBL8w69xQSppPtvRjJX8.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/images/uFUviw9ZrPHHXKTg0Uk6Ceg3IM.jpg",
+   "contentType": "image/avif"
+  },
+  {
+   "url": "https://framerusercontent.com/modules/ag2KtnH7tMkIxmuWQxFW/KcSVdcwkM6gDBbAPb9vn/Play.js",
+   "contentType": "text/javascript; charset=utf-8"
+  },
+  {
+   "url": "https://framerusercontent.com/modules/K3PeUzM4qhL5IiaYcDem/hZzGgUtf1YrXicbBr18G/ArrowRight.js",
+   "contentType": "text/javascript; charset=utf-8"
+  },
+  {
+   "url": "https://framerusercontent.com/modules/FXBjxIel50FTZAcde0U6/EfKbBK36FTPGYz92B7Yf/ArrowsHorizontal.js",
+   "contentType": "text/javascript; charset=utf-8"
+  }
+ ],
+ "sourcePixelSizes": {
+  "uFUviw9ZrPHHXKTg0Uk6Ceg3IM (parallax)": "2464x1856"
+ },
+ "icons": "Phosphor icons via Framer modules (ArrowRight bold for buttons/cursor, Plus for accordion, ArrowsHorizontal for drag cursor, Play unused; contact-form button states use X / Spinner / Check). See network[] module URLs."
+}

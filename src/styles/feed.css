@@ -1,0 +1,214 @@
+/* /feed and /feed/<slug>, built against .recon/specs/feed.md.
+   Ranges: base = 1200–1599 | >=1600 | 810–1199.98 (tablet) | <=809.98 (phone).
+   This file can load before index.css (module order), so every rule that overrides a shared class
+   (.reveal etc.) uses two classes. */
+
+/* ---------- Text presets (§1) ---------- */
+.fd-t-small { font-size: 14px; font-weight: 500; line-height: 1.7; letter-spacing: 0; color: var(--body); } /* d483nc */
+.fd-t-body { font-size: 16px; font-weight: 500; line-height: 1.6; letter-spacing: 0; color: var(--body); } /* 1uqjdsf */
+.fd-t-date { color: var(--label); }
+.fd-t-card { font-size: 26px; font-weight: 500; line-height: 1.4; letter-spacing: -0.01em; color: var(--black); margin: 0; } /* 1kqwn6r */
+.fd-t-card strong { font-weight: 700; }
+.fd-t-rm { font-size: 48px; font-weight: 500; line-height: 1.2; letter-spacing: -0.02em; color: var(--black); margin: 0; } /* 1f2cdjh */
+.fd-t-rm strong { font-weight: 700; }
+.fd-t-h1 { font-size: 104px; font-weight: 700; line-height: 1; letter-spacing: -0.04em; color: var(--black); margin: 0; } /* 1ir0dak */
+.fd-t-num { font-size: 64px; font-weight: 700; line-height: 1.2; letter-spacing: -0.03em; color: #eee; margin: 0; white-space: pre; } /* 1xrh7u1, inline #eee */
+
+/* ---------- A1. /feed desktop ticker ---------- */
+.fd-desk { position: relative; height: 100vh; overflow: hidden; }
+.fd-ticker {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 1;
+  display: flex; flex-direction: row; justify-content: center; align-items: flex-start;
+  gap: 40px; padding: 80px 40px 0;
+}
+.fd-col { flex: 1 0 0; height: 100%; min-width: 0; }
+.fd-col-view { position: relative; height: 100%; overflow: hidden; }
+.fd-col-track { position: absolute; top: 0; left: 0; width: 100%; will-change: transform; }
+.fd-card { display: flex; flex-direction: column; gap: 40px; padding: 0 0 120px; width: 100%; }
+.fd-card-img { position: relative; display: block; width: 100%; height: auto; }
+.fd-card-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.fd-card-text { display: flex; flex-direction: column; gap: 16px; align-items: center; }
+.fd-card-text > p { width: 100%; }
+.fd-card-inner { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; width: 100%; }
+.fd-card-inner h6 { width: 100%; }
+.fd-card-ex { width: 100%; max-width: 400px; }          /* measured: 400 @1440, 373.3 @1280 */
+.fd-card-ex.fd-card-ex-first { width: 90%; }           /* measured: 384 @1440, 336 @1280 */
+
+/* ---------- A2. /feed tablet + phone "Notes List" ---------- */
+.fd-notes { display: flex; padding: 0 15px; }
+.fd-notes-side { flex: 1 0 0; }
+.fd-notes-main { flex: 4 0 0; min-width: 0; display: flex; flex-direction: column; }
+.fd-notes-spacer { height: 160px; }
+.fd-notes-text { padding: 0 15px; display: flex; flex-direction: column; gap: 24px; }
+.fd-notes-title { display: flex; flex-direction: column; gap: 16px; }
+.fd-notes-title p { text-wrap: balance; }
+.fd-notes-items { display: flex; flex-direction: column; gap: 120px; padding: 0 15px; }
+.fd-note { display: flex; flex-direction: column; gap: 32px; }
+.fd-note-img { position: relative; overflow: clip; }
+.fd-note-sizer { display: block; opacity: 0; width: 100%; height: 60vh; }
+.fd-note-img .fd-note-reveal { position: absolute; inset: 0; }
+.fd-note-text { display: flex; flex-direction: column; gap: 12px; }
+.fd-note-text > p { width: 90%; }
+.fd-note-inner { display: flex; flex-direction: column; gap: 8px; }
+.fd-note-inner h6 { width: 90%; }
+.fd-note-inner p { width: 90%; max-width: 640px; }
+
+/* ---------- B. Post ---------- */
+.fd-post { position: relative; display: flex; flex-direction: column; }
+.fd-row { display: flex; padding: 0 20px; }
+.fd-pad { padding: 0 20px; }
+.fd-sticky { position: sticky; top: 0; height: 80px; background: var(--white); z-index: 1; flex: none; }
+
+/* Article Number: absolute full-article layer with a sticky 100vh box (B2.1).
+   pointer-events:none is an assumption, see handoff: the layer is z 1 over the content. */
+.fd-num-layer { position: absolute; inset: 0; z-index: 1; display: flex; padding: 0 20px; pointer-events: none; }
+.fd-num-box {
+  flex: 2 0 0; min-width: 0; align-self: flex-start;
+  position: sticky; top: 0; height: 100vh; z-index: 1;
+  display: flex; flex-direction: column; justify-content: flex-end;
+}
+.fd-num-row { display: flex; gap: 6px; padding: 0 20px 40px; }
+.fd-num-rest { flex: 10 0 0; }
+
+/* Shared 2 | 8 | 2 rows (Intro, Image) */
+.fd-side2 { flex: 2 0 0; min-width: 0; }
+.fd-main8 { flex: 8 0 0; min-width: 0; }
+
+/* Intro (B2.2) */
+.fd-intro { position: relative; z-index: 2; padding: 160px 20px 0; }
+.fd-intro-text { display: flex; flex-direction: column; gap: 40px; justify-content: flex-end; }
+.fd-intro-block { display: flex; flex-direction: column; gap: 24px; }
+.fd-intro-block p { max-width: 640px; }
+
+/* Cover (B2.3) */
+.fd-cover-wrap { display: flex; flex-direction: column; padding: 0 20px; }
+.fd-cover-wrap .fd-cover { width: 100%; }
+
+/* Content A / B (B2.4, B2.6): 2 | 4 | 1 | 5 */
+.fd-ct { padding: 120px 20px 0; }
+.fd-ct-left { flex: 2 0 0; min-width: 0; }
+.fd-ct-b .fd-ct-left { height: 100px; align-self: flex-start; }
+.fd-ct-text { flex: 4 0 0; min-width: 0; }
+.fd-ct-inner { display: flex; flex-direction: column; gap: 40px; padding: 0 20px; }
+.fd-ct-b .fd-ct-inner { gap: 48px; }
+.fd-ct-gap { flex: 1 0 0; min-width: 0; }
+.fd-ct-label { flex: 5 0 0; min-width: 0; }
+.fd-ct-label > h3 { width: fit-content; margin-left: 20px; } /* offset inside the flex item so flex-basis 0 columns stay 12ths; h3 shrink-wraps as on the original */
+.fd-rich { max-width: 480px; }
+.fd-rich p + p { margin-top: 32px; }
+
+/* Quote (B2.5): 2 | 10 */
+.fd-q { padding: 120px 20px 0; align-items: flex-end; }
+.fd-q-main { flex: 10 0 0; min-width: 0; }
+.fd-quote { font-size: 56px; font-weight: 500; line-height: 1.2; letter-spacing: -0.03em; color: var(--black); margin: 0; }
+.fd-quote.fd-quote-anim { display: flex; flex-direction: column; transform: translateX(-160px); }
+.fd-quote-anim .fd-quote-line { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: flex-start; width: 100%; }
+
+/* Read More (B2.7): 1 | 4 | 1 */
+.fd-rm { padding: 0 20px 40px; }
+.fd-rm-side { flex: 1 0 0; min-width: 0; }
+.fd-rm-main { flex: 4 0 0; min-width: 0; display: flex; flex-direction: column; }
+.fd-rm-spacer { height: 120px; }
+.fd-rm-title { overflow: hidden; }
+.fd-rm-cards { display: flex; }
+.fd-rm-card { flex: 1 0 0; min-width: 0; display: flex; flex-direction: column; gap: 32px; padding: 0 20px; }
+.fd-rm-imgc { display: flex; flex-direction: column; }
+.fd-rm-first .fd-rm-imgc > .fd-sticky { height: 80px; } /* "1st" card (last post): 80px at every size */
+.fd-rm-img {
+  position: relative; display: flex; align-items: center; justify-content: center;
+  width: 100%; max-height: 100vh; overflow: hidden;
+}
+.fd-rm-img .fd-rm-reveal { width: 100%; flex: none; }
+.fd-rm-text { display: flex; flex-direction: column; gap: 12px; }
+.fd-rm-text > p { width: 90%; }
+.fd-rm-inner { display: flex; flex-direction: column; gap: 8px; }
+.fd-rm-inner h6 { width: 90%; }
+.fd-rm-inner p { width: 90%; max-width: 480px; }
+
+/* ---------- >= 1600 ---------- */
+@media (min-width: 1600px) {
+  .fd-t-card { font-size: 28px; }
+  .fd-t-rm { font-size: 56px; }
+  .fd-t-h1 { font-size: 120px; }
+  .fd-t-num { font-size: 80px; }
+  /* Quote size at >=1600 is not in the spec; left at the measured 56px. */
+}
+
+/* ---------- Tablet 810–1199.98 ---------- */
+@media (max-width: 1199.98px) {
+  .fd-t-card { font-size: 25px; }
+  .fd-t-rm { font-size: 44px; }
+  .fd-t-h1 { font-size: 80px; }
+  .fd-t-num { font-size: 54px; }
+
+  .fd-row { padding: 0 15px; }
+  .fd-pad { padding: 0 15px; }
+  .fd-sticky { height: 72px; }
+
+  .fd-num-layer { padding: 0 15px; }
+  .fd-num-box { flex: 1 0 0; }
+  .fd-num-row { padding: 0 15px 30px; }
+  .fd-num-rest { flex: 5 0 0; }
+
+  .fd-side2 { flex: 1 0 0; }
+  .fd-main8 { flex: 4 0 0; }
+  .fd-intro { padding: 120px 15px 0; }
+  .fd-cover-wrap { padding: 0 15px; }
+
+  .fd-ct { padding: 80px 15px 0; }
+  .fd-ct-a { padding-left: 16px; }
+  .fd-ct-left { flex: 1 0 0; }
+  .fd-ct-inner { padding: 0 15px; }
+  .fd-ct-label { display: none; }
+
+  .fd-q { padding: 80px 15px 0; }
+  .fd-q .fd-side2 { flex: 1 0 0; }
+  .fd-q-main { flex: 5 0 0; }
+  .fd-quote { font-size: 44px; letter-spacing: -0.04em; text-indent: 120px; white-space: pre-wrap; transform: translateX(-120px); }
+
+  .fd-rm { padding: 0 15px 30px; }
+  .fd-rm-card { padding: 0 15px; }
+  .fd-rm-card.fd-rm-desk { display: none; }
+}
+
+/* ---------- Phone <= 809.98 ---------- */
+@media (max-width: 809.98px) {
+  .fd-t-card { font-size: 24px; }
+  .fd-t-rm { font-size: 36px; }
+  .fd-t-h1 { font-size: 64px; }
+  .fd-t-num { font-size: 44px; }
+
+  /* Notes list */
+  .fd-notes { flex-direction: column; gap: 40px; padding: 0 10px; }
+  .fd-notes-side:first-child { display: none; }
+  .fd-notes-side { order: 1; height: 0; flex: none; }
+  .fd-notes-spacer { height: 120px; }
+  .fd-notes-text { padding: 0 10px; }
+  .fd-notes-items { gap: 80px; padding: 0 10px; }
+
+  /* Post */
+  .fd-row { padding: 0 10px; }
+  .fd-pad { padding: 0 10px; }
+  .fd-sticky { height: 64px; }
+  .fd-side2, .fd-ct-left, .fd-ct-gap, .fd-rm-side, .fd-num-rest { display: none; }
+
+  /* Order: Article Number → Image → Intro → Content A → Quote → Content B → Read More */
+  .fd-num-layer { position: static; order: 0; padding: 120px 10px 0; z-index: auto; }
+  .fd-num-box { position: static; height: auto; }
+  .fd-num-row { padding: 0 10px; }
+  .fd-cover-row { order: 1; }
+  .fd-intro { order: 2; padding: 40px 10px 0; }
+  .fd-ct-a { order: 3; }
+  .fd-q { order: 4; }
+  .fd-ct-b { order: 5; }
+  .fd-rm { order: 6; padding: 0 10px; }
+
+  .fd-intro-text { gap: 32px; }
+  .fd-cover-wrap { padding: 0 10px; }
+  .fd-ct { padding: 80px 10px 0; }
+  .fd-ct-inner { padding: 0 10px; }
+  .fd-q { padding: 80px 10px 0; }
+  .fd-quote { font-size: 36px; text-indent: 80px; transform: none; }
+  .fd-rm-cards { flex-direction: column; }
+  .fd-rm-card { padding: 0 10px; }
+}

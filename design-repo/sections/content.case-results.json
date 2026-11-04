@@ -1,0 +1,120 @@
+{
+  "id": "content.case-results",
+  "title": "Case results",
+  "status": "measured",
+  "source": {
+    "id": "src:Sections#export-function-Numbers",
+    "file": "src/components/project/Sections.jsx",
+    "tag": "export function Numbers(",
+    "lines": "64-76",
+    "citation": "src/components/project/Sections.jsx:64-76"
+  },
+  "semantic": {
+    "id": "content.case-results",
+    "category": "CONTENT"
+  },
+  "retrievalEligible": true,
+  "purpose": "Outcome metrics for a case study: one lead-in sentence and two to four big signed percentages with labels.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 8,
+        "x-maxWordsEvidence": "max 6 words measured (projects.json numbers.heading); budget = ceil(1.25 x max)"
+      },
+      "stats": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 2,
+              "x-maxWordsEvidence": "max 1 words measured (projects.json stat values); budget = ceil(1.25 x max)"
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 7,
+              "x-maxWordsEvidence": "max 5 words measured (projects.json stat labels); budget = ceil(1.25 x max)"
+            }
+          },
+          "required": [
+            "value",
+            "label"
+          ]
+        },
+        "x-countEvidence": "4 stats per project measured"
+      }
+    },
+    "required": [
+      "heading",
+      "stats"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "char-rise"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-tablet",
+        "change": "collapse-grid",
+        "detail": "Stats wrap into two columns."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 12,
+    "heightPxMin": 314.8,
+    "heightPxMax": 314.8,
+    "routes": [
+      "/work/after-light",
+      "/work/axis-point",
+      "/work/bright-matter",
+      "/work/echoform",
+      "/work/forma-nine",
+      "/work/golden-hour"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/work/after-light",
+    "/work/axis-point",
+    "/work/bright-matter",
+    "/work/echoform",
+    "/work/forma-nine",
+    "/work/golden-hour",
+    "/work/north-layer",
+    "/work/orbit-404",
+    "/work/pulse",
+    "/work/soma-studio",
+    "/work/wavehouse",
+    "/work/zero-parallel"
+  ]
+}

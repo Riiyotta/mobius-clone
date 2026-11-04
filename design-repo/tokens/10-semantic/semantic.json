@@ -1,0 +1,67 @@
+{
+  "$description": "Semantic colour roles. light = every page; inverse = the black menu panel / lightbox (no eligible section admits it).",
+  "tokens": {
+    "color.text.primary": {
+      "light": {
+        "ref": "color.black",
+        "evidence": "src/index.css:16-16"
+      },
+      "inverse": {
+        "ref": "color.white",
+        "evidence": "src/index.css:193-193"
+      }
+    },
+    "color.text.body": {
+      "light": {
+        "ref": "color.gray.body",
+        "evidence": "src/index.css:8-8"
+      }
+    },
+    "color.text.label": {
+      "light": {
+        "ref": "color.gray.label",
+        "evidence": "src/index.css:9-9"
+      }
+    },
+    "color.text.caption": {
+      "light": {
+        "ref": "color.gray.caption",
+        "evidence": "src/styles/home-sections.css:13-13"
+      }
+    },
+    "color.text.numeral": {
+      "light": {
+        "ref": "color.gray.numeral",
+        "evidence": "src/styles/home-sections.css:94-94"
+      }
+    },
+    "color.surface.page": {
+      "light": {
+        "ref": "color.white",
+        "evidence": "src/index.css:15-15"
+      },
+      "inverse": {
+        "ref": "color.black",
+        "evidence": "src/index.css:193-193"
+      }
+    },
+    "color.surface.field": {
+      "light": {
+        "ref": "color.gray.field",
+        "evidence": "src/index.css:166-166"
+      }
+    },
+    "color.border.hairline": {
+      "light": {
+        "ref": "color.gray.numeral",
+        "evidence": "src/styles/home-sections.css:157-157"
+      }
+    },
+    "color.surface.selection": {
+      "light": {
+        "ref": "color.gray.selection",
+        "evidence": "src/index.css:17-17"
+      }
+    }
+  }
+}

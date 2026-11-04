@@ -1,0 +1,115 @@
+{
+  "id": "team.studio-team",
+  "title": "Studio team",
+  "status": "measured",
+  "source": {
+    "id": "src:Studio#function-OurTeam",
+    "file": "src/pages/Studio.jsx",
+    "tag": "function OurTeam(",
+    "lines": "152-181",
+    "citation": "src/pages/Studio.jsx:152-181"
+  },
+  "semantic": {
+    "id": "team.studio-team",
+    "category": "TEAM"
+  },
+  "retrievalEligible": true,
+  "purpose": "Scroll-revealed brand statement (words light up in shuffled order, then fade) above a three-column grid of six team cards with column parallax.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "statement": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 52,
+        "x-maxWordsEvidence": "max 41 words measured (Studio.jsx REVEAL); budget = ceil(1.25 x max)"
+      },
+      "members": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 9,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "person": {
+              "$ref": "#/definitions/person"
+            },
+            "photo": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-person",
+                "person.fictional-portrait"
+              ]
+            }
+          },
+          "required": [
+            "person",
+            "photo"
+          ]
+        },
+        "x-countEvidence": "6 members measured"
+      }
+    },
+    "required": [
+      "statement",
+      "members"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "word-reveal-scroll",
+      "scroll-parallax",
+      "char-rise"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "collapse-grid",
+        "detail": "3 columns -> rows of two (tablet) -> single column (phone); statement static."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": "members[].photo",
+      "assetRoles": [
+        "photo.source-person",
+        "person.fictional-portrait"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "person.fictional-portrait",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.team-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 2451.4,
+    "heightPxMax": 2451.4,
+    "routes": [
+      "/studio"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/studio"
+  ]
+}

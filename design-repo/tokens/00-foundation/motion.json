@@ -1,0 +1,59 @@
+{
+  "$description": "Easing curves and springs. Duration springs are Framer bounce-0 springs: critically damped, omega = 9.233/duration (src/lib/spring.js).",
+  "easing": {
+    "ease.line-reveal": {
+      "value": "cubic-bezier(.4,1,.4,1)",
+      "evidence": "src/components/home/Hero.jsx:57-57"
+    },
+    "ease.image-reveal": {
+      "value": "cubic-bezier(0.6, 0, 0.4, 1)",
+      "evidence": "src/index.css:234-234"
+    },
+    "ease.rolling-letters": {
+      "value": "cubic-bezier(0.8,0,0.4,1)",
+      "evidence": "src/components/RollingLetters.jsx:31-31"
+    },
+    "ease.fade": {
+      "value": "cubic-bezier(0.44, 0, 0.56, 1)",
+      "evidence": "src/index.css:70-70"
+    },
+    "ease.bar-grow": {
+      "value": "cubic-bezier(.4,0,0,1)",
+      "evidence": "src/components/home/Process.jsx:11-11"
+    },
+    "ease.hero-exit": {
+      "value": "cubic-bezier(.8, 0, 1, .7)",
+      "evidence": "src/components/home/Hero.jsx:21-21"
+    },
+    "ease.smooth-scroll": {
+      "value": "expo-out 1.001 - 2^(-10t), 2.0s",
+      "evidence": "src/lib/useSmoothScroll.js:4-4"
+    }
+  },
+  "spring": {
+    "spring.duration-0.4": {
+      "value": "critically damped, 0.4s (omega = 9.233/0.4)",
+      "evidence": "src/lib/spring.js:16-16"
+    },
+    "spring.duration-0.6": {
+      "value": "critically damped, 0.6s",
+      "evidence": "src/lib/spring.js:17-17"
+    },
+    "spring.duration-0.8": {
+      "value": "critically damped, 0.8s",
+      "evidence": "src/lib/spring.js:18-18"
+    },
+    "spring.duration-1.6": {
+      "value": "critically damped, 1.6s",
+      "evidence": "src/components/home/Numbers.jsx:14-14"
+    },
+    "spring.physics-follow": {
+      "value": "stiffness 340, damping 60, mass 1",
+      "evidence": "src/components/Cursor.jsx:5-5"
+    },
+    "spring.physics-rows": {
+      "value": "stiffness 500, damping 100, mass 3.3",
+      "evidence": "src/components/home/Awards.jsx:7-7"
+    }
+  }
+}

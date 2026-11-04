@@ -1,0 +1,11 @@
+{
+  "id": "primitive.link-line",
+  "title": "Line link (Button C)",
+  "description": "Text link whose 2px line grows from 1px to full width on hover.",
+  "source": {
+    "file": "src/components/Footer.jsx",
+    "tag": "function FooterLink(",
+    "lines": "14-23",
+    "citation": "src/components/Footer.jsx:14-23"
+  }
+}

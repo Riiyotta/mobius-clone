@@ -1,0 +1,14 @@
+{
+  "id": "component.career-item",
+  "title": "Career item",
+  "description": "Accordion row: role title, description, lists, apply line.",
+  "source": {
+    "file": "src/components/studio/CareerAccordion.jsx",
+    "tag": "function Item(",
+    "lines": "68-117",
+    "citation": "src/components/studio/CareerAccordion.jsx:68-117"
+  },
+  "composes": [
+    "primitive.icon-glyph"
+  ]
+}

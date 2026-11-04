@@ -1,0 +1,229 @@
+{
+  "$description": "Every route the clone serves, mapped exactly once. Derived from src/lib/router.js match() + the CMS slugs in src/content/*.json; verify_all re-derives this set from the sibling source and fails on drift. 30 routes are in the original's sitemap; /404 is an explicit route; every other URL falls back to not-found.",
+  "routeTableEvidence": "src/lib/router.js:51-62",
+  "fallback": {
+    "route": "*",
+    "template": "not-found",
+    "evidence": "src/lib/router.js:61-61",
+    "note": "Unknown /work/<slug> and /legal/<slug> render not-found (App.jsx). Unknown /feed/<slug> renders an EMPTY page (Post returns null) — a clone deviation recorded in measured-values.json groundworkChecks."
+  },
+  "routes": [
+    {
+      "route": "/",
+      "template": "home",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:53-53"
+    },
+    {
+      "route": "/work",
+      "template": "work-index",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:54-54"
+    },
+    {
+      "route": "/work/soma-studio",
+      "template": "case-detail",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:55-55"
+    },
+    {
+      "route": "/work/bright-matter",
+      "template": "case-detail",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:55-55"
+    },
+    {
+      "route": "/work/wavehouse",
+      "template": "case-detail",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:55-55"
+    },
+    {
+      "route": "/work/north-layer",
+      "template": "case-detail",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:55-55"
+    },
+    {
+      "route": "/work/zero-parallel",
+      "template": "case-detail",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:55-55"
+    },
+    {
+      "route": "/work/pulse",
+      "template": "case-detail",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:55-55"
+    },
+    {
+      "route": "/work/after-light",
+      "template": "case-detail",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:55-55"
+    },
+    {
+      "route": "/work/forma-nine",
+      "template": "case-detail",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:55-55"
+    },
+    {
+      "route": "/work/golden-hour",
+      "template": "case-detail",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:55-55"
+    },
+    {
+      "route": "/work/echoform",
+      "template": "case-detail",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:55-55"
+    },
+    {
+      "route": "/work/axis-point",
+      "template": "case-detail",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:55-55"
+    },
+    {
+      "route": "/work/orbit-404",
+      "template": "case-detail",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:55-55"
+    },
+    {
+      "route": "/studio",
+      "template": "studio",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:58-58"
+    },
+    {
+      "route": "/contacts",
+      "template": "contacts",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:59-59"
+    },
+    {
+      "route": "/feed",
+      "template": "feed-index",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:56-56"
+    },
+    {
+      "route": "/feed/the-logic-of-emotion",
+      "template": "feed-post",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:57-57"
+    },
+    {
+      "route": "/feed/precision-over-perfection",
+      "template": "feed-post",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:57-57"
+    },
+    {
+      "route": "/feed/the-language-of-shape",
+      "template": "feed-post",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:57-57"
+    },
+    {
+      "route": "/feed/designing-the-invisible",
+      "template": "feed-post",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:57-57"
+    },
+    {
+      "route": "/feed/the-architecture-of-meaning",
+      "template": "feed-post",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:57-57"
+    },
+    {
+      "route": "/feed/one-idea-many-forms",
+      "template": "feed-post",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:57-57"
+    },
+    {
+      "route": "/feed/beyond-function",
+      "template": "feed-post",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:57-57"
+    },
+    {
+      "route": "/feed/the-human-algorithm",
+      "template": "feed-post",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:57-57"
+    },
+    {
+      "route": "/feed/the-clarity-paradox",
+      "template": "feed-post",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:57-57"
+    },
+    {
+      "route": "/feed/systems-with-soul",
+      "template": "feed-post",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:57-57"
+    },
+    {
+      "route": "/feed/thinking-in-motion",
+      "template": "feed-post",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:57-57"
+    },
+    {
+      "route": "/legal/privacy-policy",
+      "template": "legal",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:60-60"
+    },
+    {
+      "route": "/legal/terms-of-service",
+      "template": "legal",
+      "status": "mounted",
+      "inSitemap": true,
+      "evidence": "src/lib/router.js:60-60"
+    },
+    {
+      "route": "/404",
+      "template": "not-found",
+      "status": "mounted",
+      "inSitemap": false,
+      "evidence": "src/lib/router.js:61-61"
+    }
+  ]
+}

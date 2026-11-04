@@ -1,0 +1,136 @@
+{
+  "id": "editorial.notes-index",
+  "title": "Notes index",
+  "status": "measured",
+  "source": {
+    "id": "src:NotesTicker#export-default-function-NotesTicker",
+    "file": "src/components/feed/NotesTicker.jsx",
+    "tag": "export default function NotesTicker(",
+    "lines": "100-108",
+    "citation": "src/components/feed/NotesTicker.jsx:100-108",
+    "alsoImplementedBy": [
+      {
+        "file": "src/components/feed/NotesList.jsx",
+        "tag": "export default function NotesList(",
+        "lines": "7-43",
+        "citation": "src/components/feed/NotesList.jsx:7-43"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "editorial.notes-index",
+    "category": "EDITORIAL"
+  },
+  "retrievalEligible": true,
+  "purpose": "Every note as an image-led card: three independently auto-scrolling columns on desktop (wheel-steerable), a vertical list below 1200.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "notes": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 40,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "date": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 4,
+              "x-maxWordsEvidence": "max 3 words measured (feed.json dates); budget = ceil(1.25 x max)"
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "x-maxWordsEvidence": "max 4 words measured (feed.json titles); budget = ceil(1.25 x max)"
+            },
+            "excerpt": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 29,
+              "x-maxWordsEvidence": "max 23 words measured (feed.json excerpts); budget = ceil(1.25 x max)"
+            },
+            "href": {
+              "$ref": "#/definitions/url"
+            },
+            "cover": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-editorial",
+                "photo.generated-scene"
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "title",
+            "excerpt",
+            "href",
+            "cover"
+          ]
+        },
+        "x-countEvidence": "11 notes measured"
+      }
+    },
+    "required": [
+      "notes"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "auto-scroll-columns",
+      "image-reveal-wipe"
+    ],
+    "reducedMotionFallback": "paused-first-frame",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "show-alternate-tree",
+        "detail": "Vertical Notes List + footer instead of the 100vh column view."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": "notes[].cover",
+      "assetRoles": [
+        "photo.source-editorial",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.note-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 900,
+    "heightPxMax": 900,
+    "routes": [
+      "/feed"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/feed"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "hero.index-title",
+  "title": "Index title",
+  "status": "measured",
+  "source": {
+    "id": "src:WorksList#div-className-works-text",
+    "file": "src/components/WorksList.jsx",
+    "tag": "<div className=\"works-text\">",
+    "lines": "11-16",
+    "citation": "src/components/WorksList.jsx:11-16",
+    "alsoImplementedBy": [
+      {
+        "file": "src/components/WorkTitle.jsx",
+        "tag": "export default function WorkTitle(",
+        "lines": "2-15",
+        "citation": "src/components/WorkTitle.jsx:2-15"
+      },
+      {
+        "file": "src/components/feed/NotesList.jsx",
+        "tag": "export default function NotesList(",
+        "lines": "7-43",
+        "citation": "src/components/feed/NotesList.jsx:7-43"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "hero.index-title",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "purpose": "Index-page opener: a large one-word title with a short intro line; on the desktop work canvas it sits centred behind the cards with a 'scroll / drag' hint.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (WorksList.jsx h1, NotesList.jsx h1); budget = ceil(1.25 x max)"
+      },
+      "intro": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 24,
+        "x-maxWordsEvidence": "max 19 words measured (data.js intro, NotesList.jsx INTRO); budget = ceil(1.25 x max)"
+      },
+      "hint": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 4,
+        "x-maxWordsEvidence": "max 3 words measured (WorkTitle.jsx hint); budget = ceil(1.25 x max)"
+      }
+    },
+    "required": [
+      "title",
+      "intro"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "char-rise",
+      "static"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "desktop",
+        "change": "show-alternate-tree",
+        "detail": "Work: centred 240px title + hint behind the canvas (absolute, takes no page height). Feed: not rendered at >=1200."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "variants": [
+    "work",
+    "feed"
+  ],
+  "variantRequirements": {
+    "work": [
+      "hint"
+    ]
+  },
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 300.4,
+    "heightPxMax": 300.4,
+    "routes": [
+      "/work"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/work"
+  ]
+}

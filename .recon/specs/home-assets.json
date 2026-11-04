@@ -1,0 +1,1740 @@
+{
+ "page": "https://mobius.framer.website/",
+ "note": "URLs stripped of query. Framer serves images with ?scale-down-to=&width=&height= params; request originals or width-appropriate sizes. Rendered sizes in CSS px from DOM dumps at each viewport width (doc coords).",
+ "assets": [
+  {
+   "url": "https://framerusercontent.com/assets/9Nu9BRcGkRrLnJCGqVdSUXJt2Ig.woff2",
+   "uses": [
+    {
+     "note": "loaded at 1440 (not matched to a rendered element in dumps; e.g. lazy/hidden variant, poster, button image or font)"
+    }
+   ],
+   "role": "Inter Display 800 (latin)"
+  },
+  {
+   "url": "https://framerusercontent.com/assets/iwWTDc49ENF2tCHbqlNARXw6Ug.woff2",
+   "uses": [
+    {
+     "note": "loaded at 1440 (not matched to a rendered element in dumps; e.g. lazy/hidden variant, poster, button image or font)"
+    }
+   ],
+   "role": "Inter Display 500 (latin)"
+  },
+  {
+   "url": "https://framerusercontent.com/assets/k5BuF5agb7jRFUwK2jzQ0zjqjro.mp4",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "893.3x502.5",
+     "first_box": [
+      273.3,
+      2736.7,
+      893.3,
+      502.5
+     ],
+     "fit": "cover",
+     "served_natural": null
+    },
+    {
+     "vw": 1280,
+     "rendered": "786.7x442.5",
+     "first_box": [
+      246.7,
+      2636.7,
+      786.7,
+      442.5
+     ],
+     "fit": "cover",
+     "served_natural": null
+    },
+    {
+     "vw": 1000,
+     "rendered": "662.9x372.8",
+     "first_box": [
+      168.6,
+      1672.7,
+      662.9,
+      372.8
+     ],
+     "fit": "cover",
+     "served_natural": null
+    },
+    {
+     "vw": 390,
+     "rendered": "350x196.9",
+     "first_box": [
+      20,
+      2169.6,
+      350,
+      196.9
+     ],
+     "fit": "cover",
+     "served_natural": null
+    },
+    {
+     "note": "loaded at 1440 (not matched to a rendered element in dumps; e.g. lazy/hidden variant, poster, button image or font)"
+    }
+   ],
+   "role": "Reel video: autoplay muted loop playsinline, 1920x1080, 10.53s. Rendered 893.3x502.5 @1440 object-fit cover; lightbox 1440x810"
+  },
+  {
+   "url": "https://framerusercontent.com/assets/qITWJ2WdG0wrgQPDb8lvnYnTXDg.woff2",
+   "uses": [
+    {
+     "note": "loaded at 1440 (not matched to a rendered element in dumps; e.g. lazy/hidden variant, poster, button image or font)"
+    }
+   ],
+   "role": "Inter Display 700 (latin)"
+  },
+  {
+   "url": "https://framerusercontent.com/assets/x8eJ5VkmPMHVhVbF0E8JYFJmwc.woff2",
+   "uses": [
+    {
+     "note": "loaded at 1440 (not matched to a rendered element in dumps; e.g. lazy/hidden variant, poster, button image or font)"
+    }
+   ],
+   "role": "Inter Display 900 (latin), used by Big Number digit columns (inferred: only other weight loaded)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/11KSGbIZoRSg4pjdnUoif6MKHI.svg",
+   "uses": [
+    {
+     "note": "loaded at 1440 (not matched to a rendered element in dumps; e.g. lazy/hidden variant, poster, button image or font)"
+    }
+   ],
+   "role": "testimonial carousel (tablet/phone) arrow image; referenced in Testimonials section code"
+  },
+  {
+   "url": "https://framerusercontent.com/images/3Y1x3Iz9CnzoCeLjfRflZMOiF0.svg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "128x90",
+     "first_box": [
+      146,
+      12490.1,
+      128,
+      90
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "100x40"
+    },
+    {
+     "vw": 1280,
+     "rendered": "120x80",
+     "first_box": [
+      130,
+      12050.6,
+      120,
+      80
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "100x40"
+    },
+    {
+     "vw": 1000,
+     "rendered": "123.9x64",
+     "first_box": [
+      128.7,
+      9617.2,
+      123.9,
+      64
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "100x40"
+    },
+    {
+     "vw": 390,
+     "rendered": "120.3x109.7",
+     "first_box": [
+      227.4,
+      12208.6,
+      120.3,
+      109.7
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "100x40"
+    }
+   ],
+   "role": "partner logo #9 (grid order, row-major)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/3wAhbBL8w69xQSppPtvRjJX8.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "426.7x566.4",
+     "first_box": [
+      740,
+      18652.5,
+      426.7,
+      566.4
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "426x566"
+    },
+    {
+     "vw": 1280,
+     "rendered": "373.3x495.6",
+     "first_box": [
+      660,
+      18119.5,
+      373.3,
+      495.6
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "373x495"
+    }
+   ],
+   "role": "Studio Notes card 2 (Precision Over Perfection)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/6KUBJx1dbqL2lxMP2u9Fzuiwk.svg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "160x112.5",
+     "first_box": [
+      130,
+      12028.9,
+      160,
+      112.5
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "125x40"
+    },
+    {
+     "vw": 1280,
+     "rendered": "150x100",
+     "first_box": [
+      115,
+      11640.6,
+      150,
+      100
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "125x40"
+    },
+    {
+     "vw": 1000,
+     "rendered": "154.9x80",
+     "first_box": [
+      113.2,
+      9129.2,
+      154.9,
+      80
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "125x40"
+    },
+    {
+     "vw": 390,
+     "rendered": "129.5x118.2",
+     "first_box": [
+      37.8,
+      11360.3,
+      129.5,
+      118.2
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "125x40"
+    }
+   ],
+   "role": "partner logo #1 (grid order, row-major)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/6QEz8kJbwqWFzbNDcgcMwaBk7Jk.svg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "160x112.5",
+     "first_box": [
+      810,
+      12028.9,
+      160,
+      112.5
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "176x40"
+    },
+    {
+     "vw": 1280,
+     "rendered": "150x100",
+     "first_box": [
+      715,
+      11640.6,
+      150,
+      100
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "176x40"
+    },
+    {
+     "vw": 1000,
+     "rendered": "154.9x80",
+     "first_box": [
+      113.2,
+      9289.2,
+      154.9,
+      80
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "176x40"
+    },
+    {
+     "vw": 390,
+     "rendered": "120.3x109.7",
+     "first_box": [
+      227.4,
+      11871,
+      120.3,
+      109.7
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "176x40"
+    }
+   ],
+   "role": "partner logo #3 (grid order, row-major)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/6tTbkXggWgQCAJ4DO2QEdXXmgM.svg",
+   "uses": [
+    {
+     "note": "loaded at 1440 (not matched to a rendered element in dumps; e.g. lazy/hidden variant, poster, button image or font)"
+    }
+   ],
+   "role": "testimonial carousel (tablet/phone) arrow image; referenced in Testimonials section code"
+  },
+  {
+   "url": "https://framerusercontent.com/images/8s1d41G36Gw3wKjdAqv9BP0vZo.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "310x594",
+     "first_box": [
+      273.3,
+      15372.1,
+      310,
+      594
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "254x338"
+    },
+    {
+     "vw": 1280,
+     "rendered": "270x622.1",
+     "first_box": [
+      246.7,
+      14811.2,
+      270,
+      622.1
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "254x338"
+    },
+    {
+     "vw": 1000,
+     "rendered": "616.7x818.7",
+     "first_box": [
+      1161.7,
+      11849.4,
+      616.7,
+      818.7
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "509x677"
+    },
+    {
+     "vw": 390,
+     "rendered": "350x464.6",
+     "first_box": [
+      390,
+      14536.5,
+      350,
+      464.6
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "355x471"
+    }
+   ],
+   "role": "testimonial 2 Jonas Berg"
+  },
+  {
+   "url": "https://framerusercontent.com/images/91tSqsa2UCoJo8t9Pw7JOunYw.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "500.6x636.9",
+     "first_box": [
+      469.7,
+      131.5,
+      500.6,
+      636.9
+     ],
+     "fit": "cover 46.6% 26%",
+     "served_natural": "1439x1919"
+    },
+    {
+     "vw": 1280,
+     "rendered": "445x566.2",
+     "first_box": [
+      417.5,
+      116.9,
+      445,
+      566.2
+     ],
+     "fit": "cover 46.6% 26%",
+     "served_natural": "1280x1706"
+    },
+    {
+     "vw": 1000,
+     "rendered": "325.1x413.6",
+     "first_box": [
+      337.5,
+      174.8,
+      325.1,
+      413.6
+     ],
+     "fit": "cover 46.6% 26%",
+     "served_natural": "1000x1333"
+    },
+    {
+     "vw": 390,
+     "rendered": "344.8x438.7",
+     "first_box": [
+      22.6,
+      366.6,
+      344.8,
+      438.7
+     ],
+     "fit": "cover 46.6% 26%",
+     "served_natural": "390x520"
+    }
+   ],
+   "role": "hero stack card A (top; Soma Studio)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/G901ZjDCZB5sKU1V2zrEUrdGKis.svg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "128x90",
+     "first_box": [
+      826,
+      12490.1,
+      128,
+      90
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "71x55"
+    },
+    {
+     "vw": 1280,
+     "rendered": "120x80",
+     "first_box": [
+      730,
+      12050.6,
+      120,
+      80
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "71x55"
+    },
+    {
+     "vw": 1000,
+     "rendered": "123.9x64",
+     "first_box": [
+      748.4,
+      9617.2,
+      123.9,
+      64
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "71x55"
+    },
+    {
+     "vw": 390,
+     "rendered": "101.8x92.8",
+     "first_box": [
+      51.6,
+      12217,
+      101.8,
+      92.8
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "71x55"
+    }
+   ],
+   "role": "partner logo #11 (grid order, row-major)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/JUqCPovcIKHCGuuLShMUORkvJI.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "310x594",
+     "first_box": [
+      273.3,
+      15372.1,
+      310,
+      594
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "260x345"
+    },
+    {
+     "vw": 1280,
+     "rendered": "270x564.5",
+     "first_box": [
+      246.7,
+      14811.2,
+      270,
+      564.5
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "260x345"
+    },
+    {
+     "vw": 1000,
+     "rendered": "616.7x818.7",
+     "first_box": [
+      191.7,
+      11849.4,
+      616.7,
+      818.7
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "509x677"
+    },
+    {
+     "vw": 390,
+     "rendered": "350x464.6",
+     "first_box": [
+      20,
+      14536.5,
+      350,
+      464.6
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "355x471"
+    }
+   ],
+   "role": "testimonial 1 Clara Jensen"
+  },
+  {
+   "url": "https://framerusercontent.com/images/JZNaIjPNcrDF3IgxsRH6Azc8.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "628.1x717.7",
+     "first_box": [
+      406,
+      91.1,
+      628.1,
+      717.7
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "1439x1919"
+    },
+    {
+     "vw": 1280,
+     "rendered": "558.3x638",
+     "first_box": [
+      360.9,
+      81,
+      558.3,
+      638
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "1280x1706"
+    },
+    {
+     "vw": 1000,
+     "rendered": "407.9x466.1",
+     "first_box": [
+      296,
+      148.5,
+      407.9,
+      466.1
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "1000x1333"
+    },
+    {
+     "vw": 390,
+     "rendered": "432.6x494.4",
+     "first_box": [
+      -21.3,
+      338.8,
+      432.6,
+      494.4
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "390x520"
+    }
+   ],
+   "role": "hero stack card C (Wave 124)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/LdGkrvu5WSmHSae6OpKl2jDoOo.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "862x637.6",
+     "first_box": [
+      577,
+      7013.1,
+      862,
+      637.6
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "1438x1083"
+    },
+    {
+     "vw": 1280,
+     "rendered": "766x566.5",
+     "first_box": [
+      513,
+      7025.7,
+      766,
+      566.5
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "1278x962"
+    },
+    {
+     "vw": 1000,
+     "rendered": "468x345.9",
+     "first_box": [
+      501,
+      5464.4,
+      468,
+      345.9
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "598x450"
+    },
+    {
+     "vw": 390,
+     "rendered": "348x257.1",
+     "first_box": [
+      21,
+      5831.2,
+      348,
+      257.1
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "348x262"
+    }
+   ],
+   "role": "Big Number image A (25), lighten blend"
+  },
+  {
+   "url": "https://framerusercontent.com/images/NIbuhT0QGj7fz0t7jXI6Gk6J1c.svg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "208x146.3",
+     "first_box": [
+      446,
+      12012,
+      208,
+      146.3
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "415x109"
+    },
+    {
+     "vw": 1280,
+     "rendered": "195x130",
+     "first_box": [
+      392.5,
+      11625.6,
+      195,
+      130
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "415x109"
+    },
+    {
+     "vw": 1000,
+     "rendered": "201.4x104",
+     "first_box": [
+      399.8,
+      9117.2,
+      201.4,
+      104
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "415x109"
+    },
+    {
+     "vw": 390,
+     "rendered": "138.8x126.6",
+     "first_box": [
+      218.1,
+      11524.9,
+      138.8,
+      126.6
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "415x109"
+    }
+   ],
+   "role": "partner logo #2 (grid order, row-major)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/NpmO2eWasqY9hCe8AtNpjN8Is0.jpg",
+   "uses": [
+    {
+     "note": "loaded at 1440 (not matched to a rendered element in dumps; e.g. lazy/hidden variant, poster, button image or font)"
+    }
+   ],
+   "role": "Reel video poster"
+  },
+  {
+   "url": "https://framerusercontent.com/images/RgToa1Q7FVIjrJV0tHApD9hInTU.svg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "112x78.8",
+     "first_box": [
+      834,
+      12270.8,
+      112,
+      78.8
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "43x40"
+    },
+    {
+     "vw": 1280,
+     "rendered": "105x70",
+     "first_box": [
+      737.5,
+      11855.6,
+      105,
+      70
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "43x40"
+    },
+    {
+     "vw": 1000,
+     "rendered": "108.4x56",
+     "first_box": [
+      136.4,
+      9461.2,
+      108.4,
+      56
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "43x40"
+    },
+    {
+     "vw": 390,
+     "rendered": "83.3x76",
+     "first_box": [
+      245.9,
+      11719,
+      83.3,
+      76
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "43x40"
+    }
+   ],
+   "role": "partner logo #7 (grid order, row-major)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/RsaJCL4Sj4fVM9spQ7bKyrgyngo.svg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "144x101.3",
+     "first_box": [
+      1158,
+      12259.5,
+      144,
+      101.3
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "169x40"
+    },
+    {
+     "vw": 1280,
+     "rendered": "135x90",
+     "first_box": [
+      1022.5,
+      11845.6,
+      135,
+      90
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "169x40"
+    },
+    {
+     "vw": 1000,
+     "rendered": "139.4x72",
+     "first_box": [
+      430.8,
+      9453.2,
+      139.4,
+      72
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "169x40"
+    },
+    {
+     "vw": 390,
+     "rendered": "129.5x118.2",
+     "first_box": [
+      37.8,
+      12035.5,
+      129.5,
+      118.2
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "169x40"
+    }
+   ],
+   "role": "partner logo #8 (grid order, row-major)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/TgD2gKSlOfhH9eJku8ilavEy2Vs.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "547.4x669",
+     "first_box": [
+      446.3,
+      115.5,
+      547.4,
+      669
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "1439x1919"
+    },
+    {
+     "vw": 1280,
+     "rendered": "486.5x594.7",
+     "first_box": [
+      396.7,
+      102.7,
+      486.5,
+      594.7
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "1280x1706"
+    },
+    {
+     "vw": 1000,
+     "rendered": "355.5x434.5",
+     "first_box": [
+      322.3,
+      164.4,
+      355.5,
+      434.5
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "1000x1333"
+    },
+    {
+     "vw": 390,
+     "rendered": "377x460.8",
+     "first_box": [
+      6.5,
+      355.6,
+      377,
+      460.8
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "390x520"
+    }
+   ],
+   "role": "hero stack card B (Bright Matter)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/VaocDJ3f201Z2fVP3ikqnrJjaI.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "862x637.6",
+     "first_box": [
+      577,
+      7013.1,
+      862,
+      637.6
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "1438x1083"
+    },
+    {
+     "vw": 1280,
+     "rendered": "766x566.5",
+     "first_box": [
+      513,
+      7025.7,
+      766,
+      566.5
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "1278x962"
+    },
+    {
+     "vw": 1000,
+     "rendered": "468x345.9",
+     "first_box": [
+      501,
+      5464.4,
+      468,
+      345.9
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "598x450"
+    },
+    {
+     "vw": 390,
+     "rendered": "348x257.1",
+     "first_box": [
+      21,
+      5831.2,
+      348,
+      257.1
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "348x262"
+    }
+   ],
+   "role": "Big Number image B (42)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/WLPKtH14Ct7v2NfwWdkFssnvloU.svg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "102.4x72",
+     "first_box": [
+      1178.8,
+      12499.1,
+      102.4,
+      72
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "59x38"
+    },
+    {
+     "vw": 1280,
+     "rendered": "96x64",
+     "first_box": [
+      1042,
+      12058.6,
+      96,
+      64
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "59x38"
+    },
+    {
+     "vw": 1000,
+     "rendered": "99.1x51.2",
+     "first_box": [
+      450.9,
+      9623.6,
+      99.1,
+      51.2
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "59x38"
+    },
+    {
+     "vw": 390,
+     "rendered": "92.5x84.4",
+     "first_box": [
+      241.3,
+      12052.4,
+      92.5,
+      84.4
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "59x38"
+    }
+   ],
+   "role": "partner logo #12 (grid order, row-major)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/WnrOxsOsaOPvCTyZrMzybh6jck.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "310x594",
+     "first_box": [
+      273.3,
+      15372.1,
+      310,
+      594
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "260x345"
+    },
+    {
+     "vw": 1280,
+     "rendered": "270x622.1",
+     "first_box": [
+      246.7,
+      14811.2,
+      270,
+      622.1
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "260x345"
+    },
+    {
+     "vw": 1000,
+     "rendered": "616.7x818.5",
+     "first_box": [
+      4071.7,
+      11849.4,
+      616.7,
+      818.5
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "510x677"
+    },
+    {
+     "vw": 390,
+     "rendered": "350x464.5",
+     "first_box": [
+      1500,
+      14536.5,
+      350,
+      464.5
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "355x471"
+    }
+   ],
+   "role": "testimonial 5 Daniel Weiss"
+  },
+  {
+   "url": "https://framerusercontent.com/images/Y2CbMz6nMvzORpEeUWKNPoJjl0o.svg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "52x52",
+     "first_box": [
+      40,
+      15372.1,
+      52,
+      52
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "52x52"
+    },
+    {
+     "vw": 1280,
+     "rendered": "52x52",
+     "first_box": [
+      40,
+      14811.2,
+      52,
+      52
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "52x52"
+    }
+   ],
+   "role": "testimonial slideshow PREV button image 52x52"
+  },
+  {
+   "url": "https://framerusercontent.com/images/YVYiW8vzXkPuMM5MMZ5eURVsRKQ.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "426.7x565.7",
+     "first_box": [
+      973.3,
+      10570.4,
+      426.7,
+      565.7
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "426x565"
+    },
+    {
+     "vw": 1280,
+     "rendered": "373.3x495",
+     "first_box": [
+      866.7,
+      10337.6,
+      373.3,
+      495
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "373x495"
+    },
+    {
+     "vw": 1000,
+     "rendered": "455x603.3",
+     "first_box": [
+      515,
+      7857.2,
+      455,
+      603.3
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "455x603"
+    },
+    {
+     "vw": 390,
+     "rendered": "350x464.1",
+     "first_box": [
+      20,
+      10202.6,
+      350,
+      464.1
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "350x464"
+    }
+   ],
+   "role": "Founder card 2 Tobias Keller"
+  },
+  {
+   "url": "https://framerusercontent.com/images/ZdoJlTXzsfF4jck8jdi8x8jmQN8.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "500.6x636.9",
+     "first_box": [
+      469.7,
+      131.5,
+      500.6,
+      636.9
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "1439x1919"
+    },
+    {
+     "vw": 1280,
+     "rendered": "445x566.2",
+     "first_box": [
+      417.5,
+      116.9,
+      445,
+      566.2
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "1280x1706"
+    },
+    {
+     "vw": 1000,
+     "rendered": "325.1x413.6",
+     "first_box": [
+      337.4,
+      174.8,
+      325.1,
+      413.6
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "1000x1333"
+    },
+    {
+     "vw": 390,
+     "rendered": "344.8x438.7",
+     "first_box": [
+      22.6,
+      366.6,
+      344.8,
+      438.7
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "390x520"
+    }
+   ],
+   "role": "hero stack card D (bottom; North Layer)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/av9jNJI3hHXZ6T1DdxDCPoRrdbY.svg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "112x78.8",
+     "first_box": [
+      154,
+      12270.8,
+      112,
+      78.8
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "40x40"
+    },
+    {
+     "vw": 1280,
+     "rendered": "105x70",
+     "first_box": [
+      137.5,
+      11855.6,
+      105,
+      70
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "40x40"
+    },
+    {
+     "vw": 1000,
+     "rendered": "108.4x56",
+     "first_box": [
+      446.3,
+      9301.2,
+      108.4,
+      56
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "40x40"
+    },
+    {
+     "vw": 390,
+     "rendered": "92.5x84.4",
+     "first_box": [
+      56.3,
+      11546,
+      92.5,
+      84.4
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "40x40"
+    }
+   ],
+   "role": "partner logo #5 (grid order, row-major)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/dhOQBZ3XWETUqBdaK3jfSA2HOPw.svg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "52x52",
+     "first_box": [
+      104,
+      15372.1,
+      52,
+      52
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "52x52"
+    },
+    {
+     "vw": 1280,
+     "rendered": "52x52",
+     "first_box": [
+      104,
+      14811.2,
+      52,
+      52
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "52x52"
+    }
+   ],
+   "role": "testimonial slideshow NEXT button image 52x52"
+  },
+  {
+   "url": "https://framerusercontent.com/images/drBPvfLZfwnmhTDHHQbPmsfGe1I.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "426.7x566.4",
+     "first_box": [
+      273.3,
+      18652.5,
+      426.7,
+      566.4
+     ],
+     "fit": "cover 63.9% 28.8%",
+     "served_natural": "426x566"
+    },
+    {
+     "vw": 1280,
+     "rendered": "373.3x495.6",
+     "first_box": [
+      246.7,
+      18119.5,
+      373.3,
+      495.6
+     ],
+     "fit": "cover 63.9% 28.8%",
+     "served_natural": "373x495"
+    },
+    {
+     "vw": 1000,
+     "rendered": "616.7x818.7",
+     "first_box": [
+      191.7,
+      15419.2,
+      616.7,
+      818.7
+     ],
+     "fit": "cover 63.9% 28.8%",
+     "served_natural": "616x819"
+    },
+    {
+     "vw": 1000,
+     "rendered": "616.7x800",
+     "first_box": [
+      191.7,
+      15428.5,
+      616.7,
+      800
+     ],
+     "fit": "cover 63.9% 28.8%",
+     "served_natural": "616x819"
+    },
+    {
+     "vw": 390,
+     "rendered": "350x464.6",
+     "first_box": [
+      20,
+      18141.5,
+      350,
+      464.6
+     ],
+     "fit": "cover 63.9% 28.8%",
+     "served_natural": "350x464"
+    }
+   ],
+   "role": "Studio Notes card 1 (The Logic of Emotion)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/dsv8pyXntSx7GoSgWObJlj2AfI.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "310x594",
+     "first_box": [
+      273.3,
+      15372.1,
+      310,
+      594
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "260x345"
+    },
+    {
+     "vw": 1280,
+     "rendered": "270x564.5",
+     "first_box": [
+      246.7,
+      14811.2,
+      270,
+      564.5
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "260x345"
+    },
+    {
+     "vw": 1000,
+     "rendered": "616.7x818.7",
+     "first_box": [
+      2131.7,
+      11849.4,
+      616.7,
+      818.7
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "509x677"
+    },
+    {
+     "vw": 390,
+     "rendered": "350x464.6",
+     "first_box": [
+      760,
+      14536.5,
+      350,
+      464.6
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "355x471"
+    }
+   ],
+   "role": "testimonial 3 Sophie Adler"
+  },
+  {
+   "url": "https://framerusercontent.com/images/gk68gxIIuKf4YZpReHW8qPEWUf4.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "862x637.6",
+     "first_box": [
+      577,
+      7013.1,
+      862,
+      637.6
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "1438x1083"
+    },
+    {
+     "vw": 1280,
+     "rendered": "766x566.5",
+     "first_box": [
+      513,
+      7025.7,
+      766,
+      566.5
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "1278x962"
+    },
+    {
+     "vw": 1000,
+     "rendered": "468x345.9",
+     "first_box": [
+      501,
+      5464.4,
+      468,
+      345.9
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "598x450"
+    },
+    {
+     "vw": 390,
+     "rendered": "348x257.1",
+     "first_box": [
+      21,
+      5831.2,
+      348,
+      257.1
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "348x262"
+    }
+   ],
+   "role": "Big Number image C (83) (inferred: only remaining jpg)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/k1yRftQfPk4lIWxRe2Tfq5h4ZEk.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "426.7x565.7",
+     "first_box": [
+      506.7,
+      10420.4,
+      426.7,
+      565.7
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "426x565"
+    },
+    {
+     "vw": 1280,
+     "rendered": "373.3x495",
+     "first_box": [
+      453.3,
+      10187.6,
+      373.3,
+      495
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "373x495"
+    },
+    {
+     "vw": 1000,
+     "rendered": "455x603.3",
+     "first_box": [
+      30,
+      7857.2,
+      455,
+      603.3
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "455x603"
+    },
+    {
+     "vw": 390,
+     "rendered": "350x464.1",
+     "first_box": [
+      20,
+      9718.6,
+      350,
+      464.1
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "350x464"
+    }
+   ],
+   "role": "Founder card 1 Jonas Richter"
+  },
+  {
+   "url": "https://framerusercontent.com/images/kurrL4pv84sniLEt0JYjzeBZq58.svg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "144x101.3",
+     "first_box": [
+      478,
+      12259.5,
+      144,
+      101.3
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "70x44"
+    },
+    {
+     "vw": 1280,
+     "rendered": "135x90",
+     "first_box": [
+      422.5,
+      11845.6,
+      135,
+      90
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "70x44"
+    },
+    {
+     "vw": 1000,
+     "rendered": "139.4x72",
+     "first_box": [
+      740.6,
+      9293.2,
+      139.4,
+      72
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "70x44"
+    },
+    {
+     "vw": 390,
+     "rendered": "120.3x109.7",
+     "first_box": [
+      42.4,
+      11702.2,
+      120.3,
+      109.7
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "70x44"
+    }
+   ],
+   "role": "partner logo #6 (grid order, row-major)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/mMQQ0cROfRI2YAj8D9bHashl4.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "1360x1200",
+     "first_box": [
+      40,
+      12757.1,
+      1360,
+      1200
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "2464x1856"
+    },
+    {
+     "vw": 1280,
+     "rendered": "1200x1100",
+     "first_box": [
+      40,
+      12254.6,
+      1200,
+      1100
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "2464x1856"
+    },
+    {
+     "vw": 1000,
+     "rendered": "940x840",
+     "first_box": [
+      30,
+      9569.2,
+      940,
+      840
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "2464x1856"
+    },
+    {
+     "vw": 390,
+     "rendered": "350x506.4",
+     "first_box": [
+      20,
+      12387.8,
+      350,
+      506.4
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "2464x1856"
+    }
+   ],
+   "role": "Our Partners full-width parallax image"
+  },
+  {
+   "url": "https://framerusercontent.com/images/qc6WiaOLMJCgLjRA2nE1Poq3zLk.svg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "112x78.8",
+     "first_box": [
+      494,
+      12495.8,
+      112,
+      78.8
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "49x48"
+    },
+    {
+     "vw": 1280,
+     "rendered": "105x70",
+     "first_box": [
+      437.5,
+      12055.6,
+      105,
+      70
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "49x48"
+    },
+    {
+     "vw": 1000,
+     "rendered": "108.4x56",
+     "first_box": [
+      756.1,
+      9461.2,
+      108.4,
+      56
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "49x48"
+    },
+    {
+     "vw": 390,
+     "rendered": "92.5x84.4",
+     "first_box": [
+      56.3,
+      11883.6,
+      92.5,
+      84.4
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "49x48"
+    }
+   ],
+   "role": "partner logo #10 (grid order, row-major)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/wO8Iq3rw5mv83TUR6LomHKgu0.jpg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "310x594",
+     "first_box": [
+      273.3,
+      15372.1,
+      310,
+      594
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "260x345"
+    },
+    {
+     "vw": 1280,
+     "rendered": "270x622.1",
+     "first_box": [
+      246.7,
+      14811.2,
+      270,
+      622.1
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "260x345"
+    },
+    {
+     "vw": 1000,
+     "rendered": "616.7x818.7",
+     "first_box": [
+      3101.7,
+      11849.4,
+      616.7,
+      818.7
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "509x677"
+    },
+    {
+     "vw": 390,
+     "rendered": "350x464.6",
+     "first_box": [
+      1130,
+      14536.5,
+      350,
+      464.6
+     ],
+     "fit": "cover 50% 50%",
+     "served_natural": "355x471"
+    }
+   ],
+   "role": "testimonial 4 Markus Lehn"
+  },
+  {
+   "url": "https://framerusercontent.com/images/yJJEeKpFDSGeb3f2rZJDTMuwQ.svg",
+   "uses": [
+    {
+     "vw": 1440,
+     "rendered": "112x78.8",
+     "first_box": [
+      1174,
+      12045.8,
+      112,
+      78.8
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "40x40"
+    },
+    {
+     "vw": 1280,
+     "rendered": "105x70",
+     "first_box": [
+      1037.5,
+      11655.6,
+      105,
+      70
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "40x40"
+    },
+    {
+     "vw": 1000,
+     "rendered": "108.4x56",
+     "first_box": [
+      756.1,
+      9141.2,
+      108.4,
+      56
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "40x40"
+    },
+    {
+     "vw": 390,
+     "rendered": "83.3x76",
+     "first_box": [
+      245.9,
+      11381.5,
+      83.3,
+      76
+     ],
+     "fit": "contain 50% 50%",
+     "served_natural": "40x40"
+    }
+   ],
+   "role": "partner logo #4 (grid order, row-major)"
+  }
+ ]
+}

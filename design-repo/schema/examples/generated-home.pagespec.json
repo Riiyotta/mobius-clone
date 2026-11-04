@@ -1,0 +1,400 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "generated",
+  "template": "home",
+  "route": "/",
+  "brand": {
+    "name": "Tallowreed",
+    "mark": {
+      "assetRole": "brand.placeholder-mark",
+      "assetRef": "generate:plain serif-free text wordmark, black",
+      "alt": "Tallowreed wordmark"
+    },
+    "fictional": true
+  },
+  "meta": {
+    "title": "Tallowreed — interiors workshop",
+    "description": "Generated home page for a fictional interiors workshop."
+  },
+  "nodes": [
+    {
+      "id": "nav",
+      "type": "shell.nav-layer",
+      "content": {
+        "logoText": "Tallowreed",
+        "links": [
+          {
+            "label": "PROJECTS",
+            "href": "/projects"
+          },
+          {
+            "label": "ABOUT",
+            "href": "/about"
+          },
+          {
+            "label": "JOURNAL",
+            "href": "/journal"
+          },
+          {
+            "label": "HELLO",
+            "href": "/hello"
+          }
+        ],
+        "menuLabel": "Menu"
+      },
+      "motion": {
+        "patterns": [
+          "page-appear-scale"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "hero",
+      "type": "hero.studio-wordmark",
+      "content": {
+        "intro": "— an interiors workshop shaping calm rooms from timber, linen and daylight for homes, cafés and small hotels.",
+        "wordmarkText": "Tallowreed",
+        "yearRange": "© 2011-26",
+        "stack": [
+          {
+            "assetRole": "photo.generated-scene",
+            "assetRef": "generate:sunlit oak kitchen with linen blinds",
+            "alt": "sunlit oak kitchen with linen blinds"
+          },
+          {
+            "assetRole": "photo.generated-scene",
+            "assetRef": "generate:reading nook with clay plaster walls",
+            "alt": "reading nook with clay plaster walls"
+          }
+        ],
+        "stackLink": {
+          "label": "Projects",
+          "href": "/projects"
+        }
+      },
+      "motion": {
+        "patterns": [
+          "page-appear-scale",
+          "hero-card-stack"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "statement",
+      "type": "content.statement-scatter",
+      "content": {
+        "headline": "Tallowreed builds rooms that age gracefully and feel lived in from day one.",
+        "paragraphs": [
+          "We draw every room by hand first, then test it at full scale with tape on the floor. Materials are chosen for how they wear, not how they photograph."
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "word-scatter-scroll"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "services",
+      "type": "features.services-index",
+      "content": {
+        "heading": "What we make",
+        "items": [
+          {
+            "index": "A /",
+            "statement": "Whole-home interiors planned around light, storage and the way your household actually moves.",
+            "tags": [
+              "Space planning",
+              "Lighting plans",
+              "Joinery drawings"
+            ]
+          },
+          {
+            "index": "B /",
+            "statement": "Hospitality rooms for cafés and small hotels that stay warm after thousands of guests.",
+            "tags": [
+              "Seating layouts",
+              "Durable finishes"
+            ]
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "line-stagger-reveal"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "numbers",
+      "type": "social-proof.studio-numbers",
+      "content": {
+        "titleLines": [
+          "Tallowreed",
+          "By the count"
+        ],
+        "stats": [
+          {
+            "value": "14",
+            "labelLines": [
+              "Years",
+              "Of practice"
+            ],
+            "text": "Fourteen years of drawing, building and revisiting the rooms we hand over.",
+            "cta": {
+              "label": "See projects",
+              "href": "/projects",
+              "style": "pill"
+            },
+            "image": {
+              "assetRole": "photo.generated-scene",
+              "assetRef": "generate:workbench with hand planes",
+              "alt": "workbench with hand planes"
+            }
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "sticky-state-swap"
+        ],
+        "reducedMotionFallback": "instant-state-change"
+      }
+    },
+    {
+      "id": "process",
+      "type": "features.process-timeline",
+      "content": {
+        "heading": "How it unfolds",
+        "intro": "Four unhurried stages, each ending with a walkthrough on site.",
+        "steps": [
+          {
+            "name": "Listen",
+            "text": "We visit, measure and ask how mornings and evenings really feel."
+          },
+          {
+            "name": "Draw",
+            "text": "Hand sketches become scaled plans and a sample board."
+          },
+          {
+            "name": "Build",
+            "text": "Trusted workshops make and fit everything."
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "bar-grow-in-view"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "reflections",
+      "type": "testimonial.client-reflections",
+      "content": {
+        "heading": "Kind words",
+        "intro": "Notes from households and owners we have built for.",
+        "slides": [
+          {
+            "quote": "“The kitchen finally works for the four of us, and it still smells of oak.”",
+            "person": {
+              "name": "Ines Varga",
+              "role": "Homeowner",
+              "fictional": true
+            },
+            "photo": {
+              "assetRole": "person.fictional-portrait",
+              "assetRef": "generate:smiling adult in a sunny kitchen, fictional",
+              "alt": "Ines Varga"
+            }
+          },
+          {
+            "quote": "“Guests ask where the chairs came from every single week.”",
+            "person": {
+              "name": "Teo Marlow",
+              "role": "Café owner",
+              "fictional": true
+            },
+            "photo": {
+              "assetRole": "person.fictional-portrait",
+              "assetRef": "generate:café owner behind a counter, fictional",
+              "alt": "Teo Marlow"
+            }
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "slideshow-autoplay"
+        ],
+        "reducedMotionFallback": "manual-advance-only"
+      }
+    },
+    {
+      "id": "pricing",
+      "type": "pricing.packages",
+      "content": {
+        "heading": "Fees",
+        "toggle": {
+          "monthlyLabel": "Per room",
+          "yearlyLabel": "Whole home"
+        },
+        "intro": "Clear starting fees, confirmed after the first site visit.",
+        "plans": [
+          {
+            "name": "Single Room",
+            "description": "One room planned, drawn and fitted.",
+            "features": [
+              "Site visit",
+              "Scaled plan",
+              "Sample board"
+            ],
+            "priceLabel": "From",
+            "monthly": 2900,
+            "yearly": 2400,
+            "period": "/room"
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "price-digit-roll"
+        ],
+        "reducedMotionFallback": "instant-state-change"
+      }
+    },
+    {
+      "id": "contact",
+      "type": "conversion.contact-form",
+      "variant": "section-title",
+      "content": {
+        "heading": "Say hello",
+        "fields": [
+          {
+            "leadIn": "Hello there, I am",
+            "name": "Name",
+            "kind": "text",
+            "placeholder": "Your name *",
+            "required": true
+          },
+          {
+            "leadIn": "and my room needs",
+            "name": "Brief",
+            "kind": "textarea",
+            "placeholder": "A few words *",
+            "required": true
+          },
+          {
+            "leadIn": "Reach me at",
+            "name": "Email",
+            "kind": "email",
+            "placeholder": "Email *",
+            "required": true
+          }
+        ],
+        "closing": "Speak soon!",
+        "terms": "Sending this means you accept our fine print.",
+        "submitLabel": "Send note",
+        "successLabel": "Received"
+      },
+      "motion": {
+        "patterns": [
+          "form-feedback"
+        ],
+        "reducedMotionFallback": "instant-state-change"
+      }
+    },
+    {
+      "id": "faq",
+      "type": "faq.questions-answered",
+      "content": {
+        "heading": "Good to know.",
+        "learnMore": "A few plain answers about how a room moves from first sketch to final walkthrough.",
+        "aboutCta": {
+          "label": "Meet the makers",
+          "href": "/about",
+          "style": "underline"
+        },
+        "items": [
+          {
+            "question": "When should we call you?",
+            "answer": "Ideally before walls move. An early visit lets us plan light, storage and joinery together rather than patching them in later."
+          },
+          {
+            "question": "Do you source furniture?",
+            "answer": "Yes. We commission small workshops and restore found pieces, and we always share the full maker list with you."
+          },
+          {
+            "question": "Can you work remotely?",
+            "answer": "For planning and drawings, yes. Site visits happen in person at the milestones that matter most."
+          }
+        ],
+        "ctaText": "Still wondering about something specific?",
+        "cta": {
+          "label": "Write to us",
+          "href": "/hello",
+          "style": "pill"
+        }
+      },
+      "motion": {
+        "patterns": [
+          "accordion-height"
+        ],
+        "reducedMotionFallback": "instant-state-change"
+      }
+    },
+    {
+      "id": "footer",
+      "type": "shell.site-footer",
+      "variant": "responsive",
+      "content": {
+        "wordmarkText": "Tallowreed",
+        "yearRange": "© 2011-26",
+        "newsletter": {
+          "text": "A short letter every season about crafted interiors, materials we trust and the rooms we are quietly finishing.",
+          "placeholder": "YOUR ADDRESS"
+        },
+        "columns": [
+          {
+            "label": "Elsewhere",
+            "links": [
+              {
+                "label": "Newsletter",
+                "href": "https://tallowreed.example/letters"
+              },
+              {
+                "label": "Press kit",
+                "href": "https://tallowreed.example/press"
+              }
+            ]
+          },
+          {
+            "label": "Fine print",
+            "links": [
+              {
+                "label": "Privacy",
+                "href": "/fine-print/privacy"
+              },
+              {
+                "label": "Terms",
+                "href": "/fine-print/terms"
+              }
+            ]
+          }
+        ],
+        "legalLine": "© 2026 Tallowreed. Every right kept."
+      },
+      "motion": {
+        "patterns": [
+          "blinds-reveal"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    }
+  ]
+}

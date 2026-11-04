@@ -1,0 +1,837 @@
+{
+  "_source": "https://mobius.framer.website/feed (Framer CMS collection 'Feed', KgNVRPcOZ). Order = CMS index order = date desc.",
+  "_notes": [
+    "The CMS has no category/tag fields; category=null, tags=[].",
+    "contentA, quote, contentB and author are identical template copy on all 11 posts (verified live).",
+    "body = contentA + {blockquote: quote} + contentB, for convenience. The template renders them in separate sections (see .recon/specs/feed.md).",
+    "articleNumber is the CMS 'Article Number' field (11..1), shown as 'N / 11' on the post page. 11 = articleNumber of the first CMS item.",
+    "Rich text contains only <p> with no inline markup."
+  ],
+  "posts": [
+    {
+      "index": 0,
+      "slug": "the-logic-of-emotion",
+      "articleNumber": 11,
+      "title": "The Logic of Emotion",
+      "date": "April 26, 2026",
+      "author": "Jonas Richter",
+      "category": null,
+      "tags": [],
+      "excerpt": "In design, clarity isn’t about simplicity for its own sake. It’s about removing what doesn’t serve meaning — until what remains feels inevitable.",
+      "cover": {
+        "src": "https://framerusercontent.com/images/drBPvfLZfwnmhTDHHQbPmsfGe1I.jpg",
+        "width": 1856,
+        "height": 2464,
+        "objectPosition": "63.9% 28.8%",
+        "alt": "Möbius"
+      },
+      "contentA": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        }
+      ],
+      "quote": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives.",
+      "contentB": [
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        },
+        {
+          "type": "blockquote",
+          "text": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives."
+        },
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "prevSlug": null,
+      "nextSlug": "precision-over-perfection",
+      "readMoreDesktop": {
+        "Next": "precision-over-perfection",
+        "3rd": "the-language-of-shape"
+      }
+    },
+    {
+      "index": 1,
+      "slug": "precision-over-perfection",
+      "articleNumber": 10,
+      "title": "Precision Over Perfection",
+      "date": "March 29, 2026",
+      "author": "Jonas Richter",
+      "category": null,
+      "tags": [],
+      "excerpt": "Design isn’t about getting everything right — it’s about making the right things matter.",
+      "cover": {
+        "src": "https://framerusercontent.com/images/3wAhbBL8w69xQSppPtvRjJX8.jpg",
+        "width": 1856,
+        "height": 2464,
+        "objectPosition": "50% 50%",
+        "alt": "Möbius"
+      },
+      "contentA": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        }
+      ],
+      "quote": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives.",
+      "contentB": [
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        },
+        {
+          "type": "blockquote",
+          "text": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives."
+        },
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "prevSlug": "the-logic-of-emotion",
+      "nextSlug": "the-language-of-shape",
+      "readMoreDesktop": {
+        "Previous": "the-logic-of-emotion",
+        "Next": "the-language-of-shape"
+      }
+    },
+    {
+      "index": 2,
+      "slug": "the-language-of-shape",
+      "articleNumber": 9,
+      "title": "The Language of Shape",
+      "date": "April 12, 2026",
+      "author": "Jonas Richter",
+      "category": null,
+      "tags": [],
+      "excerpt": "Every curve, line, and contrast says something. Good design doesn’t speak louder — it speaks clearer.",
+      "cover": {
+        "src": "https://framerusercontent.com/images/D6sjwa6CB1TA6J14RIeUTRXGA.jpg",
+        "width": 1856,
+        "height": 2464,
+        "objectPosition": "50% 50%",
+        "alt": "Möbius"
+      },
+      "contentA": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        }
+      ],
+      "quote": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives.",
+      "contentB": [
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        },
+        {
+          "type": "blockquote",
+          "text": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives."
+        },
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "prevSlug": "precision-over-perfection",
+      "nextSlug": "designing-the-invisible",
+      "readMoreDesktop": {
+        "Previous": "precision-over-perfection",
+        "Next": "designing-the-invisible"
+      }
+    },
+    {
+      "index": 3,
+      "slug": "designing-the-invisible",
+      "articleNumber": 8,
+      "title": "Designing the Invisible",
+      "date": "March 20, 2026",
+      "author": "Jonas Richter",
+      "category": null,
+      "tags": [],
+      "excerpt": "The best experiences are often the ones we don’t notice. A look into how hierarchy, spacing, and motion shape perception and trust online.",
+      "cover": {
+        "src": "https://framerusercontent.com/images/6OZ1cj4VpOGzHQL55ssRbrdqY.jpg",
+        "width": 1856,
+        "height": 2464,
+        "objectPosition": "52.8% 32.4%",
+        "alt": "Möbius"
+      },
+      "contentA": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        }
+      ],
+      "quote": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives.",
+      "contentB": [
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        },
+        {
+          "type": "blockquote",
+          "text": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives."
+        },
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "prevSlug": "the-language-of-shape",
+      "nextSlug": "the-architecture-of-meaning",
+      "readMoreDesktop": {
+        "Previous": "the-language-of-shape",
+        "Next": "the-architecture-of-meaning"
+      }
+    },
+    {
+      "index": 4,
+      "slug": "the-architecture-of-meaning",
+      "articleNumber": 7,
+      "title": "The Architecture of Meaning",
+      "date": "March 2, 2026",
+      "author": "Jonas Richter",
+      "category": null,
+      "tags": [],
+      "excerpt": "A brand is a structure built from ideas, shaped by language, and held together by design.",
+      "cover": {
+        "src": "https://framerusercontent.com/images/IGqp0EXPneu3mMobpxg8irTwRO0.jpg",
+        "width": 2464,
+        "height": 2464,
+        "objectPosition": "50% 50%",
+        "alt": "Möbius"
+      },
+      "contentA": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        }
+      ],
+      "quote": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives.",
+      "contentB": [
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        },
+        {
+          "type": "blockquote",
+          "text": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives."
+        },
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "prevSlug": "designing-the-invisible",
+      "nextSlug": "one-idea-many-forms",
+      "readMoreDesktop": {
+        "Previous": "designing-the-invisible",
+        "Next": "one-idea-many-forms"
+      }
+    },
+    {
+      "index": 5,
+      "slug": "one-idea-many-forms",
+      "articleNumber": 6,
+      "title": "One Idea, Many Forms",
+      "date": "February 6, 2026",
+      "author": "Jonas Richter",
+      "category": null,
+      "tags": [],
+      "excerpt": "A single thought can take endless shapes. The challenge is keeping its meaning intact as it moves between mediums.",
+      "cover": {
+        "src": "https://framerusercontent.com/images/lU6Wf49y8KkFoUZkcQgd8hjpjA.jpg",
+        "width": 2220,
+        "height": 2220,
+        "objectPosition": "50% 50%",
+        "alt": "Möbius"
+      },
+      "contentA": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        }
+      ],
+      "quote": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives.",
+      "contentB": [
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        },
+        {
+          "type": "blockquote",
+          "text": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives."
+        },
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "prevSlug": "the-architecture-of-meaning",
+      "nextSlug": "beyond-function",
+      "readMoreDesktop": {
+        "Previous": "the-architecture-of-meaning",
+        "Next": "beyond-function"
+      }
+    },
+    {
+      "index": 6,
+      "slug": "beyond-function",
+      "articleNumber": 5,
+      "title": "Beyond Function",
+      "date": "February 4, 2026",
+      "author": "Jonas Richter",
+      "category": null,
+      "tags": [],
+      "excerpt": "Design begins with solving problems, but great design goes further — creating emotion, memory, and meaning in the process.",
+      "cover": {
+        "src": "https://framerusercontent.com/images/z8gWu8BAvK5pON4EdwWT8Ag036E.jpg",
+        "width": 2052,
+        "height": 2464,
+        "objectPosition": "50% 50%",
+        "alt": "Möbius"
+      },
+      "contentA": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        }
+      ],
+      "quote": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives.",
+      "contentB": [
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        },
+        {
+          "type": "blockquote",
+          "text": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives."
+        },
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "prevSlug": "one-idea-many-forms",
+      "nextSlug": "the-human-algorithm",
+      "readMoreDesktop": {
+        "Previous": "one-idea-many-forms",
+        "Next": "the-human-algorithm"
+      }
+    },
+    {
+      "index": 7,
+      "slug": "the-human-algorithm",
+      "articleNumber": 4,
+      "title": "The Human Algorithm",
+      "date": "January 18, 2026",
+      "author": "Jonas Richter",
+      "category": null,
+      "tags": [],
+      "excerpt": "Behind every framework and system lies intuition — the human sense of balance that no tool can replace.",
+      "cover": {
+        "src": "https://framerusercontent.com/images/sHJWNxSgnKBrm42kYzSCZYTveQ.jpg",
+        "width": 2308,
+        "height": 2464,
+        "objectPosition": "52.5% 21.1%",
+        "alt": "Möbius"
+      },
+      "contentA": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        }
+      ],
+      "quote": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives.",
+      "contentB": [
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        },
+        {
+          "type": "blockquote",
+          "text": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives."
+        },
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "prevSlug": "beyond-function",
+      "nextSlug": "the-clarity-paradox",
+      "readMoreDesktop": {
+        "Previous": "beyond-function",
+        "Next": "the-clarity-paradox"
+      }
+    },
+    {
+      "index": 8,
+      "slug": "the-clarity-paradox",
+      "articleNumber": 3,
+      "title": "The Clarity Paradox",
+      "date": "January 4, 2026",
+      "author": "Jonas Richter",
+      "category": null,
+      "tags": [],
+      "excerpt": "Design isn’t about getting everything right — it’s about making the right things matter.",
+      "cover": {
+        "src": "https://framerusercontent.com/images/FBGgd4TeVvEyHzgVIBIexh9Ou8.jpg",
+        "width": 1856,
+        "height": 2464,
+        "objectPosition": "50% 50%",
+        "alt": "Möbius"
+      },
+      "contentA": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        }
+      ],
+      "quote": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives.",
+      "contentB": [
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        },
+        {
+          "type": "blockquote",
+          "text": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives."
+        },
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "prevSlug": "the-human-algorithm",
+      "nextSlug": "systems-with-soul",
+      "readMoreDesktop": {
+        "Previous": "the-human-algorithm",
+        "Next": "systems-with-soul"
+      }
+    },
+    {
+      "index": 9,
+      "slug": "systems-with-soul",
+      "articleNumber": 2,
+      "title": "Systems with Soul",
+      "date": "December 21, 2025",
+      "author": "Jonas Richter",
+      "category": null,
+      "tags": [],
+      "excerpt": "Between structure and emotion lies the kind of design that endures. Building brand systems that feel human without losing precision.",
+      "cover": {
+        "src": "https://framerusercontent.com/images/sskvZkQLCNhSYCjV8XqbAm3PhAM.jpg",
+        "width": 2388,
+        "height": 2388,
+        "objectPosition": "50% 50%",
+        "alt": "Möbius"
+      },
+      "contentA": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        }
+      ],
+      "quote": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives.",
+      "contentB": [
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        },
+        {
+          "type": "blockquote",
+          "text": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives."
+        },
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "prevSlug": "the-clarity-paradox",
+      "nextSlug": "thinking-in-motion",
+      "readMoreDesktop": {
+        "Previous": "the-clarity-paradox",
+        "Next": "thinking-in-motion"
+      }
+    },
+    {
+      "index": 10,
+      "slug": "thinking-in-motion",
+      "articleNumber": 1,
+      "title": "Thinking in Motion",
+      "date": "December 7, 2025",
+      "author": "Jonas Richter",
+      "category": null,
+      "tags": [],
+      "excerpt": "Design doesn’t live in static form. Movement reveals intention, and every interaction tells part of the story.",
+      "cover": {
+        "src": "https://framerusercontent.com/images/jmE1QW2pgqCx9nJuefsIaaVc7U.jpg",
+        "width": 1856,
+        "height": 1936,
+        "objectPosition": "50% 50%",
+        "alt": "Möbius"
+      },
+      "contentA": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        }
+      ],
+      "quote": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives.",
+      "contentB": [
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "body": [
+        {
+          "type": "p",
+          "text": "Design is a dialogue between structure and imagination. Every project starts as a field of possibilities — ideas, fragments, emotions — and the role of design is to shape that energy into something coherent. At Möbius, we see clarity as an act of empathy: making complex ideas simple without making them smaller."
+        },
+        {
+          "type": "p",
+          "text": "We build with intent. Every line, color, and transition serves a purpose. It’s not about decoration, but direction — guiding attention, creating rhythm, and leaving space where meaning can breathe. Design is not only what’s visible, but how it feels to move through it."
+        },
+        {
+          "type": "blockquote",
+          "text": "Good design is not the art of reduction, but the discipline of intention. What remains after everything unnecessary is gone — that’s where meaning lives."
+        },
+        {
+          "type": "p",
+          "text": "In an age of constant motion, design has to balance adaptability with restraint. The tools change every day, but principles remain: focus, proportion, hierarchy, flow. Technology gives us reach, but clarity gives us permanence."
+        },
+        {
+          "type": "p",
+          "text": "Each project teaches something new. Some reveal how much can be removed; others, how much must remain. What connects them is a shared pursuit of precision and emotion — brands and experiences that last not because they shout, but because they resonate."
+        },
+        {
+          "type": "p",
+          "text": "Design is less about what we make and more about how we think. It’s a continuous process of learning, refining, and reconnecting. And like the Möbius loop, it never truly ends — it simply turns into something else."
+        }
+      ],
+      "prevSlug": "systems-with-soul",
+      "nextSlug": null,
+      "readMoreDesktop": {
+        "Previous": "systems-with-soul",
+        "1st": "the-logic-of-emotion"
+      }
+    }
+  ]
+}

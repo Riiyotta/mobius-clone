@@ -1,0 +1,42 @@
+{
+  "source": "https://mobius.framer.website/work",
+  "measuredAt": "2026-11-04",
+  "notes": "Image URLs are canonical (query stripped). Framer serves ?scale-down-to=1024|2048&width=W&height=H variants; at 1440 DPR1 the browser loaded scale-down-to=2048 for the canvas cards. alreadyInHomepageSave = file with identical name exists in /Users/riyaghosh/portfolio/Möbius/Möbius_files/.",
+  "images": [
+    {"card":"01","slug":"soma-studio","name":"Soma Studio","url":"https://framerusercontent.com/images/91tSqsa2UCoJo8t9Pw7JOunYw.jpg","pixelWidth":1800,"pixelHeight":2400,"format":"jpg","objectPosition":"46.6% 26%","alreadyInHomepageSave":"Möbius_files/91tSqsa2UCoJo8t9Pw7JOunYw.jpg"},
+    {"card":"02","slug":"bright-matter","name":"Bright Matter","url":"https://framerusercontent.com/images/TgD2gKSlOfhH9eJku8ilavEy2Vs.jpg","pixelWidth":1800,"pixelHeight":2400,"format":"jpg","objectPosition":"center","alreadyInHomepageSave":"Möbius_files/TgD2gKSlOfhH9eJku8ilavEy2Vs.jpg"},
+    {"card":"03","slug":"wavehouse","name":"Wave 124","url":"https://framerusercontent.com/images/JZNaIjPNcrDF3IgxsRH6Azc8.jpg","pixelWidth":1800,"pixelHeight":2400,"format":"jpg","objectPosition":"center","alreadyInHomepageSave":"Möbius_files/JZNaIjPNcrDF3IgxsRH6Azc8.jpg"},
+    {"card":"04","slug":"north-layer","name":"North Layer","url":"https://framerusercontent.com/images/ZdoJlTXzsfF4jck8jdi8x8jmQN8.jpg","pixelWidth":1800,"pixelHeight":2400,"format":"jpg","objectPosition":"center","alreadyInHomepageSave":"Möbius_files/ZdoJlTXzsfF4jck8jdi8x8jmQN8.jpg"},
+    {"card":"05","slug":"zero-parallel","name":"Zero Parallel","url":"https://framerusercontent.com/images/5jd5VWBN8ZG85MGXuhQfHfdV3M.jpg","pixelWidth":2400,"pixelHeight":1800,"format":"jpg","objectPosition":"center","alreadyInHomepageSave":null},
+    {"card":"06","slug":"pulse","name":"Pulse","url":"https://framerusercontent.com/images/wvQDwJd4SD2wngQjJZQMGAI.jpg","pixelWidth":1800,"pixelHeight":2400,"format":"jpg","objectPosition":"52.3% 16.3%","alreadyInHomepageSave":null},
+    {"card":"07","slug":"forma-nine","name":"Forma Nine","url":"https://framerusercontent.com/images/aHAP7xg5ONNK4g1WeQC34kBsVs.jpg","pixelWidth":1800,"pixelHeight":2400,"format":"jpg","objectPosition":"center","alreadyInHomepageSave":null},
+    {"card":"08","slug":"after-light","name":"After Light","url":"https://framerusercontent.com/images/DsGJvT1AjWPpAnwaISwENoGk.jpg","pixelWidth":1856,"pixelHeight":2464,"format":"jpg","objectPosition":"center","alreadyInHomepageSave":null},
+    {"card":"09","slug":"golden-hour","name":"Golden Hour","url":"https://framerusercontent.com/images/70P7DlHOLA5V6H0shE8MTQZ5XW0.jpg","pixelWidth":1800,"pixelHeight":2400,"format":"jpg","objectPosition":"center","alreadyInHomepageSave":null},
+    {"card":"10","slug":"echoform","name":"Echoform","url":"https://framerusercontent.com/images/hT3qlH9GjIZn0XY4ES3pI2A8LU.jpg","pixelWidth":2400,"pixelHeight":1800,"format":"jpg","objectPosition":"center","alreadyInHomepageSave":null},
+    {"card":"11","slug":"axis-point","name":"Axis Point","url":"https://framerusercontent.com/images/0vnxbbxLjIiUePXnIzdt69Rk.jpg","pixelWidth":2400,"pixelHeight":1800,"format":"jpg","objectPosition":"center","alreadyInHomepageSave":null},
+    {"card":"12","slug":"orbit-404","name":"Orbit 404","url":"https://framerusercontent.com/images/i5EVAPbSjFlbPcvvbXVwzln3BY.jpg","pixelWidth":1800,"pixelHeight":2400,"format":"jpg","objectPosition":"center","alreadyInHomepageSave":null}
+  ],
+  "fonts": {
+    "note": "Only the three 'latin' (U+0000-00FF,...) files were actually downloaded on /work. Other subsets are declared @font-face entries; include them only if you need non-Latin glyphs. 'Inter Display Placeholder' = local('Arial') metric fallback.",
+    "loaded": [
+      {"family":"Inter Display","weight":800,"style":"normal","subset":"latin","url":"https://framerusercontent.com/assets/9Nu9BRcGkRrLnJCGqVdSUXJt2Ig.woff2","usedBy":"Work title, logo, footer wordmark"},
+      {"family":"Inter Display","weight":700,"style":"normal","subset":"latin","url":"https://framerusercontent.com/assets/qITWJ2WdG0wrgQPDb8lvnYnTXDg.woff2","usedBy":"nav links, MENU, card hover name (strong), footer links"},
+      {"family":"Inter Display","weight":500,"style":"normal","subset":"latin","url":"https://framerusercontent.com/assets/iwWTDc49ENF2tCHbqlNARXw6Ug.woff2","usedBy":"scroll / drag, tablet/mobile list titles and paragraphs"}
+    ],
+    "declaredOtherSubsets": {
+      "InterDisplay-800": {"latin-ext":"https://framerusercontent.com/assets/pFve2DToKu0uyKsWs4NBTHpK7Vc.woff2","cyrillic-ext":"https://framerusercontent.com/assets/RDJfWXA0aFdpD2OO2AJLBh2Z7E.woff2","cyrillic":"https://framerusercontent.com/assets/e97VFGU1js4GGgvQCnvIiHpRf0.woff2","greek-ext":"https://framerusercontent.com/assets/9WZaFuMg9OiQ7an8bugAJkUG04.woff2","greek":"https://framerusercontent.com/assets/Kc2pkIGjh9K7EmlGx2sorKHcJDw.woff2","vietnamese":"https://framerusercontent.com/assets/4hhgqiTCDCCa8WhFmTB7QXODupk.woff2"},
+      "InterDisplay-700": {"latin-ext":"https://framerusercontent.com/assets/Ig8B8nzy11hzIWEIYnkg91sofjo.woff2","cyrillic-ext":"https://framerusercontent.com/assets/I11LrmuBDQZweplJ62KkVsklU5Y.woff2","cyrillic":"https://framerusercontent.com/assets/UjFZPDy3qGuDktQM4q9CxhKfIa8.woff2","greek-ext":"https://framerusercontent.com/assets/8exwVHJy2DhJ4N5prYlVMrEKmQ.woff2","greek":"https://framerusercontent.com/assets/UTeedEK21hO5jDxEUldzdScUqpg.woff2","vietnamese":"https://framerusercontent.com/assets/qctQFoJqJ9aIbRSIp0AhCQpFxn8.woff2"},
+      "InterDisplay-500": {"latin-ext":"https://framerusercontent.com/assets/r0mv3NegmA0akcQsNFotG32Las.woff2","cyrillic-ext":"https://framerusercontent.com/assets/ePuN3mCjzajIHnyCdvKBFiZkyY0.woff2","cyrillic":"https://framerusercontent.com/assets/V3j1L0o5vPFKe26Sw4HcpXCfHo.woff2","greek-ext":"https://framerusercontent.com/assets/F3kdpd2N0cToWV5huaZjjgM.woff2","greek":"https://framerusercontent.com/assets/0iDmxkizU9goZoclqIqsV5rvETU.woff2","vietnamese":"https://framerusercontent.com/assets/Ii21jnSJkulBKsHHXKlapi7fv9w.woff2"}
+    },
+    "unicodeRangeLatin": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+    "notNeeded": "Google 'Material Symbols Outlined' stylesheet is injected by the Rolling Letters nav component (fonts.googleapis.com/css2?family=Material+Symbols+Outlined...) but no icon is shown — skip it. Plain 'Inter' 400/700 are declared but never downloaded on /work."
+  },
+  "svgs": [
+    {"id":"cursor-arrow-right","source":"phosphor-icons ArrowRight weight=bold (framer.com/m/phosphor-icons/ArrowRight.js@0.0.57)","viewBox":"0 0 256 256","fill":"#fff","renderedSize":"32x32","path":"M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z","usedBy":"custom cursor 'Big Black Arrow Right' variant over cards"},
+    {"id":"cursor-arrows-horizontal","source":"phosphor-icons ArrowsHorizontal weight=bold","viewBox":"0 0 256 256","renderedSize":"32x32","path":"M240.49,136.49l-32,32a12,12,0,0,1-17-17L203,140H53l11.52,11.51a12,12,0,0,1-17,17l-32-32a12,12,0,0,1,0-17l32-32a12,12,0,1,1,17,17L53,116H203l-11.52-11.51a12,12,0,0,1,17-17l32,32A12,12,0,0,1,240.49,136.49Z","usedBy":"present in cursor DOM at opacity 0 (Drag variant) — NOT shown on /work"},
+    {"id":"cursor-play","source":"phosphor-icons Play weight=fill","usedBy":"present in cursor DOM at opacity 0 — NOT shown on /work; path not captured"}
+  ],
+  "textRenderedAsSvg": [
+    {"id":"footer-wordmark","note":"Tablet/mobile footer only. Framer fit-text: <svg viewBox='0 0 924 180'><foreignObject><p>Möbius®</p> Inter Display 800, 240px, letter-spacing -0.05em, line-height 75%, #000. Not an asset file — recreate as text scaled to container width."}
+  ]
+}

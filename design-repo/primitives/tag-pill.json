@@ -1,0 +1,11 @@
+{
+  "id": "primitive.tag-pill",
+  "title": "Tag pill",
+  "description": "#eee pill (radius 99px) with 14px bold label.",
+  "source": {
+    "file": "src/components/home/Services.jsx",
+    "tag": "className=\"hs-tag\"",
+    "lines": "55-65",
+    "citation": "src/components/home/Services.jsx:55-65"
+  }
+}

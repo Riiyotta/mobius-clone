@@ -1,0 +1,216 @@
+{
+  "id": "conversion.contact-form",
+  "title": "Contact form",
+  "status": "measured",
+  "source": {
+    "id": "src:LetsTalk#export-default-function-LetsTalk",
+    "file": "src/components/home/LetsTalk.jsx",
+    "tag": "export default function LetsTalk(",
+    "lines": "10-32",
+    "citation": "src/components/home/LetsTalk.jsx:10-32",
+    "alsoImplementedBy": [
+      {
+        "file": "src/pages/Contacts.jsx",
+        "tag": "{/* §2.1 Let's Talk */}",
+        "lines": "35-56",
+        "citation": "src/pages/Contacts.jsx:35-56"
+      },
+      {
+        "file": "src/components/contacts/ContactForm.jsx",
+        "tag": "export default function ContactForm(",
+        "lines": "49-117",
+        "citation": "src/components/contacts/ContactForm.jsx:49-117"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "conversion.contact-form",
+    "category": "CONVERSION"
+  },
+  "retrievalEligible": true,
+  "purpose": "Display 'Let's Talk!' title above a fill-in-the-sentence enquiry form (name, company, message, budget, timeframe, email) with a sticky recruiting aside on desktop.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (LetsTalk.jsx / Contacts.jsx h1); budget = ceil(1.25 x max)"
+      },
+      "aside": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "question": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 14,
+            "x-maxWordsEvidence": "max 11 words measured (Contacts.jsx aside); budget = ceil(1.25 x max)"
+          },
+          "cta": {
+            "$ref": "#/definitions/cta"
+          }
+        },
+        "required": [
+          "question",
+          "cta"
+        ]
+      },
+      "fields": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 8,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "leadIn": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 10,
+              "x-maxWordsEvidence": "max 8 words measured (ContactForm.jsx sentence segments); budget = ceil(1.25 x max)"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 3,
+              "x-maxWordsEvidence": "max 2 words measured (ContactForm.jsx names); budget = ceil(1.25 x max)"
+            },
+            "kind": {
+              "enum": [
+                "text",
+                "email",
+                "textarea",
+                "select"
+              ]
+            },
+            "placeholder": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "x-maxWordsEvidence": "max 4 words measured (ContactForm.jsx placeholders); budget = ceil(1.25 x max)"
+            },
+            "required": {
+              "type": "boolean"
+            },
+            "options": {
+              "type": "array",
+              "minItems": 0,
+              "maxItems": 6,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxWords": 5,
+                "x-maxWordsEvidence": "max 4 words measured (ContactForm.jsx options); budget = ceil(1.25 x max)"
+              }
+            }
+          },
+          "required": [
+            "leadIn",
+            "name",
+            "kind",
+            "placeholder",
+            "required"
+          ]
+        },
+        "x-countEvidence": "6 fields measured"
+      },
+      "closing": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 7,
+        "x-maxWordsEvidence": "max 5 words measured (ContactForm.jsx); budget = ceil(1.25 x max)"
+      },
+      "terms": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 13,
+        "x-maxWordsEvidence": "max 10 words measured (ContactForm.jsx terms); budget = ceil(1.25 x max)"
+      },
+      "submitLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 4,
+        "x-maxWordsEvidence": "max 3 words measured (ContactForm.jsx button); budget = ceil(1.25 x max)"
+      },
+      "successLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (ContactForm.jsx success); budget = ceil(1.25 x max)"
+      }
+    },
+    "required": [
+      "heading",
+      "fields",
+      "closing",
+      "terms",
+      "submitLabel",
+      "successLabel"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "line-stagger-reveal",
+      "form-feedback",
+      "hover-micro"
+    ],
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "hide",
+        "detail": "Sticky recruiting aside is desktop-only."
+      },
+      {
+        "at": "below-desktop",
+        "change": "resize-type",
+        "detail": "Title 160 -> 120 (tablet) -> 80 (phone)."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.sentence-form",
+    "primitive.text-field",
+    "primitive.select-field",
+    "primitive.button-pill",
+    "primitive.button-underline"
+  ],
+  "variants": [
+    "page-title",
+    "section-title"
+  ],
+  "notes": "No backend in the clone: submit is simulated (loading 1500ms then success). page-title = the contacts page h1; section-title = the same block as an h2 on home. The success state is feedback.form-success.",
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "heightPxMin": 1707.8,
+    "heightPxMax": 1707.8,
+    "routes": [
+      "/",
+      "/contacts"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/",
+    "/contacts"
+  ]
+}

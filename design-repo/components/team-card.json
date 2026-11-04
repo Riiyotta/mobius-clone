@@ -1,0 +1,14 @@
+{
+  "id": "component.team-card",
+  "title": "Team card",
+  "description": "Portrait with name and role over a shade.",
+  "source": {
+    "file": "src/components/studio/TeamCard.jsx",
+    "tag": "export default function TeamCard(",
+    "lines": "12-58",
+    "citation": "src/components/studio/TeamCard.jsx:12-58"
+  },
+  "composes": [
+    "primitive.media-slot"
+  ]
+}

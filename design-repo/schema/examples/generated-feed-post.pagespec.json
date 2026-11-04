@@ -1,0 +1,210 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "generated",
+  "template": "feed-post",
+  "route": "/journal/why-oak-darkens",
+  "brand": {
+    "name": "Tallowreed",
+    "mark": {
+      "assetRole": "brand.placeholder-mark",
+      "assetRef": "generate:plain serif-free text wordmark, black",
+      "alt": "Tallowreed wordmark"
+    },
+    "fictional": true
+  },
+  "meta": {
+    "title": "Why Oak Darkens — Tallowreed journal",
+    "description": "Generated journal article for a fictional interiors workshop."
+  },
+  "nodes": [
+    {
+      "id": "nav",
+      "type": "shell.nav-layer",
+      "content": {
+        "logoText": "Tallowreed",
+        "links": [
+          {
+            "label": "PROJECTS",
+            "href": "/projects"
+          },
+          {
+            "label": "ABOUT",
+            "href": "/about"
+          },
+          {
+            "label": "JOURNAL",
+            "href": "/journal"
+          },
+          {
+            "label": "HELLO",
+            "href": "/hello"
+          }
+        ],
+        "menuLabel": "Menu"
+      },
+      "motion": {
+        "patterns": [
+          "page-appear-scale"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "header",
+      "type": "hero.article-header",
+      "content": {
+        "number": 3,
+        "total": 8,
+        "date": "February 2, 2026",
+        "title": "Why Oak Darkens",
+        "excerpt": "Timber keeps changing after it leaves the workshop, and that slow shift is the point."
+      },
+      "motion": {
+        "patterns": [
+          "page-appear-scale"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "cover",
+      "type": "media.article-cover",
+      "content": {
+        "image": {
+          "assetRole": "photo.generated-scene",
+          "assetRef": "generate:close crop of oiled oak grain in low sun",
+          "alt": "close crop of oiled oak grain in low sun"
+        }
+      },
+      "motion": {
+        "patterns": [
+          "image-reveal-wipe"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "chapter-a",
+      "type": "content.marked-chapter",
+      "variant": "lettered",
+      "content": {
+        "marker": "/ A",
+        "paragraphs": [
+          "Freshly planed oak is pale and almost pink. Within a year of daylight it settles into honey, and after a decade it reads nearly bronze.",
+          "We plan finishes around that drift, so the room looks right in year five as well as on handover day."
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "static"
+        ],
+        "reducedMotionFallback": "none-needed"
+      }
+    },
+    {
+      "id": "quote",
+      "type": "content.pull-quote",
+      "content": {
+        "quote": "A room should be finished on the day we leave and still becoming itself ten years later."
+      },
+      "motion": {
+        "patterns": [
+          "line-stagger-reveal"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "chapter-b",
+      "type": "content.marked-chapter",
+      "variant": "lettered",
+      "content": {
+        "marker": "/ B",
+        "paragraphs": [
+          "Oil instead of lacquer lets small scratches heal with a cloth. That choice matters more than any colour swatch."
+        ],
+        "byline": "Ines Varga"
+      },
+      "motion": {
+        "patterns": [
+          "static"
+        ],
+        "reducedMotionFallback": "none-needed"
+      }
+    },
+    {
+      "id": "more",
+      "type": "editorial.read-more",
+      "content": {
+        "heading": "Keep reading",
+        "cards": [
+          {
+            "date": "January 9, 2026",
+            "title": "Linen in Winter",
+            "excerpt": "Heavy weaves, layered curtains and why we skip blackout fabric.",
+            "href": "/journal/linen-in-winter",
+            "cover": {
+              "assetRole": "photo.generated-scene",
+              "assetRef": "generate:folded linen curtains by a frosty window",
+              "alt": "folded linen curtains by a frosty window"
+            }
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "char-rise"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "footer",
+      "type": "shell.site-footer",
+      "variant": "responsive",
+      "content": {
+        "wordmarkText": "Tallowreed",
+        "yearRange": "© 2011-26",
+        "newsletter": {
+          "text": "A short letter every season about crafted interiors, materials we trust and the rooms we are quietly finishing.",
+          "placeholder": "YOUR ADDRESS"
+        },
+        "columns": [
+          {
+            "label": "Elsewhere",
+            "links": [
+              {
+                "label": "Newsletter",
+                "href": "https://tallowreed.example/letters"
+              },
+              {
+                "label": "Press kit",
+                "href": "https://tallowreed.example/press"
+              }
+            ]
+          },
+          {
+            "label": "Fine print",
+            "links": [
+              {
+                "label": "Privacy",
+                "href": "/fine-print/privacy"
+              },
+              {
+                "label": "Terms",
+                "href": "/fine-print/terms"
+              }
+            ]
+          }
+        ],
+        "legalLine": "© 2026 Tallowreed. Every right kept."
+      },
+      "motion": {
+        "patterns": [
+          "blinds-reveal"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    }
+  ]
+}

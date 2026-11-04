@@ -1,0 +1,136 @@
+{
+  "id": "navigation.case-teaser",
+  "title": "Case teaser",
+  "status": "measured",
+  "source": {
+    "id": "src:NextCase#export-default-function-NextCase",
+    "file": "src/components/project/NextCase.jsx",
+    "tag": "export default function NextCase(",
+    "lines": "79-114",
+    "citation": "src/components/project/NextCase.jsx:79-114",
+    "alsoImplementedBy": [
+      {
+        "file": "src/pages/Studio.jsx",
+        "tag": "function SelectedCase(",
+        "lines": "281-321",
+        "citation": "src/pages/Studio.jsx:281-321"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "navigation.case-teaser",
+    "category": "NAVIGATION"
+  },
+  "retrievalEligible": true,
+  "purpose": "Two opposing display-text bands ('Featured Project.' / 'Next Project.') behind one centred project card linking to a case study.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "tickerText": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (TextTicker.jsx / NextCase.jsx); budget = ceil(1.25 x max)"
+      },
+      "projectName": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (projects.json names); budget = ceil(1.25 x max)"
+      },
+      "href": {
+        "$ref": "#/definitions/url"
+      },
+      "image": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-project",
+          "photo.generated-scene"
+        ]
+      }
+    },
+    "required": [
+      "tickerText",
+      "projectName",
+      "href",
+      "image"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustPrecedeFooter": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "marquee-loop",
+      "hover-micro"
+    ],
+    "reducedMotionFallback": "paused-first-frame",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "show-alternate-tree",
+        "detail": "Touch card: name shown statically, no zoom."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": "image",
+      "assetRoles": [
+        "photo.source-project",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.project-card"
+  ],
+  "variants": [
+    "featured",
+    "next"
+  ],
+  "notes": "featured = studio page (fixed project); next = case study pages (CMS 'next', absent on the last project). Bands are utility.text-ticker decoration.",
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 12,
+    "heightPxMin": 886.8,
+    "heightPxMax": 886.9,
+    "routes": [
+      "/studio",
+      "/work/after-light",
+      "/work/axis-point",
+      "/work/bright-matter",
+      "/work/echoform",
+      "/work/forma-nine"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/studio",
+    "/work/after-light",
+    "/work/axis-point",
+    "/work/bright-matter",
+    "/work/echoform",
+    "/work/forma-nine",
+    "/work/golden-hour",
+    "/work/north-layer",
+    "/work/pulse",
+    "/work/soma-studio",
+    "/work/wavehouse",
+    "/work/zero-parallel"
+  ]
+}

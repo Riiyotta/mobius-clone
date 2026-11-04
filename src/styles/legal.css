@@ -1,0 +1,74 @@
+/* /legal/<slug>, built against .recon/specs/legal-404.md §A.
+   Ranges: desktop >=1200 | tablet 810–1199.98 | phone <=809.98. Desktop columns are fractions of u = W/12. */
+
+/* ---------- Frame ---------- */
+.lg-frame { position: relative; display: flex; flex-direction: column; background: var(--white); }
+.lg-side { min-width: 0; }
+
+/* ---------- Last Updated (desktop overlay, §A.1/§A.2) ---------- */
+.lg-lu { position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: flex; padding: 0 20px; }
+.lg-lu-text {
+  flex: 0 0 calc(200% / 12); min-width: 0; align-self: flex-start; /* % basis: padding must not widen the column */
+  position: sticky; top: 0; height: 100vh; z-index: 1;
+  display: flex; flex-direction: column; justify-content: flex-end; padding: 0 20px 40px;
+}
+.lg-lu-rest { flex: 0 0 calc(1000% / 12); min-width: 0; }
+.lg-lu-label, .lg-lu-date { font-size: 14px; font-weight: 500; line-height: 23.8px; }
+.lg-lu-label { color: var(--label); }
+.lg-lu-date { color: var(--black); }
+
+/* ---------- Intro ---------- */
+.lg-intro { position: relative; z-index: 2; display: flex; padding: 200px 20px 0; }
+.lg-intro-l { flex: 0 0 calc(200% / 12); } /* percentage bases: padded flex items must not distort the 12ths */
+.lg-intro-text { flex: 0 0 50%; min-width: 0; display: flex; flex-direction: column; gap: 32px; padding: 0 20px; }
+.lg-intro-r { flex: 0 0 calc(400% / 12); }
+.lg-h1 { font-size: 104px; font-weight: 700; line-height: 104px; letter-spacing: -4.16px; color: var(--black); }
+.lg-intro-p { max-width: 640px; font-size: 20px; font-weight: 500; line-height: 32px; color: var(--body); }
+
+/* ---------- Content ---------- */
+.lg-content { position: relative; display: flex; padding: 120px 20px 0; }
+.lg-content-l { flex: 2 0 0; }
+.lg-content-box { flex: 4 0 0; min-width: 0; padding-bottom: 40px; }
+.lg-content-r { flex: 6 0 0; }
+
+/* ---------- Rich text (§A.3, §A.4) ---------- */
+.lg-content-text { padding: 0 20px; }
+.lg-rt { max-width: 480px; }
+.lg-rt h5 { font-size: 32px; font-weight: 700; line-height: 41.6px; letter-spacing: -0.32px; color: var(--black); }
+.lg-rt p, .lg-rt li { font-size: 16px; font-weight: 500; line-height: 25.6px; color: var(--body); }
+.lg-rt strong { font-weight: 700; }
+.lg-rt a { color: var(--black); text-decoration: none; }
+.lg-rt > p, .lg-rt > h5 { margin-top: 32px; }
+.lg-rt > .lg-spacer + h5 { margin-top: 40px; }
+.lg-rt > ul { margin: 12px 0 0; padding: 0; list-style: disc; }
+.lg-rt li { padding-left: 20.0156px; }
+.lg-rt > :first-child { margin-top: 0; }
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1199.98px) {
+  .lg-lu { position: static; order: 1; padding: 40px 15px 0; }
+  .lg-lu-text { flex: 0 0 calc(500% / 6); position: static; height: auto; z-index: auto; padding: 0 15px; }
+  .lg-lu-rest { order: -1; flex: 0 0 calc(100% / 6); }
+  .lg-intro { order: 0; padding: 160px 15px 0; }
+  .lg-intro-l, .lg-intro-r { flex: 0 0 calc(100% / 6); }
+  .lg-intro-text { flex: 0 0 calc(400% / 6); padding: 0 15px; }
+  .lg-h1 { font-size: 80px; line-height: 80px; letter-spacing: -3.2px; }
+  .lg-content { order: 2; padding: 100px 15px 0 16px; }
+  .lg-content-l, .lg-content-r { flex: 1 0 0; }
+  .lg-content-box { flex: 4 0 0; }
+  .lg-content-text { padding: 0 15px; } /* not in spec for tablet, see handoff */
+  .lg-rt h5 { font-size: 30px; line-height: 39px; letter-spacing: -0.3px; } /* measured on the live site */
+}
+
+/* ---------- Phone ---------- */
+@media (max-width: 809.98px) {
+  .lg-lu { padding: 40px 10px 0; }
+  .lg-lu-rest, .lg-side { display: none; }
+  .lg-lu-text { flex: 0 0 100%; padding: 0 10px; }
+  .lg-intro { padding: 120px 10px 0; }
+  .lg-intro-text { flex: 0 0 100%; padding: 0 10px; }
+  .lg-rt h5 { font-size: 28px; line-height: 36.4px; letter-spacing: -0.28px; }
+  .lg-h1 { font-size: 64px; line-height: 64px; letter-spacing: -2.56px; }
+  .lg-content { padding: 80px 10px 0; }
+  .lg-content-text { padding: 0 10px; }
+}

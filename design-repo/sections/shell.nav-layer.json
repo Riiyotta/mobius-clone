@@ -1,0 +1,94 @@
+{
+  "id": "shell.nav-layer",
+  "title": "Navigation layer",
+  "status": "measured",
+  "source": {
+    "id": "src:Nav#export-default-function-Nav",
+    "file": "src/components/Nav.jsx",
+    "tag": "export default function Nav(",
+    "lines": "6-30",
+    "citation": "src/components/Nav.jsx:6-30"
+  },
+  "semantic": {
+    "id": "shell.nav-layer",
+    "category": "SHELL"
+  },
+  "retrievalEligible": true,
+  "purpose": "Fixed full-viewport navigation layer blended with difference mode: text wordmark left, four uppercase page links right (MENU button below 1200).",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "logoText": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 2,
+        "x-maxWordsEvidence": "max 1 words measured (Nav.jsx logo); budget = ceil(1.25 x max)"
+      },
+      "links": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 6,
+        "items": {
+          "$ref": "#/definitions/link"
+        },
+        "x-countEvidence": "4 links measured (data.js navLinks)"
+      },
+      "menuLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 2,
+        "x-maxWordsEvidence": "max 1 words measured (Nav.jsx menu button); budget = ceil(1.25 x max)"
+      }
+    },
+    "required": [
+      "logoText",
+      "links",
+      "menuLabel"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeFirst": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "page-appear-scale",
+      "rolling-letters-hover"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "show-alternate-tree",
+        "detail": "Links collapse into a MENU button that opens overlay.menu-overlay; padding 32/20 -> 27/15 (tablet) -> 22/10 (phone)."
+      },
+      {
+        "at": "below-desktop",
+        "change": "disable-motion",
+        "detail": "No appear animation and no rolling-letter hover below 1200."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "primitive.rolling-letters"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "note": "runtime UI / overlay: not an in-page section, not height-gated"
+  },
+  "referenceRoutes": []
+}

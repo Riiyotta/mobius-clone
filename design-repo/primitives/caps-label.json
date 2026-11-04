@@ -1,0 +1,11 @@
+{
+  "id": "primitive.caps-label",
+  "title": "Caps label",
+  "description": "14/700 uppercase #999 label (SOCIAL, LEGAL, STARTING FROM).",
+  "source": {
+    "file": "src/components/Footer.jsx",
+    "tag": "<p className=\"ft-label\">",
+    "lines": "28-34",
+    "citation": "src/components/Footer.jsx:28-34"
+  }
+}

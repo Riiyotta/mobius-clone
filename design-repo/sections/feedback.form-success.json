@@ -1,0 +1,67 @@
+{
+  "id": "feedback.form-success",
+  "title": "Form success state",
+  "status": "measured",
+  "source": {
+    "id": "src:ContactForm#function-SubmitButton",
+    "file": "src/components/contacts/ContactForm.jsx",
+    "tag": "function SubmitButton(",
+    "lines": "29-47",
+    "citation": "src/components/contacts/ContactForm.jsx:29-47"
+  },
+  "semantic": {
+    "id": "feedback.form-success",
+    "category": "UTILITY"
+  },
+  "retrievalEligible": false,
+  "retrievalIneligibleReason": "Transient post-submit feedback state of the contact form; it is a state, not a section.",
+  "purpose": "Submit button Loading (spinner) then Success ('Thank you' + check) variants after a simulated submit.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "label": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 4,
+        "x-maxWordsEvidence": "max 3 words measured (contract title); budget = ceil(1.25 x max)"
+      }
+    },
+    "required": []
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "form-feedback"
+    ],
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "hide",
+        "detail": "See purpose for per-breakpoint availability."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "note": "runtime UI / overlay: not an in-page section, not height-gated"
+  },
+  "referenceRoutes": []
+}

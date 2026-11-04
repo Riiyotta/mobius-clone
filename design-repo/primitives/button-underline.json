@@ -1,0 +1,11 @@
+{
+  "id": "primitive.button-underline",
+  "title": "Underline text CTA (Button B)",
+  "description": "h6 label with arrow glyphs and a growing underline.",
+  "source": {
+    "file": "src/components/legal/ButtonB.jsx",
+    "tag": "export default function ButtonB(",
+    "lines": "13-32",
+    "citation": "src/components/legal/ButtonB.jsx:13-32"
+  }
+}

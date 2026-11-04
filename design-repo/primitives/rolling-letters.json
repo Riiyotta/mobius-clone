@@ -1,0 +1,11 @@
+{
+  "id": "primitive.rolling-letters",
+  "title": "Rolling-letter link",
+  "description": "Uppercase link whose letters roll up one line on hover.",
+  "source": {
+    "file": "src/components/RollingLetters.jsx",
+    "tag": "export default function RollingLetters(",
+    "lines": "5-44",
+    "citation": "src/components/RollingLetters.jsx:5-44"
+  }
+}

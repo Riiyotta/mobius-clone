@@ -1,0 +1,123 @@
+{
+  "id": "social-proof.partner-logos",
+  "title": "Partner logos",
+  "status": "measured",
+  "source": {
+    "id": "src:Partners#export-default-function-Partners",
+    "file": "src/components/home/Partners.jsx",
+    "tag": "export default function Partners(",
+    "lines": "35-95",
+    "citation": "src/components/home/Partners.jsx:35-95"
+  },
+  "semantic": {
+    "id": "social-proof.partner-logos",
+    "category": "SOCIAL_PROOF"
+  },
+  "retrievalEligible": true,
+  "purpose": "Sticky display heading that fades out over a 4-column grid of partner logos, closed by a wide photo with scroll parallax.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "max 2 words measured (Partners.jsx h2); budget = ceil(1.25 x max)"
+      },
+      "caption": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 17,
+        "x-maxWordsEvidence": "max 13 words measured (Partners.jsx CAPTION); budget = ceil(1.25 x max)"
+      },
+      "logos": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 16,
+        "items": {
+          "$ref": "#/definitions/media",
+          "x-assetRoles": [
+            "logo.source-partner",
+            "logo.fictional-partner"
+          ]
+        },
+        "x-countEvidence": "12 logos measured"
+      },
+      "closingImage": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-editorial",
+          "photo.generated-scene"
+        ]
+      }
+    },
+    "required": [
+      "heading",
+      "caption",
+      "logos",
+      "closingImage"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "heading-fade-scroll",
+      "scroll-parallax",
+      "hover-micro"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "collapse-grid",
+        "detail": "Logo order and grid change per breakpoint (desktop/tablet/phone orders differ)."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": "logos[]",
+      "assetRoles": [
+        "logo.source-partner",
+        "logo.fictional-partner"
+      ]
+    },
+    {
+      "field": "closingImage",
+      "assetRoles": [
+        "photo.source-editorial",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "logo.fictional-partner",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 2771,
+    "heightPxMax": 2771,
+    "routes": [
+      "/"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/"
+  ]
+}

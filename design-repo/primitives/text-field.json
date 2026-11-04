@@ -1,0 +1,11 @@
+{
+  "id": "primitive.text-field",
+  "title": "Text field",
+  "description": "Square #f7f7f7 field, 18px padding, bold placeholder.",
+  "source": {
+    "file": "src/components/contacts/ContactForm.jsx",
+    "tag": "const Field = ",
+    "lines": "25-27",
+    "citation": "src/components/contacts/ContactForm.jsx:25-27"
+  }
+}

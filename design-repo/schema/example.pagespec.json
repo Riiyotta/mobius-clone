@@ -1,0 +1,834 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "reference",
+  "template": "home",
+  "route": "/",
+  "brand": {
+    "name": "Möbius",
+    "mark": {
+      "assetRole": "brand.source-wordmark",
+      "assetRef": "ref:src/components/Nav.jsx#logo",
+      "alt": "Möbius wordmark"
+    },
+    "fictional": false
+  },
+  "meta": {
+    "title": "Möbius",
+    "description": "Reference reconstruction of the template homepage: wordmark hero, services, proof, team, process, testimonials, pricing, notes, contact form and FAQ."
+  },
+  "nodes": [
+    {
+      "id": "nav",
+      "type": "shell.nav-layer",
+      "content": {
+        "logoText": "Möbius®",
+        "links": [
+          {
+            "label": "WORK",
+            "href": "/work"
+          },
+          {
+            "label": "STUDIO",
+            "href": "/studio"
+          },
+          {
+            "label": "FEED",
+            "href": "/feed"
+          },
+          {
+            "label": "CONTACT",
+            "href": "/contacts"
+          }
+        ],
+        "menuLabel": "Menu"
+      },
+      "motion": {
+        "patterns": [
+          "page-appear-scale",
+          "rolling-letters-hover"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "hero",
+      "type": "hero.studio-wordmark",
+      "content": {
+        "intro": "— a design studio shaping brands and digital experiences through motion, clarity, and timeless craft. Based online, working globally, we help ambitious teams express who they are and what they stand for.",
+        "wordmarkText": "Möbius®",
+        "yearRange": "© 2018-26",
+        "stack": [
+          {
+            "assetRole": "photo.source-project",
+            "assetRef": "ref:public/assets/img/ZdoJlTXzsfF4jck8jdi8x8jmQN8.jpg",
+            "alt": "Möbius"
+          },
+          {
+            "assetRole": "photo.source-project",
+            "assetRef": "ref:public/assets/img/JZNaIjPNcrDF3IgxsRH6Azc8.jpg",
+            "alt": "Möbius"
+          },
+          {
+            "assetRole": "photo.source-project",
+            "assetRef": "ref:public/assets/img/TgD2gKSlOfhH9eJku8ilavEy2Vs.jpg",
+            "alt": "Möbius"
+          },
+          {
+            "assetRole": "photo.source-project",
+            "assetRef": "ref:public/assets/img/91tSqsa2UCoJo8t9Pw7JOunYw.jpg",
+            "alt": "Möbius"
+          }
+        ],
+        "stackLink": {
+          "label": "Work",
+          "href": "/work"
+        }
+      },
+      "motion": {
+        "patterns": [
+          "page-appear-scale",
+          "hero-card-stack",
+          "line-stagger-reveal",
+          "char-rise"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "statement",
+      "type": "content.statement-scatter",
+      "content": {
+        "headline": "Möbius® brings ideas and design together, turning imagination into clarity and connection into beauty.",
+        "paragraphs": [
+          "At Möbius®, we keep our process clear, collaborative, and focused. We work closely as a small team, shaping each project with intention and care. Every idea is explored from multiple angles, refined together, and guided by a shared sense of purpose. Nothing is added without reason, and nothing essential is left behind. The result is work that feels thoughtful, precise, and built to last beyond trends.",
+          "Our way of working is straightforward. We stay small by choice, keeping the process open and honest so decisions remain meaningful. Dialogue is constant, feedback is collective, and the direction becomes sharper with every step. We believe clarity comes from collaboration, and that strong ideas emerge when the team thinks as one."
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "word-scatter-scroll",
+          "line-stagger-reveal"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "reel",
+      "type": "media.showreel",
+      "content": {
+        "tickerText": "Ideas in Motion.",
+        "video": {
+          "assetRole": "media.source-reel",
+          "assetRef": "ref:public/assets/video/k5BuF5agb7jRFUwK2jzQ0zjqjro.mp4",
+          "alt": "Möbius reel"
+        },
+        "poster": {
+          "assetRole": "photo.source-editorial",
+          "assetRef": "ref:public/assets/img/NpmO2eWasqY9hCe8AtNpjN8Is0.jpg",
+          "alt": "Reel poster"
+        }
+      },
+      "motion": {
+        "patterns": [
+          "video-autoplay",
+          "marquee-loop"
+        ],
+        "reducedMotionFallback": "paused-first-frame"
+      }
+    },
+    {
+      "id": "services",
+      "type": "features.services-index",
+      "content": {
+        "heading": "Our Services",
+        "caption": "If you’re looking for clarity in design, let’s build it together.",
+        "cta": {
+          "label": "Get Started",
+          "href": "/contacts",
+          "style": "underline"
+        },
+        "items": [
+          {
+            "index": "A /",
+            "statement": "We create identity systems that bring clarity and distinction to brands — thoughtful visuals, cohesive structure, and design that lasts.",
+            "tags": [
+              "Brand Strategy",
+              "Visual Identity System",
+              "Logo & Mark Development",
+              "Typography & Color System",
+              "Guidelines & Asset Library"
+            ]
+          },
+          {
+            "index": "B /",
+            "statement": "We design intuitive, expressive digital experiences shaped by strong visual direction and seamless interaction across all screens.",
+            "tags": [
+              "Website & Platform Design",
+              "Interaction & Motion Guidelines",
+              "UI Systems",
+              "Component Libraries",
+              "Responsive Layouts"
+            ]
+          },
+          {
+            "index": "C /",
+            "statement": "We guide ideas from concept to execution, shaping visual and narrative direction for consistent expression across every touchpoint.",
+            "tags": [
+              "Visual Direction",
+              "Campaign Concepts",
+              "Art Direction for Photo & Film",
+              "Tone & Narrative Guidance",
+              "Style Frameworks"
+            ]
+          },
+          {
+            "index": "D /",
+            "statement": "We help teams make confident decisions by defining direction, sharpening positioning, and building the foundation for meaningful growth.",
+            "tags": [
+              "Brand Positioning",
+              "Market & Audience Insights",
+              "Naming & Messaging",
+              "Design Audits",
+              "Roadmaps & Recommendations"
+            ]
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "char-rise",
+          "line-stagger-reveal"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "numbers",
+      "type": "social-proof.studio-numbers",
+      "content": {
+        "titleLines": [
+          "Möbius®",
+          "In Numbers"
+        ],
+        "caption": "A closer look at the milestones and collaborations that define our ongoing practice.",
+        "cta": {
+          "label": "Let's work together",
+          "href": "/contacts",
+          "style": "underline"
+        },
+        "stats": [
+          {
+            "value": "25",
+            "labelLines": [
+              "International",
+              "Awards"
+            ],
+            "text": "Recognized across global juries for clarity, craft, and concept. Every award reflects the same commitment: creating work with intention, designing with purpose, and shaping ideas that resonate far beyond their launch.",
+            "cta": {
+              "label": "Our Awards",
+              "href": "/#awards",
+              "style": "pill"
+            },
+            "image": {
+              "assetRole": "photo.source-editorial",
+              "assetRef": "ref:public/assets/img/LdGkrvu5WSmHSae6OpKl2jDoOo.jpg",
+              "alt": ""
+            }
+          },
+          {
+            "value": "42",
+            "labelLines": [
+              "Clients",
+              "Worldwide"
+            ],
+            "text": "Built on relationships, not transactions. We partner with teams who value dialogue, trust, and shared ambition — working together to create brands and digital experiences that feel true to who they are.n, designing with purpose, and shaping ideas that resonate far beyond their launch.",
+            "cta": {
+              "label": "Our Clients",
+              "href": "/#client-logotypes",
+              "style": "pill"
+            },
+            "image": {
+              "assetRole": "photo.source-editorial",
+              "assetRef": "ref:public/assets/img/VaocDJ3f201Z2fVP3ikqnrJjaI.jpg",
+              "alt": ""
+            }
+          },
+          {
+            "value": "83",
+            "labelLines": [
+              "Completed",
+              "Projects"
+            ],
+            "text": "Each project becomes a part of the studio’s rhythm — ideas shaped, stories refined, and systems brought to life. Every collaboration deepens our perspective and strengthens the work that follows.",
+            "cta": {
+              "label": "Our Work",
+              "href": "/work",
+              "style": "pill"
+            },
+            "image": {
+              "assetRole": "photo.source-editorial",
+              "assetRef": "ref:public/assets/img/gk68gxIIuKf4YZpReHW8qPEWUf4.jpg",
+              "alt": ""
+            }
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "sticky-state-swap",
+          "char-rise"
+        ],
+        "reducedMotionFallback": "instant-state-change"
+      }
+    },
+    {
+      "id": "awards",
+      "type": "social-proof.awards-list",
+      "content": {
+        "titleLines": [
+          "Our",
+          "Awards"
+        ],
+        "caption": "Selected moments where our work was acknowledged by others.",
+        "cta": {
+          "label": "Our Work",
+          "href": "/work",
+          "style": "underline"
+        },
+        "rows": [
+          {
+            "award": "Red Dot",
+            "category": "Brand & Communication Design",
+            "count": "x3"
+          },
+          {
+            "award": "European Design Awards",
+            "category": "Visual Identity",
+            "count": "x1"
+          },
+          {
+            "award": "ADC Europe",
+            "category": "Branding & Typography",
+            "count": "x2"
+          },
+          {
+            "award": "D&AD",
+            "category": "Digital Design",
+            "count": "x3"
+          },
+          {
+            "award": "Tokyo TDC",
+            "category": "Typography Excellence",
+            "count": "x1"
+          },
+          {
+            "award": "Awwwards",
+            "category": "Site of the Day",
+            "count": "x2"
+          },
+          {
+            "award": "Awwwards",
+            "category": "Honorable Mention",
+            "count": "x3"
+          },
+          {
+            "award": "FWA",
+            "category": "Site of the Day",
+            "count": "x1"
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "row-scroll-link",
+          "char-rise"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "founders",
+      "type": "team.founders",
+      "content": {
+        "heading": "Our Founders",
+        "text": "Founded by Jonas Richter and Tobias Keller, Möbius® began as a shared belief in how design should feel: clear, thoughtful, and human. What started as a focused partnership has grown into a small team with a strong collective mindset, bringing structure, imagination, and craft to every project we take on.",
+        "cta": {
+          "label": "Meet the Team",
+          "href": "/studio",
+          "style": "pill"
+        },
+        "members": [
+          {
+            "person": {
+              "name": "Jonas Richter",
+              "role": "Founder & Creative Director",
+              "fictional": false
+            },
+            "photo": {
+              "assetRole": "photo.source-person",
+              "assetRef": "ref:public/assets/img/k1yRftQfPk4lIWxRe2Tfq5h4ZEk.jpg",
+              "alt": "Jonas Richter"
+            }
+          },
+          {
+            "person": {
+              "name": "Tobias Keller",
+              "role": "Founder & Strategy Director",
+              "fictional": false
+            },
+            "photo": {
+              "assetRole": "photo.source-person",
+              "assetRef": "ref:public/assets/img/YVYiW8vzXkPuMM5MMZ5eURVsRKQ.jpg",
+              "alt": "Tobias Keller"
+            }
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "scroll-parallax",
+          "hover-micro"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "partners",
+      "type": "social-proof.partner-logos",
+      "content": {
+        "heading": "Our Partners",
+        "caption": "Here are some of the brands we’ve had the privilege to collaborate with.",
+        "logos": [
+          {
+            "assetRole": "logo.source-partner",
+            "assetRef": "ref:public/assets/img/6KUBJx1dbqL2lxMP2u9Fzuiwk.svg",
+            "alt": "Logo"
+          },
+          {
+            "assetRole": "logo.source-partner",
+            "assetRef": "ref:public/assets/img/NIbuhT0QGj7fz0t7jXI6Gk6J1c.svg",
+            "alt": "Logo"
+          },
+          {
+            "assetRole": "logo.source-partner",
+            "assetRef": "ref:public/assets/img/6QEz8kJbwqWFzbNDcgcMwaBk7Jk.svg",
+            "alt": "Logo"
+          },
+          {
+            "assetRole": "logo.source-partner",
+            "assetRef": "ref:public/assets/img/yJJEeKpFDSGeb3f2rZJDTMuwQ.svg",
+            "alt": "Logo"
+          }
+        ],
+        "closingImage": {
+          "assetRole": "photo.source-editorial",
+          "assetRef": "ref:public/assets/img/mMQQ0cROfRI2YAj8D9bHashl4.jpg",
+          "alt": "Möbius"
+        }
+      },
+      "motion": {
+        "patterns": [
+          "heading-fade-scroll",
+          "scroll-parallax"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "process",
+      "type": "features.process-timeline",
+      "content": {
+        "heading": "The Process",
+        "intro": "Honest impressions from the teams we’ve collaborated with across brand and digital work.",
+        "steps": [
+          {
+            "name": "Discovery",
+            "text": "We start by listening. This phase is about understanding your goals, audience, and challenges — finding clarity before we begin designing."
+          },
+          {
+            "name": "Strategy",
+            "text": "We translate insights into direction. Here, we define the concept, structure, and creative approach that shape your brand or digital product."
+          },
+          {
+            "name": "Design & Build",
+            "text": "Ideas take form. From visual identity to interactive experience, we design, prototype, and develop with precision and care."
+          },
+          {
+            "name": "Launch & Beyond",
+            "text": "Delivery is only the beginning. We test, refine, and support long after launch — ensuring the work performs and evolves over time."
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "bar-grow-in-view"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "reflections",
+      "type": "testimonial.client-reflections",
+      "content": {
+        "heading": "Client reflections",
+        "intro": "Honest impressions from the teams we’ve collaborated with across brand and digital work.",
+        "slides": [
+          {
+            "quote": "“Möbius® turned our complex ideas into something clear and elegant. They understood our goals quickly and shaped a design language that feels natural to us.”",
+            "person": {
+              "name": "Clara Jensen",
+              "role": "Vela Studio",
+              "fictional": false
+            },
+            "photo": {
+              "assetRole": "photo.source-person",
+              "assetRef": "ref:public/assets/img/JUqCPovcIKHCGuuLShMUORkvJI.jpg",
+              "alt": "Clara Jensen"
+            }
+          },
+          {
+            "quote": "“They delivered a level of clarity we’d been missing for years. Möbius® took our scattered thoughts and shaped them into a cohesive identity that finally feels right.”",
+            "person": {
+              "name": "Jonas Berg",
+              "role": "Arcton Labs",
+              "fictional": false
+            },
+            "photo": {
+              "assetRole": "photo.source-person",
+              "assetRef": "ref:public/assets/img/8s1d41G36Gw3wKjdAqv9BP0vZo.jpg",
+              "alt": "Jonas Berg"
+            }
+          },
+          {
+            "quote": "“Möbius® turned our complex ideas into something clear and elegant. They understood our goals quickly and shaped a design language that feels natural to us.”",
+            "person": {
+              "name": "Sophie Adler",
+              "role": "Norrhaven Collective",
+              "fictional": false
+            },
+            "photo": {
+              "assetRole": "photo.source-person",
+              "assetRef": "ref:public/assets/img/dsv8pyXntSx7GoSgWObJlj2AfI.jpg",
+              "alt": "Sophie Adler"
+            }
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "slideshow-autoplay",
+          "image-reveal-wipe"
+        ],
+        "reducedMotionFallback": "manual-advance-only"
+      }
+    },
+    {
+      "id": "pricing",
+      "type": "pricing.packages",
+      "content": {
+        "heading": "Pricing",
+        "toggle": {
+          "monthlyLabel": "Monthly",
+          "yearlyLabel": "Yearly –20%"
+        },
+        "intro": "Choose a plan that fits your pace, your team, and your goals. From startups to scaling brands, our monthly options give you the design support you need.",
+        "caption": "Not sure where to start? Let’s figure it out together.",
+        "cta": {
+          "label": "Let's Talk",
+          "href": "/contacts",
+          "style": "underline"
+        },
+        "plans": [
+          {
+            "name": "Foundation Package",
+            "description": "For early-stage companies or brands in need of a clear visual foundation.",
+            "features": [
+              "Discovery session",
+              "Brand direction",
+              "Logo & mark",
+              "Visual system",
+              "Color & typography",
+              "Basic brand guidelines"
+            ],
+            "priceLabel": "Starting from",
+            "monthly": 6500,
+            "yearly": 5200,
+            "period": "/month"
+          },
+          {
+            "name": "Studio Package",
+            "description": "For websites, platforms, or digital-first brands.",
+            "features": [
+              "UX structure & sitemap",
+              "UI design",
+              "Component system",
+              "Responsive layouts",
+              "Interaction & motion direction"
+            ],
+            "priceLabel": "Starting from",
+            "monthly": 8000,
+            "yearly": 6400,
+            "period": "/month"
+          },
+          {
+            "name": "Signature Package",
+            "description": "For teams that want everything aligned, from identity to digital presence.",
+            "features": [
+              "Brand identity",
+              "Digital design",
+              "Visual language",
+              "Motion direction",
+              "Guidelines"
+            ],
+            "priceLabel": "Starting from",
+            "monthly": 14000,
+            "yearly": 11200,
+            "period": "/month"
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "price-digit-roll"
+        ],
+        "reducedMotionFallback": "instant-state-change"
+      }
+    },
+    {
+      "id": "notes",
+      "type": "editorial.studio-notes-teaser",
+      "content": {
+        "heading": "Studio Notes",
+        "aside": "Our thoughts on how brands, systems, and stories find their form.",
+        "cta": {
+          "label": "Read All",
+          "href": "/feed",
+          "style": "underline"
+        },
+        "notes": [
+          {
+            "date": "April 26, 2026",
+            "title": "The Logic of Emotion",
+            "excerpt": "In design, clarity isn’t about simplicity for its own sake. It’s about removing what doesn’t serve meaning — until what remains feels inevitable.",
+            "href": "/feed/the-logic-of-emotion",
+            "cover": {
+              "assetRole": "photo.source-editorial",
+              "assetRef": "ref:public/assets/img/drBPvfLZfwnmhTDHHQbPmsfGe1I.jpg",
+              "alt": "Möbius"
+            }
+          },
+          {
+            "date": "March 29, 2026",
+            "title": "Precision Over Perfection",
+            "excerpt": "Design isn’t about getting everything right — it’s about making the right things matter.",
+            "href": "/feed/precision-over-perfection",
+            "cover": {
+              "assetRole": "photo.source-editorial",
+              "assetRef": "ref:public/assets/img/3wAhbBL8w69xQSppPtvRjJX8.jpg",
+              "alt": "Möbius"
+            }
+          }
+        ]
+      },
+      "motion": {
+        "patterns": [
+          "image-reveal-wipe"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    },
+    {
+      "id": "contact",
+      "type": "conversion.contact-form",
+      "variant": "section-title",
+      "content": {
+        "heading": "Let’s Talk!",
+        "aside": {
+          "question": "Do you feel ready to become part of our growing team?",
+          "cta": {
+            "label": "Join Us",
+            "href": "/studio#career",
+            "style": "underline"
+          }
+        },
+        "fields": [
+          {
+            "leadIn": "Hey Möbius®, my name is",
+            "name": "Name",
+            "kind": "text",
+            "placeholder": "Your Name *",
+            "required": true
+          },
+          {
+            "leadIn": "and I’m writing from",
+            "name": "Company Name",
+            "kind": "text",
+            "placeholder": "Company Name",
+            "required": false
+          },
+          {
+            "leadIn": "I’m getting in touch because I’d like to",
+            "name": "Message",
+            "kind": "textarea",
+            "placeholder": "Message *",
+            "required": true
+          },
+          {
+            "leadIn": "My budget is roughly",
+            "name": "Budget",
+            "kind": "select",
+            "placeholder": "Select a Budget *",
+            "required": true,
+            "options": [
+              "$5,000 - $10,000",
+              "$10,000 - $20,000",
+              "$20,000 +"
+            ]
+          },
+          {
+            "leadIn": "and I'd like to start",
+            "name": "Timeframe",
+            "kind": "select",
+            "placeholder": "Choose a Timeframe *",
+            "required": true,
+            "options": [
+              "As soon as possible",
+              "Next month",
+              "Whenever you’re available"
+            ]
+          },
+          {
+            "leadIn": "You can contact me at",
+            "name": "Email",
+            "kind": "email",
+            "placeholder": "Email *",
+            "required": true
+          }
+        ],
+        "closing": "Looking forward to your reply!",
+        "terms": "By submitting, you agree to our Terms and Privacy Policy.",
+        "submitLabel": "Get in Touch",
+        "successLabel": "Thank you"
+      },
+      "motion": {
+        "patterns": [
+          "line-stagger-reveal",
+          "form-feedback"
+        ],
+        "reducedMotionFallback": "instant-state-change"
+      }
+    },
+    {
+      "id": "faq",
+      "type": "faq.questions-answered",
+      "content": {
+        "heading": "Questions, answered.",
+        "learnMore": "Learn more about the people and principles behind Learn more about the people and principles behind Möbius®.",
+        "aboutCta": {
+          "label": "About us",
+          "href": "/studio",
+          "style": "underline"
+        },
+        "items": [
+          {
+            "question": "How do you start a new project?",
+            "answer": "We start by listening. Every project begins with a short discovery phase where we learn about your goals, challenges, and expectations. From there, we define the creative direction, map out deliverables, and set a timeline that balances clarity with craft."
+          },
+          {
+            "question": "Can you help with strategy, not just design?",
+            "answer": "Yes — strategy is part of everything we do. Before we design, we help define your message, audience, and positioning. That foundation shapes how your brand looks, feels, and communicates across every touchpoint."
+          },
+          {
+            "question": "How long does a typical project take?",
+            "answer": "It depends on the scope and level of detail. A small website or brand refresh may take around 4–6 weeks , while larger, more complex projects often need 8–12 weeks . We always plan collaboratively to make sure deadlines fit both sides."
+          },
+          {
+            "question": "What if I don’t know exactly what I need?",
+            "answer": "That’s completely fine. Many collaborations start that way. We’ll guide you through a short discovery process to clarify your goals and define what makes the most impact — whether it’s a rebrand, a digital experience, or something entirely new."
+          }
+        ],
+        "ctaText": "Still have questions? Let’s talk about your project and how we can help.",
+        "cta": {
+          "label": "Ask a question",
+          "href": "/contacts",
+          "style": "pill"
+        }
+      },
+      "motion": {
+        "patterns": [
+          "accordion-height"
+        ],
+        "reducedMotionFallback": "instant-state-change"
+      }
+    },
+    {
+      "id": "footer",
+      "type": "shell.site-footer",
+      "variant": "responsive",
+      "content": {
+        "wordmarkText": "Möbius®",
+        "yearRange": "© 2018-26",
+        "newsletter": {
+          "text": "Join our studio newsletter for thoughts on design, brand systems, and creative direction — sent occasionally, when there’s something worth saying.",
+          "placeholder": "YOUR EMAIL HERE"
+        },
+        "columns": [
+          {
+            "label": "Social",
+            "links": [
+              {
+                "label": "LinkedIn",
+                "href": "https://framer.link/drukarov"
+              },
+              {
+                "label": "X (Twitter)",
+                "href": "https://framer.link/drukarov"
+              },
+              {
+                "label": "Instagram",
+                "href": "https://framer.link/drukarov"
+              }
+            ]
+          },
+          {
+            "label": "Legal",
+            "links": [
+              {
+                "label": "Privacy Policy",
+                "href": "/legal/privacy-policy"
+              },
+              {
+                "label": "Terms of Service",
+                "href": "/legal/terms-of-service"
+              },
+              {
+                "label": "404",
+                "href": "/404"
+              }
+            ]
+          }
+        ],
+        "credit": {
+          "lead": "Template handcrafted by",
+          "links": [
+            {
+              "label": "FRAMER",
+              "href": "https://framer.link/drukarov"
+            },
+            {
+              "label": "ANTON DRUKAROV",
+              "href": "https://templatoria.com/"
+            }
+          ]
+        },
+        "legalLine": "© 2026 Möbius. All rights reserved."
+      },
+      "motion": {
+        "patterns": [
+          "blinds-reveal"
+        ],
+        "reducedMotionFallback": "static-final-state"
+      }
+    }
+  ]
+}

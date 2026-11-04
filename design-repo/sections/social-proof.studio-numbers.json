@@ -1,0 +1,159 @@
+{
+  "id": "social-proof.studio-numbers",
+  "title": "Studio numbers",
+  "status": "measured",
+  "source": {
+    "id": "src:Numbers#export-default-function-Numbers",
+    "file": "src/components/home/Numbers.jsx",
+    "tag": "export default function Numbers(",
+    "lines": "95-137",
+    "citation": "src/components/home/Numbers.jsx:95-137"
+  },
+  "semantic": {
+    "id": "social-proof.studio-numbers",
+    "category": "SOCIAL_PROOF"
+  },
+  "retrievalEligible": true,
+  "purpose": "Two-line section title, caption and CTA, then three 100vh rows (big number + label, paragraph, pill CTA) beside a sticky box whose digits roll and photo cross-fades per row.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "titleLines": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxWords": 3,
+          "x-maxWordsEvidence": "max 2 words measured (Numbers.jsx h2); budget = ceil(1.25 x max)"
+        }
+      },
+      "caption": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 17,
+        "x-maxWordsEvidence": "max 13 words measured (Numbers.jsx caption); budget = ceil(1.25 x max)"
+      },
+      "cta": {
+        "$ref": "#/definitions/cta"
+      },
+      "stats": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": "string",
+              "pattern": "^[0-9]{1,2}$"
+            },
+            "labelLines": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 2,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxWords": 2,
+                "x-maxWordsEvidence": "max 1 words measured (Numbers.jsx l1/l2); budget = ceil(1.25 x max)"
+              }
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 55,
+              "x-maxWordsEvidence": "max 44 words measured (Numbers.jsx ROWS p); budget = ceil(1.25 x max)"
+            },
+            "cta": {
+              "$ref": "#/definitions/cta"
+            },
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-editorial",
+                "photo.generated-scene"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "labelLines",
+            "text",
+            "cta",
+            "image"
+          ]
+        },
+        "x-countEvidence": "3 rows measured"
+      }
+    },
+    "required": [
+      "titleLines",
+      "stats"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "sticky-state-swap",
+      "char-rise",
+      "line-stagger-reveal"
+    ],
+    "reducedMotionFallback": "instant-state-change",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "show-alternate-tree",
+        "detail": "No sticky box: each row carries its own static number box."
+      },
+      {
+        "at": "below-desktop",
+        "change": "hide",
+        "detail": "Caption hidden on tablet; CTA desktop only."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": "stats[].image",
+      "assetRoles": [
+        "photo.source-editorial",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.digit-column",
+    "primitive.button-pill"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 3108,
+    "heightPxMax": 3108,
+    "routes": [
+      "/"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/"
+  ]
+}

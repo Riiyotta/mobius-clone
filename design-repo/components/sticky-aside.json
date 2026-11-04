@@ -1,0 +1,14 @@
+{
+  "id": "component.sticky-aside",
+  "title": "Sticky aside column",
+  "description": "Left column whose heading/caption/CTA stick while the right list scrolls.",
+  "source": {
+    "file": "src/components/home/Services.jsx",
+    "tag": "<div className=\"hs-svc-sticky\">",
+    "lines": "34-65",
+    "citation": "src/components/home/Services.jsx:34-65"
+  },
+  "composes": [
+    "primitive.button-underline"
+  ]
+}

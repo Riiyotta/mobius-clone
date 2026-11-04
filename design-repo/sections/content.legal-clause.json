@@ -1,0 +1,125 @@
+{
+  "id": "content.legal-clause",
+  "title": "Legal clause",
+  "status": "measured",
+  "source": {
+    "id": "src:RichText#export-default-function-RichText",
+    "file": "src/components/legal/RichText.jsx",
+    "tag": "export default function RichText(",
+    "lines": "4-19",
+    "citation": "src/components/legal/RichText.jsx:4-19"
+  },
+  "semantic": {
+    "id": "content.legal-clause",
+    "category": "CONTENT"
+  },
+  "retrievalEligible": true,
+  "purpose": "One heading-bounded part of a legal document: a bold heading followed by paragraphs and bullet lists.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 7,
+        "x-maxWordsEvidence": "max 5 words measured (legal.json h5); budget = ceil(1.25 x max)"
+      },
+      "blocks": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 20,
+        "items": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "paragraph": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxWords": 54,
+                  "x-maxWordsEvidence": "max 43 words measured (legal.json p); budget = ceil(1.25 x max)"
+                }
+              },
+              "required": [
+                "paragraph"
+              ]
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "listItems": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 12,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxWords": 24,
+                    "x-maxWordsEvidence": "max 19 words measured (legal.json li); budget = ceil(1.25 x max)"
+                  }
+                }
+              },
+              "required": [
+                "listItems"
+              ]
+            }
+          ]
+        },
+        "x-countEvidence": "1-12 blocks per clause measured"
+      }
+    },
+    "required": [
+      "heading",
+      "blocks"
+    ]
+  },
+  "constraints": {
+    "maxPerPage": 20,
+    "repeatable": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none-needed",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "resize-type",
+        "detail": "Clause heading h5 32/41.6 -> 30/39 (tablet) -> 28/36.4 (phone)."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "notes": "R6 decomposition: the clone renders the whole body as one rich-text block, but each h5-bounded part is its own node (9 per page measured).",
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 18,
+    "heightPxMin": 124.8,
+    "heightPxMax": 751.9,
+    "routes": [
+      "/legal/privacy-policy",
+      "/legal/terms-of-service"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/legal/privacy-policy",
+    "/legal/terms-of-service"
+  ]
+}

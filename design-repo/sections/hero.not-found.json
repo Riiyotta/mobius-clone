@@ -1,0 +1,111 @@
+{
+  "id": "hero.not-found",
+  "title": "Not-found hero",
+  "status": "measured",
+  "source": {
+    "id": "src:NotFound#div-className-nf-hero",
+    "file": "src/pages/NotFound.jsx",
+    "tag": "<div className=\"nf-hero\">",
+    "lines": "19-28",
+    "citation": "src/pages/NotFound.jsx:19-28",
+    "alsoImplementedBy": [
+      {
+        "file": "src/components/legal/BigNumber404.jsx",
+        "tag": "export default function BigNumber404(",
+        "lines": "45-92",
+        "citation": "src/components/legal/BigNumber404.jsx:45-92"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "hero.not-found",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "purpose": "404 opener (100vh): oversized digit columns that settle into the error code over a looping gradient blob, one line of copy and a back-home link.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "digits": {
+        "type": "string",
+        "pattern": "^[0-9]{3}$"
+      },
+      "copy": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 14,
+        "x-maxWordsEvidence": "max 11 words measured (legal.json notFound.copy); budget = ceil(1.25 x max)"
+      },
+      "cta": {
+        "$ref": "#/definitions/cta"
+      },
+      "shape": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "illustration.gradient-shape",
+          "illustration.generated-abstract"
+        ]
+      }
+    },
+    "required": [
+      "digits",
+      "copy",
+      "cta"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "digit-column-settle",
+      "marquee-loop"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "disable-motion",
+        "detail": "Digits render settled; the gradient loop still runs."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": "shape",
+      "assetRoles": [
+        "illustration.gradient-shape",
+        "illustration.generated-abstract"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "illustration.generated-abstract",
+    "url.placeholder"
+  ],
+  "composes": [
+    "primitive.button-underline"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 900,
+    "heightPxMax": 900,
+    "routes": [
+      "/404"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/404"
+  ]
+}

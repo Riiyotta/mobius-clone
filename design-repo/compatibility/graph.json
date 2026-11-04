@@ -1,0 +1,83 @@
+{
+  "$description": "Rhythm/position rules JSON Schema cannot express. Rule ids equal schema/semantic_validate.GRAPH_RULE_IDS (verify_all checks parity). Each rule was checked against templates/templates.json node sequences when written.",
+  "version": "1.0.0",
+  "rules": [
+    {
+      "id": "SHELL_POSITION",
+      "severity": "error",
+      "rule": "First node is shell.nav-layer; last is shell.site-footer unless the template is footerOptional (work/feed index render no footer at >=1200)."
+    },
+    {
+      "id": "ONE_HERO",
+      "severity": "error",
+      "rule": "At most one HERO node; every template except heroless ones (contacts) has exactly one."
+    },
+    {
+      "id": "HERO_FIRST",
+      "severity": "error",
+      "rule": "The HERO is the first body node after the nav layer."
+    },
+    {
+      "id": "HOME_ROUTE_ONLY",
+      "severity": "error",
+      "rule": "hero.studio-wordmark only on route '/'."
+    },
+    {
+      "id": "ONE_PER_PAGE",
+      "severity": "error",
+      "rule": "onePerPage / maxPerPage constraints from each contract."
+    },
+    {
+      "id": "NO_CONSECUTIVE_SAME_SECTION",
+      "severity": "error",
+      "rule": "The same (section, variant) may not repeat back to back unless the contract is repeatable (legal clauses)."
+    },
+    {
+      "id": "NO_ADJACENT_SAME_CATEGORY",
+      "severity": "warn",
+      "rule": "Adjacent body nodes of the same category warn, except CONTENT chains (chapters/quotes) and the numbers->awards proof pair on home.",
+      "allowedCategories": [
+        "CONTENT",
+        "SHELL"
+      ],
+      "allowedPairs": [
+        [
+          "social-proof.studio-numbers",
+          "social-proof.awards-list"
+        ]
+      ]
+    },
+    {
+      "id": "MUST_PRECEDE_FOOTER",
+      "severity": "warn",
+      "rule": "faq.questions-answered, editorial.read-more and navigation.case-teaser sit directly before the footer."
+    },
+    {
+      "id": "OVERLAY_NOT_A_NODE",
+      "severity": "error",
+      "rule": "Retrieval-ineligible runtime UI (cursor, trail, clock, tickers, menu, lightbox, form success) is never a node."
+    },
+    {
+      "id": "QUOTE_FOLLOWS_CHAPTER",
+      "severity": "error",
+      "rule": "content.pull-quote directly follows a content.marked-chapter (case studies and posts)."
+    },
+    {
+      "id": "LEGAL_CLAUSES_FOLLOW_HEADER",
+      "severity": "error",
+      "rule": "content.legal-clause nodes are contiguous and directly follow hero.legal-header."
+    },
+    {
+      "id": "MOTION_BUDGET",
+      "severity": "warn",
+      "rule": "At most 4 nodes with continuous motion (marquee-loop, auto-scroll-columns, video-autoplay, slideshow-autoplay).",
+      "max": 4,
+      "continuousPatterns": [
+        "marquee-loop",
+        "auto-scroll-columns",
+        "video-autoplay",
+        "slideshow-autoplay"
+      ]
+    }
+  ]
+}

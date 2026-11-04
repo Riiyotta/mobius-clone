@@ -1,0 +1,308 @@
+/* /studio — built against .recon/specs/studio.md.
+   Desktop (>=1200) is the base; tablet (810–1199.98) and phone (<=809.98) overrides are at the bottom.
+   Desktop column grid: C = content box of a `padding: 0 20px` row, 12 equal columns, no gutters (§0). */
+
+.st-page { position: relative; display: flex; flex-direction: column; background: var(--white); overflow: clip; }
+.st-page h2, .st-page h3 { margin: 0; }
+.st-p { font-size: 16px; font-weight: 500; line-height: 25.6px; color: var(--body); }
+.st-bar { flex: none; width: 100%; height: 80px; position: sticky; top: 0; z-index: 3; background: var(--white); }
+.st-sp1 { flex: none; width: calc(100% / 12); }
+.st-sp2 { flex: none; width: calc(100% / 6); }
+.st-sp4 { flex: none; width: calc(100% / 3); }
+
+/* ---------- 3.1 Intro ---------- */
+.st-intro { position: relative; display: flex; padding: 0 20px; overflow: clip; }
+/* Box [0,0,vw-1,0.66vh]: 1439x594 @1440x900, 1279x528 @1280x800, 999x528 @1000x800, 389x557 @390x844 */
+.st-trail { position: absolute; left: 0; top: 0; width: calc(100% - 1px); height: 66vh; z-index: 2; }
+.st-trail-img {
+  position: absolute; width: 300px; height: 400px; pointer-events: none; opacity: 0;
+  background-size: contain; background-position: center; background-repeat: no-repeat;
+  transition: opacity 0.4s cubic-bezier(0.44, 0, 0.56, 1);
+}
+.st-trail-img.is-in { opacity: 1; }
+.st-intro-sticky { flex: none; width: calc(100% / 6); position: sticky; top: 0; height: 100vh; z-index: 1; }
+.st-intro-btns {
+  height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start;
+  gap: 64px; padding: 0 20px 40px;
+}
+.st-intro-q { width: 160px; font-size: 14px; font-weight: 500; line-height: 23.8px; letter-spacing: 0; color: #757575; }
+.st-intro-main { flex: none; width: calc(100% * 8 / 12); display: flex; flex-direction: column; gap: 64px; padding: 200px 0 40px; }
+.st-h1-wrap { padding: 0 20px; }
+.st-h1 { font-size: 160px; font-weight: 800; line-height: 160px; letter-spacing: -8px; color: var(--black); }
+.st-intro-text { padding: 0 20px; display: flex; flex-direction: column; gap: 24px; }
+.st-intro-p { width: 480px; display: flex; flex-direction: column; gap: 32px; }
+
+/* ---------- 3.2 Our Team ---------- */
+.st-team { display: flex; flex-direction: column; align-items: center; padding: 0 20px; }
+.st-reveal { width: 100%; height: 100vh; position: sticky; top: 0; display: flex; align-items: flex-start; padding: 120px 20px; overflow: clip; }
+.st-reveal-h { flex: 1 0 0; min-width: 0; font-size: 64px; font-weight: 700; line-height: 76.8px; letter-spacing: -2.56px; color: var(--black); text-align: left; }
+.st-word { display: inline-block; margin-right: 0.3em; }
+.st-word:first-child { margin-left: 17%; }
+.st-team-wrap { width: 100%; padding-top: 300px; }
+.st-cards { position: relative; display: flex; justify-content: space-evenly; align-items: center; container-type: inline-size; }
+.st-col { flex: none; width: calc(100% / 3); padding: 0 20px; display: flex; flex-direction: column; gap: 40px; }
+/* Invisible scroll marker for the reveal fade-out (§3.2.5): card height + 20 */
+.st-fade-marker {
+  position: absolute; left: 0; top: 0; width: 10px; height: calc((100cqw / 3 - 40px) * 1847 / 1393 + 20px);
+  opacity: 0; pointer-events: none;
+}
+
+/* Team Card ("Touch" variant at every width) */
+.st-tc {
+  position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  width: 100%; aspect-ratio: 1393 / 1847; background: #999; overflow: clip; cursor: auto;
+}
+.st-tc-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+.st-tc-shade {
+  position: absolute; inset: 0; background: rgba(0, 0, 0, 0.5);
+  -webkit-mask: linear-gradient(0deg, #000 0%, transparent 50%); mask: linear-gradient(0deg, #000 0%, transparent 50%);
+}
+.st-tc-text { position: absolute; left: 24px; right: 24px; bottom: 24px; display: flex; flex-direction: column; align-items: flex-start; }
+.st-tc-name { font-size: 48px; font-weight: 700; line-height: 57.6px; letter-spacing: -0.96px; color: var(--white); }
+.st-tc-name strong { font-weight: 700; }
+.st-tc-word { display: inline-block; white-space: nowrap; }
+.st-tc-char { display: inline-block; }
+.st-tc-role { font-size: 20px; font-weight: 500; line-height: 32px; color: var(--white); }
+
+/* ---------- 3.3 Our Principles ---------- */
+.st-pr { display: flex; padding: 0 20px 120px; }
+.st-pr-left { flex: none; width: calc(100% * 5 / 12); }
+.st-pr-sticky {
+  position: sticky; top: 0; height: 100vh; z-index: 1; display: flex; flex-direction: column;
+  justify-content: flex-end; gap: 40px; padding: 0 20px 40px;
+}
+.st-pr-top { flex: 1 0 0; display: flex; flex-direction: column; overflow: clip; }
+.st-pr-spacer { flex: none; height: 300px; }
+.st-pr-h6 { font-size: 26px; font-weight: 700; line-height: 36.4px; letter-spacing: -0.01em; color: var(--black); }
+.st-pr-h6 strong { font-weight: 700; }
+.st-note { width: 240px; font-size: 14px; font-weight: 500; line-height: 23.8px; color: #757575; }
+.st-btn-row { display: flex; }
+.st-pr-right { flex: none; width: calc(100% * 7 / 12); display: flex; flex-direction: column; padding-bottom: 40px; }
+.st-pr-list { display: flex; flex-direction: column; gap: 160px; }
+.st-pi { display: flex; }
+.st-pi-idx { flex: none; width: calc(100% / 7); padding: 0 20px; text-align: right; display: flex; justify-content: flex-end; align-items: flex-start; }
+.st-pi-txt { flex: none; width: calc(100% * 6 / 7); padding: 0 20px; }
+.st-pi-h { font-size: 56px; font-weight: 700; line-height: 67.2px; letter-spacing: -0.03em; color: var(--black); }
+.st-pi-idx .st-pi-h { color: #eee; white-space: nowrap; }
+
+/* ---------- 3.4 Image Gallery ---------- */
+.st-gal { display: flex; flex-direction: column; height: 100vh; padding: 0 40px; }
+.st-gal-ticker { flex: none; width: 100%; height: calc(100vh - 80px); overflow: clip; cursor: grab; touch-action: pan-y; user-select: none; }
+.st-gal-track { display: flex; gap: 40px; height: 100%; width: max-content; margin: 0; padding: 0; list-style: none; will-change: transform; }
+.st-gal-li { flex: none; height: 100%; }
+.st-gal-img { width: 100%; height: 100%; background-size: cover; background-position: center; background-repeat: no-repeat; }
+
+/* ---------- 3.5 Career ---------- */
+.st-career { display: flex; flex-direction: column; padding: 200px 20px 0; }
+.st-row { display: flex; }
+.st-cr-head { flex: none; width: 50%; display: flex; flex-direction: column; gap: 32px; }
+.st-cr-h2 { font-size: 104px; font-weight: 700; line-height: 104px; letter-spacing: -0.04em; color: var(--black); }
+.st-cr-text { padding: 0 20px; display: flex; flex-direction: column; gap: 32px; }
+.st-cr-text .st-p, .st-cr-note .st-p { width: 480px; max-width: 100%; }
+
+.st-quote { display: flex; justify-content: center; align-items: flex-end; padding: 120px 40px 0; }
+/* Percentage bases (border-box) so the padded box is exactly 5/6 of the row (a 0 basis + padding overshoots). */
+.st-quote-sp { flex: none; width: calc(100% / 6); }
+.st-quote-box { flex: none; width: calc(500% / 6); box-sizing: border-box; padding: 0 20px; }
+.st-page .st-cr-h2 { margin: 0 20px; } /* padding lives on a wrapper in the original: box = column − 40 */
+/* text-indent inherits into WordStagger's inline-block masks; only the first line box should get it */
+.st-quote-h .ws-mask { text-indent: 0; }
+.st-quote-h {
+  font-size: 56px; font-weight: 500; line-height: 67.2px; letter-spacing: -0.04em; color: var(--black);
+  text-indent: 160px; transform: translateX(-160px);
+}
+
+.st-cr-note-row { padding-top: 120px; }
+.st-cr-note { padding: 0 20px; }
+
+.st-acc-row { padding-top: 120px; }
+.st-acc-sec { flex: none; width: calc(100% * 7 / 12); display: flex; flex-direction: column; gap: 80px; }
+
+/* Career Accordion (§3.5.4, §5.4) — studio-specific, not the shared FAQ */
+.st-acc { display: flex; flex-direction: column; gap: 80px; }
+.st-ci { display: flex; align-items: flex-start; cursor: pointer; }
+.st-ci-plus { position: relative; flex: none; width: calc(100% / 7); padding: 0 20px; }
+.st-ci-ph { visibility: hidden; font-size: 48px; font-weight: 700; line-height: 57.6px; letter-spacing: -0.96px; }
+.st-ci-icon {
+  position: absolute; top: calc(50% - 16px); left: calc(50% - 16px); width: 32px; height: 32px; color: var(--black);
+  transition: transform 0.8s cubic-bezier(0.6, 0, 0.4, 1);
+}
+.st-ci.is-open .st-ci-icon { transform: rotate(45deg); }
+.st-ci-role {
+  position: relative; flex: none; width: calc(100% * 6 / 7); overflow: clip;
+  transition: height 0.8s cubic-bezier(0.6, 0, 0.4, 1);
+}
+.st-ci-qa { position: absolute; left: 0; top: 0; width: 100%; padding: 0 20px; display: flex; flex-direction: column; gap: 40px; }
+.st-ci-title { font-size: 48px; font-weight: 700; line-height: 57.6px; letter-spacing: -0.02em; color: var(--black); }
+.st-ci-title strong { font-weight: 700; }
+.st-ci-qa .st-p { width: 480px; max-width: 100%; }
+.st-ci-block { display: flex; flex-direction: column; gap: 8px; }
+.st-ci-bh { font-size: 26px; font-weight: 700; line-height: 36.4px; letter-spacing: -0.26px; color: var(--black); }
+.st-ci-bh strong { font-weight: 700; }
+.st-ci-ul { width: 480px; max-width: 100%; margin: 0; padding: 0; list-style: disc outside; color: var(--body); font-size: 16px; }
+.st-ci-ul li { padding-left: 20px; }
+.st-ci-mail { color: var(--black); font-weight: 700; text-decoration: none; }
+.st-ci-border { flex: none; height: 40px; border-bottom: 1px solid #eee; }
+
+.st-cr-more { display: flex; }
+.st-cr-more-sp { flex: none; width: calc(100% / 7); }
+.st-cr-more-col { flex: none; width: calc(100% * 5 / 7); display: flex; flex-direction: column; align-items: flex-start; gap: 40px; padding: 0 20px; }
+.st-cr-more-col .st-p { width: 320px; max-width: 100%; }
+.st-cr-more-col strong { color: var(--black); font-weight: 700; }
+
+/* ---------- 3.6 Selected Case ---------- */
+.st-case { position: relative; display: flex; flex-direction: column; align-items: center; padding: 160px 0; }
+.st-tickers {
+  position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%;
+  display: flex; flex-direction: column; gap: 16px; pointer-events: none;
+}
+.st-tk-row { height: 160px; overflow: clip; }
+.st-tk-track { display: flex; width: max-content; will-change: transform; }
+.st-tk-h { flex: none; font-size: 160px; font-weight: 800; line-height: 160px; letter-spacing: -8px; white-space: pre; }
+.st-case-row { position: relative; z-index: 1; width: 100%; display: flex; padding: 0 20px; }
+.st-case-a { display: block; flex: none; width: calc(100% / 3); padding: 0 20px; }
+.st-case-a .card { aspect-ratio: 426.7 / 566.9; }
+.st-case-a .card-name h4 { color: var(--white); }
+.st-case-sticky { display: none; }
+
+/* Project Card, Touch variant (tablet/phone): name always visible, no hover */
+.st-pc { position: relative; width: 100%; overflow: clip; aspect-ratio: 616.7 / 819.4; }
+.st-pc-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+.st-pc-name { position: absolute; left: 24px; right: 24px; bottom: 24px; display: flex; justify-content: flex-start; }
+.st-pc-name h4 { font-size: 44px; font-weight: 700; line-height: 52.8px; letter-spacing: -0.02em; color: var(--white); }
+
+/* ======================= TABLET (810–1199.98) ======================= */
+@media (max-width: 1199.98px) {
+  .st-bar { height: 72px; }
+
+  .st-intro { padding: 0 15px; }
+  .st-intro-sticky { height: auto; position: static; }
+  .st-intro-main { width: calc(100% * 4 / 6); padding: 160px 0 0; }
+  .st-h1-wrap, .st-intro-text { padding: 0 15px; }
+  .st-h1 { font-size: 120px; line-height: 120px; letter-spacing: -6px; }
+  .st-intro-p { gap: 25.6px; }
+
+  .st-team { padding: 0 15px; }
+  .st-reveal { position: static; height: auto; padding: 80px 15px 0; }
+  .st-reveal-h { font-size: 44px; line-height: 52.8px; letter-spacing: -1.76px; }
+  .st-team-wrap { padding-top: 160px; }
+  .st-cards { flex-direction: column; gap: 30px; }
+  .st-col { width: 100%; flex-direction: row; gap: 30px; padding: 0 15px; }
+  .st-col .st-tc { flex: 1 0 0; min-width: 0; width: auto; }
+  .st-fade-marker { display: none; }
+  .st-tc-name { font-size: 44px; line-height: 52.8px; letter-spacing: -0.88px; }
+
+  .st-pr { padding: 0 15px; }
+  .st-pr-left { width: calc(100% / 3); }
+  .st-pr-sticky { padding: 0 15px 30px; }
+  .st-pr-spacer { height: 160px; }
+  .st-pr-h6 { font-size: 25px; line-height: 35px; }
+  .st-pr-right { width: calc(100% * 2 / 3); padding: 0 15px 30px; }
+  .st-pr-list { gap: 80px; }
+  .st-pi-idx { width: 25%; padding: 0 0 0 20px; justify-content: center; }
+  .st-pi-txt { width: 75%; padding: 0; }
+  .st-pi-h { font-size: 44px; line-height: 52.8px; }
+
+  .st-gal { height: auto; padding: 80px 30px 0; }
+  .st-gal-ticker { height: 640px; }
+  .st-gal-track { gap: 30px; }
+
+  .st-career { padding: 160px 15px 0; }
+  .st-cr-head { width: calc(100% * 4 / 6); }
+  .st-cr-h2 { font-size: 80px; line-height: 80px; }
+  .st-cr-head + .st-sp4 { width: calc(100% / 6); }
+  .st-quote { padding: 80px 30px 0; }
+  .st-quote-box { padding: 0 15px; }
+  .st-quote-h { font-size: 44px; line-height: 52.8px; text-indent: 120px; transform: translateX(-120px); }
+  .st-cr-note-row { padding-top: 80px; }
+  .st-acc-row { padding-top: 80px; }
+  .st-acc-row .st-sp1 { width: calc(100% / 6); }
+  .st-acc-sec { width: calc(100% * 4 / 6); padding: 0 15px; gap: 72px; }
+  .st-acc-row .st-sp4 { width: calc(100% / 6); }
+  .st-acc { gap: 64px; }
+  .st-ci-plus { order: 1; width: auto; padding: 0 0 0 20px; }
+  .st-ci-ph { font-size: 44px; line-height: 52.8px; letter-spacing: -0.88px; }
+  .st-ci-role { flex: 1 0 0; min-width: 0; width: auto; }
+  .st-ci-qa { padding: 0; }
+  .st-ci-title { font-size: 44px; line-height: 52.8px; }
+  .st-ci-bh { font-size: 25px; line-height: 35px; letter-spacing: -0.25px; }
+  .st-cr-more-sp { display: none; }
+  .st-cr-more-col { width: 100%; padding: 0; }
+
+  .st-case-row { padding: 0 15px; }
+  .st-case-row .st-sp4 { width: calc(100% / 6); }
+  .st-case-a { width: calc(100% * 4 / 6); padding: 0 15px; }
+  .st-tk-row { height: 120px; }
+  .st-tk-h { font-size: 120px; line-height: 120px; letter-spacing: -6px; }
+}
+
+/* ======================= PHONE (<=809.98) ======================= */
+@media (max-width: 809.98px) {
+  .st-bar { height: 64px; }
+
+  .st-intro { flex-direction: column; padding: 0 10px; }
+  .st-intro-sticky, .st-intro-side { display: none; }
+  .st-intro-main { width: 100%; padding: 120px 0 0; }
+  .st-h1-wrap, .st-intro-text { padding: 0 10px; }
+  .st-h1 { font-size: 80px; line-height: 80px; letter-spacing: -4px; }
+  .st-intro-p { width: 100%; }
+
+  .st-team { padding: 0 10px; }
+  .st-reveal { padding: 64px 10px 0; }
+  .st-reveal-h { font-size: 36px; line-height: 43.2px; letter-spacing: -1.44px; }
+  .st-team-wrap { padding-top: 120px; }
+  .st-cards { gap: 20px; }
+  .st-col { flex-direction: column; gap: 20px; padding: 0 10px; }
+  .st-col .st-tc { flex: none; width: 100%; }
+  .st-tc-name { font-size: 36px; line-height: 43.2px; letter-spacing: -0.72px; }
+
+  .st-pr { flex-direction: column; gap: 40px; padding: 120px 0 0; }
+  .st-pr-left, .st-pr-right { width: 100%; }
+  .st-pr-sticky { height: auto; padding: 0 20px; gap: 0; }
+  .st-pr-top { flex: none; }
+  .st-pr-spacer, .st-pr-sticky .st-note, .st-pr-sticky .st-btn-row { display: none; }
+  .st-pr-h6 { font-size: 24px; line-height: 33.6px; }
+  .st-pr-right { padding: 0; }
+  .st-pr-list { padding: 0 20px; gap: 40px; }
+  .st-pi { flex-direction: column; gap: 20px; }
+  .st-pi-idx, .st-pi-txt { width: 100%; padding: 0; text-align: left; }
+  .st-pi-idx { justify-content: flex-start; }
+  .st-pi-h { font-size: 36px; line-height: 43.2px; }
+
+  .st-gal { padding: 40px 20px 0; }
+  .st-gal-ticker { height: 480px; }
+  .st-gal-track { gap: 20px; }
+
+  .st-career { padding: 120px 0 0; }
+  .st-sp2, .st-cr-head + .st-sp4 { display: none; }
+  .st-cr-head { width: 100%; }
+  .st-cr-h2 { font-size: 64px; line-height: 64px; }
+  .st-quote { padding: 80px 10px 0; }
+  .st-quote-sp { display: none; }
+  .st-quote-box { width: 100%; }
+  .st-quote-box { padding: 0 10px; }
+  .st-quote-h { font-size: 36px; line-height: 43.2px; text-indent: 80px; transform: none; }
+  .st-cr-note { width: 100%; }
+  .st-acc-row .st-sp1, .st-acc-row .st-sp4 { display: none; }
+  .st-acc-sec { width: 100%; padding: 0 20px; gap: 64px; }
+  .st-ci-ph { font-size: 36px; line-height: 43.2px; letter-spacing: -0.72px; }
+  .st-ci-title { font-size: 36px; line-height: 43.2px; }
+  .st-ci-bh { font-size: 24px; line-height: 33.6px; letter-spacing: -0.24px; }
+  .st-cr-more-col .faq-btna { width: 100%; }
+  .st-cr-more-col .faq-btna-text { flex: 1 0 0; }
+  .st-cr-more-col { align-items: stretch; }
+
+  .st-case { padding: 0 10px; }
+  .st-tickers { display: none; }
+  .st-case-row { padding: 0; }
+  .st-case-row .st-sp4 { display: none; }
+  .st-case-a { width: 100%; padding: 0 10px; }
+  .st-case-sticky { display: block; position: sticky; top: 0; z-index: 2; height: 64px; background: var(--white); }
+  .st-pc { aspect-ratio: 350 / 466.7; }
+  .st-pc-name h4 { font-size: 36px; line-height: 43.2px; }
+}
+
+/* ---------- Motion (desktop) ---------- */
+/* §4.1 text reveal: words default to 0, fade 0.4s Framer easeOut on both directions */
+.st-reveal-h.is-anim .st-word { opacity: 0; transition: opacity 0.4s cubic-bezier(0, 0, 0.58, 1); }
+.st-reveal-h.is-anim .st-word.is-on { opacity: 1; }

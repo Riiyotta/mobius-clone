@@ -1,0 +1,129 @@
+{
+  "id": "listing.project-index",
+  "title": "Project index",
+  "status": "measured",
+  "source": {
+    "id": "src:InfiniteCanvas#export-default-function-InfiniteCanvas",
+    "file": "src/components/InfiniteCanvas.jsx",
+    "tag": "export default function InfiniteCanvas(",
+    "lines": "20-128",
+    "citation": "src/components/InfiniteCanvas.jsx:20-128",
+    "alsoImplementedBy": [
+      {
+        "file": "src/components/WorksList.jsx",
+        "tag": "export default function WorksList(",
+        "lines": "5-33",
+        "citation": "src/components/WorksList.jsx:5-33"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "listing.project-index",
+    "category": "LISTING"
+  },
+  "retrievalEligible": true,
+  "purpose": "All projects: a 100vh infinite drag/scroll canvas of image cards on desktop (hover zoom + name rise), a vertical image list with summary below 1200.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "projects": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 24,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 3,
+              "x-maxWordsEvidence": "max 2 words measured (projects.json names); budget = ceil(1.25 x max)"
+            },
+            "href": {
+              "$ref": "#/definitions/url"
+            },
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-project",
+                "photo.generated-scene"
+              ]
+            },
+            "summary": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 38,
+              "x-maxWordsEvidence": "max 30 words measured (data.js listCopy); budget = ceil(1.25 x max)"
+            }
+          },
+          "required": [
+            "name",
+            "href",
+            "image"
+          ]
+        },
+        "x-countEvidence": "12 projects measured"
+      }
+    },
+    "required": [
+      "projects"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "infinite-drag-canvas",
+      "hover-micro",
+      "image-reveal-wipe"
+    ],
+    "reducedMotionFallback": "manual-advance-only",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "show-alternate-tree",
+        "detail": "Works List (image 640/480 tall, name, summary) + footer replaces the canvas."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": "projects[].image",
+      "assetRoles": [
+        "photo.source-project",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.project-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "heightPxMin": 900,
+    "heightPxMax": 900,
+    "routes": [
+      "/work"
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/work"
+  ]
+}

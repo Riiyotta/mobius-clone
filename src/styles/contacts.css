@@ -1,0 +1,225 @@
+/* /contacts — .recon/specs/contacts.md. Desktop >= 1200 (base rules), tablet <= 1199.98 (§6), phone <= 809.98 (§7).
+   .ct-desk (desktop prop) gates the desktop-only hovers. */
+
+.ct { position: relative; display: flex; flex-direction: column; overflow: clip; background: var(--white); }
+.ct-pad { padding: 0 20px; }
+.ct-bar { position: sticky; top: 0; z-index: 1; flex: none; height: 80px; background: var(--white); }
+
+/* ---------- §2.1 Let's Talk ---------- */
+.ct-talk { position: relative; z-index: 2; display: flex; justify-content: center; padding: 0 20px; overflow: clip; }
+.ct-sticky { flex: 2 0 0; min-width: 0; position: sticky; top: 0; height: 100vh; z-index: 1; }
+.ct-btnc {
+  height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start;
+  gap: 64px; padding: 0 20px 40px;
+}
+.ct-ready { width: 160px; font-size: 14px; font-weight: 500; line-height: 23.8px; letter-spacing: 0; color: #757575; }
+.ct-talk-main {
+  flex: 6 0 0; min-width: 0; display: flex; flex-direction: column; justify-content: flex-end;
+  gap: 120px; padding: 200px 0 40px;
+}
+.ct-talk-side { flex: 4 0 0; min-width: 0; }
+.ct-h1 { font-size: 160px; font-weight: 800; line-height: 160px; letter-spacing: -8px; color: var(--black); white-space: pre; }
+.ct-formc { overflow: clip; }
+
+/* ---------- §3 Contact Form ---------- */
+.ct-form { display: flex; flex-direction: column; gap: 80px; }
+.ct-group { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; row-gap: 20px; column-gap: 6px; }
+.ct-w { font-size: 20px; font-weight: 500; line-height: 32px; color: var(--black); white-space: nowrap; }
+
+.ct-field { position: relative; flex: none; background: #f7f7f7; border-radius: 0; }
+.ct-f-440 { width: 440px; }
+.ct-f-240 { width: 240px; }
+.ct-f-480 { width: 480px; }
+.ct-f-full { width: 100%; }
+/* Focus: instant 2px black bottom border as an inset overlay (no layout shift, no transition). */
+.ct-field:focus-within::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  border: 0 solid var(--black); border-bottom-width: 2px;
+}
+.ct-input {
+  display: block; width: 100%; height: 68px; margin: 0; padding: 18px; border: 0; border-radius: 0;
+  outline: none; background: transparent; box-shadow: none;
+  font-family: var(--font); font-size: 20px; font-weight: 500; line-height: 32px;
+  color: var(--black); caret-color: var(--black);
+}
+.ct-input::placeholder { color: var(--label); opacity: 1; }
+.ct-textarea { height: 240px; min-height: 240px; resize: vertical; }
+.ct-textarea::-webkit-resizer {
+  background: no-repeat center / 14px 14px
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M13 5L5 13M13 9L9 13' stroke='%23999' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+}
+
+/* Select: appearance none, #999 until a value is chosen (required + "" = :invalid), chevron ::before */
+.ct-select { padding-right: 18px; }
+.ct-select select { appearance: none; -webkit-appearance: none; cursor: default; text-overflow: ellipsis; }
+.ct-select select:invalid { color: var(--label); }
+.ct-select option { color: var(--black); }
+.ct-select::before {
+  content: ''; position: absolute; top: 0; bottom: 0; right: 0; width: 44px; pointer-events: none;
+  background: var(--label);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M 3.5 6 L 8 10.5 L 12.5 6' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat 10px 50% / 16px auto;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M 3.5 6 L 8 10.5 L 12.5 6' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat 10px 50% / 16px auto;
+}
+
+.ct-terms { font-size: 14px; font-weight: 500; line-height: 23.8px; color: var(--label); }
+.ct-terms a { color: var(--black); font-weight: 500; text-decoration: none; }
+
+/* ---------- §5.3 Submit button ---------- */
+.ct-btn {
+  position: relative; display: flex; align-self: flex-start; width: 200px; height: 48px;
+  padding: 8px 58px 8px 18px; overflow: clip; cursor: pointer;
+}
+.ct-btn-bg { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: var(--black); border-radius: 999px; }
+.ct-btn-text {
+  position: relative; pointer-events: none; white-space: nowrap;
+  font-size: 20px; font-weight: 500; line-height: 32px; color: var(--white);
+}
+.ct-btn-ic { position: absolute; top: calc(50% - 8px); width: 16px; height: 16px; color: var(--white); }
+.ct-btn-ic svg { display: block; width: 100%; height: 100%; }
+.ct-btn-ic1 { right: 14px; }
+.ct-btn-ic2 { left: -32px; }
+/* Hover and all non-default variants share the collapsed geometry; spring 0.4 bounce 0. */
+.ct-btn, .ct-btn-bg, .ct-btn-text, .ct-btn-ic1, .ct-btn-ic2 {
+  transition: padding 0.4s var(--spring-04), top 0.4s var(--spring-04), right 0.4s var(--spring-04),
+    bottom 0.4s var(--spring-04), left 0.4s var(--spring-04), color 0.4s var(--spring-04);
+}
+.ct-btn-desk:hover, .ct-btn[data-state="loading"], .ct-btn[data-state="success"] { padding: 8px 104px 8px 0; }
+.ct-btn-desk:hover .ct-btn-bg,
+.ct-btn[data-state="loading"] .ct-btn-bg,
+.ct-btn[data-state="success"] .ct-btn-bg {
+  top: calc(50% - 14px); bottom: calc(50% - 14px); right: 1px; left: calc(100% - 29px);
+}
+.ct-btn-desk:hover .ct-btn-text,
+.ct-btn[data-state="loading"] .ct-btn-text,
+.ct-btn[data-state="success"] .ct-btn-text { color: var(--black); }
+.ct-btn-desk:hover .ct-btn-ic1,
+.ct-btn[data-state="loading"] .ct-btn-ic1,
+.ct-btn[data-state="success"] .ct-btn-ic1 { right: -120px; }
+.ct-btn-desk:hover .ct-btn-ic2,
+.ct-btn[data-state="loading"] .ct-btn-ic2,
+.ct-btn[data-state="success"] .ct-btn-ic2 { left: calc(100% - 23px); }
+.ct-btn:not(.ct-btn-desk), .ct-btn[data-state="loading"], .ct-btn[data-state="success"] { cursor: unset; }
+.ct-spin { animation: ct-spin 6s linear infinite; }
+@keyframes ct-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+/* ---------- §2.2 Image + contact card ---------- */
+.ct-img { display: flex; flex-direction: column; padding: 120px 20px 0; overflow: clip; }
+.ct-img-in { display: flex; flex-direction: column; }
+.ct-img-c { position: relative; height: 100vh; }
+.ct-par-pad { height: 100%; padding: 0 20px; }
+.ct-par { position: relative; width: 100%; height: 100%; overflow: hidden; background: var(--white); }
+.ct-par img { display: block; width: 100%; max-width: none; object-fit: cover; object-position: 50% 50%; will-change: transform; }
+.ct-info { position: absolute; inset: 0; display: flex; flex-direction: row; align-items: center; }
+.ct-info-sp { flex: 6 0 0; min-width: 0; }
+.ct-info-sec { flex: 5 0 0; min-width: 0; display: flex; flex-direction: column; justify-content: center; padding: 0 20px; }
+.ct-info-sp2 { flex: 1 0 0; min-width: 0; }
+.ct-card { background: var(--white); padding: 56px; display: flex; flex-direction: column; gap: 56px; }
+.ct-block { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.ct-label {
+  font-size: 14px; font-weight: 700; line-height: 22.4px; letter-spacing: 0.28px;
+  color: var(--label); text-transform: uppercase;
+}
+.ct-label-addr { width: 250px; }
+.ct-val { font-size: 32px; font-weight: 700; line-height: 41.6px; letter-spacing: -0.32px; color: var(--black); white-space: nowrap; }
+.ct-link { position: relative; display: flex; overflow: clip; }
+.ct-link-line { position: absolute; bottom: 0; left: -1px; right: 100%; height: 2px; background: var(--black); }
+.ct-desk .ct-link-line { transition: right 0.6s var(--spring-06); }
+.ct-desk .ct-link:hover .ct-link-line { right: 0; }
+.ct-addr { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+.ct-addr-line { overflow: clip; }
+/* §4 address chars: spring 0.8 (CharRise hardcodes 0.6; its inline delay is kept). */
+.ct-addr .char-rise-c { transition-duration: 0.8s !important; transition-timing-function: var(--spring-08) !important; }
+
+/* ---------- §2.3 Studio Notes ---------- */
+.ct-notes { display: flex; padding: 0 20px; }
+.ct-notes-left { flex: 2 0 0; min-width: 0; }
+.ct-notes-sticky {
+  position: sticky; top: 0; height: 100vh; z-index: 1;
+  display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start;
+  gap: 64px; padding: 0 20px 40px;
+}
+.ct-thoughts { font-size: 14px; font-weight: 500; line-height: 23.8px; color: #757575; }
+.ct-notes-mid { flex: 8 0 0; min-width: 0; display: flex; flex-direction: column; }
+.ct-notes-right { flex: 2 0 0; min-width: 0; }
+.ct-notes-sp { height: 200px; }
+.ct-h2 { font-size: 104px; font-weight: 700; line-height: 104px; letter-spacing: -4.16px; color: var(--black); }
+.ct-notes-c { padding-bottom: 40px; }
+.ct-blog { display: flex; flex-direction: row; }
+.ct-note { flex: 1 0 0; min-width: 0; display: flex; flex-direction: column; gap: 32px; padding: 0 20px; }
+.ct-note-imgc { display: flex; flex-direction: column; overflow: clip; }
+.ct-note-img { display: block; }
+.ct-note-reveal { width: 100%; aspect-ratio: 426.7 / 566.4; }
+.ct-note-text { display: flex; flex-direction: column; gap: 12px; }
+.ct-date { width: 90%; font-size: 14px; font-weight: 500; line-height: 23.8px; color: var(--label); }
+.ct-note-inner { display: flex; flex-direction: column; gap: 8px; }
+.ct-note-title { font-size: 26px; font-weight: 500; line-height: 36.4px; letter-spacing: -0.26px; color: var(--black); }
+.ct-note-title a { color: var(--black); text-decoration: none; }
+.ct-note-title strong { font-weight: 700; }
+.ct-excerpt { width: 90%; max-width: 480px; font-size: 16px; font-weight: 500; line-height: 25.6px; color: var(--body); }
+
+/* ---------- §6 Tablet ---------- */
+@media (max-width: 1199.98px) {
+  .ct-pad { padding: 0 15px; }
+  .ct-bar { height: 72px; }
+
+  .ct-talk { padding: 0 15px; }
+  .ct-sticky { flex: 1 0 0; }
+  .ct-talk-main { flex: 4 0 0; gap: 80px; padding: 160px 0 0; }
+  .ct-talk-side { flex: 1 0 0; }
+  .ct-h1 { font-size: 120px; line-height: 120px; letter-spacing: -6px; }
+  .ct-form { gap: 72px; }
+  .ct-group { row-gap: 16px; }
+
+  .ct-img { padding: 80px 15px 0; }
+  .ct-img-c { height: auto; display: flex; flex-direction: column; gap: 64px; }
+  .ct-par-pad { height: 640px; padding: 0 15px; }
+  .ct-info { position: static; }
+  .ct-info-sp { flex: 1 0 0; }
+  .ct-info-sec { flex: 4 0 0; padding: 0 15px; }
+  .ct-info-sp2 { flex: 1 0 0; }
+  .ct-card { padding: 0; gap: 48px; }
+  .ct-val { font-size: 25px; line-height: 35px; letter-spacing: -0.25px; }
+
+  .ct-notes { padding: 0 15px; }
+  .ct-notes-left { flex: 1 0 0; }
+  .ct-notes-mid { flex: 4 0 0; }
+  .ct-notes-right { flex: 1 0 0; }
+  .ct-notes-sp { height: 160px; }
+  .ct-h2 { font-size: 80px; line-height: 80px; letter-spacing: -3.2px; }
+  .ct-notes-c { padding-bottom: 30px; }
+  .ct-note { padding: 0 15px; }
+  .ct-note-reveal { aspect-ratio: auto; height: 800px; }
+  .ct-note-title { font-size: 25px; line-height: 35px; letter-spacing: -0.25px; }
+}
+
+/* ---------- §7 Phone ---------- */
+@media (max-width: 809.98px) {
+  .ct-pad { padding: 0 10px; }
+  .ct-bar { height: 64px; }
+
+  .ct-talk { padding: 0 10px; }
+  .ct-sticky, .ct-talk-side { display: none; }
+  .ct-talk-main { flex: 1 0 0; gap: 64px; padding: 120px 0 0; }
+  .ct-h1 { font-size: 80px; line-height: 80px; letter-spacing: -4px; }
+  .ct-form { gap: 64px; }
+  .ct-f-440, .ct-f-240, .ct-f-480, .ct-f-full { width: 95%; }
+  .ct-btn { width: 100%; align-self: stretch; }
+
+  .ct-img { padding: 40px 10px 0; }
+  .ct-par-pad { height: 480px; padding: 0 10px; }
+  .ct-info-sp, .ct-info-sp2 { display: none; }
+  .ct-info-sec { flex: 1 0 0; padding: 0 10px; }
+  .ct-val { font-size: 24px; line-height: 33.6px; letter-spacing: -0.24px; }
+
+  .ct-notes { flex-direction: column; gap: 40px; padding: 0 10px; }
+  .ct-notes-left { order: 2; flex: none; }
+  .ct-notes-mid { order: 1; flex: none; }
+  .ct-notes-right { display: none; }
+  .ct-notes-sticky { height: auto; justify-content: flex-start; gap: 32px; padding: 0 10px 20px; }
+  .ct-notes-sp { height: 120px; }
+  .ct-h2 { font-size: 64px; line-height: 64px; letter-spacing: -2.56px; }
+  .ct-notes-c { padding-bottom: 20px; }
+  .ct-note { padding: 0 10px; }
+  .ct-note-reveal { aspect-ratio: 426.7 / 566.4; height: auto; }
+  .ct-note-title { font-size: 24px; line-height: 33.6px; letter-spacing: -0.24px; }
+}
