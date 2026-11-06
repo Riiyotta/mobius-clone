@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.3 - 2026-11-06
+
+Reviewed by the repository owner (Riya Ghosh, 2026-11-06): `status` / `designReviewStatus` are now `design-reviewed` with a
+`designReview` record (the N0 engine's own reviewed state); the open human-review label is removed. `productionApproved` stays
+`false` (production approval is a separate sign-off) and the design-policy approval block is unchanged.
+- verify_all: new `review` check (both statuses `design-reviewed`, `designReview.by` a named human, YYYY-MM-DD date, note,
+  productionApproved false). Parity exceptions, if ever recorded, are `recorded exception` with a named human `reviewedBy`.
+- prove_drift: 6 new `review` cases (record removed, agent as reviewer, date missing, pending status without a record,
+  status mismatch, productionApproved true).
+- Earlier entries below that mention `pending human approval` / `design-review-pending` are history, superseded by this entry.
+
 ## 1.1.2
 
 - "fix mobius": the four weakest 1.1.1 sections were diagnosed from live / clone / diff images, the real causes fixed, and the parity that

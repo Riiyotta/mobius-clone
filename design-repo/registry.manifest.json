@@ -1,12 +1,12 @@
 {
   "repositoryId": "mobius-studio-template-clone.design-repo",
   "title": "Design-repo for a design-faithful clone of a design-studio website template",
-  "repositoryVersion": "1.1.2",
+  "repositoryVersion": "1.1.3",
   "pageSpecVersion": "1.0.0",
   "allowlistVersion": "1.0.0",
   "tokenCatalogVersion": "1.0.0",
   "versionFieldNote": "allowlistVersion and tokenCatalogVersion are machine-checked by extraction/verify_all.py (must equal tokens/llm/component-allowlist.json and tokens/llm/token-catalog.json versions); pageSpecVersion is machine-checked against the schema const. repositoryVersion is documentation-only and hand-maintained.",
-  "status": "design-review-pending",
+  "status": "design-reviewed",
   "productionApproved": false,
   "category": "portfolio",
   "productDomain": "creative-design-studio-portfolio",
@@ -131,5 +131,11 @@
     "primitivesDir": "primitives/",
     "designPolicy": "policy/design-policy.json",
     "policyHash": "extraction/policy_hash.py"
+  },
+  "designReviewStatus": "design-reviewed",
+  "designReview": {
+    "by": "Riya Ghosh (repository owner)",
+    "date": "2026-11-06",
+    "note": "Reviewed by the repository owner; the owner instructed (chat, 2026-11-06) that the open human-review label be removed."
   }
 }

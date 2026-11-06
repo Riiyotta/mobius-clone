@@ -3,7 +3,7 @@
 AI-ready design-repo extracted from the clone in the parent folder (a design-faithful rebuild of a commercial
 no-code design-studio template). It describes what the site renders and how it behaves: tokens, primitives,
 components, semantic section contracts, page templates, a PageSpec schema, a semantic validator and an
-adversarial suite. Status: `design-review-pending`, `productionApproved: false`.
+adversarial suite. Status: `design-reviewed` (reviewed by the repository owner, Riya Ghosh, on 2026-11-06), not production-approved (`productionApproved: false`).
 
 ## Counts (recomputed from disk by `extraction/verify_all.py`)
 
@@ -150,7 +150,7 @@ counterpart (30 in the original sitemap plus its 404 page); live and clone docum
   slideshow enters the view on both sides. Full wording: `cloneParity.captureState` and the harness header. `--freeze off` reproduces the earlier
   unfrozen capture.
 - The 1.1.1 finding stands: `media.showreel`, `media.studio-image-strip`, `editorial.notes-index` were animation timing (unfrozen 0.58-0.81 across re-runs).
-- No parity exception is recorded in any run (an exception could only be added as pending human approval, `approvedBy: null`).
+- No parity exception is recorded in any run (an exception could only be added as a `recorded exception` with a named human `reviewedBy`).
 - Every recorded number is pinned (sha256) to a tracked result file in `extraction/parity-results/` and `verify_all` re-derives it
   (`parity-evidence` for 1440 / 9 routes, `parity-runs` for the other runs). The pre-fix measurements are tracked as `*-before-fix.json`. Live
   screenshots are never committed.

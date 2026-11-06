@@ -535,8 +535,8 @@ def check_parity_evidence():
     below = {(r["route"], s["section"], s["instance"]) for r in cp["routes"] for s in r["sections"] if s["score"] < GATE}
     exc = cp.get("exceptions", [])
     for e in exc:
-        if e.get("status") != "pending human approval" or e.get("approvedBy") is not None:
-            bad.append(f"exception {e.get('section')}: must be status 'pending human approval' with approvedBy null")
+        if e.get("status") != "recorded exception" or not _named_human(e.get("reviewedBy")) or not e.get("reviewedOn"):
+            bad.append(f"exception {e.get('section')}: must be status 'recorded exception' with a named human reviewedBy and reviewedOn")
         if (e.get("route"), e.get("section"), e.get("instance", 0)) not in below:
             bad.append(f"exception {e.get('section')} is for a section that is not below the gate (exceptions are never added to pass)")
     rec("parity-evidence", not bad, f"{len(ev.get('beforeUnfrozen', []))} before + {len(ev.get('phaseEvidence', []))} phase result files + official + repeat pinned by sha256; recorded scores == official result file; repeat within {ev.get('repeatTolerance')}; {len(exc)} exceptions" if not bad else bad[:6])
@@ -608,8 +608,8 @@ def check_parity_runs():
                     bad.append(f"{rid}: repeat result file is not the same frozen viewport")
         below_all = {key(r, s) for r in run["routes"] for s in r["sections"] if s["score"] < GATE}
         for e in run.get("exceptions", []):
-            if e.get("status") != "pending human approval" or e.get("approvedBy") is not None:
-                bad.append(f"{rid}: exception {e.get('section')} must be status 'pending human approval' with approvedBy null")
+            if e.get("status") != "recorded exception" or not _named_human(e.get("reviewedBy")) or not e.get("reviewedOn"):
+                bad.append(f"{rid}: exception {e.get('section')} must be status 'recorded exception' with a named human reviewedBy and reviewedOn")
             if (e.get("route"), e.get("section"), e.get("instance", 0)) not in below_all:
                 bad.append(f"{rid}: exception {e.get('section')} is for a section that is not below the gate (never added to pass)")
     # coverage: desktop 1440 must cover every served route (the 9 representative routes live in cloneParity)
@@ -646,6 +646,27 @@ def check_generated_examples(examples):
 BOUND_POLICY = {"policyId": "n0-design-constraints-common", "policyVersion": "0.1.0", "commonIrVersion": "0.5", "enforcementMode": "hard-and-soft"}
 LOCAL_EXTENSION = {"ref": "policy/design-policy.json", "policyId": "portfolio-site-web", "policyVersion": "1.0.0"}
 POLICY_DOMAIN = "creative-design-studio-portfolio"
+
+_AGENT_NAMES = re.compile(r"claude|anthropic|\bai\b|agent|\bbot\b|assistant|automat|gpt|llm|\bmodel\b|script", re.I)
+def _named_human(name):
+    return isinstance(name, str) and bool(name.strip()) and not _AGENT_NAMES.search(name)
+
+def check_review(man):
+    """Review state: the N0 engine's reviewed state (design-reviewed + a designReview record by a named human);
+    productionApproved stays false (production approval is a separate sign-off)."""
+    bad = []
+    if man.get("status") != "design-reviewed" or man.get("designReviewStatus") != "design-reviewed":
+        bad.append(f"status/designReviewStatus must both be 'design-reviewed' (got {man.get('status')!r} / {man.get('designReviewStatus')!r})")
+    dr = man.get("designReview")
+    if not isinstance(dr, dict):
+        bad.append("designReview record missing")
+    else:
+        if not _named_human(dr.get("by")): bad.append("designReview.by must be a named human (an agent never records a review)")
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(dr.get("date", ""))): bad.append("designReview.date must be YYYY-MM-DD")
+        if not str(dr.get("note", "")).strip(): bad.append("designReview.note missing")
+    if man.get("productionApproved") is not False:
+        bad.append("productionApproved must stay false (production approval is a separate sign-off)")
+    rec("review", not bad, "design-reviewed by a named human, productionApproved false" if not bad else "; ".join(bad))
 
 def check_design_policy(man):
     """Portfolio category + common-policy binding. Approval is pending: the check fails if any file claims a recorded decision."""
@@ -713,7 +734,7 @@ def main():
                      ("semantic-examples", lambda: check_semantic(examples)), ("allowlist-parity", lambda: check_allowlist(contracts, man)), ("citations", check_citations),
                      ("contracts", lambda: check_contracts(contracts)), ("asset-pins", check_asset_pins), ("tokens", lambda: check_tokens(man)), ("source-brand", check_source_brand),
                      ("routes", lambda: check_routes(contracts)), ("graph-parity", check_graph), ("counts", lambda: check_counts(man, contracts)), ("wrapper-gate", check_gate),
-                     ("clone-parity", check_parity), ("parity-evidence", check_parity_evidence), ("parity-runs", check_parity_runs), ("generated-examples", lambda: check_generated_examples(examples)), ("design-policy", lambda: check_design_policy(man))):
+                     ("review", lambda: check_review(man)), ("clone-parity", check_parity), ("parity-evidence", check_parity_evidence), ("parity-runs", check_parity_runs), ("generated-examples", lambda: check_generated_examples(examples)), ("design-policy", lambda: check_design_policy(man))):
         try:
             fn()
         except Exception as e:
