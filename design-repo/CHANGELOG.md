@@ -5,12 +5,12 @@
 - "fix mobius": the four weakest 1.1.1 sections were diagnosed from live / clone / diff images, the real causes fixed, and the parity that
   1.1.1 had skipped was measured: tablet 768x1024, phone 390x844 and desktop 1440 for every remaining route. Everything uses the same
   symmetric freeze and the same 0.80 per-section gate; every run was made twice and the repeat is pinned too.
-- 1440 weak sections (before 1.1.1 -> now): `/404 hero.not-found` 0.880 -> 0.998 (harness artefact: the live gradient shapes are script-driven
-  and were never frozen; the harness now pins rotating elements symmetrically, no src change), `/ testimonial.client-reflections`
+- 1440 weak sections (before 1.1.1 -> now): `/404 hero.not-found` 0.880 -> 0.997 (harness artefact: the live gradient shapes are script-driven
+  and were never frozen; the harness now pins rotating elements symmetrically, no src change; residual: the live page starts its rotation 0.2-0.3 s after the clone, so this one section scores 0.98-0.998 across runs), `/ testimonial.client-reflections`
   0.927 -> 0.991 and `/ features.process-timeline` 0.945 -> 0.990 (real mismatch: the original's 10 s slideshow only plays while on screen, the clone
   started it at mount and was one slide ahead; fixed in `src/components/home/Testimonials.jsx`), `/ team.founders` 0.965 -> 0.995 (real mismatch:
   the original always draws a 50% black backdrop masked by a bottom-up gradient over each portrait, the clone only on hover; fixed in
-  `.hs-tc-bd`). Mean over the 53 sections 0.9889 -> 0.9937, lowest section 0.880 -> 0.976, two runs within 0.0021.
+  `.hs-tc-bd`). Mean over the 53 sections 0.9889 -> 0.9936, lowest section 0.880 -> 0.976, two runs within 0.0019.
 - Tablet 768 (56 sections): first measurement 20 sections below the gate, mean 0.842 (lowest 0.454); now 0, mean 0.997 (lowest 0.973).
   Phone 390 (56 sections): first measurement 5 below the gate, mean 0.950 (lowest 0.708); now 0, mean 0.995 (lowest 0.974).
   Desktop 1440 remaining 22 routes (183 sections): 0 below the gate, mean 0.9945, lowest 0.975 (no src change needed). Every one of the

@@ -1,6 +1,6 @@
 {
  "tool": "extraction/parity_harness.mjs",
- "measuredAt": "2026-11-06T11:09:26.470Z",
+ "measuredAt": "2026-11-06T12:04:36.650Z",
  "captureState": {
   "freeze": true,
   "phaseMs": 0,
@@ -2020,7 +2020,7 @@
       "movers": [
        {
         "el": "ul.",
-        "vx": -19.8,
+        "vx": -26.4,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2040,7 +2040,7 @@
       "movers": [
        {
         "el": "ul.st-gal-track",
-        "vx": -99.5,
+        "vx": -99.4,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2062,49 +2062,7 @@
       "movers": [
        {
         "el": "ul.",
-        "vx": -26.4,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 728,
-        "heightPx": 480
-       }
-      ],
-      "rotators": []
-     },
-     "clone": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 0,
-      "movers": [
-       {
-        "el": "ul.st-gal-track",
-        "vx": -98.8,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 6563,
-        "heightPx": 480
-       }
-      ],
-      "rotators": []
-     }
-    },
-    "1650": {
-     "original": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 0,
-      "movers": [
-       {
-        "el": "ul.",
-        "vx": -19.9,
+        "vx": -19.4,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2137,7 +2095,7 @@
       "rotators": []
      }
     },
-    "2674": {
+    "1650": {
      "original": {
       "videos": 0,
       "videoSeeks": [],
@@ -2147,48 +2105,6 @@
        {
         "el": "ul.",
         "vx": -19.8,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 728,
-        "heightPx": 480
-       }
-      ],
-      "rotators": []
-     },
-     "clone": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 0,
-      "movers": [
-       {
-        "el": "ul.st-gal-track",
-        "vx": -98.7,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 6563,
-        "heightPx": 480
-       }
-      ],
-      "rotators": []
-     }
-    },
-    "7024": {
-     "original": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 0,
-      "movers": [
-       {
-        "el": "ul.",
-        "vx": -99.1,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2221,7 +2137,7 @@
       "rotators": []
      }
     },
-    "7833": {
+    "2674": {
      "original": {
       "videos": 0,
       "videoSeeks": [],
@@ -2230,7 +2146,7 @@
       "movers": [
        {
         "el": "ul.",
-        "vx": -100,
+        "vx": -19.9,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2250,7 +2166,91 @@
       "movers": [
        {
         "el": "ul.st-gal-track",
-        "vx": -98.6,
+        "vx": -99,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 6563,
+        "heightPx": 480
+       }
+      ],
+      "rotators": []
+     }
+    },
+    "7024": {
+     "original": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 0,
+      "movers": [
+       {
+        "el": "ul.",
+        "vx": -99.4,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 728,
+        "heightPx": 480
+       }
+      ],
+      "rotators": []
+     },
+     "clone": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 0,
+      "movers": [
+       {
+        "el": "ul.st-gal-track",
+        "vx": -99,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 6563,
+        "heightPx": 480
+       }
+      ],
+      "rotators": []
+     }
+    },
+    "7833": {
+     "original": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 0,
+      "movers": [
+       {
+        "el": "ul.",
+        "vx": -98.9,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 728,
+        "heightPx": 480
+       }
+      ],
+      "rotators": []
+     },
+     "clone": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 0,
+      "movers": [
+       {
+        "el": "ul.st-gal-track",
+        "vx": -92.8,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2272,7 +2272,7 @@
       "movers": [
        {
         "el": "ul.",
-        "vx": -98.7,
+        "vx": -99.2,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2314,7 +2314,7 @@
       "movers": [
        {
         "el": "ul.",
-        "vx": -98.5,
+        "vx": -99.1,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2334,7 +2334,7 @@
       "movers": [
        {
         "el": "ul.st-gal-track",
-        "vx": -98.6,
+        "vx": -98.9,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2356,7 +2356,7 @@
       "movers": [
        {
         "el": "ul.",
-        "vx": -99.4,
+        "vx": -99.1,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2376,7 +2376,7 @@
       "movers": [
        {
         "el": "ul.st-gal-track",
-        "vx": -98.7,
+        "vx": -99.5,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2398,7 +2398,7 @@
       "movers": [
        {
         "el": "ul.",
-        "vx": -99,
+        "vx": -99.4,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2440,7 +2440,7 @@
       "movers": [
        {
         "el": "ul.",
-        "vx": -98.9,
+        "vx": -99.2,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2460,7 +2460,7 @@
       "movers": [
        {
         "el": "ul.st-gal-track",
-        "vx": -99.4,
+        "vx": -98.9,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2482,13 +2482,24 @@
       "movers": [
        {
         "el": "ul.",
-        "vx": -99.5,
+        "vx": -99.1,
         "vy": 0,
         "firstItemAlignPx": [
          0,
          0
         ],
         "widthPx": 728,
+        "heightPx": 480
+       },
+       {
+        "el": "li.ticker-item",
+        "vx": 8699.4,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 480,
         "heightPx": 480
        }
       ],
@@ -2502,7 +2513,7 @@
       "movers": [
        {
         "el": "ul.st-gal-track",
-        "vx": -99,
+        "vx": -99.2,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -3412,8 +3423,8 @@
    "template": "not-found",
    "docHeightOriginal": 3148,
    "docHeightClone": 3148,
-   "average": 0.9986,
-   "minSection": 0.9963,
+   "average": 0.9979,
+   "minSection": 0.9941,
    "perSectionGatePass": true,
    "averageGatePass": true,
    "belowGate": [],
@@ -3428,13 +3439,13 @@
       "rotators": [
        {
         "el": "div.framer-ygpifn",
-        "degPerSec": 24.99,
-        "pinnedDeg": -173.8
+        "degPerSec": 25.72,
+        "pinnedDeg": 159.9
        },
        {
         "el": "div.framer-191sieh",
-        "degPerSec": -34.99,
-        "pinnedDeg": 3.9
+        "degPerSec": -36,
+        "pinnedDeg": 40.7
        }
       ]
      },
@@ -3447,13 +3458,13 @@
       "rotators": [
        {
         "el": "div.nf-shape",
-        "degPerSec": 26.37,
-        "pinnedDeg": -176.4
+        "degPerSec": 26.08,
+        "pinnedDeg": 151
        },
        {
         "el": "div.nf-shape",
-        "degPerSec": -36.92,
-        "pinnedDeg": 7.6
+        "degPerSec": -36.52,
+        "pinnedDeg": 53.2
        }
       ]
      }
@@ -3468,13 +3479,13 @@
       "rotators": [
        {
         "el": "div.framer-ygpifn",
-        "degPerSec": 26.38,
-        "pinnedDeg": -183.7
+        "degPerSec": 25.71,
+        "pinnedDeg": 159.9
        },
        {
         "el": "div.framer-191sieh",
-        "degPerSec": -36.93,
-        "pinnedDeg": 17.7
+        "degPerSec": -33.2,
+        "pinnedDeg": 10.5
        }
       ]
      },
@@ -3497,8 +3508,8 @@
       "rotators": [
        {
         "el": "div.framer-ygpifn",
-        "degPerSec": 26.34,
-        "pinnedDeg": -185.3
+        "degPerSec": 25.72,
+        "pinnedDeg": 159.9
        }
       ]
      },
@@ -3539,9 +3550,9 @@
      "offsets": [
       0
      ],
-     "score": 0.9963,
+     "score": 0.9941,
      "shotScores": [
-      0.9963
+      0.9941
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",

@@ -2765,7 +2765,7 @@
   "wrapperWhitelistNote": "Empty: at 1440 no HERO exceeds 1800px (max 911.9) and no in-flow section exceeds 50% of a page with >= 3 sections (max: contacts form 34.8%). The 100vh index pages (/work, /feed) have < 3 in-flow sections and are skipped by rule.",
   "cloneParity": {
     "tool": "extraction/parity_harness.mjs",
-    "measuredAt": "2026-11-06T10:58:26.626Z",
+    "measuredAt": "2026-11-06T11:58:31.843Z",
     "captureState": {
       "freeze": true,
       "phaseMs": 0,
@@ -2787,7 +2787,7 @@
     "overall": {
       "routes": 9,
       "sections": 53,
-      "meanSectionScore": 0.9937,
+      "meanSectionScore": 0.9936,
       "sectionsBelowGate": 0
     },
     "routes": [
@@ -2796,7 +2796,7 @@
         "template": "home",
         "docHeightOriginal": 23544,
         "docHeightClone": 23544,
-        "average": 0.9929,
+        "average": 0.9927,
         "minSection": 0.9784,
         "perSectionGatePass": true,
         "averageGatePass": true,
@@ -2805,7 +2805,7 @@
           {
             "section": "hero.studio-wordmark",
             "instance": 0,
-            "score": 0.9978
+            "score": 0.997
           },
           {
             "section": "content.statement-scatter",
@@ -2815,12 +2815,12 @@
           {
             "section": "media.showreel",
             "instance": 0,
-            "score": 0.9966
+            "score": 0.9968
           },
           {
             "section": "features.services-index",
             "instance": 0,
-            "score": 0.9929
+            "score": 0.9928
           },
           {
             "section": "social-proof.studio-numbers",
@@ -2830,7 +2830,7 @@
           {
             "section": "social-proof.awards-list",
             "instance": 0,
-            "score": 0.9975
+            "score": 0.9966
           },
           {
             "section": "team.founders",
@@ -2845,7 +2845,7 @@
           {
             "section": "features.process-timeline",
             "instance": 0,
-            "score": 0.9902
+            "score": 0.9901
           },
           {
             "section": "testimonial.client-reflections",
@@ -2860,7 +2860,7 @@
           {
             "section": "editorial.studio-notes-teaser",
             "instance": 0,
-            "score": 0.9987
+            "score": 0.9986
           },
           {
             "section": "conversion.contact-form",
@@ -2907,7 +2907,7 @@
         "template": "case-detail",
         "docHeightOriginal": 6221,
         "docHeightClone": 6221,
-        "average": 0.9949,
+        "average": 0.995,
         "minSection": 0.9902,
         "perSectionGatePass": true,
         "averageGatePass": true,
@@ -2916,7 +2916,7 @@
           {
             "section": "hero.case-intro",
             "instance": 0,
-            "score": 0.9964
+            "score": 0.9963
           },
           {
             "section": "content.marked-chapter",
@@ -2941,7 +2941,7 @@
           {
             "section": "content.marked-chapter",
             "instance": 2,
-            "score": 0.9933
+            "score": 0.9934
           },
           {
             "section": "content.case-results",
@@ -2951,12 +2951,12 @@
           {
             "section": "content.case-credits",
             "instance": 0,
-            "score": 0.9981
+            "score": 0.9986
           },
           {
             "section": "navigation.case-teaser",
             "instance": 0,
-            "score": 0.9981
+            "score": 0.9986
           },
           {
             "section": "shell.site-footer",
@@ -2970,8 +2970,8 @@
         "template": "studio",
         "docHeightOriginal": 9661,
         "docHeightClone": 9661,
-        "average": 0.9931,
-        "minSection": 0.9816,
+        "average": 0.9932,
+        "minSection": 0.9817,
         "perSectionGatePass": true,
         "averageGatePass": true,
         "belowGate": [],
@@ -2999,12 +2999,12 @@
           {
             "section": "listing.career-openings",
             "instance": 0,
-            "score": 0.9816
+            "score": 0.9817
           },
           {
             "section": "navigation.case-teaser",
             "instance": 0,
-            "score": 0.9935
+            "score": 0.994
           },
           {
             "section": "shell.site-footer",
@@ -3018,7 +3018,7 @@
         "template": "contacts",
         "docHeightOriginal": 4905,
         "docHeightClone": 4905,
-        "average": 0.9904,
+        "average": 0.9903,
         "minSection": 0.9762,
         "perSectionGatePass": true,
         "averageGatePass": true,
@@ -3037,7 +3037,7 @@
           {
             "section": "editorial.studio-notes-teaser",
             "instance": 0,
-            "score": 0.9958
+            "score": 0.9957
           },
           {
             "section": "shell.site-footer",
@@ -3070,7 +3070,7 @@
         "docHeightOriginal": 4801,
         "docHeightClone": 4801,
         "average": 0.9922,
-        "minSection": 0.9868,
+        "minSection": 0.9867,
         "perSectionGatePass": true,
         "averageGatePass": true,
         "belowGate": [],
@@ -3078,7 +3078,7 @@
           {
             "section": "hero.article-header",
             "instance": 0,
-            "score": 0.9868
+            "score": 0.9867
           },
           {
             "section": "media.article-cover",
@@ -3088,7 +3088,7 @@
           {
             "section": "content.marked-chapter",
             "instance": 0,
-            "score": 0.992
+            "score": 0.9919
           },
           {
             "section": "content.pull-quote",
@@ -3098,7 +3098,7 @@
           {
             "section": "content.marked-chapter",
             "instance": 1,
-            "score": 0.9985
+            "score": 0.9984
           },
           {
             "section": "editorial.read-more",
@@ -3117,8 +3117,8 @@
         "template": "legal",
         "docHeightOriginal": 6137,
         "docHeightClone": 6138,
-        "average": 0.9968,
-        "minSection": 0.9906,
+        "average": 0.9967,
+        "minSection": 0.9905,
         "perSectionGatePass": true,
         "averageGatePass": true,
         "belowGate": [],
@@ -3136,12 +3136,12 @@
           {
             "section": "faq.questions-answered",
             "instance": 0,
-            "score": 0.9982
+            "score": 0.9981
           },
           {
             "section": "shell.site-footer",
             "instance": 0,
-            "score": 0.9906
+            "score": 0.9905
           }
         ]
       },
@@ -3150,7 +3150,7 @@
         "template": "not-found",
         "docHeightOriginal": 3288,
         "docHeightClone": 3288,
-        "average": 0.9957,
+        "average": 0.9952,
         "minSection": 0.991,
         "perSectionGatePass": true,
         "averageGatePass": true,
@@ -3159,12 +3159,12 @@
           {
             "section": "hero.not-found",
             "instance": 0,
-            "score": 0.9979
+            "score": 0.9965
           },
           {
             "section": "faq.questions-answered",
             "instance": 0,
-            "score": 0.9982
+            "score": 0.9981
           },
           {
             "section": "shell.site-footer",
@@ -3177,16 +3177,16 @@
     "evidence": {
       "official": {
         "path": "extraction/parity-results/freeze-official.json",
-        "sha256": "99ab8d6707e73470f6356176708e80f5b941ab165832db32df96cdd77675b26e",
+        "sha256": "2c2ad473296cbd849e3c3e2e82108626b0d4fe97735c042268ba70add7ef13dc",
         "what": "full run at 1.1.2, 9 routes / 53 sections, freeze on (incl. rotation pins), phase 0, with text-free geometry"
       },
       "repeat": {
         "path": "extraction/parity-results/freeze-repeat.json",
-        "sha256": "575a1861a9f65b613fbc7eae94c0c5df7bc739036e15291276eea5d74611e091",
+        "sha256": "3e5afb7a97d119c096ed0f45e8491e6e082a1f278b44c0464f1e98f4c23cdaf6",
         "what": "identical second full run"
       },
       "repeatTolerance": 0.02,
-      "repeatMaxSectionDifference": 0.0021,
+      "repeatMaxSectionDifference": 0.0019,
       "beforeUnfrozen": [
         {
           "path": "extraction/parity-results/unfrozen-run1.json",
@@ -3234,8 +3234,8 @@
         "recordedIn1_1_0": 0.6249,
         "unfrozenRerun1": 0.6318,
         "unfrozenRerun2": 0.7094,
-        "frozenOfficial": 0.9966,
-        "frozenRepeat": 0.9964,
+        "frozenOfficial": 0.9968,
+        "frozenRepeat": 0.9968,
         "frozenAt1_1_1": 0.9964
       },
       {
@@ -3266,7 +3266,7 @@
       },
       "meanSectionScore": {
         "before": 0.9699,
-        "after": 0.9937
+        "after": 0.9936
       },
       "minSection": {
         "before": 0.6249,
@@ -3407,7 +3407,7 @@
       }
     },
     "exceptions": [],
-    "interpretation": "At 1440x900 every one of the 53 sections on the 9 representative routes is at or above the 0.80 gate (minimum 0.9762) and every page average is >= 0.99; two full runs agree within 0.0021 per section. The four weakest sections of 1.1.1 were diagnosed from live / clone / diff images: /404 hero.not-found 0.880 was a harness artefact (the live gradient shapes are script-driven and were not frozen; now pinned symmetrically), / testimonial.client-reflections 0.927 and features.process-timeline 0.945 came from the clone's autoplay starting at mount instead of when the slideshow enters the view (src fix), and / team.founders 0.965 from the missing always-on portrait backdrop (src fix). No parity exception is recorded. Tablet, phone and the remaining 22 routes are in cloneParityRuns.",
+    "interpretation": "At 1440x900 every one of the 53 sections on the 9 representative routes is at or above the 0.80 gate (minimum 0.9762) and every page average is >= 0.99; two full runs agree within 0.0019 per section. The four weakest sections of 1.1.1 were diagnosed from live / clone / diff images: /404 hero.not-found 0.880 was a harness artefact (the live gradient shapes are script-driven and were not frozen; now pinned symmetrically), / testimonial.client-reflections 0.927 and features.process-timeline 0.945 came from the clone's autoplay starting at mount instead of when the slideshow enters the view (src fix), and / team.founders 0.965 from the missing always-on portrait backdrop (src fix). No parity exception is recorded. Tablet, phone and the remaining 22 routes are in cloneParityRuns.",
     "notMeasured": [
       "hover/drag/interaction states (the mobile menu overlay was compared once open at 390 and 768 wide, similarity 0.9999, not a pinned run)",
       "motion timing curves (see recon specs instead)",
@@ -3421,10 +3421,10 @@
         "instance": 0,
         "cause": "harness artefact (time-dependent shot), not a clone mismatch",
         "before1_1_1": 0.88,
-        "after": 0.9979,
-        "repeat": 0.9958,
+        "after": 0.9965,
+        "repeat": 0.9978,
         "diagnosis": "Layout, text rows and the digit shapes already matched (text rows 64/65 matched at IoU 0.99). The gradient inside the 404 digits is two rotating shapes (14 s and 10 s per turn). In the clone they are CSS animations and were paused at 0 ms; on the live site they are script-driven (no CSS/WAAPI animation) and kept turning, so the two screenshots caught different gradient angles. Angular velocities match (live 25.8 / -36.0 deg/s, clone 25.7 / -36.0), and extrapolating the live angles back to the page time origin lands on the clone start angles (-171 / 0 deg) within 0.3 s, i.e. the same animation.",
-        "fix": "parity_harness.mjs: rotating elements are detected and pinned symmetrically on both sides (rotation pin, step 3b). No src change."
+        "fix": "parity_harness.mjs: rotating elements are detected, fitted (angle against time, one reading per animation frame for 700 ms) and pinned symmetrically on both sides (rotation pin, step 3b). No src change. Residual: the live page starts its rotation about 0.2-0.3 s after the clone (its hydration is later), so the pinned angles differ by 5-10 deg and the section scores 0.98-0.998 across runs; the gradient is blurred 53 px, so this is the remaining noise of this one section."
       },
       {
         "route": "/",
@@ -3433,7 +3433,7 @@
         "cause": "real clone behaviour mismatch (autoplay clock) plus a harness-visible consequence",
         "before1_1_1": 0.9271,
         "after": 0.9911,
-        "repeat": 0.991,
+        "repeat": 0.9911,
         "diagnosis": "The two sides showed different slides. Measured on the original: left at the top for 13 s, the slideshow still shows slide 1 when scrolled to and advances about 10 s after it came into view (it only plays while on screen). The clone started its 10 s timer at page mount, so by the time the section was reached it had already advanced. Text rows, image rects and computed typography were identical.",
         "fix": "src/components/home/Testimonials.jsx: the 10 s countdown now runs only while the slideshow intersects the viewport and restarts on every change and (re)entry."
       },
@@ -3443,7 +3443,7 @@
         "instance": 0,
         "cause": "same autoplay mismatch: its second shot (one viewport down) contains the top of the testimonial slideshow",
         "before1_1_1": 0.9453,
-        "after": 0.9902,
+        "after": 0.9901,
         "repeat": 0.9901,
         "diagnosis": "The process list itself matched (first shot 0.996). The second shot at +900 px shows the slideshow heading, portrait and quote; the clone had advanced to another slide. Residual 0.01: sub-pixel text rasterisation of the revealed lines (identical Range rects, 0.1 px apart).",
         "fix": "same Testimonials.jsx change; no process-timeline change."
@@ -3555,6 +3555,7 @@
     "runs": [
       {
         "id": "tablet-768",
+        "label": "tablet 768x1024",
         "scope": "9 representative routes",
         "viewport": {
           "width": 768,
@@ -3562,12 +3563,12 @@
         },
         "official": {
           "path": "extraction/parity-results/tablet-768-official.json",
-          "sha256": "631f493da9493882e2d2848b2e34f888c726daec230434718fe2227bb489b9f3",
+          "sha256": "51b70a6440127e40cc5125fb3732ee3c525c888aa3a27eea3d6b9e5efa9615d2",
           "what": "full run at 768x1024 (the original serves its phone layout below 810 px), 9 routes, freeze on, phase 0, with text-free geometry"
         },
         "repeat": {
           "path": "extraction/parity-results/tablet-768-repeat.json",
-          "sha256": "baa3ae97e1743c4040e4f90da6edd1333faa2230389a32a351a66029d8dd4b8e",
+          "sha256": "73d80398c133ed8cb6bba1714d4dce43dbd72dd5dd49f3a6f7afeb07727113b4",
           "what": "identical second run"
         },
         "beforeFix": {
@@ -3576,7 +3577,7 @@
           "what": "first measurement of the same routes before the 1.1.2 src fixes (same harness otherwise, without the wrap-offset release)"
         },
         "repeatTolerance": 0.02,
-        "repeatMaxSectionDifference": 0.0001,
+        "repeatMaxSectionDifference": 0.0023,
         "overall": {
           "routes": 9,
           "sections": 56,
@@ -4223,6 +4224,7 @@
       },
       {
         "id": "phone-390",
+        "label": "phone 390x844",
         "scope": "9 representative routes",
         "viewport": {
           "width": 390,
@@ -4230,12 +4232,12 @@
         },
         "official": {
           "path": "extraction/parity-results/phone-390-official.json",
-          "sha256": "4072e6478480acc64ba523dd8a060a04acbce4f45c74f039fc4c5ff0b55fc726",
+          "sha256": "4b10626fa3a923364f0eb77adef2343d2e200e235b36c8b10ff1690a6e52dea7",
           "what": "full run at 390x844, 9 routes, freeze on, phase 0, with text-free geometry"
         },
         "repeat": {
           "path": "extraction/parity-results/phone-390-repeat.json",
-          "sha256": "98516156dc592e9bf179d55b5721a5a57dfa3bc2fe0ea80932c9777f1af8c6c7",
+          "sha256": "81adc856b05a8e3c37867b12947848d8114d0527e945c1f706e49380cecaa96f",
           "what": "identical second run"
         },
         "beforeFix": {
@@ -4772,7 +4774,8 @@
       },
       {
         "id": "desktop-1440-remaining-routes",
-        "scope": "the 22 routes of templates/routes.json that are not among the 9 representative routes: 11 case studies (/work/*), 10 feed posts (/feed/*) and /legal/terms-of-service; all have a live counterpart",
+        "label": "desktop 1440x900, every remaining route",
+        "scope": "22 routes of templates/routes.json that are not among the 9 representative routes: 10 more case studies + the first (bright-matter) = 11 /work/*, 10 /feed/* posts and /legal/terms-of-service",
         "viewport": {
           "width": 1440,
           "height": 900

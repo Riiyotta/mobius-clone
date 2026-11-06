@@ -140,21 +140,36 @@ async function freezePage(p, phase) {
     const pins = []
     let n = 0
     // 3b. rotating elements (the 404's two gradient shapes: script-driven on the live site, a CSS animation in the clone). Same rule on both sides:
-    // an element whose rotation angle keeps changing in the same direction across the three samples is pinned to the angle it would have PHASE ms
-    // after the page's time origin, i.e. its measured angle extrapolated back along its own measured angular velocity (deg/s) to performance.now() = 0,
-    // advanced by PHASE. The page's own animation keeps running underneath; only the painted angle is fixed. Scale and translation are kept.
+    // an element whose rotation angle keeps changing in the same direction, at a similar rate, across the three samples is a candidate; its angle is then
+    // read once per animation frame for 700 ms and a line (unwrapped angle against time) is fitted. It is pinned to the fitted angle at PHASE ms after the
+    // page's time origin (performance.now() = 0), i.e. the measured angle extrapolated back along the measured angular velocity (deg/s) and advanced by PHASE.
+    // The page's own animation keeps running underneath; only the painted angle is fixed. Scale and translation are kept.
     const wrap = (d) => ((d + 540) % 360) - 180
     const rotPins = []
+    const cands = []
     els.forEach((e, i) => {
-      const a1 = wrap(s1[i][2] - s0[i][2]), a2 = wrap(s2[i][2] - s1[i][2])
-      if (!(Math.abs(a1) > 0.5 && Math.abs(a2) > 0.5 && Math.sign(a1) === Math.sign(a2) && Math.abs(a1 - a2) < 0.25 * Math.abs(a1 + a2))) return
-      const w = (a1 / (t1 - t0) + a2 / (t2 - t1)) * 500 // deg/s, mean of the two intervals
-      const m = new DOMMatrix(getComputedStyle(e).transform)
-      e.setAttribute('data-parity-rot', String(++n))
-      const th = (s2[i][2] - w * t2 / 1000 + w * ph / 1000) * Math.PI / 180, k = s2[i][3]
-      e.style.setProperty('--pr', `matrix(${(k * Math.cos(th)).toFixed(5)},${(k * Math.sin(th)).toFixed(5)},${(-k * Math.sin(th)).toFixed(5)},${(k * Math.cos(th)).toFixed(5)},${m.m41.toFixed(2)},${m.m42.toFixed(2)})`)
-      rotPins.push({ el: e.tagName.toLowerCase() + '.' + String(e.className?.baseVal ?? e.className).split(' ')[0], degPerSec: +w.toFixed(2), pinnedDeg: +(th * 180 / Math.PI % 360).toFixed(1) })
+      const r1 = wrap(s1[i][2] - s0[i][2]) * 1000 / (t1 - t0), r2 = wrap(s2[i][2] - s1[i][2]) * 1000 / (t2 - t1)
+      if (Math.abs(r1) > 2 && Math.abs(r2) > 2 && Math.sign(r1) === Math.sign(r2) && Math.abs(r1 - r2) < 0.5 * Math.abs(r1 + r2) / 2) cands.push(e)
     })
+    if (cands.length) {
+      const rec = cands.map(() => [])
+      for (const t00 = performance.now(); performance.now() - t00 < 700;) {
+        await raf()
+        cands.forEach((e, k) => { const m = new DOMMatrix(getComputedStyle(e).transform); rec[k].push([performance.now() / 1000, Math.atan2(m.m12, m.m11) * 180 / Math.PI]) })
+      }
+      cands.forEach((e, k) => {
+        const pts = rec[k]; let un = pts[0][1]; const xs = [pts[0][0]], ys = [un]
+        for (let q = 1; q < pts.length; q++) { un += wrap(pts[q][1] - pts[q - 1][1]); xs.push(pts[q][0]); ys.push(un) }
+        const mx = xs.reduce((a, b) => a + b) / xs.length, my = ys.reduce((a, b) => a + b) / ys.length
+        const w = xs.reduce((a, x, q) => a + (x - mx) * (ys[q] - my), 0) / xs.reduce((a, x) => a + (x - mx) ** 2, 0) // deg/s
+        const c = my - w * mx
+        const cs = getComputedStyle(e), m = new DOMMatrix(cs.transform), kk = Math.hypot(m.m11, m.m12)
+        const th = (c + w * ph / 1000) * Math.PI / 180
+        e.setAttribute('data-parity-rot', String(++n))
+        e.style.setProperty('--pr', `matrix(${(kk * Math.cos(th)).toFixed(5)},${(kk * Math.sin(th)).toFixed(5)},${(-kk * Math.sin(th)).toFixed(5)},${(kk * Math.cos(th)).toFixed(5)},${m.m41.toFixed(2)},${m.m42.toFixed(2)})`)
+        rotPins.push({ el: e.tagName.toLowerCase() + '.' + String(e.className?.baseVal ?? e.className).split(' ')[0], degPerSec: +w.toFixed(2), pinnedDeg: +(((th * 180 / Math.PI) % 360 + 540) % 360 - 180).toFixed(1) })
+      })
+    }
     info.rotators = rotPins
     els.forEach((e, i) => {
       if (e.hasAttribute('data-parity-rot')) return

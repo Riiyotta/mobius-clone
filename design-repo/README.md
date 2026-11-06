@@ -89,7 +89,7 @@ The home "loader" is the hero's own appear sequence, not a preloader.
 - Live-original vs clone parity, same scroll offsets, per-section gate 0.80 (`extraction/parity_harness.mjs`, symmetric freeze on both
   sides, see below). Every run was made twice; the repeat is pinned too and must agree within 0.02 per section.
 
-**Desktop 1440x900, 9 representative routes** (`cloneParity`): mean section score 0.9937 over 53 sections,
+**Desktop 1440x900, 9 representative routes** (`cloneParity`): mean section score 0.9936 over 53 sections,
 0 below the gate, lowest 0.976 (1.1.1: 0.9889 mean, lowest 0.880).
 
 | route | average | min section | per-section gate |
@@ -102,7 +102,7 @@ The home "loader" is the hero's own appear sequence, not a preloader.
 | /feed | 0.994 | 0.994 | pass |
 | /feed/beyond-function | 0.992 | 0.987 | pass |
 | /legal/privacy-policy | 0.997 | 0.991 | pass |
-| /404 | 0.996 | 0.991 | pass |
+| /404 | 0.995 | 0.991 | pass |
 
 **Tablet 768x1024, same 9 routes** (`cloneParityRuns`, the original serves its phone layout below 810 px): mean 0.9970 over 56 sections,
 0 below the gate, lowest 0.973. First measurement (before the 1.1.2 src fixes): 20 sections below the gate, mean 0.842, lowest 0.454.
@@ -138,8 +138,8 @@ First measurement: 5 below the gate, mean 0.950, lowest 0.708.
 lowest 0.975; each route's average is in `cloneParityRuns.runs[2].routes`. With these, all 31 routes are measured at 1440. All 31 routes have a live
 counterpart (30 in the original sitemap plus its 404 page); live and clone document heights are equal on every remaining route.
 
-- What 1.1.2 fixed (numbers before -> after, details in `cloneParity.weakSections`): `/404 hero.not-found` 0.880 -> 0.998 (harness: the live gradient
-  shapes are script-driven and were not frozen), `/ testimonial.client-reflections` 0.927 -> 0.991 and `/ features.process-timeline` 0.945 -> 0.990
+- What 1.1.2 fixed (numbers before -> after, details in `cloneParity.weakSections`): `/404 hero.not-found` 0.880 -> 0.997 (harness: the live gradient
+  shapes are script-driven and were not frozen; the live page starts its rotation 0.2-0.3 s after the clone, so this one section scores 0.98-0.998 across runs), `/ testimonial.client-reflections` 0.927 -> 0.991 and `/ features.process-timeline` 0.945 -> 0.990
   (src: the original's slideshow only plays while on screen), `/ team.founders` 0.965 -> 0.995 (src: always-on portrait backdrop). Tablet/phone: the home hero
   intro fades out on scroll there too (the page is 32 px shorter afterwards), phone-layout paragraphs take the original's 480 / 400 px max-widths,
   centred number/award text blocks, two-column stats grid; harness wrap-offset release and rotation pins. `src/` was edited for these (responsive CSS, `Hero.jsx`,
