@@ -1,7 +1,7 @@
 {
   "repositoryId": "mobius-studio-template-clone.design-repo",
   "title": "Design-repo for a design-faithful clone of a design-studio website template",
-  "repositoryVersion": "1.1.0",
+  "repositoryVersion": "1.1.1",
   "pageSpecVersion": "1.0.0",
   "allowlistVersion": "1.0.0",
   "tokenCatalogVersion": "1.0.0",
@@ -125,6 +125,7 @@
     "measureTool": "extraction/measure_sections.mjs",
     "sectionSelectors": "extraction/section-selectors.json",
     "parityHarness": "extraction/parity_harness.mjs",
+    "parityResults": "extraction/parity-results/",
     "sectionsDir": "sections/",
     "componentsDir": "components/",
     "primitivesDir": "primitives/",

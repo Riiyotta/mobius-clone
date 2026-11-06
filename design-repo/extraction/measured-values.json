@@ -2732,7 +2732,15 @@
   "wrapperWhitelistNote": "Empty: at 1440 no HERO exceeds 1800px (max 911.9) and no in-flow section exceeds 50% of a page with >= 3 sections (max: contacts form 34.8%). The 100vh index pages (/work, /feed) have < 3 in-flow sections and are skipped by rule.",
   "cloneParity": {
     "tool": "extraction/parity_harness.mjs",
-    "measuredAt": "2026-11-04T12:32:42.360Z (routes /work/soma-studio and /studio re-run 2026-11-04T12:55:17.067Z after the concurrent layout fixes)",
+    "measuredAt": "2026-11-06T07:24:54.645Z",
+    "captureState": {
+      "freeze": true,
+      "phaseMs": 0,
+      "cloneSkewMs": 0,
+      "description": "Symmetric freeze applied identically to the live page and the clone immediately before every screenshot (documented in the extraction/parity_harness.mjs header): (0) fonts, visible <img> and CSS background images loaded and decoded, re-checked after the pins; (1) every <video> paused and seeked to 0 ms with the seeked event awaited; (2) infinite CSS/WAAPI animations paused at 0 ms, finite ones finished; (3) every element whose translation keeps changing (script-driven marquees, tickers, auto-scrolling columns) pinned with its first item on the track start edge plus velocity x phase (0), released and re-pinned at every shot. Nothing is hidden or replaced; no consent banner is present on either side and none is clicked; the Framer badge overlay is hidden on both. Not frozen: the 10 s testimonial autoplay and hover/drag states.",
+      "scroll": "stepped 450px scroll to each offset (section top, +1 viewport, max 3 shots per section), 3.5 s settle at offset 0 and 1.8 s elsewhere, then the freeze, then the screenshot",
+      "cloneBuild": "npm ci, vite build and vite preview of this repository at the commit that carries this record"
+    },
     "viewport": {
       "width": 1440,
       "height": 900
@@ -2746,8 +2754,8 @@
     "overall": {
       "routes": 9,
       "sections": 53,
-      "meanSectionScore": 0.9699,
-      "sectionsBelowGate": 3
+      "meanSectionScore": 0.9889,
+      "sectionsBelowGate": 0
     },
     "routes": [
       {
@@ -2755,13 +2763,11 @@
         "template": "home",
         "docHeightOriginal": 23544,
         "docHeightClone": 23544,
-        "average": 0.9518,
-        "minSection": 0.6249,
-        "perSectionGatePass": false,
+        "average": 0.9837,
+        "minSection": 0.9271,
+        "perSectionGatePass": true,
         "averageGatePass": true,
-        "belowGate": [
-          "media.showreel#0"
-        ],
+        "belowGate": [],
         "sections": [
           {
             "section": "hero.studio-wordmark",
@@ -2771,12 +2777,12 @@
           {
             "section": "content.statement-scatter",
             "instance": 0,
-            "score": 0.8683
+            "score": 0.9909
           },
           {
             "section": "media.showreel",
             "instance": 0,
-            "score": 0.6249
+            "score": 0.9964
           },
           {
             "section": "features.services-index",
@@ -2791,7 +2797,7 @@
           {
             "section": "social-proof.awards-list",
             "instance": 0,
-            "score": 0.9975
+            "score": 0.9992
           },
           {
             "section": "team.founders",
@@ -2806,12 +2812,12 @@
           {
             "section": "features.process-timeline",
             "instance": 0,
-            "score": 0.9538
+            "score": 0.9453
           },
           {
             "section": "testimonial.client-reflections",
             "instance": 0,
-            "score": 0.9368
+            "score": 0.9271
           },
           {
             "section": "pricing.packages",
@@ -2826,7 +2832,7 @@
           {
             "section": "conversion.contact-form",
             "instance": 0,
-            "score": 0.9985
+            "score": 0.9984
           },
           {
             "section": "faq.questions-answered",
@@ -2868,8 +2874,8 @@
         "template": "case-detail",
         "docHeightOriginal": 6221,
         "docHeightClone": 6221,
-        "average": 0.9885,
-        "minSection": 0.9658,
+        "average": 0.9951,
+        "minSection": 0.9902,
         "perSectionGatePass": true,
         "averageGatePass": true,
         "belowGate": [],
@@ -2912,12 +2918,12 @@
           {
             "section": "content.case-credits",
             "instance": 0,
-            "score": 0.9658
+            "score": 0.9989
           },
           {
             "section": "navigation.case-teaser",
             "instance": 0,
-            "score": 0.9667
+            "score": 0.999
           },
           {
             "section": "shell.site-footer",
@@ -2931,18 +2937,16 @@
         "template": "studio",
         "docHeightOriginal": 9661,
         "docHeightClone": 9661,
-        "average": 0.9417,
-        "minSection": 0.6704,
-        "perSectionGatePass": false,
+        "average": 0.9932,
+        "minSection": 0.9818,
+        "perSectionGatePass": true,
         "averageGatePass": true,
-        "belowGate": [
-          "media.studio-image-strip#0"
-        ],
+        "belowGate": [],
         "sections": [
           {
             "section": "hero.studio-intro",
             "instance": 0,
-            "score": 0.9942
+            "score": 0.9941
           },
           {
             "section": "team.studio-team",
@@ -2957,17 +2961,17 @@
           {
             "section": "media.studio-image-strip",
             "instance": 0,
-            "score": 0.6704
+            "score": 0.9994
           },
           {
             "section": "listing.career-openings",
             "instance": 0,
-            "score": 0.9739
+            "score": 0.9818
           },
           {
             "section": "navigation.case-teaser",
             "instance": 0,
-            "score": 0.9707
+            "score": 0.9943
           },
           {
             "section": "shell.site-footer",
@@ -2981,8 +2985,8 @@
         "template": "contacts",
         "docHeightOriginal": 4905,
         "docHeightClone": 4905,
-        "average": 0.9904,
-        "minSection": 0.9762,
+        "average": 0.9903,
+        "minSection": 0.9761,
         "perSectionGatePass": true,
         "averageGatePass": true,
         "belowGate": [],
@@ -2995,17 +2999,17 @@
           {
             "section": "content.contact-details",
             "instance": 0,
-            "score": 0.9762
+            "score": 0.9761
           },
           {
             "section": "editorial.studio-notes-teaser",
             "instance": 0,
-            "score": 0.9958
+            "score": 0.9957
           },
           {
             "section": "shell.site-footer",
             "instance": 0,
-            "score": 0.991
+            "score": 0.9909
           }
         ]
       },
@@ -3014,18 +3018,16 @@
         "template": "feed-index",
         "docHeightOriginal": 900,
         "docHeightClone": 900,
-        "average": 0.7954,
-        "minSection": 0.7954,
-        "perSectionGatePass": false,
-        "averageGatePass": false,
-        "belowGate": [
-          "editorial.notes-index#0"
-        ],
+        "average": 0.994,
+        "minSection": 0.994,
+        "perSectionGatePass": true,
+        "averageGatePass": true,
+        "belowGate": [],
         "sections": [
           {
             "section": "editorial.notes-index",
             "instance": 0,
-            "score": 0.7954
+            "score": 0.994
           }
         ]
       },
@@ -3035,7 +3037,7 @@
         "docHeightOriginal": 4801,
         "docHeightClone": 4801,
         "average": 0.9922,
-        "minSection": 0.9868,
+        "minSection": 0.9867,
         "perSectionGatePass": true,
         "averageGatePass": true,
         "belowGate": [],
@@ -3043,7 +3045,7 @@
           {
             "section": "hero.article-header",
             "instance": 0,
-            "score": 0.9868
+            "score": 0.9867
           },
           {
             "section": "media.article-cover",
@@ -3053,7 +3055,7 @@
           {
             "section": "content.marked-chapter",
             "instance": 0,
-            "score": 0.992
+            "score": 0.9919
           },
           {
             "section": "content.pull-quote",
@@ -3115,8 +3117,8 @@
         "template": "not-found",
         "docHeightOriginal": 3288,
         "docHeightClone": 3288,
-        "average": 0.9874,
-        "minSection": 0.9732,
+        "average": 0.9564,
+        "minSection": 0.88,
         "perSectionGatePass": true,
         "averageGatePass": true,
         "belowGate": [],
@@ -3124,7 +3126,7 @@
           {
             "section": "hero.not-found",
             "instance": 0,
-            "score": 0.9732
+            "score": 0.88
           },
           {
             "section": "faq.questions-answered",
@@ -3139,12 +3141,226 @@
         ]
       }
     ],
-    "interpretation": "Sections below 0.80 are continuously animating media the harness does not freeze (reel video + text bands, studio image strip, auto-scrolling feed columns): their frames differ by time, not layout. Every static section scores >= 0.97. Not measured: tablet/phone parity, and routes beyond one per template.",
+    "evidence": {
+      "official": {
+        "path": "extraction/parity-results/freeze-official.json",
+        "sha256": "81d08ab5093763f0fda4d851ab502271761cd5b54d0f39793dc2d0c556e89114",
+        "what": "full run, 9 routes / 53 sections, freeze on, phase 0, with text-free geometry"
+      },
+      "repeat": {
+        "path": "extraction/parity-results/freeze-repeat.json",
+        "sha256": "180692c6cfb6fedb1e8382d361618deec44bef41ca0dff52c9a37b2a736d71c4",
+        "what": "identical second full run"
+      },
+      "repeatTolerance": 0.02,
+      "repeatMaxSectionDifference": 0.0038,
+      "beforeUnfrozen": [
+        {
+          "path": "extraction/parity-results/unfrozen-run1.json",
+          "sha256": "56dfecdb759c2b7e77c84a212861b06a4274a11c361b99a91ee312ff9511026e",
+          "what": "the three sections, freeze off (the pre-1.1.1 capture), run 1"
+        },
+        {
+          "path": "extraction/parity-results/unfrozen-run2.json",
+          "sha256": "90c7244c9794e982e9b76e58d388f713e8f98e51d321e016c0a3f5dffa7b07ae",
+          "what": "same, run 2"
+        }
+      ],
+      "phaseEvidence": [
+        {
+          "path": "extraction/parity-results/phase-1000.json",
+          "sha256": "c6adc4b48b282df32ff3efd711869fbea5a805f7687f4420667c5fda67edd96d",
+          "what": "freeze on, both sides at phase 1000 ms"
+        },
+        {
+          "path": "extraction/parity-results/phase-2500.json",
+          "sha256": "13a52e2aa09e76030c073fb3eca3d244d3c9d89b573aa1f88a9fa07f4f2f2de4",
+          "what": "freeze on, both sides at phase 2500 ms"
+        },
+        {
+          "path": "extraction/parity-results/skew-1000.json",
+          "sha256": "174a7341f3b8e06f97f1d1311c9146b4f35357e37240d8a9d7f3d1c76d8ddccb",
+          "what": "diagnostic: clone deliberately 1000 ms out of phase"
+        },
+        {
+          "path": "extraction/parity-results/skew-2500.json",
+          "sha256": "210b205c353ba34336ca79fb6ef76264de58d41d2c20436e0f6fc8a9699cb6ca",
+          "what": "diagnostic: clone deliberately 2500 ms out of phase"
+        }
+      ]
+    },
+    "beforeAfter": [
+      {
+        "route": "/",
+        "section": "media.showreel",
+        "recordedIn1_1_0": 0.6249,
+        "unfrozenRerun1": 0.6318,
+        "unfrozenRerun2": 0.7094,
+        "frozenOfficial": 0.9964,
+        "frozenRepeat": 0.9966
+      },
+      {
+        "route": "/studio",
+        "section": "media.studio-image-strip",
+        "recordedIn1_1_0": 0.6704,
+        "unfrozenRerun1": 0.5793,
+        "unfrozenRerun2": 0.6013,
+        "frozenOfficial": 0.9994,
+        "frozenRepeat": 0.9994
+      },
+      {
+        "route": "/feed",
+        "section": "editorial.notes-index",
+        "recordedIn1_1_0": 0.7954,
+        "unfrozenRerun1": 0.7969,
+        "unfrozenRerun2": 0.8055,
+        "frozenOfficial": 0.994,
+        "frozenRepeat": 0.994
+      }
+    ],
+    "beforeAfterSummary": {
+      "sectionsBelowGate": {
+        "before": 3,
+        "after": 0
+      },
+      "meanSectionScore": {
+        "before": 0.9699,
+        "after": 0.9889
+      },
+      "minSection": {
+        "before": 0.6249,
+        "after": 0.88
+      },
+      "note": "Before = the 1.1.0 record (unfrozen capture; its harness output file was not tracked, so it cannot be re-derived). After = tracked result files."
+    },
+    "animationHypothesis": {
+      "verdict": "true",
+      "claim": "The three low scores were caused by continuously animating media that the harness did not freeze, not by a structural or visual mismatch.",
+      "evidence": [
+        "The unfrozen capture is not reproducible: showreel / studio strip / notes index scored 0.6249 / 0.6704 / 0.7954 in the 1.1.0 record, [0.6318, 0.5793, 0.7969] in re-run 1 and [0.7094, 0.6013, 0.8055] in re-run 2 of the unchanged capture.",
+        "With the symmetric freeze the same sections score [0.9964, 0.9994, 0.994] (official) and [0.9966, 0.9994, 0.994] (repeat); no section of the 53 differs between the two full runs by more than 0.0038.",
+        "The score moves with animation phase when only the phase differs: with the clone deliberately 1000 ms / 2500 ms out of phase the scores fall to showreel 0.8097 / 0.6639, studio strip 0.5986 / 0.4927, notes index 0.7773 / 0.6721; with both sides frozen at the same non-zero phase (1000 ms / 2500 ms) they stay at showreel 0.9961 / 0.9795, studio strip 0.9538 / 0.9382, notes index 0.9368 / 0.9654.",
+        "Static geometry matches (see geometry): every live media rect inside the viewport has a clone rect at IoU >= 0.8 with median edge delta 0 px, and text rows match one to one except a few rows the live page renders that the clone does not; for the strip, all 3 live item boxes that reach the 1440 px viewport match a clone box (the 4th live item box sits off-screen left because its ticker keeps a wrapped item there; the clone renders 12 boxes = 3 copies, the extra ones lie off-screen right). Motion speeds match: measured track velocities are about 98 px/s on both sides for the reel bands and the strip, and about 49 / 73 / 24 px/s on both sides for the three feed columns.",
+        "Diagnosed from live / clone / diff images (local scratch, not committed): the unfrozen diffs are the shifted strip, shifted headline bands and shifted feed cards; the frozen captures show the same frame, the same image placement and the same text."
+      ],
+      "harnessArtefactsFoundAndFixed": [
+        "a freeze that only set the track transform to 0 left the live site's wrap-style ticker (it moves items that left the view to the far end with per-item offsets) with a blank first item and scored the strip 0.26 on some runs; fixed by aligning the first item with the track start edge and releasing / re-pinning at every shot",
+        "lazy-loaded live images enter the view only after the pin: the freeze now waits for visible images to have pixels"
+      ]
+    },
+    "geometry": {
+      "note": "text-free box matching taken from the frozen captures; media = img/video/canvas/background-image boxes (IoU >= 0.8), text rows = one rect per text line (IoU >= 0.5)",
+      "media.showreel": {
+        "officialRun": {
+          "mediaRects": {
+            "live": 1,
+            "clone": 1,
+            "matched": 1,
+            "meanIoU": 1,
+            "medianMaxEdgeDeltaPx": 0
+          },
+          "textRows": {
+            "live": 50,
+            "clone": 49,
+            "matched": 49,
+            "meanIoU": 0.9968,
+            "medianMaxEdgeDeltaPx": 0
+          }
+        },
+        "repeatRun": {
+          "mediaRects": {
+            "live": 1,
+            "clone": 1,
+            "matched": 1,
+            "meanIoU": 1,
+            "medianMaxEdgeDeltaPx": 0
+          },
+          "textRows": {
+            "live": 50,
+            "clone": 49,
+            "matched": 49,
+            "meanIoU": 0.9968,
+            "medianMaxEdgeDeltaPx": 0
+          }
+        }
+      },
+      "media.studio-image-strip": {
+        "officialRun": {
+          "mediaRects": {
+            "live": 4,
+            "clone": 12,
+            "matched": 3,
+            "meanIoU": 1,
+            "medianMaxEdgeDeltaPx": 0
+          },
+          "textRows": {
+            "live": 46,
+            "clone": 45,
+            "matched": 45,
+            "meanIoU": 0.9916,
+            "medianMaxEdgeDeltaPx": 0
+          }
+        },
+        "repeatRun": {
+          "mediaRects": {
+            "live": 4,
+            "clone": 12,
+            "matched": 3,
+            "meanIoU": 1,
+            "medianMaxEdgeDeltaPx": 0
+          },
+          "textRows": {
+            "live": 46,
+            "clone": 45,
+            "matched": 45,
+            "meanIoU": 0.9916,
+            "medianMaxEdgeDeltaPx": 0
+          }
+        }
+      },
+      "editorial.notes-index": {
+        "officialRun": {
+          "mediaRects": {
+            "live": 3,
+            "clone": 3,
+            "matched": 3,
+            "meanIoU": 1,
+            "medianMaxEdgeDeltaPx": 0
+          },
+          "textRows": {
+            "live": 61,
+            "clone": 56,
+            "matched": 56,
+            "meanIoU": 0.9972,
+            "medianMaxEdgeDeltaPx": 0
+          }
+        },
+        "repeatRun": {
+          "mediaRects": {
+            "live": 3,
+            "clone": 3,
+            "matched": 3,
+            "meanIoU": 1,
+            "medianMaxEdgeDeltaPx": 0
+          },
+          "textRows": {
+            "live": 61,
+            "clone": 56,
+            "matched": 56,
+            "meanIoU": 0.9972,
+            "medianMaxEdgeDeltaPx": 0
+          }
+        }
+      }
+    },
+    "exceptions": [],
+    "interpretation": "With the symmetric freeze every one of the 53 sections on the 9 representative routes is at or above the 0.80 gate (minimum 0.88) and every page average is >= 0.95; two full runs agree within 0.0038 per section. The three sections that scored 0.58-0.80 unfrozen were animation timing, not layout or content. Lowest sections now: /404 hero.not-found 0.88, / testimonial.client-reflections 0.9271, / features.process-timeline 0.9453, / team.founders 0.9654. No src/ change was needed and no parity exception is recorded.",
     "notMeasured": [
       "parity at 1000 and 390",
       "the other 22 CMS routes (one representative per template only)",
       "hover/drag/interaction states",
-      "motion timing curves (see recon specs instead)"
+      "motion timing curves (see recon specs instead)",
+      "the 10 s testimonial autoplay carousel phase (not frozen; its section still passes)"
     ]
   },
   "cloneBuild": {

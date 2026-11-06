@@ -30,9 +30,13 @@ Checks (each prints PASS/FAIL/WARN with evidence):
   manifest-counts / readme-counts   recomputed from disk
   wrapper-gate       extraction/wrapper_gate.py (R9) has zero errors
   clone-parity       recorded parity numbers are internally consistent (averages, minima and gate flags re-derived)
+  parity-evidence    every recorded parity number is pinned to a tracked harness result file (sha256); the recorded routes,
+                     sections, scores and overall figures equal the official result file; the repeat run agrees within the
+                     recorded tolerance; the freeze is on; parity exceptions can only be pending/unapproved and only for
+                     sections that really are below the gate
   generated-examples a generation-safe example exists for home and at least one non-home template family
 """
-import glob, json, os, re, sys
+import glob, hashlib, json, os, re, sys
 from collections import Counter
 sys.dont_write_bytecode = True
 
@@ -476,6 +480,62 @@ def check_parity():
     passing = sum(1 for r in cp["routes"] if r["perSectionGatePass"] and r["averageGatePass"])
     rec("clone-parity", not bad, f"{len(cp['routes'])} routes / {len(allsec)} sections recorded; mean section {o['meanSectionScore']}; {o['sectionsBelowGate']} sections below {GATE}; {passing}/{len(cp['routes'])} routes pass both gates (numbers re-derived, consistent)" if not bad else bad[:5])
 
+def check_parity_evidence():
+    cp = load("extraction/measured-values.json").get("cloneParity") or {}
+    ev = cp.get("evidence")
+    if not ev:
+        rec("parity-evidence", False, "cloneParity.evidence missing: recorded parity numbers are not pinned to tracked result files"); return
+    bad = []
+    def pinned(entry, what):
+        path = os.path.join(REPO, entry.get("path", "")) if entry.get("path") else None
+        if not path or not os.path.isfile(path):
+            bad.append(f"{what}: result file {entry.get('path')!r} missing"); return None
+        raw = open(path, "rb").read()
+        if hashlib.sha256(raw).hexdigest() != entry.get("sha256"):
+            bad.append(f"{what}: {entry['path']} sha256 does not match the recorded pin"); return None
+        return json.loads(raw)
+    off = pinned(ev.get("official", {}), "official")
+    rep = pinned(ev.get("repeat", {}), "repeat")
+    for k in ("beforeUnfrozen", "phaseEvidence"):
+        for i, e in enumerate(ev.get(k, [])):
+            pinned(e, f"{k}[{i}]")
+    key = lambda r, s: (r["route"], s["section"], s["instance"])
+    if off:
+        if not (off.get("captureState") or {}).get("freeze") or off["captureState"].get("phaseMs") != 0 or off["captureState"].get("cloneSkewMs"):
+            bad.append("official result file is not a symmetric freeze at phase 0 without skew")
+        if off.get("captureState", {}).get("only"):
+            bad.append("official result file is a filtered run (--only); it must cover every section")
+        have = {key(r, s): s["score"] for r in cp["routes"] for s in r["sections"]}
+        want = {key(r, s): s["score"] for r in off["routes"] for s in r["sections"]}
+        if have != want:
+            bad.append(f"recorded section scores differ from the official result file in {len([k for k in set(have) | set(want) if have.get(k) != want.get(k)])} sections")
+        for r in cp["routes"]:
+            orr = next((x for x in off["routes"] if x["route"] == r["route"]), None)
+            if orr is None or orr["docHeightOriginal"] != r["docHeightOriginal"] or orr["docHeightClone"] != r["docHeightClone"]:
+                bad.append(f"{r['route']}: doc heights differ from the official result file")
+        o = cp["overall"]
+        if o != off["overall"]:
+            bad.append("cloneParity.overall differs from the official result file")
+        if rep:
+            tol = ev.get("repeatTolerance")
+            if not isinstance(tol, (int, float)) or tol > 0.05:
+                bad.append("repeatTolerance missing or looser than 0.05")
+            else:
+                rv = {key(r, s): s["score"] for r in rep["routes"] for s in r["sections"]}
+                far = [k for k in want if abs(rv.get(k, -9) - want[k]) > tol]
+                if far:
+                    bad.append(f"repeat run disagrees beyond {tol} in {len(far)} sections, e.g. {far[0]}")
+                if {k for k, v in rv.items() if v < GATE} != {k for k, v in want.items() if v < GATE}:
+                    bad.append("repeat run and official run disagree on which sections are below the gate")
+    below = {(r["route"], s["section"], s["instance"]) for r in cp["routes"] for s in r["sections"] if s["score"] < GATE}
+    exc = cp.get("exceptions", [])
+    for e in exc:
+        if e.get("status") != "pending human approval" or e.get("approvedBy") is not None:
+            bad.append(f"exception {e.get('section')}: must be status 'pending human approval' with approvedBy null")
+        if (e.get("route"), e.get("section"), e.get("instance", 0)) not in below:
+            bad.append(f"exception {e.get('section')} is for a section that is not below the gate (exceptions are never added to pass)")
+    rec("parity-evidence", not bad, f"{len(ev.get('beforeUnfrozen', []))} before + {len(ev.get('phaseEvidence', []))} phase result files + official + repeat pinned by sha256; recorded scores == official result file; repeat within {ev.get('repeatTolerance')}; {len(exc)} exceptions" if not bad else bad[:6])
+
 def check_generated_examples(examples):
     gen = {s["template"] for p, s in examples if s.get("mode") == "generated"}
     ok = "home" in gen and len(gen - {"home"}) >= 1
@@ -551,7 +611,7 @@ def main():
                      ("semantic-examples", lambda: check_semantic(examples)), ("allowlist-parity", lambda: check_allowlist(contracts, man)), ("citations", check_citations),
                      ("contracts", lambda: check_contracts(contracts)), ("asset-pins", check_asset_pins), ("tokens", lambda: check_tokens(man)), ("source-brand", check_source_brand),
                      ("routes", lambda: check_routes(contracts)), ("graph-parity", check_graph), ("counts", lambda: check_counts(man, contracts)), ("wrapper-gate", check_gate),
-                     ("clone-parity", check_parity), ("generated-examples", lambda: check_generated_examples(examples)), ("design-policy", lambda: check_design_policy(man))):
+                     ("clone-parity", check_parity), ("parity-evidence", check_parity_evidence), ("generated-examples", lambda: check_generated_examples(examples)), ("design-policy", lambda: check_design_policy(man))):
         try:
             fn()
         except Exception as e:

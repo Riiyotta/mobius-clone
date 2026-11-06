@@ -114,8 +114,30 @@ def m_unmeasured(r):
     d = jl(r, "extraction/measured-values.json"); d["sectionHeights"]["pages"] = [p for p in d["sectionHeights"]["pages"] if p["route"] != "/legal/terms-of-service"]; jw(r, "extraction/measured-values.json", d)
 def m_parity(r):
     d = jl(r, "extraction/measured-values.json"); d["cloneParity"]["routes"][0]["average"] = 0.999; jw(r, "extraction/measured-values.json", d)
+def _ev(r, which="official"):
+    return jl(r, "extraction/measured-values.json")["cloneParity"]["evidence"][which]["path"]
+def m_result_tamper(r):
+    p = os.path.join(r, _ev(r)); d = jl(r, _ev(r)); d["routes"][0]["sections"][0]["score"] = 0.5; jw(r, _ev(r), d)
+def m_score_consistent_edit(r):
+    # a hand edit that keeps averages / minima / counts / gate flags internally consistent: only the pin can catch it
+    d = jl(r, "extraction/measured-values.json"); cp = d["cloneParity"]; x = cp["routes"][0]
+    x["sections"][0]["score"] = round(x["sections"][0]["score"] - 0.01, 4)
+    sc = [q["score"] for q in x["sections"]]; x["average"] = round(sum(sc) / len(sc), 4); x["minSection"] = min(sc)
+    allsc = [q["score"] for rr in cp["routes"] for q in rr["sections"]]; cp["overall"]["meanSectionScore"] = round(sum(allsc) / len(allsc), 4)
+    jw(r, "extraction/measured-values.json", d)
+def m_pin_removed(r):
+    d = jl(r, "extraction/measured-values.json"); d["cloneParity"].pop("evidence"); jw(r, "extraction/measured-values.json", d)
+def m_result_missing(r):
+    os.unlink(os.path.join(r, _ev(r, "repeat")))
+def m_freeze_off(r):
+    d = jl(r, "extraction/measured-values.json"); e = d["cloneParity"]["evidence"]["official"]; f = jl(r, e["path"]); f["captureState"]["freeze"] = False
+    import hashlib; jw(r, e["path"], f); e["sha256"] = hashlib.sha256(open(os.path.join(r, e["path"]), "rb").read()).hexdigest(); jw(r, "extraction/measured-values.json", d)
+def m_exc_selfapproved(r):
+    d = jl(r, "extraction/measured-values.json"); d["cloneParity"].setdefault("exceptions", []).append({"route": "/", "section": "media.showreel", "instance": 0, "status": "approved", "approvedBy": "agent"}); jw(r, "extraction/measured-values.json", d)
+def m_exc_to_pass(r):
+    d = jl(r, "extraction/measured-values.json"); d["cloneParity"].setdefault("exceptions", []).append({"route": "/", "section": "media.showreel", "instance": 0, "status": "pending human approval", "approvedBy": None}); jw(r, "extraction/measured-values.json", d)
 def m_parity_gate(r):
-    d = jl(r, "extraction/measured-values.json"); x = next(x for x in d["cloneParity"]["routes"] if x["belowGate"]); x["belowGate"] = []; x["perSectionGatePass"] = True; jw(r, "extraction/measured-values.json", d)
+    d = jl(r, "extraction/measured-values.json"); x = d["cloneParity"]["routes"][0]; x["belowGate"] = ["media.showreel#0"]; x["perSectionGatePass"] = False; jw(r, "extraction/measured-values.json", d)
 def m_abspath(r):
     with open(os.path.join(r, "CHANGELOG.md"), "a", encoding="utf-8") as f:
         f.write("\nbuilt from " + "/Us" + "ers/someone/project\n")
@@ -158,6 +180,13 @@ CASES = [  # (name, mutation, expected failing check, needs sibling source)
     ("served route missing from sectionHeights", m_unmeasured, "wrapper-gate", False),
     ("parity average hand-edited", m_parity, "clone-parity", False),
     ("parity gate flag hand-flipped", m_parity_gate, "clone-parity", False),
+    ("parity result file edited (sha256 pin)", m_result_tamper, "parity-evidence", False),
+    ("parity score hand-edited consistently (averages re-derived)", m_score_consistent_edit, "parity-evidence", False),
+    ("parity evidence pins removed", m_pin_removed, "parity-evidence", False),
+    ("parity repeat result file missing", m_result_missing, "parity-evidence", False),
+    ("official parity run re-labelled as unfrozen and re-pinned", m_freeze_off, "parity-evidence", False),
+    ("parity exception self-approved", m_exc_selfapproved, "parity-evidence", False),
+    ("parity exception added for a passing section", m_exc_to_pass, "parity-evidence", False),
     ("absolute machine path in a doc", m_abspath, "no-absolute-paths", False),
     ("entryPoint outside the package", m_entry, "self-containment", False),
     ("junk file in the package", m_junk, "no-junk-files", False),

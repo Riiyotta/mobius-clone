@@ -1,0 +1,115 @@
+{
+ "tool": "extraction/parity_harness.mjs",
+ "measuredAt": "2026-11-06T07:31:41.028Z",
+ "captureState": {
+  "freeze": false,
+  "phaseMs": 0,
+  "cloneSkewMs": 0,
+  "only": [
+   "media.showreel",
+   "media.studio-image-strip",
+   "editorial.notes-index"
+  ]
+ },
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "originalUrl": "https://mobius.framer.website",
+ "cloneUrl": "http://localhost:5781",
+ "pixelThreshold": 40,
+ "gate": {
+  "perSectionMin": 0.8,
+  "pageAverageMin": 0.8
+ },
+ "overall": {
+  "routes": 3,
+  "sections": 3,
+  "meanSectionScore": 0.7054,
+  "sectionsBelowGate": 2
+ },
+ "routes": [
+  {
+   "route": "/",
+   "template": "home",
+   "docHeightOriginal": 23544,
+   "docHeightClone": 23544,
+   "average": 0.7094,
+   "minSection": 0.7094,
+   "perSectionGatePass": false,
+   "averageGatePass": false,
+   "belowGate": [
+    "media.showreel#0"
+   ],
+   "sections": [
+    {
+     "section": "media.showreel",
+     "instance": 0,
+     "topPx": 2737,
+     "heightPx": 503,
+     "offsets": [
+      2737
+     ],
+     "score": 0.7094,
+     "shotScores": [
+      0.7094
+     ]
+    }
+   ]
+  },
+  {
+   "route": "/studio",
+   "template": "studio",
+   "docHeightOriginal": 9661,
+   "docHeightClone": 9661,
+   "average": 0.6013,
+   "minSection": 0.6013,
+   "perSectionGatePass": false,
+   "averageGatePass": false,
+   "belowGate": [
+    "media.studio-image-strip#0"
+   ],
+   "sections": [
+    {
+     "section": "media.studio-image-strip",
+     "instance": 0,
+     "topPx": 5084,
+     "heightPx": 900,
+     "offsets": [
+      5084
+     ],
+     "score": 0.6013,
+     "shotScores": [
+      0.6013
+     ]
+    }
+   ]
+  },
+  {
+   "route": "/feed",
+   "template": "feed-index",
+   "docHeightOriginal": 900,
+   "docHeightClone": 900,
+   "average": 0.8055,
+   "minSection": 0.8055,
+   "perSectionGatePass": true,
+   "averageGatePass": true,
+   "belowGate": [],
+   "sections": [
+    {
+     "section": "editorial.notes-index",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 900,
+     "offsets": [
+      0
+     ],
+     "score": 0.8055,
+     "shotScores": [
+      0.8055
+     ]
+    }
+   ]
+  }
+ ]
+}

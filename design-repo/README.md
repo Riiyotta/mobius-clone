@@ -86,25 +86,34 @@ The home "loader" is the hero's own appear sequence, not a preloader.
   (re-measure: `PLAYWRIGHT_MODULE=<playwright> CLONE_URL=<url> node extraction/measure_sections.mjs --out <file>`).
   Wrapper gate: 0 errors; no whitelist entries needed (max HERO 911.9px; max share 34.8%).
 - Doc heights at 1000 and 390 for every route: `responsiveDocHeights`.
-- Live-original vs clone parity at 1440x900, same scroll offsets, per-section gate 0.80 (`extraction/parity_harness.mjs`):
-  mean section score 0.970 over 53 sections on 9 routes;
-  3 sections below the gate.
+- Live-original vs clone parity at 1440x900, same scroll offsets, per-section gate 0.80 (`extraction/parity_harness.mjs`,
+  symmetric freeze on both sides, see below): mean section score 0.989 over 53 sections on 9 routes;
+  0 sections below the gate (lowest 0.880). Two full runs agree within 0.0038 per section.
 
 | route | average | min section | per-section gate |
 |---|---|---|---|
-| / | 0.952 | 0.625 | FAIL: media.showreel#0 |
+| / | 0.984 | 0.927 | pass |
 | /work | 0.998 | 0.998 | pass |
-| /work/soma-studio | 0.989 | 0.966 | pass |
-| /studio | 0.942 | 0.670 | FAIL: media.studio-image-strip#0 |
+| /work/soma-studio | 0.995 | 0.990 | pass |
+| /studio | 0.993 | 0.982 | pass |
 | /contacts | 0.990 | 0.976 | pass |
-| /feed | 0.795 | 0.795 | FAIL: editorial.notes-index#0 |
+| /feed | 0.994 | 0.994 | pass |
 | /feed/beyond-function | 0.992 | 0.987 | pass |
 | /legal/privacy-policy | 0.997 | 0.991 | pass |
-| /404 | 0.987 | 0.973 | pass |
+| /404 | 0.956 | 0.880 | pass |
 
-The below-gate sections are continuously animating media (video + text bands, image strip, auto-scrolling
-columns) that the harness does not freeze. Not measured: parity at tablet/phone widths, the other CMS routes,
-interaction states.
+- Capture state: before each screenshot both sides get the same freeze (videos paused and seeked to 0 ms with the seek awaited,
+  CSS/WAAPI animations paused or finished, script-driven marquees/columns pinned to the same start state, images decoded). Nothing is
+  masked or replaced; the 10 s testimonial autoplay and hover/drag states are not frozen. Full wording: `cloneParity.captureState`
+  and the harness header. `--freeze off` reproduces the earlier unfrozen capture.
+- The earlier below-gate sections (`media.showreel`, `media.studio-image-strip`, `editorial.notes-index`) were animation timing: unfrozen
+  they scored 0.6318/0.5793/0.7969 and 0.7094/0.6013/0.8055 on two re-runs (1.1.0 recorded
+  0.6249/0.6704/0.7954), frozen 0.9964/0.9994/0.994; with the clone deliberately out of phase the score falls again, and text-free
+  geometry (boxes, text rows) matches. Evidence and numbers: `cloneParity.animationHypothesis`, `cloneParity.geometry`. No `src/` change
+  was needed and no parity exception is recorded (`cloneParity.exceptions` is empty; an exception could only be added as pending human approval).
+- Every recorded number is pinned (sha256) to a tracked result file in `extraction/parity-results/` and `verify_all` re-derives it
+  (`parity-evidence`). Live screenshots are never committed. Not measured: parity at tablet/phone widths, the other CMS routes,
+  interaction states.
 
 ## Verify
 
