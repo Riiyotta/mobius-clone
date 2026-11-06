@@ -1,6 +1,6 @@
 {
  "tool": "extraction/parity_harness.mjs",
- "measuredAt": "2026-11-06T07:24:54.645Z",
+ "measuredAt": "2026-11-06T10:58:26.626Z",
  "captureState": {
   "freeze": true,
   "phaseMs": 0,
@@ -12,7 +12,7 @@
   "height": 900
  },
  "originalUrl": "https://mobius.framer.website",
- "cloneUrl": "http://localhost:5781",
+ "cloneUrl": "http://localhost:5791",
  "pixelThreshold": 40,
  "gate": {
   "perSectionMin": 0.8,
@@ -21,7 +21,7 @@
  "overall": {
   "routes": 9,
   "sections": 53,
-  "meanSectionScore": 0.9889,
+  "meanSectionScore": 0.9937,
   "sectionsBelowGate": 0
  },
  "routes": [
@@ -30,8 +30,8 @@
    "template": "home",
    "docHeightOriginal": 23544,
    "docHeightClone": 23544,
-   "average": 0.9837,
-   "minSection": 0.9271,
+   "average": 0.9929,
+   "minSection": 0.9784,
    "perSectionGatePass": true,
    "averageGatePass": true,
    "belowGate": [],
@@ -49,7 +49,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -63,7 +64,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "900": {
@@ -79,7 +81,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -93,7 +96,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "1800": {
@@ -112,7 +116,7 @@
       "movers": [
        {
         "el": "div.",
-        "vx": -98,
+        "vx": -98.3,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -120,160 +124,9 @@
         ],
         "widthPx": 3235,
         "heightPx": 160
-       }
-      ]
-     },
-     "clone": {
-      "videos": 1,
-      "videoSeeks": [
-       {
-        "requestedS": 0,
-        "atS": 0,
-        "paused": true,
-        "readyState": 4
        }
       ],
-      "animsPaused": 0,
-      "animsFinished": 2,
-      "movers": [
-       {
-        "el": "div.hs-tk-track",
-        "vx": -98.4,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 3235,
-        "heightPx": 160
-       },
-       {
-        "el": "div.hs-tk-track",
-        "vx": 98.4,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 3235,
-        "heightPx": 160
-       }
-      ]
-     }
-    },
-    "2700": {
-     "original": {
-      "videos": 1,
-      "videoSeeks": [
-       {
-        "requestedS": 0,
-        "atS": 0,
-        "paused": true,
-        "readyState": 4
-       }
-      ],
-      "animsPaused": 0,
-      "animsFinished": 0,
-      "movers": [
-       {
-        "el": "div.",
-        "vx": -98,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 3235,
-        "heightPx": 160
-       },
-       {
-        "el": "div.",
-        "vx": 98,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 3235,
-        "heightPx": 160
-       }
-      ]
-     },
-     "clone": {
-      "videos": 1,
-      "videoSeeks": [
-       {
-        "requestedS": 0,
-        "atS": 0,
-        "paused": true,
-        "readyState": 4
-       }
-      ],
-      "animsPaused": 0,
-      "animsFinished": 2,
-      "movers": [
-       {
-        "el": "div.hs-tk-track",
-        "vx": -98.2,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 3235,
-        "heightPx": 160
-       },
-       {
-        "el": "div.hs-tk-track",
-        "vx": 98.2,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 3235,
-        "heightPx": 160
-       }
-      ]
-     }
-    },
-    "2737": {
-     "original": {
-      "videos": 1,
-      "videoSeeks": [
-       {
-        "requestedS": 0,
-        "atS": 0,
-        "paused": true,
-        "readyState": 4
-       }
-      ],
-      "animsPaused": 0,
-      "animsFinished": 0,
-      "movers": [
-       {
-        "el": "div.",
-        "vx": -98.4,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 3235,
-        "heightPx": 160
-       },
-       {
-        "el": "div.",
-        "vx": 98.4,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 3235,
-        "heightPx": 160
-       }
-      ]
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -310,7 +163,164 @@
         "widthPx": 3235,
         "heightPx": 160
        }
-      ]
+      ],
+      "rotators": []
+     }
+    },
+    "2700": {
+     "original": {
+      "videos": 1,
+      "videoSeeks": [
+       {
+        "requestedS": 0,
+        "atS": 0,
+        "paused": true,
+        "readyState": 4
+       }
+      ],
+      "animsPaused": 0,
+      "animsFinished": 0,
+      "movers": [
+       {
+        "el": "div.",
+        "vx": -98.5,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 3235,
+        "heightPx": 160
+       },
+       {
+        "el": "div.",
+        "vx": 98.5,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 3235,
+        "heightPx": 160
+       }
+      ],
+      "rotators": []
+     },
+     "clone": {
+      "videos": 1,
+      "videoSeeks": [
+       {
+        "requestedS": 0,
+        "atS": 0,
+        "paused": true,
+        "readyState": 4
+       }
+      ],
+      "animsPaused": 0,
+      "animsFinished": 2,
+      "movers": [
+       {
+        "el": "div.hs-tk-track",
+        "vx": -97.9,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 3235,
+        "heightPx": 160
+       },
+       {
+        "el": "div.hs-tk-track",
+        "vx": 97.9,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 3235,
+        "heightPx": 160
+       }
+      ],
+      "rotators": []
+     }
+    },
+    "2737": {
+     "original": {
+      "videos": 1,
+      "videoSeeks": [
+       {
+        "requestedS": 0,
+        "atS": 0,
+        "paused": true,
+        "readyState": 4
+       }
+      ],
+      "animsPaused": 0,
+      "animsFinished": 0,
+      "movers": [
+       {
+        "el": "div.",
+        "vx": -97.9,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 3235,
+        "heightPx": 160
+       },
+       {
+        "el": "div.",
+        "vx": 97.9,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 3235,
+        "heightPx": 160
+       }
+      ],
+      "rotators": []
+     },
+     "clone": {
+      "videos": 1,
+      "videoSeeks": [
+       {
+        "requestedS": 0,
+        "atS": 0,
+        "paused": true,
+        "readyState": 4
+       }
+      ],
+      "animsPaused": 0,
+      "animsFinished": 2,
+      "movers": [
+       {
+        "el": "div.hs-tk-track",
+        "vx": -97.6,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 3235,
+        "heightPx": 160
+       },
+       {
+        "el": "div.hs-tk-track",
+        "vx": 97.6,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 3235,
+        "heightPx": 160
+       }
+      ],
+      "rotators": []
      }
     },
     "3239": {
@@ -329,7 +339,7 @@
       "movers": [
        {
         "el": "div.",
-        "vx": 98,
+        "vx": 97.1,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -338,7 +348,8 @@
         "widthPx": 3235,
         "heightPx": 160
        }
-      ]
+      ],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -375,7 +386,8 @@
         "widthPx": 3235,
         "heightPx": 160
        }
-      ]
+      ],
+      "rotators": []
      }
     },
     "4139": {
@@ -391,7 +403,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -405,7 +418,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "5039": {
@@ -421,7 +435,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -435,7 +450,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "6344": {
@@ -451,7 +467,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -465,7 +482,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "7244": {
@@ -481,7 +499,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -495,7 +514,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "8144": {
@@ -511,7 +531,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -525,7 +546,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "9452": {
@@ -541,7 +563,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -555,7 +578,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "10240": {
@@ -571,7 +595,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -585,7 +610,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "11140": {
@@ -601,7 +627,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -615,7 +642,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "11186": {
@@ -631,7 +659,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -644,8 +673,9 @@
        }
       ],
       "animsPaused": 0,
-      "animsFinished": 3,
-      "movers": []
+      "animsFinished": 2,
+      "movers": [],
+      "rotators": []
      }
     },
     "12086": {
@@ -661,7 +691,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -675,7 +706,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "12986": {
@@ -691,7 +723,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -705,7 +738,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "13957": {
@@ -721,7 +755,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -734,8 +769,9 @@
        }
       ],
       "animsPaused": 0,
-      "animsFinished": 3,
-      "movers": []
+      "animsFinished": 2,
+      "movers": [],
+      "rotators": []
      }
     },
     "14857": {
@@ -751,7 +787,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -765,7 +802,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "14913": {
@@ -781,7 +819,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -795,7 +834,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "15813": {
@@ -811,7 +851,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -825,7 +866,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "15966": {
@@ -841,7 +883,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -855,7 +898,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "16866": {
@@ -871,7 +915,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -885,7 +930,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "17766": {
@@ -901,7 +947,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -915,7 +962,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "18268": {
@@ -931,7 +979,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -945,7 +994,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "19168": {
@@ -961,7 +1011,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -975,7 +1026,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "19448": {
@@ -991,7 +1043,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -1005,7 +1058,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "20348": {
@@ -1021,7 +1075,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -1034,8 +1089,9 @@
        }
       ],
       "animsPaused": 0,
-      "animsFinished": 3,
-      "movers": []
+      "animsFinished": 2,
+      "movers": [],
+      "rotators": []
      }
     },
     "21156": {
@@ -1051,7 +1107,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -1065,7 +1122,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "22056": {
@@ -1081,7 +1139,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -1095,7 +1154,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "22626": {
@@ -1111,7 +1171,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -1125,7 +1186,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "22644": {
@@ -1141,7 +1203,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 1,
@@ -1155,7 +1218,8 @@
       ],
       "animsPaused": 0,
       "animsFinished": 2,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     }
    },
@@ -1168,9 +1232,9 @@
      "offsets": [
       0
      ],
-     "score": 0.9976,
+     "score": 0.9978,
      "shotScores": [
-      0.9976
+      0.9978
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -1202,11 +1266,11 @@
       1800,
       2700
      ],
-     "score": 0.9909,
+     "score": 0.991,
      "shotScores": [
       0.9963,
       0.9794,
-      0.997
+      0.9971
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -1236,9 +1300,9 @@
      "offsets": [
       2737
      ],
-     "score": 0.9964,
+     "score": 0.9966,
      "shotScores": [
-      0.9964
+      0.9966
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -1340,9 +1404,9 @@
      "offsets": [
       9452
      ],
-     "score": 0.9992,
+     "score": 0.9975,
      "shotScores": [
-      0.9992
+      0.9975
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -1373,9 +1437,9 @@
       10240,
       11140
      ],
-     "score": 0.9654,
+     "score": 0.9954,
      "shotScores": [
-      0.9318,
+      0.9918,
       0.999
      ],
      "geometry": {
@@ -1412,7 +1476,7 @@
      "shotScores": [
       0.9945,
       0.9763,
-      0.9645
+      0.9644
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -1443,10 +1507,10 @@
       13957,
       14857
      ],
-     "score": 0.9453,
+     "score": 0.9902,
      "shotScores": [
       0.9964,
-      0.8943
+      0.9839
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -1477,10 +1541,10 @@
       14913,
       15813
      ],
-     "score": 0.9271,
+     "score": 0.9911,
      "shotScores": [
-      0.8831,
-      0.971
+      0.9862,
+      0.996
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -1515,8 +1579,8 @@
      "score": 0.9962,
      "shotScores": [
       0.9958,
-      0.9958,
-      0.9969
+      0.9959,
+      0.997
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -1547,10 +1611,10 @@
       18268,
       19168
      ],
-     "score": 0.9986,
+     "score": 0.9987,
      "shotScores": [
       0.9981,
-      0.9991
+      0.9992
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -1581,9 +1645,9 @@
       19448,
       20348
      ],
-     "score": 0.9984,
+     "score": 0.9985,
      "shotScores": [
-      0.9993,
+      0.9994,
       0.9976
      ],
      "geometry": {
@@ -1618,7 +1682,7 @@
      "score": 0.9974,
      "shotScores": [
       0.9982,
-      0.9965
+      0.9966
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -1759,7 +1823,7 @@
    "template": "case-detail",
    "docHeightOriginal": 6221,
    "docHeightClone": 6221,
-   "average": 0.9951,
+   "average": 0.9949,
    "minSection": 0.9902,
    "perSectionGatePass": true,
    "averageGatePass": true,
@@ -1774,7 +1838,7 @@
       "movers": [
        {
         "el": "div.",
-        "vx": -88.1,
+        "vx": -99.2,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -1783,7 +1847,8 @@
         "widthPx": 2672,
         "heightPx": 160
        }
-      ]
+      ],
+      "rotators": []
      },
      "clone": {
       "videos": 0,
@@ -1793,7 +1858,7 @@
       "movers": [
        {
         "el": "div.pj-tk-track",
-        "vx": -97.8,
+        "vx": -99.1,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -1802,7 +1867,8 @@
         "widthPx": 2672,
         "heightPx": 160
        }
-      ]
+      ],
+      "rotators": []
      }
     },
     "4068": {
@@ -1814,7 +1880,7 @@
       "movers": [
        {
         "el": "div.",
-        "vx": -69.3,
+        "vx": -99,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -1825,7 +1891,7 @@
        },
        {
         "el": "div.",
-        "vx": 69.3,
+        "vx": 99,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -1834,7 +1900,8 @@
         "widthPx": 2672,
         "heightPx": 160
        }
-      ]
+      ],
+      "rotators": []
      },
      "clone": {
       "videos": 0,
@@ -1844,7 +1911,7 @@
       "movers": [
        {
         "el": "div.pj-tk-track",
-        "vx": -91.3,
+        "vx": -99.1,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -1855,7 +1922,7 @@
        },
        {
         "el": "div.pj-tk-track",
-        "vx": 91.3,
+        "vx": 99.1,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -1864,7 +1931,8 @@
         "widthPx": 2672,
         "heightPx": 160
        }
-      ]
+      ],
+      "rotators": []
      }
     },
     "4416": {
@@ -1876,7 +1944,7 @@
       "movers": [
        {
         "el": "div.",
-        "vx": -98.6,
+        "vx": -98.9,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -1887,7 +1955,7 @@
        },
        {
         "el": "div.",
-        "vx": 98.6,
+        "vx": 98.9,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -1896,7 +1964,8 @@
         "widthPx": 2672,
         "heightPx": 160
        }
-      ]
+      ],
+      "rotators": []
      },
      "clone": {
       "videos": 0,
@@ -1906,7 +1975,7 @@
       "movers": [
        {
         "el": "div.pj-tk-track",
-        "vx": -98.8,
+        "vx": -92.4,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -1917,7 +1986,7 @@
        },
        {
         "el": "div.pj-tk-track",
-        "vx": 98.8,
+        "vx": 92.4,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -1926,7 +1995,8 @@
         "widthPx": 2672,
         "heightPx": 160
        }
-      ]
+      ],
+      "rotators": []
      }
     }
    },
@@ -1939,9 +2009,9 @@
      "offsets": [
       0
      ],
-     "score": 0.9963,
+     "score": 0.9964,
      "shotScores": [
-      0.9963
+      0.9964
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -1958,7 +2028,7 @@
        "clone": 54,
        "matched": 54,
        "matchedShare": 0.9,
-       "meanIoU": 0.993,
+       "meanIoU": 0.9923,
        "medianMaxEdgeDeltaPx": 0
       }
      }
@@ -2101,9 +2171,9 @@
      "offsets": [
       3294
      ],
-     "score": 0.9934,
+     "score": 0.9933,
      "shotScores": [
-      0.9934
+      0.9933
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -2165,9 +2235,9 @@
      "offsets": [
       4068
      ],
-     "score": 0.9989,
+     "score": 0.9981,
      "shotScores": [
-      0.9989
+      0.9981
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -2197,9 +2267,9 @@
      "offsets": [
       4416
      ],
-     "score": 0.999,
+     "score": 0.9981,
      "shotScores": [
-      0.999
+      0.9981
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -2262,8 +2332,8 @@
    "template": "studio",
    "docHeightOriginal": 9661,
    "docHeightClone": 9661,
-   "average": 0.9932,
-   "minSection": 0.9818,
+   "average": 0.9931,
+   "minSection": 0.9816,
    "perSectionGatePass": true,
    "averageGatePass": true,
    "belowGate": [],
@@ -2277,7 +2347,7 @@
       "movers": [
        {
         "el": "ul.",
-        "vx": 52.4,
+        "vx": 52.5,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2286,7 +2356,8 @@
         "widthPx": 1360,
         "heightPx": 820
        }
-      ]
+      ],
+      "rotators": []
      },
      "clone": {
       "videos": 0,
@@ -2296,7 +2367,7 @@
       "movers": [
        {
         "el": "ul.st-gal-track",
-        "vx": -98.9,
+        "vx": -98.3,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2305,130 +2376,11 @@
         "widthPx": 11277,
         "heightPx": 820
        }
-      ]
+      ],
+      "rotators": []
      }
     },
     "900": {
-     "original": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 0,
-      "movers": [
-       {
-        "el": "ul.",
-        "vx": 59,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 1360,
-        "heightPx": 820
-       }
-      ]
-     },
-     "clone": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 1,
-      "movers": [
-       {
-        "el": "ul.st-gal-track",
-        "vx": -98.8,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 11277,
-        "heightPx": 820
-       }
-      ]
-     }
-    },
-    "912": {
-     "original": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 0,
-      "movers": [
-       {
-        "el": "ul.",
-        "vx": 59.1,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 1360,
-        "heightPx": 820
-       }
-      ]
-     },
-     "clone": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 1,
-      "movers": [
-       {
-        "el": "ul.st-gal-track",
-        "vx": -98.8,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 11277,
-        "heightPx": 820
-       }
-      ]
-     }
-    },
-    "1812": {
-     "original": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 0,
-      "movers": [
-       {
-        "el": "ul.",
-        "vx": 58.8,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 1360,
-        "heightPx": 820
-       }
-      ]
-     },
-     "clone": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 1,
-      "movers": [
-       {
-        "el": "ul.st-gal-track",
-        "vx": -98.9,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 11277,
-        "heightPx": 820
-       }
-      ]
-     }
-    },
-    "2712": {
      "original": {
       "videos": 0,
       "videoSeeks": [],
@@ -2446,7 +2398,134 @@
         "widthPx": 1360,
         "heightPx": 820
        }
-      ]
+      ],
+      "rotators": []
+     },
+     "clone": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 1,
+      "movers": [
+       {
+        "el": "ul.st-gal-track",
+        "vx": -98.4,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 11277,
+        "heightPx": 820
+       }
+      ],
+      "rotators": []
+     }
+    },
+    "912": {
+     "original": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 0,
+      "movers": [
+       {
+        "el": "ul.",
+        "vx": 59.3,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 1360,
+        "heightPx": 820
+       }
+      ],
+      "rotators": []
+     },
+     "clone": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 1,
+      "movers": [
+       {
+        "el": "ul.st-gal-track",
+        "vx": -98.6,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 11277,
+        "heightPx": 820
+       }
+      ],
+      "rotators": []
+     }
+    },
+    "1812": {
+     "original": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 0,
+      "movers": [
+       {
+        "el": "ul.",
+        "vx": 59.6,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 1360,
+        "heightPx": 820
+       }
+      ],
+      "rotators": []
+     },
+     "clone": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 1,
+      "movers": [
+       {
+        "el": "ul.st-gal-track",
+        "vx": -98.5,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 11277,
+        "heightPx": 820
+       }
+      ],
+      "rotators": []
+     }
+    },
+    "2712": {
+     "original": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 0,
+      "movers": [
+       {
+        "el": "ul.",
+        "vx": 58.9,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 1360,
+        "heightPx": 820
+       }
+      ],
+      "rotators": []
      },
      "clone": {
       "videos": 0,
@@ -2465,7 +2544,8 @@
         "widthPx": 11277,
         "heightPx": 820
        }
-      ]
+      ],
+      "rotators": []
      }
     },
     "3363": {
@@ -2477,7 +2557,7 @@
       "movers": [
        {
         "el": "ul.",
-        "vx": 52.9,
+        "vx": 59.2,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2486,7 +2566,8 @@
         "widthPx": 1360,
         "heightPx": 820
        }
-      ]
+      ],
+      "rotators": []
      },
      "clone": {
       "videos": 0,
@@ -2496,7 +2577,7 @@
       "movers": [
        {
         "el": "ul.st-gal-track",
-        "vx": -103.6,
+        "vx": -98.9,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2505,7 +2586,8 @@
         "widthPx": 11277,
         "heightPx": 820
        }
-      ]
+      ],
+      "rotators": []
      }
     },
     "4263": {
@@ -2517,16 +2599,101 @@
       "movers": [
        {
         "el": "ul.",
-        "vx": -99.1,
+        "vx": -98.6,
         "vy": 0,
         "firstItemAlignPx": [
-         -3772,
+         0,
          0
         ],
         "widthPx": 1360,
         "heightPx": 820
        }
-      ]
+      ],
+      "rotators": []
+     },
+     "clone": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 1,
+      "movers": [
+       {
+        "el": "ul.st-gal-track",
+        "vx": -99.1,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 11277,
+        "heightPx": 820
+       }
+      ],
+      "rotators": []
+     }
+    },
+    "5084": {
+     "original": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 0,
+      "movers": [
+       {
+        "el": "ul.",
+        "vx": -93.6,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 1360,
+        "heightPx": 820
+       }
+      ],
+      "rotators": []
+     },
+     "clone": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 1,
+      "movers": [
+       {
+        "el": "ul.st-gal-track",
+        "vx": -85.8,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 11277,
+        "heightPx": 820
+       }
+      ],
+      "rotators": []
+     }
+    },
+    "5984": {
+     "original": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 0,
+      "movers": [
+       {
+        "el": "ul.",
+        "vx": -99.1,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 1360,
+        "heightPx": 820
+       }
+      ],
+      "rotators": []
      },
      "clone": {
       "videos": 0,
@@ -2545,87 +2712,8 @@
         "widthPx": 11277,
         "heightPx": 820
        }
-      ]
-     }
-    },
-    "5084": {
-     "original": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 0,
-      "movers": [
-       {
-        "el": "ul.",
-        "vx": -80.7,
-        "vy": 0,
-        "firstItemAlignPx": [
-         -3772,
-         0
-        ],
-        "widthPx": 1360,
-        "heightPx": 820
-       }
-      ]
-     },
-     "clone": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 1,
-      "movers": [
-       {
-        "el": "ul.st-gal-track",
-        "vx": -92,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 11277,
-        "heightPx": 820
-       }
-      ]
-     }
-    },
-    "5984": {
-     "original": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 0,
-      "movers": [
-       {
-        "el": "ul.",
-        "vx": -98.9,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 1360,
-        "heightPx": 820
-       }
-      ]
-     },
-     "clone": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 1,
-      "movers": [
-       {
-        "el": "ul.st-gal-track",
-        "vx": -98.9,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 11277,
-        "heightPx": 820
-       }
-      ]
+      ],
+      "rotators": []
      }
     },
     "6884": {
@@ -2637,7 +2725,7 @@
       "movers": [
        {
         "el": "ul.",
-        "vx": -99.1,
+        "vx": -98.8,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2646,7 +2734,8 @@
         "widthPx": 1360,
         "heightPx": 820
        }
-      ]
+      ],
+      "rotators": []
      },
      "clone": {
       "videos": 0,
@@ -2656,7 +2745,7 @@
       "movers": [
        {
         "el": "ul.st-gal-track",
-        "vx": -98.5,
+        "vx": -98.8,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2665,7 +2754,8 @@
         "widthPx": 11277,
         "heightPx": 820
        }
-      ]
+      ],
+      "rotators": []
      }
     },
     "7784": {
@@ -2677,7 +2767,7 @@
       "movers": [
        {
         "el": "ul.",
-        "vx": -98,
+        "vx": -98.5,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2688,173 +2778,28 @@
        },
        {
         "el": "div.",
-        "vx": -98.4,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 3566,
-        "heightPx": 160
-       },
-       {
-        "el": "div.",
-        "vx": 98.4,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 3566,
-        "heightPx": 160
-       }
-      ]
-     },
-     "clone": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 1,
-      "movers": [
-       {
-        "el": "ul.st-gal-track",
-        "vx": -98.7,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 11277,
-        "heightPx": 820
-       },
-       {
-        "el": "div.st-tk-track",
-        "vx": -98.7,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 4754,
-        "heightPx": 160
-       },
-       {
-        "el": "div.st-tk-track",
-        "vx": 98.7,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 4754,
-        "heightPx": 160
-       }
-      ]
-     }
-    },
-    "7856": {
-     "original": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 0,
-      "movers": [
-       {
-        "el": "ul.",
-        "vx": -97,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 1360,
-        "heightPx": 820
-       },
-       {
-        "el": "div.",
-        "vx": -98,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 3566,
-        "heightPx": 160
-       },
-       {
-        "el": "div.",
-        "vx": 98,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 3566,
-        "heightPx": 160
-       }
-      ]
-     },
-     "clone": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 1,
-      "movers": [
-       {
-        "el": "ul.st-gal-track",
         "vx": -98.5,
         "vy": 0,
         "firstItemAlignPx": [
          0,
          0
         ],
-        "widthPx": 11277,
-        "heightPx": 820
-       },
-       {
-        "el": "div.st-tk-track",
-        "vx": -98.5,
-        "vy": 0,
-        "firstItemAlignPx": [
-         0,
-         0
-        ],
-        "widthPx": 4754,
+        "widthPx": 3566,
         "heightPx": 160
        },
        {
-        "el": "div.st-tk-track",
+        "el": "div.",
         "vx": 98.5,
         "vy": 0,
         "firstItemAlignPx": [
          0,
          0
         ],
-        "widthPx": 4754,
+        "widthPx": 3566,
         "heightPx": 160
        }
-      ]
-     }
-    },
-    "8743": {
-     "original": {
-      "videos": 0,
-      "videoSeeks": [],
-      "animsPaused": 0,
-      "animsFinished": 0,
-      "movers": [
-       {
-        "el": "ul.",
-        "vx": -99.1,
-        "vy": 0,
-        "firstItemAlignPx": [
-         -3772,
-         0
-        ],
-        "widthPx": 1360,
-        "heightPx": 820
-       }
-      ]
+      ],
+      "rotators": []
      },
      "clone": {
       "videos": 0,
@@ -2872,8 +2817,159 @@
         ],
         "widthPx": 11277,
         "heightPx": 820
+       },
+       {
+        "el": "div.st-tk-track",
+        "vx": -98.9,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 4754,
+        "heightPx": 160
+       },
+       {
+        "el": "div.st-tk-track",
+        "vx": 98.9,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 4754,
+        "heightPx": 160
        }
-      ]
+      ],
+      "rotators": []
+     }
+    },
+    "7856": {
+     "original": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 0,
+      "movers": [
+       {
+        "el": "ul.",
+        "vx": -100.5,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 1360,
+        "heightPx": 820
+       },
+       {
+        "el": "div.",
+        "vx": -98.6,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 3566,
+        "heightPx": 160
+       },
+       {
+        "el": "div.",
+        "vx": 98.6,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 3566,
+        "heightPx": 160
+       }
+      ],
+      "rotators": []
+     },
+     "clone": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 1,
+      "movers": [
+       {
+        "el": "ul.st-gal-track",
+        "vx": -98.8,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 11277,
+        "heightPx": 820
+       },
+       {
+        "el": "div.st-tk-track",
+        "vx": -98.8,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 4754,
+        "heightPx": 160
+       },
+       {
+        "el": "div.st-tk-track",
+        "vx": 98.8,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 4754,
+        "heightPx": 160
+       }
+      ],
+      "rotators": []
+     }
+    },
+    "8743": {
+     "original": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 0,
+      "movers": [
+       {
+        "el": "ul.",
+        "vx": -98.6,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 1360,
+        "heightPx": 820
+       }
+      ],
+      "rotators": []
+     },
+     "clone": {
+      "videos": 0,
+      "videoSeeks": [],
+      "animsPaused": 0,
+      "animsFinished": 1,
+      "movers": [
+       {
+        "el": "ul.st-gal-track",
+        "vx": -98.6,
+        "vy": 0,
+        "firstItemAlignPx": [
+         0,
+         0
+        ],
+        "widthPx": 11277,
+        "heightPx": 820
+       }
+      ],
+      "rotators": []
      }
     },
     "8761": {
@@ -2885,16 +2981,17 @@
       "movers": [
        {
         "el": "ul.",
-        "vx": -98.5,
+        "vx": -98.7,
         "vy": 0,
         "firstItemAlignPx": [
-         -3772,
+         0,
          0
         ],
         "widthPx": 1360,
         "heightPx": 820
        }
-      ]
+      ],
+      "rotators": []
      },
      "clone": {
       "videos": 0,
@@ -2904,7 +3001,7 @@
       "movers": [
        {
         "el": "ul.st-gal-track",
-        "vx": -98.5,
+        "vx": -98.8,
         "vy": 0,
         "firstItemAlignPx": [
          0,
@@ -2913,7 +3010,8 @@
         "widthPx": 11277,
         "heightPx": 820
        }
-      ]
+      ],
+      "rotators": []
      }
     }
    },
@@ -2927,10 +3025,10 @@
       0,
       900
      ],
-     "score": 0.9941,
+     "score": 0.9942,
      "shotScores": [
-      0.9994,
-      0.9888
+      0.9995,
+      0.9889
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -2964,7 +3062,7 @@
      ],
      "score": 0.9928,
      "shotScores": [
-      0.9884,
+      0.9885,
       0.9956,
       0.9943
      ],
@@ -3039,8 +3137,8 @@
       "media": {
        "live": 4,
        "clone": 12,
-       "matched": 3,
-       "matchedShare": 0.25,
+       "matched": 4,
+       "matchedShare": 0.3333,
        "meanIoU": 1,
        "medianMaxEdgeDeltaPx": 0
       },
@@ -3064,11 +3162,11 @@
       6884,
       7784
      ],
-     "score": 0.9818,
+     "score": 0.9816,
      "shotScores": [
       0.9591,
-      0.992,
-      0.9943
+      0.9921,
+      0.9935
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -3098,9 +3196,9 @@
      "offsets": [
       7856
      ],
-     "score": 0.9943,
+     "score": 0.9935,
      "shotScores": [
-      0.9943
+      0.9935
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -3163,8 +3261,8 @@
    "template": "contacts",
    "docHeightOriginal": 4905,
    "docHeightClone": 4905,
-   "average": 0.9903,
-   "minSection": 0.9761,
+   "average": 0.9904,
+   "minSection": 0.9762,
    "perSectionGatePass": true,
    "averageGatePass": true,
    "belowGate": [],
@@ -3181,8 +3279,8 @@
      ],
      "score": 0.9985,
      "shotScores": [
-      0.9993,
-      0.9976
+      0.9994,
+      0.9977
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -3213,7 +3311,7 @@
       1708,
       2608
      ],
-     "score": 0.9761,
+     "score": 0.9762,
      "shotScores": [
       0.9544,
       0.9979
@@ -3247,7 +3345,7 @@
       2808,
       3708
      ],
-     "score": 0.9957,
+     "score": 0.9958,
      "shotScores": [
       0.9981,
       0.9934
@@ -3281,10 +3379,10 @@
       3987,
       4005
      ],
-     "score": 0.9909,
+     "score": 0.991,
      "shotScores": [
-      0.9909,
-      0.9909
+      0.991,
+      0.991
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -3324,12 +3422,12 @@
       "videos": 0,
       "videoSeeks": [],
       "animsPaused": 0,
-      "animsFinished": 0,
+      "animsFinished": 1,
       "movers": [
        {
         "el": "div.",
         "vx": 0,
-        "vy": -49,
+        "vy": -49.4,
         "firstItemAlignPx": [
          0,
          0
@@ -3340,7 +3438,7 @@
        {
         "el": "div.",
         "vx": 0,
-        "vy": 73.5,
+        "vy": 74.1,
         "firstItemAlignPx": [
          0,
          0
@@ -3351,7 +3449,7 @@
        {
         "el": "div.",
         "vx": 0,
-        "vy": -24.5,
+        "vy": -24.7,
         "firstItemAlignPx": [
          0,
          0
@@ -3359,7 +3457,8 @@
         "widthPx": 427,
         "heightPx": 4877
        }
-      ]
+      ],
+      "rotators": []
      },
      "clone": {
       "videos": 0,
@@ -3381,7 +3480,7 @@
        {
         "el": "div.fd-col-track",
         "vx": 0,
-        "vy": 74.2,
+        "vy": 74.3,
         "firstItemAlignPx": [
          0,
          0
@@ -3392,7 +3491,7 @@
        {
         "el": "div.fd-col-track",
         "vx": 0,
-        "vy": -24.7,
+        "vy": -24.8,
         "firstItemAlignPx": [
          0,
          0
@@ -3400,7 +3499,8 @@
         "widthPx": 427,
         "heightPx": 4877
        }
-      ]
+      ],
+      "rotators": []
      }
     }
    },
@@ -3445,7 +3545,7 @@
    "docHeightOriginal": 4801,
    "docHeightClone": 4801,
    "average": 0.9922,
-   "minSection": 0.9867,
+   "minSection": 0.9868,
    "perSectionGatePass": true,
    "averageGatePass": true,
    "belowGate": [],
@@ -3459,9 +3559,9 @@
      "offsets": [
       0
      ],
-     "score": 0.9867,
+     "score": 0.9868,
      "shotScores": [
-      0.9867
+      0.9868
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -3494,8 +3594,8 @@
      ],
      "score": 0.9906,
      "shotScores": [
-      0.9849,
-      0.9962
+      0.985,
+      0.9963
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -3525,9 +3625,9 @@
      "offsets": [
       1556
      ],
-     "score": 0.9919,
+     "score": 0.992,
      "shotScores": [
-      0.9919
+      0.992
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -3589,9 +3689,9 @@
      "offsets": [
       2378
      ],
-     "score": 0.9984,
+     "score": 0.9985,
      "shotScores": [
-      0.9984
+      0.9985
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -3624,7 +3724,7 @@
      ],
      "score": 0.9947,
      "shotScores": [
-      0.9984,
+      0.9985,
       0.991
      ],
      "geometry": {
@@ -3688,8 +3788,8 @@
    "template": "legal",
    "docHeightOriginal": 6137,
    "docHeightClone": 6138,
-   "average": 0.9967,
-   "minSection": 0.9905,
+   "average": 0.9968,
+   "minSection": 0.9906,
    "perSectionGatePass": true,
    "averageGatePass": true,
    "belowGate": [],
@@ -3772,10 +3872,10 @@
       3749,
       4649
      ],
-     "score": 0.9981,
+     "score": 0.9982,
      "shotScores": [
-      0.9982,
-      0.998
+      0.9983,
+      0.9981
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -3806,10 +3906,10 @@
       5219,
       5237
      ],
-     "score": 0.9905,
+     "score": 0.9906,
      "shotScores": [
-      0.9905,
-      0.9905
+      0.9906,
+      0.9906
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -3838,8 +3938,8 @@
    "template": "not-found",
    "docHeightOriginal": 3288,
    "docHeightClone": 3288,
-   "average": 0.9564,
-   "minSection": 0.88,
+   "average": 0.9957,
+   "minSection": 0.991,
    "perSectionGatePass": true,
    "averageGatePass": true,
    "belowGate": [],
@@ -3850,14 +3950,38 @@
       "videoSeeks": [],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": [
+       {
+        "el": "div.framer-ygpifn",
+        "degPerSec": 24.74,
+        "pinnedDeg": -175.8
+       },
+       {
+        "el": "div.framer-191sieh",
+        "degPerSec": -34.63,
+        "pinnedDeg": 6.7
+       }
+      ]
      },
      "clone": {
       "videos": 0,
       "videoSeeks": [],
       "animsPaused": 2,
       "animsFinished": 1,
-      "movers": []
+      "movers": [],
+      "rotators": [
+       {
+        "el": "div.nf-shape",
+        "degPerSec": 24.68,
+        "pinnedDeg": -168.9
+       },
+       {
+        "el": "div.nf-shape",
+        "degPerSec": -34.55,
+        "pinnedDeg": 357.1
+       }
+      ]
      }
     },
     "900": {
@@ -3866,14 +3990,27 @@
       "videoSeeks": [],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": [
+       {
+        "el": "div.framer-ygpifn",
+        "degPerSec": 25.54,
+        "pinnedDeg": -179
+       },
+       {
+        "el": "div.framer-191sieh",
+        "degPerSec": -35.75,
+        "pinnedDeg": 11.3
+       }
+      ]
      },
      "clone": {
       "videos": 0,
       "videoSeeks": [],
       "animsPaused": 2,
       "animsFinished": 1,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "1800": {
@@ -3882,14 +4019,22 @@
       "videoSeeks": [],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": [
+       {
+        "el": "div.framer-ygpifn",
+        "degPerSec": 25.5,
+        "pinnedDeg": -177.9
+       }
+      ]
      },
      "clone": {
       "videos": 0,
       "videoSeeks": [],
       "animsPaused": 2,
       "animsFinished": 1,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "2370": {
@@ -3898,14 +4043,16 @@
       "videoSeeks": [],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 0,
       "videoSeeks": [],
       "animsPaused": 2,
       "animsFinished": 1,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     },
     "2388": {
@@ -3914,14 +4061,16 @@
       "videoSeeks": [],
       "animsPaused": 0,
       "animsFinished": 0,
-      "movers": []
+      "movers": [],
+      "rotators": []
      },
      "clone": {
       "videos": 0,
       "videoSeeks": [],
       "animsPaused": 2,
       "animsFinished": 1,
-      "movers": []
+      "movers": [],
+      "rotators": []
      }
     }
    },
@@ -3934,9 +4083,9 @@
      "offsets": [
       0
      ],
-     "score": 0.88,
+     "score": 0.9979,
      "shotScores": [
-      0.88
+      0.9979
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",
@@ -3967,10 +4116,10 @@
       900,
       1800
      ],
-     "score": 0.9981,
+     "score": 0.9982,
      "shotScores": [
       0.9982,
-      0.998
+      0.9981
      ],
      "geometry": {
       "note": "text-free; boxes relative to the section top, from the shot at the section top offset",

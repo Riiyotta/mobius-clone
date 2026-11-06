@@ -1,5 +1,39 @@
 # Changelog
 
+## 1.1.2
+
+- "fix mobius": the four weakest 1.1.1 sections were diagnosed from live / clone / diff images, the real causes fixed, and the parity that
+  1.1.1 had skipped was measured: tablet 768x1024, phone 390x844 and desktop 1440 for every remaining route. Everything uses the same
+  symmetric freeze and the same 0.80 per-section gate; every run was made twice and the repeat is pinned too.
+- 1440 weak sections (before 1.1.1 -> now): `/404 hero.not-found` 0.880 -> 0.998 (harness artefact: the live gradient shapes are script-driven
+  and were never frozen; the harness now pins rotating elements symmetrically, no src change), `/ testimonial.client-reflections`
+  0.927 -> 0.991 and `/ features.process-timeline` 0.945 -> 0.990 (real mismatch: the original's 10 s slideshow only plays while on screen, the clone
+  started it at mount and was one slide ahead; fixed in `src/components/home/Testimonials.jsx`), `/ team.founders` 0.965 -> 0.995 (real mismatch:
+  the original always draws a 50% black backdrop masked by a bottom-up gradient over each portrait, the clone only on hover; fixed in
+  `.hs-tc-bd`). Mean over the 53 sections 0.9889 -> 0.9937, lowest section 0.880 -> 0.976, two runs within 0.0021.
+- Tablet 768 (56 sections): first measurement 20 sections below the gate, mean 0.842 (lowest 0.454); now 0, mean 0.997 (lowest 0.973).
+  Phone 390 (56 sections): first measurement 5 below the gate, mean 0.950 (lowest 0.708); now 0, mean 0.995 (lowest 0.974).
+  Desktop 1440 remaining 22 routes (183 sections): 0 below the gate, mean 0.9945, lowest 0.975 (no src change needed). Every one of the
+  31 routes now has a desktop measurement; all 31 have a live counterpart (live and clone document heights equal on all 22 remaining routes).
+- Real src fixes found by those runs (all responsive, `src/` only, no copy changed): the home hero intro now fades out on scroll at tablet/phone
+  widths exactly like the original (the page is 32 px shorter after the first scroll there; every phone section below it was 32 px off);
+  phone-layout paragraphs take the original's max-widths (480 / 400 px, the clone had 100%: `.hs-scr-p`, `.hs-fd-p`, `.hs-pc-p`, `.hs-pc-text`,
+  `.hs-ts-p`, `.hs-pr-p`, `.hs-bn-p`, `.pj-body`, `.pj-cr-p`, `.pj-services p`, `.st-intro-p`); numbers/awards text blocks are centred as on the
+  original; case-study stats use a two-column `1fr 1fr` grid instead of fixed 185 px columns. Harness: wrap-offset release for tickers
+  (studio image strip 0.614 -> 0.997 at 768), rotation pins, documented in the harness header and `cloneParity.captureState`.
+- Per-section before/after numbers: `cloneParity.weakSections`, `cloneParityRuns.runs[].sectionsFixed` / `beforeAfterSummary`; the pre-fix result files
+  are tracked and pinned (`*-before-fix.json`). No parity exception recorded; nothing is waiting for approval.
+- Source line citations moved by the edits to Hero.jsx, Testimonials.jsx, home-sections.css (and token evidence lines) were re-pointed with a
+  line-mapping script and re-verified by `citations` / `tokens-vs-source`; 1440 section heights and the 1000 / 390 document heights were re-measured
+  and are unchanged; 768 document heights were added. Motion pattern `slideshow-autoplay` and the hero contract detail now describe the new behaviour.
+  Tokens, token policy, copy corpus and source-brand registries did not change (no token value, no copy).
+- New `verify_all` check `parity-runs` (25 checks now): pins, re-derived scores / heights / gates, viewport, freeze, unfiltered coverage, repeat tolerance,
+  exceptions, full 1440 route coverage, 768 and 390 coverage of the representative routes, and an honest `notMeasured` list. 19 new `prove_drift` cases.
+- Still unmeasured (listed in `cloneParityRuns.notMeasured`): the 22 non-representative routes at 768 and 390, 1000 and 1280 wide parity
+  (document heights only), hover / drag states, motion timing curves. The open mobile menu overlay was compared once on /studio at 390 and 768
+  (similarity 0.9999), not as a pinned run.
+- IR left untouched by request; no IR field depends on the changed numbers.
+
 ## 1.1.1
 
 - Parity harness (`extraction/parity_harness.mjs`): symmetric capture freeze applied identically to the live page and the clone before

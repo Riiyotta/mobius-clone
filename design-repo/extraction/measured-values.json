@@ -2647,7 +2647,7 @@
     ]
   },
   "responsiveDocHeights": {
-    "tool": "extraction/measure_sections.mjs --width 1000/390",
+    "tool": "extraction/measure_sections.mjs --width 1000/768/390 (768 added in 1.1.2; re-measured at 1.1.2: 1000 and 390 unchanged)",
     "clone": {
       "1000x800": {
         "/": 20070,
@@ -2714,6 +2714,39 @@
         "/legal/privacy-policy": 6284,
         "/legal/terms-of-service": 5847,
         "/404": 3247
+      },
+      "768x1024": {
+        "/": 24345,
+        "/work": 9756,
+        "/work/soma-studio": 8542,
+        "/work/bright-matter": 8057,
+        "/work/wavehouse": 8542,
+        "/work/north-layer": 8539,
+        "/work/zero-parallel": 8542,
+        "/work/pulse": 8539,
+        "/work/after-light": 9011,
+        "/work/forma-nine": 8542,
+        "/work/golden-hour": 8539,
+        "/work/echoform": 8054,
+        "/work/axis-point": 8542,
+        "/work/orbit-404": 7144,
+        "/studio": 12079,
+        "/contacts": 5357,
+        "/feed": 10819,
+        "/feed/the-logic-of-emotion": 5152,
+        "/feed/precision-over-perfection": 5126,
+        "/feed/the-language-of-shape": 5177,
+        "/feed/designing-the-invisible": 4913,
+        "/feed/the-architecture-of-meaning": 4713,
+        "/feed/one-idea-many-forms": 4821,
+        "/feed/beyond-function": 4870,
+        "/feed/the-human-algorithm": 4963,
+        "/feed/the-clarity-paradox": 4888,
+        "/feed/systems-with-soul": 4706,
+        "/feed/thinking-in-motion": 4986,
+        "/legal/privacy-policy": 5585,
+        "/legal/terms-of-service": 5133,
+        "/404": 3148
       }
     },
     "originalReference": {
@@ -2732,12 +2765,12 @@
   "wrapperWhitelistNote": "Empty: at 1440 no HERO exceeds 1800px (max 911.9) and no in-flow section exceeds 50% of a page with >= 3 sections (max: contacts form 34.8%). The 100vh index pages (/work, /feed) have < 3 in-flow sections and are skipped by rule.",
   "cloneParity": {
     "tool": "extraction/parity_harness.mjs",
-    "measuredAt": "2026-11-06T07:24:54.645Z",
+    "measuredAt": "2026-11-06T10:58:26.626Z",
     "captureState": {
       "freeze": true,
       "phaseMs": 0,
       "cloneSkewMs": 0,
-      "description": "Symmetric freeze applied identically to the live page and the clone immediately before every screenshot (documented in the extraction/parity_harness.mjs header): (0) fonts, visible <img> and CSS background images loaded and decoded, re-checked after the pins; (1) every <video> paused and seeked to 0 ms with the seeked event awaited; (2) infinite CSS/WAAPI animations paused at 0 ms, finite ones finished; (3) every element whose translation keeps changing (script-driven marquees, tickers, auto-scrolling columns) pinned with its first item on the track start edge plus velocity x phase (0), released and re-pinned at every shot. Nothing is hidden or replaced; no consent banner is present on either side and none is clicked; the Framer badge overlay is hidden on both. Not frozen: the 10 s testimonial autoplay and hover/drag states.",
+      "description": "Symmetric freeze applied identically to the live page and the clone immediately before every screenshot (documented in the extraction/parity_harness.mjs header): (0) fonts, visible <img> and CSS background images loaded and decoded, re-checked after the pins; (1) every <video> paused and seeked to 0 ms with the seeked event awaited; (2) infinite CSS/WAAPI animations paused at 0 ms, finite ones finished; (3) every element whose translation keeps changing (script-driven marquees, tickers, auto-scrolling columns) pinned with its first item on the track start edge plus velocity x phase (0), released and re-pinned at every shot; for wrap-style tickers the per-item wrap offsets of the track's children are released too (1.1.2); (3b, new in 1.1.2) every element whose rotation angle keeps changing (the 404's two gradient shapes: script-driven on the live site, a CSS animation in the clone) pinned to its measured angle extrapolated along its own measured angular velocity to the page time origin, plus phase x velocity. Nothing is hidden or replaced; no consent banner is present on either side and none is clicked; the Framer badge overlay is hidden on both. Not frozen: hover/drag states. The 10 s testimonial autoplay is not frozen either, but since 1.1.2 it starts counting when the slideshow enters the viewport on BOTH sides (the original only plays while on screen).",
       "scroll": "stepped 450px scroll to each offset (section top, +1 viewport, max 3 shots per section), 3.5 s settle at offset 0 and 1.8 s elsewhere, then the freeze, then the screenshot",
       "cloneBuild": "npm ci, vite build and vite preview of this repository at the commit that carries this record"
     },
@@ -2754,7 +2787,7 @@
     "overall": {
       "routes": 9,
       "sections": 53,
-      "meanSectionScore": 0.9889,
+      "meanSectionScore": 0.9937,
       "sectionsBelowGate": 0
     },
     "routes": [
@@ -2763,8 +2796,8 @@
         "template": "home",
         "docHeightOriginal": 23544,
         "docHeightClone": 23544,
-        "average": 0.9837,
-        "minSection": 0.9271,
+        "average": 0.9929,
+        "minSection": 0.9784,
         "perSectionGatePass": true,
         "averageGatePass": true,
         "belowGate": [],
@@ -2772,17 +2805,17 @@
           {
             "section": "hero.studio-wordmark",
             "instance": 0,
-            "score": 0.9976
+            "score": 0.9978
           },
           {
             "section": "content.statement-scatter",
             "instance": 0,
-            "score": 0.9909
+            "score": 0.991
           },
           {
             "section": "media.showreel",
             "instance": 0,
-            "score": 0.9964
+            "score": 0.9966
           },
           {
             "section": "features.services-index",
@@ -2797,12 +2830,12 @@
           {
             "section": "social-proof.awards-list",
             "instance": 0,
-            "score": 0.9992
+            "score": 0.9975
           },
           {
             "section": "team.founders",
             "instance": 0,
-            "score": 0.9654
+            "score": 0.9954
           },
           {
             "section": "social-proof.partner-logos",
@@ -2812,12 +2845,12 @@
           {
             "section": "features.process-timeline",
             "instance": 0,
-            "score": 0.9453
+            "score": 0.9902
           },
           {
             "section": "testimonial.client-reflections",
             "instance": 0,
-            "score": 0.9271
+            "score": 0.9911
           },
           {
             "section": "pricing.packages",
@@ -2827,12 +2860,12 @@
           {
             "section": "editorial.studio-notes-teaser",
             "instance": 0,
-            "score": 0.9986
+            "score": 0.9987
           },
           {
             "section": "conversion.contact-form",
             "instance": 0,
-            "score": 0.9984
+            "score": 0.9985
           },
           {
             "section": "faq.questions-answered",
@@ -2874,7 +2907,7 @@
         "template": "case-detail",
         "docHeightOriginal": 6221,
         "docHeightClone": 6221,
-        "average": 0.9951,
+        "average": 0.9949,
         "minSection": 0.9902,
         "perSectionGatePass": true,
         "averageGatePass": true,
@@ -2883,7 +2916,7 @@
           {
             "section": "hero.case-intro",
             "instance": 0,
-            "score": 0.9963
+            "score": 0.9964
           },
           {
             "section": "content.marked-chapter",
@@ -2908,7 +2941,7 @@
           {
             "section": "content.marked-chapter",
             "instance": 2,
-            "score": 0.9934
+            "score": 0.9933
           },
           {
             "section": "content.case-results",
@@ -2918,12 +2951,12 @@
           {
             "section": "content.case-credits",
             "instance": 0,
-            "score": 0.9989
+            "score": 0.9981
           },
           {
             "section": "navigation.case-teaser",
             "instance": 0,
-            "score": 0.999
+            "score": 0.9981
           },
           {
             "section": "shell.site-footer",
@@ -2937,8 +2970,8 @@
         "template": "studio",
         "docHeightOriginal": 9661,
         "docHeightClone": 9661,
-        "average": 0.9932,
-        "minSection": 0.9818,
+        "average": 0.9931,
+        "minSection": 0.9816,
         "perSectionGatePass": true,
         "averageGatePass": true,
         "belowGate": [],
@@ -2946,7 +2979,7 @@
           {
             "section": "hero.studio-intro",
             "instance": 0,
-            "score": 0.9941
+            "score": 0.9942
           },
           {
             "section": "team.studio-team",
@@ -2966,12 +2999,12 @@
           {
             "section": "listing.career-openings",
             "instance": 0,
-            "score": 0.9818
+            "score": 0.9816
           },
           {
             "section": "navigation.case-teaser",
             "instance": 0,
-            "score": 0.9943
+            "score": 0.9935
           },
           {
             "section": "shell.site-footer",
@@ -2985,8 +3018,8 @@
         "template": "contacts",
         "docHeightOriginal": 4905,
         "docHeightClone": 4905,
-        "average": 0.9903,
-        "minSection": 0.9761,
+        "average": 0.9904,
+        "minSection": 0.9762,
         "perSectionGatePass": true,
         "averageGatePass": true,
         "belowGate": [],
@@ -2999,17 +3032,17 @@
           {
             "section": "content.contact-details",
             "instance": 0,
-            "score": 0.9761
+            "score": 0.9762
           },
           {
             "section": "editorial.studio-notes-teaser",
             "instance": 0,
-            "score": 0.9957
+            "score": 0.9958
           },
           {
             "section": "shell.site-footer",
             "instance": 0,
-            "score": 0.9909
+            "score": 0.991
           }
         ]
       },
@@ -3037,7 +3070,7 @@
         "docHeightOriginal": 4801,
         "docHeightClone": 4801,
         "average": 0.9922,
-        "minSection": 0.9867,
+        "minSection": 0.9868,
         "perSectionGatePass": true,
         "averageGatePass": true,
         "belowGate": [],
@@ -3045,7 +3078,7 @@
           {
             "section": "hero.article-header",
             "instance": 0,
-            "score": 0.9867
+            "score": 0.9868
           },
           {
             "section": "media.article-cover",
@@ -3055,7 +3088,7 @@
           {
             "section": "content.marked-chapter",
             "instance": 0,
-            "score": 0.9919
+            "score": 0.992
           },
           {
             "section": "content.pull-quote",
@@ -3065,7 +3098,7 @@
           {
             "section": "content.marked-chapter",
             "instance": 1,
-            "score": 0.9984
+            "score": 0.9985
           },
           {
             "section": "editorial.read-more",
@@ -3084,8 +3117,8 @@
         "template": "legal",
         "docHeightOriginal": 6137,
         "docHeightClone": 6138,
-        "average": 0.9967,
-        "minSection": 0.9905,
+        "average": 0.9968,
+        "minSection": 0.9906,
         "perSectionGatePass": true,
         "averageGatePass": true,
         "belowGate": [],
@@ -3103,12 +3136,12 @@
           {
             "section": "faq.questions-answered",
             "instance": 0,
-            "score": 0.9981
+            "score": 0.9982
           },
           {
             "section": "shell.site-footer",
             "instance": 0,
-            "score": 0.9905
+            "score": 0.9906
           }
         ]
       },
@@ -3117,8 +3150,8 @@
         "template": "not-found",
         "docHeightOriginal": 3288,
         "docHeightClone": 3288,
-        "average": 0.9564,
-        "minSection": 0.88,
+        "average": 0.9957,
+        "minSection": 0.991,
         "perSectionGatePass": true,
         "averageGatePass": true,
         "belowGate": [],
@@ -3126,12 +3159,12 @@
           {
             "section": "hero.not-found",
             "instance": 0,
-            "score": 0.88
+            "score": 0.9979
           },
           {
             "section": "faq.questions-answered",
             "instance": 0,
-            "score": 0.9981
+            "score": 0.9982
           },
           {
             "section": "shell.site-footer",
@@ -3144,50 +3177,55 @@
     "evidence": {
       "official": {
         "path": "extraction/parity-results/freeze-official.json",
-        "sha256": "81d08ab5093763f0fda4d851ab502271761cd5b54d0f39793dc2d0c556e89114",
-        "what": "full run, 9 routes / 53 sections, freeze on, phase 0, with text-free geometry"
+        "sha256": "99ab8d6707e73470f6356176708e80f5b941ab165832db32df96cdd77675b26e",
+        "what": "full run at 1.1.2, 9 routes / 53 sections, freeze on (incl. rotation pins), phase 0, with text-free geometry"
       },
       "repeat": {
         "path": "extraction/parity-results/freeze-repeat.json",
-        "sha256": "180692c6cfb6fedb1e8382d361618deec44bef41ca0dff52c9a37b2a736d71c4",
+        "sha256": "575a1861a9f65b613fbc7eae94c0c5df7bc739036e15291276eea5d74611e091",
         "what": "identical second full run"
       },
       "repeatTolerance": 0.02,
-      "repeatMaxSectionDifference": 0.0038,
+      "repeatMaxSectionDifference": 0.0021,
       "beforeUnfrozen": [
         {
           "path": "extraction/parity-results/unfrozen-run1.json",
           "sha256": "56dfecdb759c2b7e77c84a212861b06a4274a11c361b99a91ee312ff9511026e",
-          "what": "the three sections, freeze off (the pre-1.1.1 capture), run 1"
+          "what": "the three sections, freeze off (the pre-1.1.1 capture), run 1 (1.1.1 harness, before the rotation pins)"
         },
         {
           "path": "extraction/parity-results/unfrozen-run2.json",
           "sha256": "90c7244c9794e982e9b76e58d388f713e8f98e51d321e016c0a3f5dffa7b07ae",
-          "what": "same, run 2"
+          "what": "same, run 2 (1.1.1 harness, before the rotation pins)"
         }
       ],
       "phaseEvidence": [
         {
           "path": "extraction/parity-results/phase-1000.json",
           "sha256": "c6adc4b48b282df32ff3efd711869fbea5a805f7687f4420667c5fda67edd96d",
-          "what": "freeze on, both sides at phase 1000 ms"
+          "what": "freeze on, both sides at phase 1000 ms (1.1.1 harness, before the rotation pins)"
         },
         {
           "path": "extraction/parity-results/phase-2500.json",
           "sha256": "13a52e2aa09e76030c073fb3eca3d244d3c9d89b573aa1f88a9fa07f4f2f2de4",
-          "what": "freeze on, both sides at phase 2500 ms"
+          "what": "freeze on, both sides at phase 2500 ms (1.1.1 harness, before the rotation pins)"
         },
         {
           "path": "extraction/parity-results/skew-1000.json",
           "sha256": "174a7341f3b8e06f97f1d1311c9146b4f35357e37240d8a9d7f3d1c76d8ddccb",
-          "what": "diagnostic: clone deliberately 1000 ms out of phase"
+          "what": "diagnostic: clone deliberately 1000 ms out of phase (1.1.1 harness, before the rotation pins)"
         },
         {
           "path": "extraction/parity-results/skew-2500.json",
           "sha256": "210b205c353ba34336ca79fb6ef76264de58d41d2c20436e0f6fc8a9699cb6ca",
-          "what": "diagnostic: clone deliberately 2500 ms out of phase"
+          "what": "diagnostic: clone deliberately 2500 ms out of phase (1.1.1 harness, before the rotation pins)"
         }
-      ]
+      ],
+      "beforeFix": {
+        "path": "extraction/parity-results/freeze-before-fix.json",
+        "sha256": "81d08ab5093763f0fda4d851ab502271761cd5b54d0f39793dc2d0c556e89114",
+        "what": "the 1.1.1 official run (before the rotation pins and the src fixes of 1.1.2); the weak sections are re-derivable from it"
+      }
     },
     "beforeAfter": [
       {
@@ -3196,8 +3234,9 @@
         "recordedIn1_1_0": 0.6249,
         "unfrozenRerun1": 0.6318,
         "unfrozenRerun2": 0.7094,
-        "frozenOfficial": 0.9964,
-        "frozenRepeat": 0.9966
+        "frozenOfficial": 0.9966,
+        "frozenRepeat": 0.9964,
+        "frozenAt1_1_1": 0.9964
       },
       {
         "route": "/studio",
@@ -3206,7 +3245,8 @@
         "unfrozenRerun1": 0.5793,
         "unfrozenRerun2": 0.6013,
         "frozenOfficial": 0.9994,
-        "frozenRepeat": 0.9994
+        "frozenRepeat": 0.9994,
+        "frozenAt1_1_1": 0.9994
       },
       {
         "route": "/feed",
@@ -3215,7 +3255,8 @@
         "unfrozenRerun1": 0.7969,
         "unfrozenRerun2": 0.8055,
         "frozenOfficial": 0.994,
-        "frozenRepeat": 0.994
+        "frozenRepeat": 0.994,
+        "frozenAt1_1_1": 0.994
       }
     ],
     "beforeAfterSummary": {
@@ -3225,13 +3266,13 @@
       },
       "meanSectionScore": {
         "before": 0.9699,
-        "after": 0.9889
+        "after": 0.9937
       },
       "minSection": {
         "before": 0.6249,
-        "after": 0.88
+        "after": 0.9762
       },
-      "note": "Before = the 1.1.0 record (unfrozen capture; its harness output file was not tracked, so it cannot be re-derived). After = tracked result files."
+      "note": "Before = the 1.1.0 record (unfrozen capture; its harness output file was not tracked, so it cannot be re-derived). After = tracked result files at 1.1.2. The 1.1.1 -> 1.1.2 step is in cloneParity.weakSections and cloneParity.evidence.beforeFix."
     },
     "animationHypothesis": {
       "verdict": "true",
@@ -3249,13 +3290,14 @@
       ]
     },
     "geometry": {
-      "note": "text-free box matching taken from the frozen captures; media = img/video/canvas/background-image boxes (IoU >= 0.8), text rows = one rect per text line (IoU >= 0.5)",
+      "note": "text-free box matching taken from the frozen 1.1.2 captures; media = img/video/canvas/background-image boxes (IoU >= 0.8), text rows = one rect per text line (IoU >= 0.5)",
       "media.showreel": {
         "officialRun": {
           "mediaRects": {
             "live": 1,
             "clone": 1,
             "matched": 1,
+            "matchedShare": 1,
             "meanIoU": 1,
             "medianMaxEdgeDeltaPx": 0
           },
@@ -3263,6 +3305,7 @@
             "live": 50,
             "clone": 49,
             "matched": 49,
+            "matchedShare": 0.98,
             "meanIoU": 0.9968,
             "medianMaxEdgeDeltaPx": 0
           }
@@ -3272,6 +3315,7 @@
             "live": 1,
             "clone": 1,
             "matched": 1,
+            "matchedShare": 1,
             "meanIoU": 1,
             "medianMaxEdgeDeltaPx": 0
           },
@@ -3279,6 +3323,7 @@
             "live": 50,
             "clone": 49,
             "matched": 49,
+            "matchedShare": 0.98,
             "meanIoU": 0.9968,
             "medianMaxEdgeDeltaPx": 0
           }
@@ -3289,7 +3334,8 @@
           "mediaRects": {
             "live": 4,
             "clone": 12,
-            "matched": 3,
+            "matched": 4,
+            "matchedShare": 0.3333,
             "meanIoU": 1,
             "medianMaxEdgeDeltaPx": 0
           },
@@ -3297,6 +3343,7 @@
             "live": 46,
             "clone": 45,
             "matched": 45,
+            "matchedShare": 0.9783,
             "meanIoU": 0.9916,
             "medianMaxEdgeDeltaPx": 0
           }
@@ -3305,7 +3352,8 @@
           "mediaRects": {
             "live": 4,
             "clone": 12,
-            "matched": 3,
+            "matched": 4,
+            "matchedShare": 0.3333,
             "meanIoU": 1,
             "medianMaxEdgeDeltaPx": 0
           },
@@ -3313,6 +3361,7 @@
             "live": 46,
             "clone": 45,
             "matched": 45,
+            "matchedShare": 0.9783,
             "meanIoU": 0.9916,
             "medianMaxEdgeDeltaPx": 0
           }
@@ -3324,6 +3373,7 @@
             "live": 3,
             "clone": 3,
             "matched": 3,
+            "matchedShare": 1,
             "meanIoU": 1,
             "medianMaxEdgeDeltaPx": 0
           },
@@ -3331,6 +3381,7 @@
             "live": 61,
             "clone": 56,
             "matched": 56,
+            "matchedShare": 0.918,
             "meanIoU": 0.9972,
             "medianMaxEdgeDeltaPx": 0
           }
@@ -3340,6 +3391,7 @@
             "live": 3,
             "clone": 3,
             "matched": 3,
+            "matchedShare": 1,
             "meanIoU": 1,
             "medianMaxEdgeDeltaPx": 0
           },
@@ -3347,6 +3399,7 @@
             "live": 61,
             "clone": 56,
             "matched": 56,
+            "matchedShare": 0.918,
             "meanIoU": 0.9972,
             "medianMaxEdgeDeltaPx": 0
           }
@@ -3354,13 +3407,58 @@
       }
     },
     "exceptions": [],
-    "interpretation": "With the symmetric freeze every one of the 53 sections on the 9 representative routes is at or above the 0.80 gate (minimum 0.88) and every page average is >= 0.95; two full runs agree within 0.0038 per section. The three sections that scored 0.58-0.80 unfrozen were animation timing, not layout or content. Lowest sections now: /404 hero.not-found 0.88, / testimonial.client-reflections 0.9271, / features.process-timeline 0.9453, / team.founders 0.9654. No src/ change was needed and no parity exception is recorded.",
+    "interpretation": "At 1440x900 every one of the 53 sections on the 9 representative routes is at or above the 0.80 gate (minimum 0.9762) and every page average is >= 0.99; two full runs agree within 0.0021 per section. The four weakest sections of 1.1.1 were diagnosed from live / clone / diff images: /404 hero.not-found 0.880 was a harness artefact (the live gradient shapes are script-driven and were not frozen; now pinned symmetrically), / testimonial.client-reflections 0.927 and features.process-timeline 0.945 came from the clone's autoplay starting at mount instead of when the slideshow enters the view (src fix), and / team.founders 0.965 from the missing always-on portrait backdrop (src fix). No parity exception is recorded. Tablet, phone and the remaining 22 routes are in cloneParityRuns.",
     "notMeasured": [
-      "parity at 1000 and 390",
-      "the other 22 CMS routes (one representative per template only)",
-      "hover/drag/interaction states",
+      "hover/drag/interaction states (the mobile menu overlay was compared once open at 390 and 768 wide, similarity 0.9999, not a pinned run)",
       "motion timing curves (see recon specs instead)",
-      "the 10 s testimonial autoplay carousel phase (not frozen; its section still passes)"
+      "viewports other than 1440, 768 and 390 (1000 and 1280 only as document heights)",
+      "the 22 non-representative routes at 768 and 390"
+    ],
+    "weakSections": [
+      {
+        "route": "/404",
+        "section": "hero.not-found",
+        "instance": 0,
+        "cause": "harness artefact (time-dependent shot), not a clone mismatch",
+        "before1_1_1": 0.88,
+        "after": 0.9979,
+        "repeat": 0.9958,
+        "diagnosis": "Layout, text rows and the digit shapes already matched (text rows 64/65 matched at IoU 0.99). The gradient inside the 404 digits is two rotating shapes (14 s and 10 s per turn). In the clone they are CSS animations and were paused at 0 ms; on the live site they are script-driven (no CSS/WAAPI animation) and kept turning, so the two screenshots caught different gradient angles. Angular velocities match (live 25.8 / -36.0 deg/s, clone 25.7 / -36.0), and extrapolating the live angles back to the page time origin lands on the clone start angles (-171 / 0 deg) within 0.3 s, i.e. the same animation.",
+        "fix": "parity_harness.mjs: rotating elements are detected and pinned symmetrically on both sides (rotation pin, step 3b). No src change."
+      },
+      {
+        "route": "/",
+        "section": "testimonial.client-reflections",
+        "instance": 0,
+        "cause": "real clone behaviour mismatch (autoplay clock) plus a harness-visible consequence",
+        "before1_1_1": 0.9271,
+        "after": 0.9911,
+        "repeat": 0.991,
+        "diagnosis": "The two sides showed different slides. Measured on the original: left at the top for 13 s, the slideshow still shows slide 1 when scrolled to and advances about 10 s after it came into view (it only plays while on screen). The clone started its 10 s timer at page mount, so by the time the section was reached it had already advanced. Text rows, image rects and computed typography were identical.",
+        "fix": "src/components/home/Testimonials.jsx: the 10 s countdown now runs only while the slideshow intersects the viewport and restarts on every change and (re)entry."
+      },
+      {
+        "route": "/",
+        "section": "features.process-timeline",
+        "instance": 0,
+        "cause": "same autoplay mismatch: its second shot (one viewport down) contains the top of the testimonial slideshow",
+        "before1_1_1": 0.9453,
+        "after": 0.9902,
+        "repeat": 0.9901,
+        "diagnosis": "The process list itself matched (first shot 0.996). The second shot at +900 px shows the slideshow heading, portrait and quote; the clone had advanced to another slide. Residual 0.01: sub-pixel text rasterisation of the revealed lines (identical Range rects, 0.1 px apart).",
+        "fix": "same Testimonials.jsx change; no process-timeline change."
+      },
+      {
+        "route": "/",
+        "section": "team.founders",
+        "instance": 0,
+        "cause": "real clone mismatch (portrait overlay)",
+        "before1_1_1": 0.9654,
+        "after": 0.9954,
+        "repeat": 0.9954,
+        "diagnosis": "Live media rects 4 vs clone 2: the original always draws a backdrop over each founder portrait (50% black masked by a bottom-up gradient, black 0% to transparent 50%), in the default and the hover state alike. The clone only showed a flat 50% black layer on hover. Seen as a grey fade at the bottom of both portraits in the live image and absent in the clone image.",
+        "fix": "src/styles/home-sections.css .hs-tc-bd: always on, masked by linear-gradient(0deg, #000 0%, transparent 50%); the hover-only opacity rules were removed."
+      }
     ]
   },
   "cloneBuild": {
@@ -3450,5 +3548,2556 @@
     ".recon/specs/feed.md:3-3",
     ".recon/specs/project.md:3-3",
     ".recon/specs/legal-404.md:3-3"
-  ]
+  ],
+  "cloneParityRuns": {
+    "note": "Parity beyond the 9 routes at 1440 (cloneParity). Same harness, same symmetric freeze, same 0.80 per-section gate; every run was made twice and the second run is the pinned repeat. Result files are text-free (scores, geometry); live screenshots are never committed.",
+    "liveCounterpart": "Every one of the 31 routes in templates/routes.json has a live counterpart: 30 are in the original sitemap and /404 is the original 404 page. The measured document heights of live and clone match on all 22 remaining routes (see each route docHeightOriginal / docHeightClone), so none of them fell back to the original 404 page. There is no route without a live counterpart.",
+    "runs": [
+      {
+        "id": "tablet-768",
+        "scope": "9 representative routes",
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "official": {
+          "path": "extraction/parity-results/tablet-768-official.json",
+          "sha256": "631f493da9493882e2d2848b2e34f888c726daec230434718fe2227bb489b9f3",
+          "what": "full run at 768x1024 (the original serves its phone layout below 810 px), 9 routes, freeze on, phase 0, with text-free geometry"
+        },
+        "repeat": {
+          "path": "extraction/parity-results/tablet-768-repeat.json",
+          "sha256": "baa3ae97e1743c4040e4f90da6edd1333faa2230389a32a351a66029d8dd4b8e",
+          "what": "identical second run"
+        },
+        "beforeFix": {
+          "path": "extraction/parity-results/tablet-768-before-fix.json",
+          "sha256": "9ab985d13fc46d7f7536c26e4e29785cc14e62dafe1cc6cba4f8735093356573",
+          "what": "first measurement of the same routes before the 1.1.2 src fixes (same harness otherwise, without the wrap-offset release)"
+        },
+        "repeatTolerance": 0.02,
+        "repeatMaxSectionDifference": 0.0001,
+        "overall": {
+          "routes": 9,
+          "sections": 56,
+          "meanSectionScore": 0.997,
+          "sectionsBelowGate": 0
+        },
+        "routes": [
+          {
+            "route": "/",
+            "template": "home",
+            "docHeightOriginal": 24345,
+            "docHeightClone": 24345,
+            "average": 0.9943,
+            "minSection": 0.9734,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.studio-wordmark",
+                "instance": 0,
+                "score": 0.9959
+              },
+              {
+                "section": "content.statement-scatter",
+                "instance": 0,
+                "score": 0.9945
+              },
+              {
+                "section": "media.showreel",
+                "instance": 0,
+                "score": 0.9999
+              },
+              {
+                "section": "features.services-index",
+                "instance": 0,
+                "score": 1
+              },
+              {
+                "section": "social-proof.studio-numbers",
+                "instance": 0,
+                "score": 0.9734
+              },
+              {
+                "section": "social-proof.awards-list",
+                "instance": 0,
+                "score": 0.9998
+              },
+              {
+                "section": "team.founders",
+                "instance": 0,
+                "score": 0.9942
+              },
+              {
+                "section": "social-proof.partner-logos",
+                "instance": 0,
+                "score": 0.9976
+              },
+              {
+                "section": "features.process-timeline",
+                "instance": 0,
+                "score": 0.9967
+              },
+              {
+                "section": "testimonial.client-reflections",
+                "instance": 0,
+                "score": 0.9943
+              },
+              {
+                "section": "pricing.packages",
+                "instance": 0,
+                "score": 0.9941
+              },
+              {
+                "section": "editorial.studio-notes-teaser",
+                "instance": 0,
+                "score": 0.9956
+              },
+              {
+                "section": "conversion.contact-form",
+                "instance": 0,
+                "score": 0.9968
+              },
+              {
+                "section": "faq.questions-answered",
+                "instance": 0,
+                "score": 0.988
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9933
+              }
+            ]
+          },
+          {
+            "route": "/work",
+            "template": "work-index",
+            "docHeightOriginal": 9756,
+            "docHeightClone": 9756,
+            "average": 0.9996,
+            "minSection": 0.9995,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.index-title",
+                "instance": 0,
+                "score": 0.9995
+              },
+              {
+                "section": "listing.project-index",
+                "instance": 0,
+                "score": 0.9998
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9995
+              }
+            ]
+          },
+          {
+            "route": "/work/soma-studio",
+            "template": "case-detail",
+            "docHeightOriginal": 8542,
+            "docHeightClone": 8542,
+            "average": 0.9971,
+            "minSection": 0.9925,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.case-intro",
+                "instance": 0,
+                "score": 0.9999
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9939
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9939
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9999
+              },
+              {
+                "section": "media.case-gallery",
+                "instance": 0,
+                "score": 0.9993
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 2,
+                "score": 0.9925
+              },
+              {
+                "section": "content.case-results",
+                "instance": 0,
+                "score": 0.9925
+              },
+              {
+                "section": "content.case-credits",
+                "instance": 0,
+                "score": 0.9999
+              },
+              {
+                "section": "navigation.case-teaser",
+                "instance": 0,
+                "score": 0.9996
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9998
+              }
+            ]
+          },
+          {
+            "route": "/studio",
+            "template": "studio",
+            "docHeightOriginal": 12079,
+            "docHeightClone": 12079,
+            "average": 0.9964,
+            "minSection": 0.9912,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.studio-intro",
+                "instance": 0,
+                "score": 0.9912
+              },
+              {
+                "section": "team.studio-team",
+                "instance": 0,
+                "score": 0.9954
+              },
+              {
+                "section": "content.principles",
+                "instance": 0,
+                "score": 0.9976
+              },
+              {
+                "section": "media.studio-image-strip",
+                "instance": 0,
+                "score": 0.9974
+              },
+              {
+                "section": "listing.career-openings",
+                "instance": 0,
+                "score": 0.9968
+              },
+              {
+                "section": "navigation.case-teaser",
+                "instance": 0,
+                "score": 0.9978
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9985
+              }
+            ]
+          },
+          {
+            "route": "/contacts",
+            "template": "contacts",
+            "docHeightOriginal": 5357,
+            "docHeightClone": 5357,
+            "average": 0.998,
+            "minSection": 0.9968,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "conversion.contact-form",
+                "instance": 0,
+                "score": 0.9974
+              },
+              {
+                "section": "content.contact-details",
+                "instance": 0,
+                "score": 0.9968
+              },
+              {
+                "section": "editorial.studio-notes-teaser",
+                "instance": 0,
+                "score": 0.9993
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9985
+              }
+            ]
+          },
+          {
+            "route": "/feed",
+            "template": "feed-index",
+            "docHeightOriginal": 10819,
+            "docHeightClone": 10819,
+            "average": 0.9983,
+            "minSection": 0.9957,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.index-title",
+                "instance": 0,
+                "score": 0.9999
+              },
+              {
+                "section": "editorial.notes-index",
+                "instance": 0,
+                "score": 0.9957
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9993
+              }
+            ]
+          },
+          {
+            "route": "/feed/beyond-function",
+            "template": "feed-post",
+            "docHeightOriginal": 4870,
+            "docHeightClone": 4870,
+            "average": 0.999,
+            "minSection": 0.9939,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "media.article-cover",
+                "instance": 0,
+                "score": 0.9939
+              },
+              {
+                "section": "hero.article-header",
+                "instance": 0,
+                "score": 0.9999
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9999
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9999
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9999
+              },
+              {
+                "section": "editorial.read-more",
+                "instance": 0,
+                "score": 0.9998
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9994
+              }
+            ]
+          },
+          {
+            "route": "/legal/privacy-policy",
+            "template": "legal",
+            "docHeightOriginal": 5585,
+            "docHeightClone": 5585,
+            "average": 0.9994,
+            "minSection": 0.9992,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.legal-header",
+                "instance": 0,
+                "score": 0.9994
+              },
+              {
+                "section": "content.legal-clause",
+                "instance": 0,
+                "score": 0.9992
+              },
+              {
+                "section": "faq.questions-answered",
+                "instance": 0,
+                "score": 0.9997
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9993
+              }
+            ]
+          },
+          {
+            "route": "/404",
+            "template": "not-found",
+            "docHeightOriginal": 3148,
+            "docHeightClone": 3148,
+            "average": 0.9986,
+            "minSection": 0.9964,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.not-found",
+                "instance": 0,
+                "score": 0.9964
+              },
+              {
+                "section": "faq.questions-answered",
+                "instance": 0,
+                "score": 0.9997
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9998
+              }
+            ]
+          }
+        ],
+        "exceptions": [],
+        "beforeAfterSummary": {
+          "sectionsBelowGate": {
+            "before": 20,
+            "after": 0
+          },
+          "meanSectionScore": {
+            "before": 0.8418,
+            "after": 0.997
+          },
+          "minSection": {
+            "before": 0.4535,
+            "after": 0.9734
+          },
+          "sectionsBelow0.97": {
+            "before": 31,
+            "after": 0
+          }
+        },
+        "sectionsFixed": [
+          {
+            "route": "/",
+            "section": "content.statement-scatter",
+            "instance": 0,
+            "before": 0.6383,
+            "after": 0.9945
+          },
+          {
+            "route": "/",
+            "section": "conversion.contact-form",
+            "instance": 0,
+            "before": 0.9027,
+            "after": 0.9968
+          },
+          {
+            "route": "/",
+            "section": "editorial.studio-notes-teaser",
+            "instance": 0,
+            "before": 0.5038,
+            "after": 0.9956
+          },
+          {
+            "route": "/",
+            "section": "faq.questions-answered",
+            "instance": 0,
+            "before": 0.8491,
+            "after": 0.988
+          },
+          {
+            "route": "/",
+            "section": "features.process-timeline",
+            "instance": 0,
+            "before": 0.557,
+            "after": 0.9967
+          },
+          {
+            "route": "/",
+            "section": "features.services-index",
+            "instance": 0,
+            "before": 0.7658,
+            "after": 1
+          },
+          {
+            "route": "/",
+            "section": "media.showreel",
+            "instance": 0,
+            "before": 0.4535,
+            "after": 0.9999
+          },
+          {
+            "route": "/",
+            "section": "pricing.packages",
+            "instance": 0,
+            "before": 0.9222,
+            "after": 0.9941
+          },
+          {
+            "route": "/",
+            "section": "shell.site-footer",
+            "instance": 0,
+            "before": 0.7959,
+            "after": 0.9933
+          },
+          {
+            "route": "/",
+            "section": "social-proof.awards-list",
+            "instance": 0,
+            "before": 0.8975,
+            "after": 0.9998
+          },
+          {
+            "route": "/",
+            "section": "social-proof.partner-logos",
+            "instance": 0,
+            "before": 0.6082,
+            "after": 0.9976
+          },
+          {
+            "route": "/",
+            "section": "social-proof.studio-numbers",
+            "instance": 0,
+            "before": 0.5792,
+            "after": 0.9734
+          },
+          {
+            "route": "/",
+            "section": "team.founders",
+            "instance": 0,
+            "before": 0.524,
+            "after": 0.9942
+          },
+          {
+            "route": "/",
+            "section": "testimonial.client-reflections",
+            "instance": 0,
+            "before": 0.574,
+            "after": 0.9943
+          },
+          {
+            "route": "/studio",
+            "section": "content.principles",
+            "instance": 0,
+            "before": 0.8028,
+            "after": 0.9976
+          },
+          {
+            "route": "/studio",
+            "section": "hero.studio-intro",
+            "instance": 0,
+            "before": 0.8645,
+            "after": 0.9912
+          },
+          {
+            "route": "/studio",
+            "section": "listing.career-openings",
+            "instance": 0,
+            "before": 0.7837,
+            "after": 0.9968
+          },
+          {
+            "route": "/studio",
+            "section": "media.studio-image-strip",
+            "instance": 0,
+            "before": 0.709,
+            "after": 0.9974
+          },
+          {
+            "route": "/studio",
+            "section": "navigation.case-teaser",
+            "instance": 0,
+            "before": 0.8171,
+            "after": 0.9978
+          },
+          {
+            "route": "/studio",
+            "section": "shell.site-footer",
+            "instance": 0,
+            "before": 0.8933,
+            "after": 0.9985
+          },
+          {
+            "route": "/studio",
+            "section": "team.studio-team",
+            "instance": 0,
+            "before": 0.7687,
+            "after": 0.9954
+          },
+          {
+            "route": "/work/soma-studio",
+            "section": "content.case-credits",
+            "instance": 0,
+            "before": 0.5291,
+            "after": 0.9999
+          },
+          {
+            "route": "/work/soma-studio",
+            "section": "content.case-results",
+            "instance": 0,
+            "before": 0.6884,
+            "after": 0.9925
+          },
+          {
+            "route": "/work/soma-studio",
+            "section": "content.marked-chapter",
+            "instance": 0,
+            "before": 0.7706,
+            "after": 0.9939
+          },
+          {
+            "route": "/work/soma-studio",
+            "section": "content.marked-chapter",
+            "instance": 1,
+            "before": 0.5971,
+            "after": 0.9999
+          },
+          {
+            "route": "/work/soma-studio",
+            "section": "content.marked-chapter",
+            "instance": 2,
+            "before": 0.8046,
+            "after": 0.9925
+          },
+          {
+            "route": "/work/soma-studio",
+            "section": "content.pull-quote",
+            "instance": 0,
+            "before": 0.6992,
+            "after": 0.9939
+          },
+          {
+            "route": "/work/soma-studio",
+            "section": "hero.case-intro",
+            "instance": 0,
+            "before": 0.8677,
+            "after": 0.9999
+          },
+          {
+            "route": "/work/soma-studio",
+            "section": "media.case-gallery",
+            "instance": 0,
+            "before": 0.6063,
+            "after": 0.9993
+          },
+          {
+            "route": "/work/soma-studio",
+            "section": "navigation.case-teaser",
+            "instance": 0,
+            "before": 0.613,
+            "after": 0.9996
+          },
+          {
+            "route": "/work/soma-studio",
+            "section": "shell.site-footer",
+            "instance": 0,
+            "before": 0.8011,
+            "after": 0.9998
+          }
+        ]
+      },
+      {
+        "id": "phone-390",
+        "scope": "9 representative routes",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "official": {
+          "path": "extraction/parity-results/phone-390-official.json",
+          "sha256": "4072e6478480acc64ba523dd8a060a04acbce4f45c74f039fc4c5ff0b55fc726",
+          "what": "full run at 390x844, 9 routes, freeze on, phase 0, with text-free geometry"
+        },
+        "repeat": {
+          "path": "extraction/parity-results/phone-390-repeat.json",
+          "sha256": "98516156dc592e9bf179d55b5721a5a57dfa3bc2fe0ea80932c9777f1af8c6c7",
+          "what": "identical second run"
+        },
+        "beforeFix": {
+          "path": "extraction/parity-results/phone-390-before-fix.json",
+          "sha256": "e6bbc99ac670bfabd495663c9966c3911cc2eea4006d840c09d20e79d4083672",
+          "what": "first measurement of the same routes before the 1.1.2 src fixes (same harness otherwise, without the wrap-offset release)"
+        },
+        "repeatTolerance": 0.02,
+        "repeatMaxSectionDifference": 0.0,
+        "overall": {
+          "routes": 9,
+          "sections": 56,
+          "meanSectionScore": 0.9948,
+          "sectionsBelowGate": 0
+        },
+        "routes": [
+          {
+            "route": "/",
+            "template": "home",
+            "docHeightOriginal": 22998,
+            "docHeightClone": 22998,
+            "average": 0.9946,
+            "minSection": 0.9833,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.studio-wordmark",
+                "instance": 0,
+                "score": 0.9967
+              },
+              {
+                "section": "content.statement-scatter",
+                "instance": 0,
+                "score": 0.9974
+              },
+              {
+                "section": "media.showreel",
+                "instance": 0,
+                "score": 0.9999
+              },
+              {
+                "section": "features.services-index",
+                "instance": 0,
+                "score": 0.9999
+              },
+              {
+                "section": "social-proof.studio-numbers",
+                "instance": 0,
+                "score": 0.9833
+              },
+              {
+                "section": "social-proof.awards-list",
+                "instance": 0,
+                "score": 0.9995
+              },
+              {
+                "section": "team.founders",
+                "instance": 0,
+                "score": 0.9931
+              },
+              {
+                "section": "social-proof.partner-logos",
+                "instance": 0,
+                "score": 0.9986
+              },
+              {
+                "section": "features.process-timeline",
+                "instance": 0,
+                "score": 0.9957
+              },
+              {
+                "section": "testimonial.client-reflections",
+                "instance": 0,
+                "score": 0.995
+              },
+              {
+                "section": "pricing.packages",
+                "instance": 0,
+                "score": 0.9892
+              },
+              {
+                "section": "editorial.studio-notes-teaser",
+                "instance": 0,
+                "score": 0.9925
+              },
+              {
+                "section": "conversion.contact-form",
+                "instance": 0,
+                "score": 0.9953
+              },
+              {
+                "section": "faq.questions-answered",
+                "instance": 0,
+                "score": 0.9901
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9929
+              }
+            ]
+          },
+          {
+            "route": "/work",
+            "template": "work-index",
+            "docHeightOriginal": 10679,
+            "docHeightClone": 10679,
+            "average": 0.9967,
+            "minSection": 0.9917,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.index-title",
+                "instance": 0,
+                "score": 0.9995
+              },
+              {
+                "section": "listing.project-index",
+                "instance": 0,
+                "score": 0.9917
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9988
+              }
+            ]
+          },
+          {
+            "route": "/work/soma-studio",
+            "template": "case-detail",
+            "docHeightOriginal": 6893,
+            "docHeightClone": 6893,
+            "average": 0.9896,
+            "minSection": 0.9742,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.case-intro",
+                "instance": 0,
+                "score": 0.9923
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9742
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9742
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9999
+              },
+              {
+                "section": "media.case-gallery",
+                "instance": 0,
+                "score": 0.9939
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 2,
+                "score": 0.9829
+              },
+              {
+                "section": "content.case-results",
+                "instance": 0,
+                "score": 0.9829
+              },
+              {
+                "section": "content.case-credits",
+                "instance": 0,
+                "score": 0.9985
+              },
+              {
+                "section": "navigation.case-teaser",
+                "instance": 0,
+                "score": 0.9985
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9989
+              }
+            ]
+          },
+          {
+            "route": "/studio",
+            "template": "studio",
+            "docHeightOriginal": 9850,
+            "docHeightClone": 9850,
+            "average": 0.9965,
+            "minSection": 0.9919,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.studio-intro",
+                "instance": 0,
+                "score": 0.9999
+              },
+              {
+                "section": "team.studio-team",
+                "instance": 0,
+                "score": 0.9919
+              },
+              {
+                "section": "content.principles",
+                "instance": 0,
+                "score": 0.9999
+              },
+              {
+                "section": "media.studio-image-strip",
+                "instance": 0,
+                "score": 0.9999
+              },
+              {
+                "section": "listing.career-openings",
+                "instance": 0,
+                "score": 0.9926
+              },
+              {
+                "section": "navigation.case-teaser",
+                "instance": 0,
+                "score": 0.9935
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9977
+              }
+            ]
+          },
+          {
+            "route": "/contacts",
+            "template": "contacts",
+            "docHeightOriginal": 4964,
+            "docHeightClone": 4964,
+            "average": 0.9951,
+            "minSection": 0.991,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "conversion.contact-form",
+                "instance": 0,
+                "score": 0.9953
+              },
+              {
+                "section": "content.contact-details",
+                "instance": 0,
+                "score": 0.9993
+              },
+              {
+                "section": "editorial.studio-notes-teaser",
+                "instance": 0,
+                "score": 0.9947
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/feed",
+            "template": "feed-index",
+            "docHeightOriginal": 10102,
+            "docHeightClone": 10102,
+            "average": 0.9992,
+            "minSection": 0.9987,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.index-title",
+                "instance": 0,
+                "score": 0.9999
+              },
+              {
+                "section": "editorial.notes-index",
+                "instance": 0,
+                "score": 0.9987
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9989
+              }
+            ]
+          },
+          {
+            "route": "/feed/beyond-function",
+            "template": "feed-post",
+            "docHeightOriginal": 4452,
+            "docHeightClone": 4452,
+            "average": 0.9938,
+            "minSection": 0.9876,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "media.article-cover",
+                "instance": 0,
+                "score": 0.9916
+              },
+              {
+                "section": "hero.article-header",
+                "instance": 0,
+                "score": 0.9999
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.995
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9876
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9887
+              },
+              {
+                "section": "editorial.read-more",
+                "instance": 0,
+                "score": 0.9964
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9977
+              }
+            ]
+          },
+          {
+            "route": "/legal/privacy-policy",
+            "template": "legal",
+            "docHeightOriginal": 6284,
+            "docHeightClone": 6284,
+            "average": 0.9991,
+            "minSection": 0.9984,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.legal-header",
+                "instance": 0,
+                "score": 0.9996
+              },
+              {
+                "section": "content.legal-clause",
+                "instance": 0,
+                "score": 0.9984
+              },
+              {
+                "section": "faq.questions-answered",
+                "instance": 0,
+                "score": 0.9996
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9989
+              }
+            ]
+          },
+          {
+            "route": "/404",
+            "template": "not-found",
+            "docHeightOriginal": 3247,
+            "docHeightClone": 3247,
+            "average": 0.9987,
+            "minSection": 0.9977,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.not-found",
+                "instance": 0,
+                "score": 0.9977
+              },
+              {
+                "section": "faq.questions-answered",
+                "instance": 0,
+                "score": 0.9995
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9989
+              }
+            ]
+          }
+        ],
+        "exceptions": [],
+        "beforeAfterSummary": {
+          "sectionsBelowGate": {
+            "before": 5,
+            "after": 0
+          },
+          "meanSectionScore": {
+            "before": 0.9504,
+            "after": 0.9948
+          },
+          "minSection": {
+            "before": 0.7076,
+            "after": 0.9742
+          },
+          "sectionsBelow0.97": {
+            "before": 14,
+            "after": 0
+          }
+        },
+        "sectionsFixed": [
+          {
+            "route": "/",
+            "section": "content.statement-scatter",
+            "instance": 0,
+            "before": 0.7553,
+            "after": 0.9974
+          },
+          {
+            "route": "/",
+            "section": "conversion.contact-form",
+            "instance": 0,
+            "before": 0.8969,
+            "after": 0.9953
+          },
+          {
+            "route": "/",
+            "section": "editorial.studio-notes-teaser",
+            "instance": 0,
+            "before": 0.8361,
+            "after": 0.9925
+          },
+          {
+            "route": "/",
+            "section": "faq.questions-answered",
+            "instance": 0,
+            "before": 0.8153,
+            "after": 0.9901
+          },
+          {
+            "route": "/",
+            "section": "features.process-timeline",
+            "instance": 0,
+            "before": 0.8047,
+            "after": 0.9957
+          },
+          {
+            "route": "/",
+            "section": "features.services-index",
+            "instance": 0,
+            "before": 0.8308,
+            "after": 0.9999
+          },
+          {
+            "route": "/",
+            "section": "media.showreel",
+            "instance": 0,
+            "before": 0.7449,
+            "after": 0.9999
+          },
+          {
+            "route": "/",
+            "section": "pricing.packages",
+            "instance": 0,
+            "before": 0.87,
+            "after": 0.9892
+          },
+          {
+            "route": "/",
+            "section": "shell.site-footer",
+            "instance": 0,
+            "before": 0.937,
+            "after": 0.9929
+          },
+          {
+            "route": "/",
+            "section": "social-proof.awards-list",
+            "instance": 0,
+            "before": 0.9241,
+            "after": 0.9995
+          },
+          {
+            "route": "/",
+            "section": "social-proof.partner-logos",
+            "instance": 0,
+            "before": 0.7777,
+            "after": 0.9986
+          },
+          {
+            "route": "/",
+            "section": "social-proof.studio-numbers",
+            "instance": 0,
+            "before": 0.7076,
+            "after": 0.9833
+          },
+          {
+            "route": "/",
+            "section": "team.founders",
+            "instance": 0,
+            "before": 0.7425,
+            "after": 0.9931
+          },
+          {
+            "route": "/",
+            "section": "testimonial.client-reflections",
+            "instance": 0,
+            "before": 0.8008,
+            "after": 0.995
+          }
+        ]
+      },
+      {
+        "id": "desktop-1440-remaining-routes",
+        "scope": "the 22 routes of templates/routes.json that are not among the 9 representative routes: 11 case studies (/work/*), 10 feed posts (/feed/*) and /legal/terms-of-service; all have a live counterpart",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "official": {
+          "path": "extraction/parity-results/routes-1440-remaining-official.json",
+          "sha256": "63382470da5ec252109f1eb5ee4b5bc85560a30aa23fa4969629cdb0ed6141d5",
+          "what": "full run at 1440x900 over the 22 routes not in the representative set, freeze on, phase 0, with text-free geometry"
+        },
+        "repeat": {
+          "path": "extraction/parity-results/routes-1440-remaining-repeat.json",
+          "sha256": "0a82488c85b96b410806b55622641479234693c6fb36b2bf8a0e1bed86da50de",
+          "what": "identical second run"
+        },
+        "beforeFix": {
+          "path": "extraction/parity-results/routes-1440-remaining-before-fix.json",
+          "sha256": "2aa70a5733053b28503a92b3cf90039217c255cc82f06feb403bd4f6e019a0e6",
+          "what": "first measurement of the same routes before the 1.1.2 src fixes (same harness otherwise, without the wrap-offset release)"
+        },
+        "repeatTolerance": 0.02,
+        "repeatMaxSectionDifference": 0.0014,
+        "overall": {
+          "routes": 22,
+          "sections": 183,
+          "meanSectionScore": 0.9945,
+          "sectionsBelowGate": 0
+        },
+        "routes": [
+          {
+            "route": "/work/bright-matter",
+            "template": "case-detail",
+            "docHeightOriginal": 6079,
+            "docHeightClone": 6079,
+            "average": 0.9949,
+            "minSection": 0.9902,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.case-intro",
+                "instance": 0,
+                "score": 0.9983
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9995
+              },
+              {
+                "section": "media.case-gallery",
+                "instance": 0,
+                "score": 0.9989
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 2,
+                "score": 0.9932
+              },
+              {
+                "section": "content.case-results",
+                "instance": 0,
+                "score": 0.9925
+              },
+              {
+                "section": "content.case-credits",
+                "instance": 0,
+                "score": 0.9972
+              },
+              {
+                "section": "navigation.case-teaser",
+                "instance": 0,
+                "score": 0.998
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/work/wavehouse",
+            "template": "case-detail",
+            "docHeightOriginal": 6221,
+            "docHeightClone": 6221,
+            "average": 0.9951,
+            "minSection": 0.9901,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.case-intro",
+                "instance": 0,
+                "score": 0.9984
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9901
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9988
+              },
+              {
+                "section": "media.case-gallery",
+                "instance": 0,
+                "score": 0.9989
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 2,
+                "score": 0.9933
+              },
+              {
+                "section": "content.case-results",
+                "instance": 0,
+                "score": 0.9933
+              },
+              {
+                "section": "content.case-credits",
+                "instance": 0,
+                "score": 0.9983
+              },
+              {
+                "section": "navigation.case-teaser",
+                "instance": 0,
+                "score": 0.9984
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/work/north-layer",
+            "template": "case-detail",
+            "docHeightOriginal": 6221,
+            "docHeightClone": 6221,
+            "average": 0.9951,
+            "minSection": 0.9902,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.case-intro",
+                "instance": 0,
+                "score": 0.9983
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.999
+              },
+              {
+                "section": "media.case-gallery",
+                "instance": 0,
+                "score": 0.9992
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 2,
+                "score": 0.9934
+              },
+              {
+                "section": "content.case-results",
+                "instance": 0,
+                "score": 0.9934
+              },
+              {
+                "section": "content.case-credits",
+                "instance": 0,
+                "score": 0.9983
+              },
+              {
+                "section": "navigation.case-teaser",
+                "instance": 0,
+                "score": 0.9983
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/work/zero-parallel",
+            "template": "case-detail",
+            "docHeightOriginal": 6221,
+            "docHeightClone": 6221,
+            "average": 0.995,
+            "minSection": 0.9902,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.case-intro",
+                "instance": 0,
+                "score": 0.9949
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9996
+              },
+              {
+                "section": "media.case-gallery",
+                "instance": 0,
+                "score": 0.9995
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 2,
+                "score": 0.9935
+              },
+              {
+                "section": "content.case-results",
+                "instance": 0,
+                "score": 0.9934
+              },
+              {
+                "section": "content.case-credits",
+                "instance": 0,
+                "score": 0.9991
+              },
+              {
+                "section": "navigation.case-teaser",
+                "instance": 0,
+                "score": 0.9991
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/work/pulse",
+            "template": "case-detail",
+            "docHeightOriginal": 6221,
+            "docHeightClone": 6221,
+            "average": 0.9954,
+            "minSection": 0.9902,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.case-intro",
+                "instance": 0,
+                "score": 0.9986
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9995
+              },
+              {
+                "section": "media.case-gallery",
+                "instance": 0,
+                "score": 0.9994
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 2,
+                "score": 0.9934
+              },
+              {
+                "section": "content.case-results",
+                "instance": 0,
+                "score": 0.9933
+              },
+              {
+                "section": "content.case-credits",
+                "instance": 0,
+                "score": 0.9993
+              },
+              {
+                "section": "navigation.case-teaser",
+                "instance": 0,
+                "score": 0.9993
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/work/after-light",
+            "template": "case-detail",
+            "docHeightOriginal": 6435,
+            "docHeightClone": 6435,
+            "average": 0.9944,
+            "minSection": 0.9902,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.case-intro",
+                "instance": 0,
+                "score": 0.9979
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9995
+              },
+              {
+                "section": "media.case-gallery",
+                "instance": 0,
+                "score": 0.9994
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 2,
+                "score": 0.9934
+              },
+              {
+                "section": "content.case-results",
+                "instance": 0,
+                "score": 0.9934
+              },
+              {
+                "section": "content.case-credits",
+                "instance": 0,
+                "score": 0.9945
+              },
+              {
+                "section": "navigation.case-teaser",
+                "instance": 0,
+                "score": 0.9945
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/work/forma-nine",
+            "template": "case-detail",
+            "docHeightOriginal": 6221,
+            "docHeightClone": 6221,
+            "average": 0.9954,
+            "minSection": 0.9902,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.case-intro",
+                "instance": 0,
+                "score": 0.9985
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9996
+              },
+              {
+                "section": "media.case-gallery",
+                "instance": 0,
+                "score": 0.9994
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 2,
+                "score": 0.9933
+              },
+              {
+                "section": "content.case-results",
+                "instance": 0,
+                "score": 0.9933
+              },
+              {
+                "section": "content.case-credits",
+                "instance": 0,
+                "score": 0.9991
+              },
+              {
+                "section": "navigation.case-teaser",
+                "instance": 0,
+                "score": 0.9991
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/work/golden-hour",
+            "template": "case-detail",
+            "docHeightOriginal": 6221,
+            "docHeightClone": 6221,
+            "average": 0.9953,
+            "minSection": 0.9902,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.case-intro",
+                "instance": 0,
+                "score": 0.9982
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9994
+              },
+              {
+                "section": "media.case-gallery",
+                "instance": 0,
+                "score": 0.9995
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 2,
+                "score": 0.9934
+              },
+              {
+                "section": "content.case-results",
+                "instance": 0,
+                "score": 0.9934
+              },
+              {
+                "section": "content.case-credits",
+                "instance": 0,
+                "score": 0.9988
+              },
+              {
+                "section": "navigation.case-teaser",
+                "instance": 0,
+                "score": 0.9988
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9909
+              }
+            ]
+          },
+          {
+            "route": "/work/echoform",
+            "template": "case-detail",
+            "docHeightOriginal": 6079,
+            "docHeightClone": 6079,
+            "average": 0.9926,
+            "minSection": 0.9746,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.case-intro",
+                "instance": 0,
+                "score": 0.9746
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9995
+              },
+              {
+                "section": "media.case-gallery",
+                "instance": 0,
+                "score": 0.9991
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 2,
+                "score": 0.9932
+              },
+              {
+                "section": "content.case-results",
+                "instance": 0,
+                "score": 0.9925
+              },
+              {
+                "section": "content.case-credits",
+                "instance": 0,
+                "score": 0.9976
+              },
+              {
+                "section": "navigation.case-teaser",
+                "instance": 0,
+                "score": 0.9983
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/work/axis-point",
+            "template": "case-detail",
+            "docHeightOriginal": 6299,
+            "docHeightClone": 6299,
+            "average": 0.9944,
+            "minSection": 0.9902,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.case-intro",
+                "instance": 0,
+                "score": 0.9956
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9996
+              },
+              {
+                "section": "media.case-gallery",
+                "instance": 0,
+                "score": 0.9995
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 2,
+                "score": 0.9934
+              },
+              {
+                "section": "content.case-results",
+                "instance": 0,
+                "score": 0.9926
+              },
+              {
+                "section": "content.case-credits",
+                "instance": 0,
+                "score": 0.9959
+              },
+              {
+                "section": "navigation.case-teaser",
+                "instance": 0,
+                "score": 0.9964
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/work/orbit-404",
+            "template": "case-detail",
+            "docHeightOriginal": 5169,
+            "docHeightClone": 5169,
+            "average": 0.9945,
+            "minSection": 0.9902,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.case-intro",
+                "instance": 0,
+                "score": 0.9982
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9902
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9996
+              },
+              {
+                "section": "media.case-gallery",
+                "instance": 0,
+                "score": 0.9968
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 2,
+                "score": 0.9934
+              },
+              {
+                "section": "content.case-results",
+                "instance": 0,
+                "score": 0.9927
+              },
+              {
+                "section": "content.case-credits",
+                "instance": 0,
+                "score": 0.9984
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/feed/the-logic-of-emotion",
+            "template": "feed-post",
+            "docHeightOriginal": 5129,
+            "docHeightClone": 5129,
+            "average": 0.9943,
+            "minSection": 0.9909,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.article-header",
+                "instance": 0,
+                "score": 0.9944
+              },
+              {
+                "section": "media.article-cover",
+                "instance": 0,
+                "score": 0.9995
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9919
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9909
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.998
+              },
+              {
+                "section": "editorial.read-more",
+                "instance": 0,
+                "score": 0.9947
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/feed/precision-over-perfection",
+            "template": "feed-post",
+            "docHeightOriginal": 5129,
+            "docHeightClone": 5129,
+            "average": 0.9942,
+            "minSection": 0.9898,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.article-header",
+                "instance": 0,
+                "score": 0.9952
+              },
+              {
+                "section": "media.article-cover",
+                "instance": 0,
+                "score": 0.9995
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9911
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9898
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9977
+              },
+              {
+                "section": "editorial.read-more",
+                "instance": 0,
+                "score": 0.9949
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/feed/the-language-of-shape",
+            "template": "feed-post",
+            "docHeightOriginal": 5155,
+            "docHeightClone": 5155,
+            "average": 0.9944,
+            "minSection": 0.9908,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.article-header",
+                "instance": 0,
+                "score": 0.9951
+              },
+              {
+                "section": "media.article-cover",
+                "instance": 0,
+                "score": 0.9989
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9919
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9909
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.998
+              },
+              {
+                "section": "editorial.read-more",
+                "instance": 0,
+                "score": 0.9952
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9908
+              }
+            ]
+          },
+          {
+            "route": "/feed/designing-the-invisible",
+            "template": "feed-post",
+            "docHeightOriginal": 5129,
+            "docHeightClone": 5129,
+            "average": 0.9943,
+            "minSection": 0.9909,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.article-header",
+                "instance": 0,
+                "score": 0.9945
+              },
+              {
+                "section": "media.article-cover",
+                "instance": 0,
+                "score": 0.9995
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9919
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9909
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9979
+              },
+              {
+                "section": "editorial.read-more",
+                "instance": 0,
+                "score": 0.9947
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/feed/the-architecture-of-meaning",
+            "template": "feed-post",
+            "docHeightOriginal": 4837,
+            "docHeightClone": 4837,
+            "average": 0.9942,
+            "minSection": 0.991,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.article-header",
+                "instance": 0,
+                "score": 0.9947
+              },
+              {
+                "section": "media.article-cover",
+                "instance": 0,
+                "score": 0.9957
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9919
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9919
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.999
+              },
+              {
+                "section": "editorial.read-more",
+                "instance": 0,
+                "score": 0.9951
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/feed/one-idea-many-forms",
+            "template": "feed-post",
+            "docHeightOriginal": 4808,
+            "docHeightClone": 4808,
+            "average": 0.9935,
+            "minSection": 0.9896,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.article-header",
+                "instance": 0,
+                "score": 0.995
+              },
+              {
+                "section": "media.article-cover",
+                "instance": 0,
+                "score": 0.9957
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9919
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9919
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9989
+              },
+              {
+                "section": "editorial.read-more",
+                "instance": 0,
+                "score": 0.9914
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9896
+              }
+            ]
+          },
+          {
+            "route": "/feed/the-human-algorithm",
+            "template": "feed-post",
+            "docHeightOriginal": 4897,
+            "docHeightClone": 4897,
+            "average": 0.994,
+            "minSection": 0.991,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.article-header",
+                "instance": 0,
+                "score": 0.9953
+              },
+              {
+                "section": "media.article-cover",
+                "instance": 0,
+                "score": 0.9964
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9919
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9919
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9989
+              },
+              {
+                "section": "editorial.read-more",
+                "instance": 0,
+                "score": 0.9925
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/feed/the-clarity-paradox",
+            "template": "feed-post",
+            "docHeightOriginal": 4889,
+            "docHeightClone": 4889,
+            "average": 0.9938,
+            "minSection": 0.9898,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.article-header",
+                "instance": 0,
+                "score": 0.9959
+              },
+              {
+                "section": "media.article-cover",
+                "instance": 0,
+                "score": 0.9995
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9911
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9898
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9977
+              },
+              {
+                "section": "editorial.read-more",
+                "instance": 0,
+                "score": 0.9927
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9902
+              }
+            ]
+          },
+          {
+            "route": "/feed/systems-with-soul",
+            "template": "feed-post",
+            "docHeightOriginal": 4733,
+            "docHeightClone": 4733,
+            "average": 0.9943,
+            "minSection": 0.991,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.article-header",
+                "instance": 0,
+                "score": 0.9953
+              },
+              {
+                "section": "media.article-cover",
+                "instance": 0,
+                "score": 0.9957
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9919
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9919
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.999
+              },
+              {
+                "section": "editorial.read-more",
+                "instance": 0,
+                "score": 0.9953
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.991
+              }
+            ]
+          },
+          {
+            "route": "/feed/thinking-in-motion",
+            "template": "feed-post",
+            "docHeightOriginal": 4797,
+            "docHeightClone": 4797,
+            "average": 0.9932,
+            "minSection": 0.9894,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.article-header",
+                "instance": 0,
+                "score": 0.995
+              },
+              {
+                "section": "media.article-cover",
+                "instance": 0,
+                "score": 0.9962
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 0,
+                "score": 0.9919
+              },
+              {
+                "section": "content.pull-quote",
+                "instance": 0,
+                "score": 0.9894
+              },
+              {
+                "section": "content.marked-chapter",
+                "instance": 1,
+                "score": 0.9964
+              },
+              {
+                "section": "editorial.read-more",
+                "instance": 0,
+                "score": 0.9932
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9902
+              }
+            ]
+          },
+          {
+            "route": "/legal/terms-of-service",
+            "template": "legal",
+            "docHeightOriginal": 5748,
+            "docHeightClone": 5748,
+            "average": 0.9967,
+            "minSection": 0.9899,
+            "perSectionGatePass": true,
+            "averageGatePass": true,
+            "belowGate": [],
+            "sections": [
+              {
+                "section": "hero.legal-header",
+                "instance": 0,
+                "score": 0.9994
+              },
+              {
+                "section": "content.legal-clause",
+                "instance": 0,
+                "score": 0.9993
+              },
+              {
+                "section": "faq.questions-answered",
+                "instance": 0,
+                "score": 0.9982
+              },
+              {
+                "section": "shell.site-footer",
+                "instance": 0,
+                "score": 0.9899
+              }
+            ]
+          }
+        ],
+        "exceptions": [],
+        "beforeAfterSummary": {
+          "sectionsBelowGate": {
+            "before": 0,
+            "after": 0
+          },
+          "meanSectionScore": {
+            "before": 0.9946,
+            "after": 0.9945
+          },
+          "minSection": {
+            "before": 0.9746,
+            "after": 0.9746
+          },
+          "sectionsBelow0.97": {
+            "before": 0,
+            "after": 0
+          }
+        },
+        "sectionsFixed": []
+      }
+    ],
+    "notMeasured": [
+      {
+        "viewportWidth": 768,
+        "what": "the 22 non-representative routes at tablet width",
+        "routes": [
+          "/work/bright-matter",
+          "/work/wavehouse",
+          "/work/north-layer",
+          "/work/zero-parallel",
+          "/work/pulse",
+          "/work/after-light",
+          "/work/forma-nine",
+          "/work/golden-hour",
+          "/work/echoform",
+          "/work/axis-point",
+          "/work/orbit-404",
+          "/feed/the-logic-of-emotion",
+          "/feed/precision-over-perfection",
+          "/feed/the-language-of-shape",
+          "/feed/designing-the-invisible",
+          "/feed/the-architecture-of-meaning",
+          "/feed/one-idea-many-forms",
+          "/feed/the-human-algorithm",
+          "/feed/the-clarity-paradox",
+          "/feed/systems-with-soul",
+          "/feed/thinking-in-motion",
+          "/legal/terms-of-service"
+        ]
+      },
+      {
+        "viewportWidth": 390,
+        "what": "the 22 non-representative routes at phone width",
+        "routes": [
+          "/work/bright-matter",
+          "/work/wavehouse",
+          "/work/north-layer",
+          "/work/zero-parallel",
+          "/work/pulse",
+          "/work/after-light",
+          "/work/forma-nine",
+          "/work/golden-hour",
+          "/work/echoform",
+          "/work/axis-point",
+          "/work/orbit-404",
+          "/feed/the-logic-of-emotion",
+          "/feed/precision-over-perfection",
+          "/feed/the-language-of-shape",
+          "/feed/designing-the-invisible",
+          "/feed/the-architecture-of-meaning",
+          "/feed/one-idea-many-forms",
+          "/feed/the-human-algorithm",
+          "/feed/the-clarity-paradox",
+          "/feed/systems-with-soul",
+          "/feed/thinking-in-motion",
+          "/legal/terms-of-service"
+        ]
+      },
+      {
+        "viewportWidth": 1000,
+        "what": "parity at 1000 and 1280 wide (the original tablet range 810-1199 is only covered by document heights in responsiveDocHeights)",
+        "routes": [
+          "/",
+          "/work",
+          "/work/soma-studio",
+          "/studio",
+          "/contacts",
+          "/feed",
+          "/feed/beyond-function",
+          "/legal/privacy-policy",
+          "/404"
+        ]
+      }
+    ],
+    "otherCheck": "The mobile menu overlay (open state) was compared once on /studio at 390 and 768 wide: pixel similarity 0.9999 on both. Not part of the harness and not pinned."
+  }
 }

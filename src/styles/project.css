@@ -204,8 +204,8 @@
   .pj-info { gap: 32px; }
   .pj-info-text, .pj-info-bottom { padding: 0 10px; }
   .pj-intro-img { height: 480px; padding: 0 10px; }
-  .pj-services p { width: 350px; }
-  .pj-info-text .pj-body, .pj-ch .pj-body, .pj-cr-p { max-width: none; }
+  .pj-services p { width: 400px; max-width: 100%; }
+  .pj-info-text .pj-body, .pj-ch .pj-body, .pj-cr-p { max-width: 480px; }
 
   .pj-row { padding: 80px 10px 0; }
   /* Challenge / credits: column, gap 12, empty 0-height section first */
@@ -221,7 +221,7 @@
   .pj-quote { font-size: 36px; line-height: 43.2px; letter-spacing: -0.04em; transform: none; text-indent: 80px; }
 
   .pj-num-h { font-size: 24px; line-height: 33.6px; letter-spacing: -0.24px; }
-  .pj-stats { display: grid; grid-template-columns: 185px 185px; grid-auto-rows: 1fr; gap: 40px 0; }
+  .pj-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: 40px 0; }
   .pj-stat { padding: 0 10px; }
   .pj-stat-v { font-size: 44px; line-height: 52.8px; letter-spacing: -1.32px; }
 

@@ -35,7 +35,7 @@
       "description": "Home card stack: cards rise from +100vh with 1.1-1.4s springs, fan out on hover, exit to -100vh past scrollY 30 and re-enter at top.",
       "reducedMotionFallback": "static-final-state",
       "evidence": [
-        "src/components/home/Hero.jsx:106-106"
+        "src/components/home/Hero.jsx:118-118"
       ]
     },
     {
@@ -112,7 +112,7 @@
     },
     {
       "id": "slideshow-autoplay",
-      "description": "One slide visible, 10s autoplay, 0.3s fade-out / swap / fade-in; prev/next buttons.",
+      "description": "One slide visible, 10s autoplay that only runs while the slideshow is on screen (the countdown restarts on entry and after every change), 0.3s fade-out / swap / fade-in; prev/next buttons.",
       "reducedMotionFallback": "manual-advance-only",
       "evidence": [
         "src/components/home/Testimonials.jsx:19-19"
@@ -123,7 +123,7 @@
       "description": "Horizontal scroll-snap carousel with dot buttons (touch).",
       "reducedMotionFallback": "manual-advance-only",
       "evidence": [
-        "src/components/home/Testimonials.jsx:83-83"
+        "src/components/home/Testimonials.jsx:95-95"
       ]
     },
     {

@@ -120,7 +120,7 @@
         "lineHeight": 52.8,
         "letterSpacing": -1.32
       },
-      "evidence": "src/styles/home-sections.css:353-353",
+      "evidence": "src/styles/home-sections.css:352-352",
       "measuredEvidence": ".recon/specs/home.md:286-306"
     },
     "type.statement": {
@@ -164,7 +164,7 @@
         "lineHeight": 43.2,
         "letterSpacing": -1.08
       },
-      "evidence": "src/styles/home-sections.css:280-280",
+      "evidence": "src/styles/home-sections.css:279-279",
       "measuredEvidence": ".recon/specs/home.md:286-306"
     },
     "type.question": {
@@ -186,7 +186,7 @@
         "lineHeight": 43.2,
         "letterSpacing": -0.72
       },
-      "evidence": "src/styles/home-sections.css:184-184",
+      "evidence": "src/styles/home-sections.css:185-185",
       "measuredEvidence": ".recon/specs/home.md:286-306"
     },
     "type.card-name": {
@@ -254,7 +254,7 @@
         "lineHeight": 36.4,
         "letterSpacing": -0.28
       },
-      "evidence": "src/styles/home-sections.css:252-252",
+      "evidence": "src/styles/home-sections.css:251-251",
       "measuredEvidence": ".recon/specs/home.md:286-306"
     },
     "type.h6": {
@@ -300,7 +300,7 @@
         "lineHeight": 32,
         "letterSpacing": 0
       },
-      "evidence": "src/styles/home-sections.css:282-282",
+      "evidence": "src/styles/home-sections.css:281-281",
       "measuredEvidence": ".recon/specs/home.md:286-306"
     },
     "type.logo": {
@@ -388,7 +388,7 @@
         "lineHeight": 22.4,
         "letterSpacing": 0
       },
-      "evidence": "src/styles/home-sections.css:253-253",
+      "evidence": "src/styles/home-sections.css:252-252",
       "measuredEvidence": ".recon/specs/home.md:286-306"
     },
     "type.label": {

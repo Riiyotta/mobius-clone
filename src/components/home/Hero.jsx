@@ -42,8 +42,8 @@ function Intro({ animate, state }) {
     return () => window.removeEventListener('resize', measure)
   }, [animate])
 
-  if (!animate) return <p className="hm-intro hm-intro-static">{' ' + INTRO}</p>
   if (state === 'empty') return <div className="hm-intro hm-intro-empty" />
+  if (!animate) return <p className={`hm-intro hm-intro-static ${state === 'outro' ? 'is-outro' : ''}`}>{' ' + INTRO}</p>
   const go = state === 'go' || state === 'outro'
   return (
     <p ref={ref} className={`hm-intro hm-intro-anim ${state === 'outro' ? 'is-outro' : ''}`}>
@@ -74,10 +74,22 @@ export default function Hero({ desktop }) {
   const timers = useRef([])
 
   useEffect(() => {
-    if (!desktop) { setPhase('main'); setIntro('go'); setYear(true); return }
     const T = timers.current
     const later = (fn, ms) => T.push(setTimeout(fn, ms))
     const clear = () => { T.forEach(clearTimeout); T.length = 0 }
+    if (!desktop) {
+      // Tablet/phone: no entrance, but the intro leaves on scroll exactly like the original (measured at 390 and 768 wide: past ~30px
+      // the intro fades out and its box drops from 9 lines (288px) to the 256px placeholder, so the page is 32px shorter; back at the top it returns).
+      setPhase('main'); setIntro('go'); setYear(true)
+      let gone = false
+      const onScrollSmall = () => {
+        const y = window.scrollY
+        if (!gone && y > 30) { gone = true; clear(); setIntro('outro'); later(() => setIntro('empty'), 600) }
+        else if (gone && y <= 10) { gone = false; clear(); setIntro('go') }
+      }
+      window.addEventListener('scroll', onScrollSmall, { passive: true })
+      return () => { clear(); window.removeEventListener('scroll', onScrollSmall) }
+    }
     const enter = (first) => {
       clear()
       setPhase('inA')

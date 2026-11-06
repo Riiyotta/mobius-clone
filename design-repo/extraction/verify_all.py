@@ -34,6 +34,11 @@ Checks (each prints PASS/FAIL/WARN with evidence):
                      sections, scores and overall figures equal the official result file; the repeat run agrees within the
                      recorded tolerance; the freeze is on; parity exceptions can only be pending/unapproved and only for
                      sections that really are below the gate
+  parity-runs        the extra parity runs (tablet 768x1024, phone 390x844, desktop 1440 for every remaining route) are each pinned to
+                     an official + repeat result file by sha256; recorded routes/sections/scores/doc heights equal the official file;
+                     viewport, symmetric freeze at phase 0 and unfiltered coverage are re-checked; the repeat agrees within the
+                     tolerance; every route of templates/routes.json is covered at desktop; exceptions only pending/unapproved and
+                     only for sections really below the gate; what stays unmeasured is listed, never silently absent
   generated-examples a generation-safe example exists for home and at least one non-home template family
 """
 import glob, hashlib, json, os, re, sys
@@ -536,6 +541,103 @@ def check_parity_evidence():
             bad.append(f"exception {e.get('section')} is for a section that is not below the gate (exceptions are never added to pass)")
     rec("parity-evidence", not bad, f"{len(ev.get('beforeUnfrozen', []))} before + {len(ev.get('phaseEvidence', []))} phase result files + official + repeat pinned by sha256; recorded scores == official result file; repeat within {ev.get('repeatTolerance')}; {len(exc)} exceptions" if not bad else bad[:6])
 
+def check_parity_runs():
+    mv = load("extraction/measured-values.json")
+    runs = mv.get("cloneParityRuns")
+    if not runs:
+        rec("parity-runs", False, "cloneParityRuns missing: tablet / phone / remaining-route parity is neither measured nor listed as unmeasured"); return
+    bad = []
+    key = lambda r, s: (r["route"], s["section"], s["instance"])
+    covered = {}                                   # route -> viewports it was measured at
+    for run in runs["runs"]:
+        rid = run.get("id", "?")
+        def pinned(entry, what):
+            path = os.path.join(REPO, entry.get("path", "")) if entry.get("path") else None
+            if not path or not os.path.isfile(path):
+                bad.append(f"{rid} {what}: result file {entry.get('path')!r} missing"); return None
+            raw = open(path, "rb").read()
+            if hashlib.sha256(raw).hexdigest() != entry.get("sha256"):
+                bad.append(f"{rid} {what}: {entry['path']} sha256 does not match the recorded pin"); return None
+            return json.loads(raw)
+        off, rep = pinned(run.get("official", {}), "official"), pinned(run.get("repeat", {}), "repeat")
+        if run.get("beforeFix"):
+            pinned(run["beforeFix"], "beforeFix")
+        if not off:
+            continue
+        cs = off.get("captureState") or {}
+        if not cs.get("freeze") or cs.get("phaseMs") != 0 or cs.get("cloneSkewMs") or cs.get("only"):
+            bad.append(f"{rid}: official result file is not an unfiltered symmetric freeze at phase 0 without skew")
+        if off.get("viewport") != run.get("viewport"):
+            bad.append(f"{rid}: recorded viewport {run.get('viewport')} != result file viewport {off.get('viewport')}")
+        if off.get("gate", {}).get("perSectionMin") != GATE:
+            bad.append(f"{rid}: result file gate is not {GATE}")
+        have = {key(r, s): s["score"] for r in run["routes"] for s in r["sections"]}
+        want = {key(r, s): s["score"] for r in off["routes"] for s in r["sections"]}
+        if have != want:
+            bad.append(f"{rid}: recorded section scores differ from the official result file in {len([k for k in set(have) | set(want) if have.get(k) != want.get(k)])} sections")
+        for r in run["routes"]:
+            orr = next((x for x in off["routes"] if x["route"] == r["route"]), None)
+            if orr is None or (orr["docHeightOriginal"], orr["docHeightClone"]) != (r["docHeightOriginal"], r["docHeightClone"]):
+                bad.append(f"{rid} {r['route']}: doc heights differ from the official result file")
+                continue
+            sc = [s["score"] for s in r["sections"]]
+            if abs(round(sum(sc) / len(sc), 4) - r["average"]) > 1e-3 or abs(min(sc) - r["minSection"]) > 1e-4:
+                bad.append(f"{rid} {r['route']}: average/minSection not re-derivable from its sections")
+            below = [f"{s['section']}#{s['instance']}" for s in r["sections"] if s["score"] < GATE]
+            if r["belowGate"] != below or r["perSectionGatePass"] != (not below) or r["averageGatePass"] != (r["average"] >= GATE):
+                bad.append(f"{rid} {r['route']}: gate flags do not match the scores")
+            covered.setdefault(r["route"], set()).add(run["viewport"]["width"])
+        if len(run["routes"]) != len(off["routes"]):
+            bad.append(f"{rid}: recorded routes ({len(run['routes'])}) != official file routes ({len(off['routes'])})")
+        allsc = list(want.values())
+        o = run["overall"]
+        if o.get("sections") != len(allsc) or o.get("sectionsBelowGate") != sum(1 for v in allsc if v < GATE) or abs(o.get("meanSectionScore", -1) - round(sum(allsc) / len(allsc), 4)) > 1e-4:
+            bad.append(f"{rid}: overall counts / mean not re-derivable")
+        if rep:
+            tol = run.get("repeatTolerance")
+            if not isinstance(tol, (int, float)) or tol > 0.05:
+                bad.append(f"{rid}: repeatTolerance missing or looser than 0.05")
+            else:
+                rv = {key(r, s): s["score"] for r in rep["routes"] for s in r["sections"]}
+                far = [k for k in want if abs(rv.get(k, -9) - want[k]) > tol]
+                if far:
+                    bad.append(f"{rid}: repeat run disagrees beyond {tol} in {len(far)} sections, e.g. {far[0]}")
+                if {k for k, v in rv.items() if v < GATE} != {k for k, v in want.items() if v < GATE}:
+                    bad.append(f"{rid}: repeat run and official run disagree on which sections are below the gate")
+                if (rep.get("captureState") or {}).get("freeze") is not True or rep.get("viewport") != run.get("viewport"):
+                    bad.append(f"{rid}: repeat result file is not the same frozen viewport")
+        below_all = {key(r, s) for r in run["routes"] for s in r["sections"] if s["score"] < GATE}
+        for e in run.get("exceptions", []):
+            if e.get("status") != "pending human approval" or e.get("approvedBy") is not None:
+                bad.append(f"{rid}: exception {e.get('section')} must be status 'pending human approval' with approvedBy null")
+            if (e.get("route"), e.get("section"), e.get("instance", 0)) not in below_all:
+                bad.append(f"{rid}: exception {e.get('section')} is for a section that is not below the gate (never added to pass)")
+    # coverage: desktop 1440 must cover every served route (the 9 representative routes live in cloneParity)
+    cp = mv.get("cloneParity") or {}
+    for r in cp.get("routes", []):
+        covered.setdefault(r["route"], set()).add(cp.get("viewport", {}).get("width"))
+    served = [r["route"] for r in load("templates/routes.json")["routes"]]
+    missing = [r for r in served if 1440 not in covered.get(r, set())]
+    if missing:
+        bad.append(f"routes with no desktop parity measurement: {missing[:5]}")
+    for r in cp.get("routes", []):
+        for w in (768, 390):
+            if w not in covered.get(r["route"], set()):
+                bad.append(f"representative route {r['route']} has no {w}px parity measurement")
+    # honesty: what is not measured must be listed and must really be unmeasured
+    un = runs.get("notMeasured")
+    if not isinstance(un, list) or not un:
+        bad.append("cloneParityRuns.notMeasured must list what is still unmeasured")
+    else:
+        for u in un:
+            w = u.get("viewportWidth")
+            hit = [r for r in u.get("routes", []) if w in covered.get(r, set())]
+            if hit:
+                bad.append(f"notMeasured lists {hit[:3]} at {w}px but they are measured")
+    exc = sum(len(r.get("exceptions", [])) for r in runs["runs"])
+    n_sec = sum(r["overall"]["sections"] for r in runs["runs"])
+    rec("parity-runs", not bad, f"{len(runs['runs'])} extra runs ({', '.join(r['id'] for r in runs['runs'])}), {n_sec} sections, each pinned to official + repeat result files; scores/doc heights == result files; every one of {len(served)} routes measured at 1440; {len(cp.get('routes', []))} representative routes also at 768 and 390; {exc} exceptions; unmeasured listed ({len(un or [])})" if not bad else bad[:6])
+
 def check_generated_examples(examples):
     gen = {s["template"] for p, s in examples if s.get("mode") == "generated"}
     ok = "home" in gen and len(gen - {"home"}) >= 1
@@ -611,7 +713,7 @@ def main():
                      ("semantic-examples", lambda: check_semantic(examples)), ("allowlist-parity", lambda: check_allowlist(contracts, man)), ("citations", check_citations),
                      ("contracts", lambda: check_contracts(contracts)), ("asset-pins", check_asset_pins), ("tokens", lambda: check_tokens(man)), ("source-brand", check_source_brand),
                      ("routes", lambda: check_routes(contracts)), ("graph-parity", check_graph), ("counts", lambda: check_counts(man, contracts)), ("wrapper-gate", check_gate),
-                     ("clone-parity", check_parity), ("parity-evidence", check_parity_evidence), ("generated-examples", lambda: check_generated_examples(examples)), ("design-policy", lambda: check_design_policy(man))):
+                     ("clone-parity", check_parity), ("parity-evidence", check_parity_evidence), ("parity-runs", check_parity_runs), ("generated-examples", lambda: check_generated_examples(examples)), ("design-policy", lambda: check_design_policy(man))):
         try:
             fn()
         except Exception as e:

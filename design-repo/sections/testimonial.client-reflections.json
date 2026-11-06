@@ -6,8 +6,8 @@
     "id": "src:Testimonials#export-default-function-Testimonials",
     "file": "src/components/home/Testimonials.jsx",
     "tag": "export default function Testimonials(",
-    "lines": "127-148",
-    "citation": "src/components/home/Testimonials.jsx:127-148"
+    "lines": "139-160",
+    "citation": "src/components/home/Testimonials.jsx:139-160"
   },
   "semantic": {
     "id": "testimonial.client-reflections",

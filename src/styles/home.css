@@ -10,7 +10,7 @@
 .hm-tc { padding: 0 20px; }
 .hm-intro { max-width: 360px; overflow: clip; font-size: 20px; font-weight: 500; line-height: 32px; color: var(--black); }
 .hm-intro-anim { display: flex; flex-wrap: wrap; align-items: flex-end; }
-.hm-intro-anim.is-outro { opacity: 0; transition: opacity 0.6s var(--spring-06); }
+.hm-intro-anim.is-outro, .hm-intro-static.is-outro { opacity: 0; transition: opacity 0.6s var(--spring-06); }
 .hm-intro-empty { min-height: 256px; }
 .hm-intro-static { text-indent: 90px; white-space: pre-wrap; }
 .hm-wm { display: inline-block; overflow: hidden; vertical-align: bottom; }

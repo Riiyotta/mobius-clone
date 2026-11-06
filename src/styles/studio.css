@@ -245,7 +245,7 @@
   .st-intro-main { width: 100%; padding: 120px 0 0; }
   .st-h1-wrap, .st-intro-text { padding: 0 10px; }
   .st-h1 { font-size: 80px; line-height: 80px; letter-spacing: -4px; }
-  .st-intro-p { width: 100%; }
+  .st-intro-p { width: 480px; max-width: 100%; }
 
   .st-team { padding: 0 10px; }
   .st-reveal { padding: 64px 10px 0; }

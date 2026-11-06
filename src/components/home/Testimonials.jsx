@@ -3,7 +3,7 @@ import ImageReveal from '../fx/ImageReveal'
 import { Lines, Rise } from './Motion'
 
 // §4.9 Client reflections (home.md).
-// Desktop: one slide visible, 10s autoplay; change = wrapper opacity 1 → 0 (.3s ease-in-out),
+// Desktop: one slide visible, 10s autoplay (only while in view); change = wrapper opacity 1 → 0 (.3s ease-in-out),
 // swap at 300ms, 0 → 1. Prev/next 52x52 image buttons (no hover). Slides are stacked in one grid
 // cell so the slideshow is as tall as its tallest slide; each slide has min-height 66vh.
 // Tablet/phone: horizontal carousel (one slide per view, snap) with 5 dot buttons.
@@ -33,6 +33,8 @@ function Slideshow() {
   const [idx, setIdx] = useState(0)
   const [fading, setFading] = useState(false)
   const swap = useRef(0)
+  const root = useRef(null)
+  const [inView, setInView] = useState(false)
 
   const go = (next) => {
     if (fading) return
@@ -42,15 +44,25 @@ function Slideshow() {
       setFading(false)
     }, FADE_MS)
   }
-  // 10s autoplay; the countdown restarts after every change (manual or automatic).
+  // The live slideshow only plays while it is on screen: measured on the original, a page left at the top for 13 s still shows
+  // slide 1 when the section is scrolled to, and it advances ~10 s after it came into view. The countdown therefore runs only
+  // while the slideshow intersects the viewport and restarts after every change (manual or automatic) and on every (re)entry.
   useEffect(() => {
+    const el = root.current
+    if (!el || typeof IntersectionObserver === 'undefined') { setInView(true); return }
+    const io = new IntersectionObserver(([e]) => setInView(e.isIntersecting), { threshold: 0.2 })
+    io.observe(el)
+    return () => io.disconnect()
+  }, [])
+  useEffect(() => {
+    if (!inView) return
     const t = setTimeout(() => go(idx + 1), AUTOPLAY_MS)
     return () => clearTimeout(t)
-  }, [idx]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [idx, inView]) // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => () => clearTimeout(swap.current), [])
 
   return (
-    <div className="hs-ss">
+    <div className="hs-ss" ref={root}>
       <div className="hs-ss-wrap" style={{ opacity: fading ? 0 : 1 }}>
         {SLIDES.map((s, i) => (
           <nav key={i} className={`hs-sl ${i === idx ? 'is-active' : ''}`} aria-hidden={i !== idx}>

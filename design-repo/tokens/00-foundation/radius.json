@@ -15,11 +15,11 @@
     },
     "radius.dot-track": {
       "value": "50px",
-      "evidence": "src/styles/home-sections.css:307-307"
+      "evidence": "src/styles/home-sections.css:306-306"
     },
     "radius.round": {
       "value": "50%",
-      "evidence": "src/styles/home-sections.css:311-311"
+      "evidence": "src/styles/home-sections.css:310-310"
     }
   }
 }

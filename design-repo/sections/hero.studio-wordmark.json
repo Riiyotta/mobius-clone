@@ -6,8 +6,8 @@
     "id": "src:Hero#export-default-function-Hero",
     "file": "src/components/home/Hero.jsx",
     "tag": "export default function Hero(",
-    "lines": "68-177",
-    "citation": "src/components/home/Hero.jsx:68-177"
+    "lines": "68-189",
+    "citation": "src/components/home/Hero.jsx:68-189"
   },
   "semantic": {
     "id": "hero.studio-wordmark",
@@ -85,7 +85,7 @@
       {
         "at": "below-desktop",
         "change": "disable-motion",
-        "detail": "Tablet/phone render the final state statically (no entrance, no hover fan)."
+        "detail": "Tablet/phone render the final state statically (no entrance, no hover fan); the intro text still fades out once the page is scrolled past about 30 px and returns at the top, like desktop."
       },
       {
         "at": "below-tablet",

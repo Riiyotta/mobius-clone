@@ -138,6 +138,63 @@ def m_exc_to_pass(r):
     d = jl(r, "extraction/measured-values.json"); d["cloneParity"].setdefault("exceptions", []).append({"route": "/", "section": "media.showreel", "instance": 0, "status": "pending human approval", "approvedBy": None}); jw(r, "extraction/measured-values.json", d)
 def m_parity_gate(r):
     d = jl(r, "extraction/measured-values.json"); x = d["cloneParity"]["routes"][0]; x["belowGate"] = ["media.showreel#0"]; x["perSectionGatePass"] = False; jw(r, "extraction/measured-values.json", d)
+def _runs(r):
+    return jl(r, "extraction/measured-values.json")
+def _run(d, rid):
+    return next(x for x in d["cloneParityRuns"]["runs"] if x["id"] == rid)
+def _repin(r, entry):
+    import hashlib; entry["sha256"] = hashlib.sha256(open(os.path.join(r, entry["path"]), "rb").read()).hexdigest()
+def mk_run_tamper(rid):
+    def f(r):
+        d = _runs(r); e = _run(d, rid)["official"]; x = jl(r, e["path"]); x["routes"][0]["sections"][0]["score"] = 0.5; jw(r, e["path"], x)
+    return f
+def mk_run_consistent_edit(rid):
+    def f(r):
+        d = _runs(r); run = _run(d, rid); x = run["routes"][0]
+        x["sections"][0]["score"] = round(x["sections"][0]["score"] - 0.01, 4)
+        sc = [q["score"] for q in x["sections"]]; x["average"] = round(sum(sc) / len(sc), 4); x["minSection"] = min(sc)
+        allsc = [q["score"] for rr in run["routes"] for q in rr["sections"]]; run["overall"]["meanSectionScore"] = round(sum(allsc) / len(allsc), 4)
+        jw(r, "extraction/measured-values.json", d)
+    return f
+def mk_run_pin_removed(rid):
+    def f(r):
+        d = _runs(r); _run(d, rid).pop("official"); jw(r, "extraction/measured-values.json", d)
+    return f
+def mk_run_repeat_missing(rid):
+    def f(r):
+        d = _runs(r); os.unlink(os.path.join(r, _run(d, rid)["repeat"]["path"]))
+    return f
+def mk_run_freeze_off(rid):
+    def f(r):
+        d = _runs(r); e = _run(d, rid)["official"]; x = jl(r, e["path"]); x["captureState"]["freeze"] = False; jw(r, e["path"], x); _repin(r, e); jw(r, "extraction/measured-values.json", d)
+    return f
+def mk_run_filtered(rid):
+    def f(r):
+        d = _runs(r); e = _run(d, rid)["official"]; x = jl(r, e["path"]); x["captureState"]["only"] = ["hero.not-found"]; jw(r, e["path"], x); _repin(r, e); jw(r, "extraction/measured-values.json", d)
+    return f
+def mk_run_viewport(rid):
+    def f(r):
+        d = _runs(r); _run(d, rid)["viewport"]["width"] = 1024; jw(r, "extraction/measured-values.json", d)
+    return f
+def mk_run_exc(rid, approved):
+    def f(r):
+        d = _runs(r); run = _run(d, rid); x = run["routes"][0]; sec = x["sections"][0]
+        run.setdefault("exceptions", []).append({"route": x["route"], "section": sec["section"], "instance": sec["instance"], "status": "approved" if approved else "pending human approval", "approvedBy": "agent" if approved else None}); jw(r, "extraction/measured-values.json", d)
+    return f
+def mk_run_route_dropped(rid):
+    def f(r):
+        d = _runs(r); run = _run(d, rid); run["routes"] = run["routes"][1:]; jw(r, "extraction/measured-values.json", d)
+    return f
+def m_unmeasured_lie(r):
+    d = _runs(r); d["cloneParityRuns"]["notMeasured"][0]["routes"].append("/"); jw(r, "extraction/measured-values.json", d)
+def m_unmeasured_removed(r):
+    d = _runs(r); d["cloneParityRuns"]["notMeasured"] = []; jw(r, "extraction/measured-values.json", d)
+def m_runs_removed(r):
+    d = _runs(r); d.pop("cloneParityRuns"); jw(r, "extraction/measured-values.json", d)
+def m_phone_missing_for_rep(r):
+    d = _runs(r); d["cloneParityRuns"]["runs"] = [x for x in d["cloneParityRuns"]["runs"] if x["id"] != "phone-390"]; jw(r, "extraction/measured-values.json", d)
+def m_before_fix_tamper(r):
+    d = _runs(r); e = _run(d, "tablet-768")["beforeFix"]; x = jl(r, e["path"]); x["overall"]["meanSectionScore"] = 0.99; jw(r, e["path"], x)
 def m_abspath(r):
     with open(os.path.join(r, "CHANGELOG.md"), "a", encoding="utf-8") as f:
         f.write("\nbuilt from " + "/Us" + "ers/someone/project\n")
@@ -187,6 +244,25 @@ CASES = [  # (name, mutation, expected failing check, needs sibling source)
     ("official parity run re-labelled as unfrozen and re-pinned", m_freeze_off, "parity-evidence", False),
     ("parity exception self-approved", m_exc_selfapproved, "parity-evidence", False),
     ("parity exception added for a passing section", m_exc_to_pass, "parity-evidence", False),
+    ("extra parity run result file edited (sha256 pin)", mk_run_tamper("tablet-768"), "parity-runs", False),
+    ("phone run result file edited (sha256 pin)", mk_run_tamper("phone-390"), "parity-runs", False),
+    ("extra-routes run result file edited (sha256 pin)", mk_run_tamper("desktop-1440-remaining-routes"), "parity-runs", False),
+    ("before-fix result file edited (sha256 pin)", m_before_fix_tamper, "parity-runs", False),
+    ("tablet score hand-edited consistently (averages re-derived)", mk_run_consistent_edit("tablet-768"), "parity-runs", False),
+    ("phone score hand-edited consistently (averages re-derived)", mk_run_consistent_edit("phone-390"), "parity-runs", False),
+    ("extra-routes score hand-edited consistently", mk_run_consistent_edit("desktop-1440-remaining-routes"), "parity-runs", False),
+    ("tablet evidence pin removed", mk_run_pin_removed("tablet-768"), "parity-runs", False),
+    ("phone repeat result file missing", mk_run_repeat_missing("phone-390"), "parity-runs", False),
+    ("tablet official run re-labelled as unfrozen and re-pinned", mk_run_freeze_off("tablet-768"), "parity-runs", False),
+    ("extra-routes official run re-labelled as filtered and re-pinned", mk_run_filtered("desktop-1440-remaining-routes"), "parity-runs", False),
+    ("phone run viewport mis-recorded", mk_run_viewport("phone-390"), "parity-runs", False),
+    ("tablet exception self-approved", mk_run_exc("tablet-768", True), "parity-runs", False),
+    ("phone exception added for a passing section", mk_run_exc("phone-390", False), "parity-runs", False),
+    ("extra-routes run drops a route", mk_run_route_dropped("desktop-1440-remaining-routes"), "parity-runs", False),
+    ("phone run removed for representative routes", m_phone_missing_for_rep, "parity-runs", False),
+    ("notMeasured lists a measured route", m_unmeasured_lie, "parity-runs", False),
+    ("notMeasured emptied", m_unmeasured_removed, "parity-runs", False),
+    ("cloneParityRuns removed", m_runs_removed, "parity-runs", False),
     ("absolute machine path in a doc", m_abspath, "no-absolute-paths", False),
     ("entryPoint outside the package", m_entry, "self-containment", False),
     ("junk file in the package", m_junk, "no-junk-files", False),

@@ -27,9 +27,16 @@
 //      That alignment is translate 0 for a plain track; the live site's wrap-style tickers move items that left the view
 //      to the far end with per-item offsets, so for them "translate 0" alone would show a blank/rotated strip.
 //      Content is not removed or replaced.
-// Not frozen: the 10 s testimonial autoplay carousel (it does not move continuously; if its slide advanced between
-// the two captures the score drops honestly) and hover/drag states. The consent banner / Framer badge are
-// position-fixed overlays; the badge is hidden on both sides, no banner is ever clicked.
+//   3a. (1.1.2) wrap-style tickers keep a per-item translation on every item that already left the view; at the track's start state no item
+//      has wrapped, so the pure translations of the pinned track's direct children are released (content untouched). Without this the
+//      live strip showed a blank first item at tablet/phone widths and scored 0.61.
+//   3b. (1.1.2) rotating elements (the 404's gradient shapes: script-driven on the live site, CSS animations in the clone): any element whose
+//      rotation angle keeps changing in one direction across the three samples is pinned to its measured angle extrapolated along its own
+//      measured angular velocity back to the page time origin (performance.now() = 0), advanced by PHASE. Scale and translation are kept.
+// Not frozen: the 10 s testimonial autoplay carousel (it does not move continuously; since 1.1.2 both sides start its countdown when the slideshow
+// enters the viewport, as the original does, so the shown slide agrees; if it advanced between the two captures the score drops honestly) and
+// hover/drag states. The consent banner / Framer badge are position-fixed overlays; the badge is hidden on both sides, no banner is ever clicked.
+// Viewports: 1440x900 (default), --width 768 --height 1024 (tablet; the original serves its phone layout below 810 px) and --width 390 --height 844 (phone).
 // --phase <ms> selects a different freeze phase (used to show the score depends on animation phase, not layout).
 // --skew <ms> is a diagnostic: it puts the clone side that many ms out of phase (never used for the recorded numbers).
 // --geometry also records text-free geometry (media rects, text rows) per section and reports how well it matches.
@@ -99,7 +106,7 @@ async function goTo(p, y) {
 // Symmetric freeze (see header). Runs inside the page; returns what it pinned so the result file can record it.
 async function freezePage(p, phase) {
   return p.evaluate(async (ph) => {
-    const info = { videos: 0, videoSeeks: [], animsPaused: 0, animsFinished: 0, movers: [] }
+    const info = { videos: 0, videoSeeks: [], animsPaused: 0, animsFinished: 0, movers: [], rotators: [] }
     const raf = () => new Promise((r) => requestAnimationFrame(() => r()))
     // fonts, <img> elements and CSS background images must be loaded and decoded (8 s cap each, viewport-visible elements only). Runs once before sampling
     // and again after the pins are applied: pinning moves marquee items into view, and lazy-loaded images start loading
@@ -117,20 +124,40 @@ async function freezePage(p, phase) {
     // 3. movers. Pins from an earlier shot are released first: the page's own ticker code keeps running underneath a pin, so an old
     // pin goes stale (items wrapped to the far end meanwhile). Sample translations of every element three times, 250 ms apart
     for (const e of document.querySelectorAll('[data-parity-frozen]')) { e.removeAttribute('data-parity-frozen'); e.style.removeProperty('--pf-x'); e.style.removeProperty('--pf-y') }
+    for (const e of document.querySelectorAll('[data-parity-wrap]')) e.removeAttribute('data-parity-wrap')
+    for (const e of document.querySelectorAll('[data-parity-rot]')) { e.removeAttribute('data-parity-rot'); e.style.removeProperty('--pr') }
     const els = [...document.querySelectorAll('body *')]
-    const sample = () => els.map((e) => { const m = new DOMMatrix(getComputedStyle(e).transform); return [m.m41, m.m42] })
+    const sample = () => els.map((e) => { const m = new DOMMatrix(getComputedStyle(e).transform); return [m.m41, m.m42, Math.atan2(m.m12, m.m11) * 180 / Math.PI, Math.hypot(m.m11, m.m12)] })
     const stamp = (f) => { const a = performance.now(), r = f(); return [(a + performance.now()) / 2, r] } // midpoint of the sampling pass
     const [t0, s0] = stamp(sample)
     await new Promise((r) => setTimeout(r, 250)); const [t1, s1] = stamp(sample)
     await new Promise((r) => setTimeout(r, 250)); const [t2, s2] = stamp(sample)
     if (!document.getElementById('parity-freeze-css')) {
       const st = document.createElement('style'); st.id = 'parity-freeze-css'
-      st.textContent = '[data-parity-frozen]{transform:translate(var(--pf-x,0px),var(--pf-y,0px))!important;transition:none!important}'
+      st.textContent = '[data-parity-frozen]{transform:translate(var(--pf-x,0px),var(--pf-y,0px))!important;transition:none!important}[data-parity-rot]{transform:var(--pr)!important;transition:none!important}[data-parity-wrap]{transform:none!important}'
       document.head.appendChild(st)
     }
     const pins = []
     let n = 0
+    // 3b. rotating elements (the 404's two gradient shapes: script-driven on the live site, a CSS animation in the clone). Same rule on both sides:
+    // an element whose rotation angle keeps changing in the same direction across the three samples is pinned to the angle it would have PHASE ms
+    // after the page's time origin, i.e. its measured angle extrapolated back along its own measured angular velocity (deg/s) to performance.now() = 0,
+    // advanced by PHASE. The page's own animation keeps running underneath; only the painted angle is fixed. Scale and translation are kept.
+    const wrap = (d) => ((d + 540) % 360) - 180
+    const rotPins = []
     els.forEach((e, i) => {
+      const a1 = wrap(s1[i][2] - s0[i][2]), a2 = wrap(s2[i][2] - s1[i][2])
+      if (!(Math.abs(a1) > 0.5 && Math.abs(a2) > 0.5 && Math.sign(a1) === Math.sign(a2) && Math.abs(a1 - a2) < 0.25 * Math.abs(a1 + a2))) return
+      const w = (a1 / (t1 - t0) + a2 / (t2 - t1)) * 500 // deg/s, mean of the two intervals
+      const m = new DOMMatrix(getComputedStyle(e).transform)
+      e.setAttribute('data-parity-rot', String(++n))
+      const th = (s2[i][2] - w * t2 / 1000 + w * ph / 1000) * Math.PI / 180, k = s2[i][3]
+      e.style.setProperty('--pr', `matrix(${(k * Math.cos(th)).toFixed(5)},${(k * Math.sin(th)).toFixed(5)},${(-k * Math.sin(th)).toFixed(5)},${(k * Math.cos(th)).toFixed(5)},${m.m41.toFixed(2)},${m.m42.toFixed(2)})`)
+      rotPins.push({ el: e.tagName.toLowerCase() + '.' + String(e.className?.baseVal ?? e.className).split(' ')[0], degPerSec: +w.toFixed(2), pinnedDeg: +(th * 180 / Math.PI % 360).toFixed(1) })
+    })
+    info.rotators = rotPins
+    els.forEach((e, i) => {
+      if (e.hasAttribute('data-parity-rot')) return
       const d1 = [s1[i][0] - s0[i][0], s1[i][1] - s0[i][1]], d2 = [s2[i][0] - s1[i][0], s2[i][1] - s1[i][1]]
       const mv = (d) => Math.abs(d[0]) > 1 || Math.abs(d[1]) > 1
       if (!(mv(d1) && mv(d2))) return
@@ -142,6 +169,14 @@ async function freezePage(p, phase) {
     // Start state of a track: its FIRST item (DOM order) sits on the track's own start edge along the motion axis. Wrap-style
     // tickers (the live site's) move items that left the view to the far end with per-item offsets, so "track translate 0"
     // alone is not a start state there; aligning the first item is, and it is also translate 0 for a plain track.
+    // Wrap-style tickers (the live site's) keep a per-item translation on every item that already left the view (it moves that item to
+    // the far end of the loop). At the track's start state no item has wrapped, so those per-item offsets are released here (the first item
+    // of a track that has run for a while sits a whole loop length to the right otherwise, which blanked the strip at tablet/phone widths).
+    // Only direct children of a pinned track with a pure, non-zero translation are released; their content is untouched.
+    for (const [e] of pins) for (const c of e.children) {
+      const m = new DOMMatrix(getComputedStyle(c).transform)
+      if ((Math.abs(m.m41) > 1 || Math.abs(m.m42) > 1) && Math.abs(m.m11 - 1) < 1e-3 && Math.abs(m.m12) < 1e-3) c.setAttribute('data-parity-wrap', '1')
+    }
     const base = pins.map(([e, v]) => { const r = e.getBoundingClientRect(), f = e.firstElementChild?.getBoundingClientRect(); return [Math.abs(v[0]) > Math.abs(v[1]) && f ? r.left - f.left : 0, Math.abs(v[1]) >= Math.abs(v[0]) && f ? r.top - f.top : 0] })
     pins.forEach(([e, v], k) => {
       e.style.setProperty('--pf-x', (base[k][0] + v[0] * ph / 1000).toFixed(2) + 'px'); e.style.setProperty('--pf-y', (base[k][1] + v[1] * ph / 1000).toFixed(2) + 'px')
@@ -240,7 +275,7 @@ for (const route of ROUTES) {
   for (const y of offsets) {
     await Promise.all([goTo(o, y), goTo(c, y)])
     await Promise.all([o.waitForTimeout(y === 0 ? 3500 : 1800), c.waitForTimeout(y === 0 ? 3500 : 1800)])
-    if (FREEZE) { const [fo, fc] = await Promise.all([freezePage(o, PHASE), freezePage(c, PHASE + SKEW)]); if (fo.movers.length || fc.movers.length || fo.videos || fc.videos || fo.animsPaused || fc.animsPaused) freezeInfo[y] = { original: fo, clone: fc } }
+    if (FREEZE) { const [fo, fc] = await Promise.all([freezePage(o, PHASE), freezePage(c, PHASE + SKEW)]); if (fo.movers.length || fc.movers.length || fo.videos || fc.videos || fo.animsPaused || fc.animsPaused || fo.rotators.length || fc.rotators.length) freezeInfo[y] = { original: fo, clone: fc } }
     const [A, B] = await Promise.all([o.screenshot(), c.screenshot()])
     const r = await similarity(A, B)
     shot[y] = r.score

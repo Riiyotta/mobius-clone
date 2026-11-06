@@ -178,7 +178,8 @@
 }
 .hs-tc-img { position: absolute; inset: 0; overflow: clip; }
 .hs-tc-img img { display: block; width: 100%; max-width: none; height: 100%; object-fit: cover; -webkit-user-drag: none; }
-.hs-tc-bd { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.5); opacity: 0; }
+/* Backdrop is always on (measured on the original in default AND hover state): 50% black masked by a bottom-up gradient (black 0% -> transparent 50%). */
+.hs-tc-bd { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.5); -webkit-mask: linear-gradient(0deg, #000 0%, transparent 50%); mask: linear-gradient(0deg, #000 0%, transparent 50%); }
 .hs-tc-txt { position: absolute; left: 24px; right: 24px; bottom: 24px; display: flex; flex-direction: column; }
 .hs-tc-clip { overflow: clip; }
 .hs-tc-name { font-size: 48px; font-weight: 500; line-height: 57.6px; letter-spacing: -0.96px; color: var(--white); }
@@ -186,11 +187,9 @@
 .hs-tc-ch { display: inline-block; white-space: pre; }
 /* Desktop hover: image 120% (centred), backdrop, chars rise y200 → 0; spring 0.6 bounce 0 */
 .hs-tc-desk .hs-tc-img { transition: transform 0.6s var(--spring-06); }
-.hs-tc-desk .hs-tc-bd { transition: opacity 0.6s var(--spring-06); }
 .hs-tc-desk .hs-tc-txt { visibility: hidden; }
 .hs-tc-desk .hs-tc-ch { transform: translateY(200px); }
 .hs-tc-desk:hover .hs-tc-img { transform: scale(1.2); }
-.hs-tc-desk:hover .hs-tc-bd { opacity: 1; }
 .hs-tc-desk:hover .hs-tc-txt { visibility: visible; }
 .hs-tc-desk:hover .hs-tc-ch { animation: rise-200 0.6s var(--spring-06) both; }
 
@@ -495,7 +494,7 @@
   .hs-scr-tc { flex-direction: column; padding: 48px 10px 120px; }
   .hs-scr-side { display: none; }
   .hs-scr-mid { flex: none; width: 100%; padding: 0 10px; }
-  .hs-scr-p { width: 100%; }
+  .hs-scr-p { width: 480px; max-width: 100%; }
 
   /* Reel: no tickers (not rendered), full-width video, 80px badge */
   .hs-reel-c { flex-direction: column; align-items: flex-end; gap: 40px; padding: 0 10px; }
@@ -534,6 +533,9 @@
   .hs-bn-tc > .hs-nb { order: -1; width: 100%; }
   .hs-bn-c { flex: none; width: 100%; }
   .hs-bn-h4 { font-size: 36px; line-height: 41.4px; letter-spacing: -1.44px; }
+  .hs-bn-text { align-items: center; }
+  .hs-bn-h4 { width: 100%; text-align: center; }
+  .hs-bn-p { width: 480px; max-width: 100%; }
   .hs-bn-c .faq-btna, .hs-fd-bc .faq-btna { width: 100%; }
   .hs-bn-c .faq-btna-text, .hs-fd-bc .faq-btna-text { flex: 1 0 0; }
 
@@ -556,7 +558,7 @@
   .hs-fd-cc { padding: 0 10px; }
   .hs-fd-h6c { padding: 0 10px; }
   .hs-fd-pc { padding: 24px 10px 0; }
-  .hs-fd-p { width: 100%; }
+  .hs-fd-p { width: 480px; max-width: 100%; }
   .hs-fd-bc { padding: 0 10px; }
   .hs-tc-name { font-size: 36px; line-height: 43.2px; letter-spacing: -0.72px; }
 
@@ -574,7 +576,7 @@
   /* Process: 4 columns, stacked list */
   .hs-pc { gap: 48px; padding: 120px 10px 0; }
   .hs-pc-tc { padding: 0 10px; }
-  .hs-pc-p { width: 100%; }
+  .hs-pc-p { width: 400px; max-width: 100%; }
   .hs-pc-nums { left: 10px; }
   .hs-pc-grid { gap: 20px; padding: 0 10px; }
   .hs-pc-sec { padding: 0 10px; }
@@ -587,14 +589,14 @@
   .hs-pc-list { flex-direction: column; gap: 40px; }
   .hs-pc-item { flex: none; width: 100%; padding: 0 10px; }
   .hs-pc-h5 { width: 100%; font-size: 28px; line-height: 36.4px; letter-spacing: -0.28px; }
-  .hs-pc-text { width: 100%; }
+  .hs-pc-text { width: 480px; max-width: 100%; }
 
   /* Testimonials */
   .hs-ts { padding: 120px 10px 0; }
   .hs-ts-side { display: none; }
   .hs-ts-mid { flex: none; width: 100%; }
   .hs-ts-tc { padding: 0 10px; }
-  .hs-ts-p { width: 100%; }
+  .hs-ts-p { width: 400px; max-width: 100%; }
   .hs-ts-bar { height: 64px; }
   .hs-cs-side { display: none; }
   .hs-cs-c { flex: 1 0 0; }
@@ -609,7 +611,7 @@
   .hs-pr-title { flex-direction: column; align-items: center; gap: 24px; }
   .hs-pr-title .hs-tg { order: -1; }
   .hs-pr-title .hs-h2 { width: 100%; }
-  .hs-pr-p { width: 100%; }
+  .hs-pr-p { width: 400px; max-width: 100%; }
   .hs-pr-border { height: 120px; }
   .hs-plan { gap: 40px; }
   .hs-plan-name, .hs-plan-item, .hs-plan-price { padding: 0 10px; }
